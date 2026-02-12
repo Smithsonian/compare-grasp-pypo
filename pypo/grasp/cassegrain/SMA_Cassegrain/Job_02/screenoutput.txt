@@ -1,0 +1,84 @@
+ Tci file: Job_02.tci
+ Out file: Job_02.out
+ Log file: Job_02.log
+ 
+ 
+ TICRA Tools 21.0 (Windows amd64/em64t 64-bit)
+ 
+ 
+ TICRA Tools found  24 CPU threads
+ Enabled products: CHAMP 3D, GRASP
+ 
+ ----- TASK No. 1 -----     Started at 13:15:13 on February 12, 2026
+ 
+ sma_sub_po get_currents ( source : sequence(ref(sma_gaussian_beam)),
+ auto_convergence_of_po : on, convergence_on_scatterer :
+ sequence(ref(sma_main_reflector)), convergence_on_output_grid :
+ sequence(ref(sma_farfield_cut), ref(sma_farfield_grid)))
+ 
+  PO1 =       315 PO2 =       780 Face =     1,    Final PO-values from auto-convergence 
+ 
+  Calculating currents.
+  No. of PO-points (target):             157620                      
+                                                                      
+ Total task time:  0.30 sec
+ 
+ ----- TASK No. 2 -----     Started at 13:15:13 on February 12, 2026
+ 
+ sma_main_po get_currents ( source : sequence(ref(sma_sub_po)),
+ auto_convergence_of_po : on, convergence_on_output_grid :
+ sequence(ref(sma_farfield_cut), ref(sma_farfield_grid)))
+ 
+  PO1 =       260 PO2 =        83 Face =     1,    Final PO-values from auto-convergence 
+ 
+  Calculating currents.
+  No. of PO-points (target):              15521                      
+  No. of PO points (source):             157620                      
+ Estimated task time:  4.86 sec, Estimated remaining time:  0.00 sec  
+ 
+  Relative power hitting scatterer:    0.923746
+  Spill-over:     0.3445 dB
+                                                                      
+ Total task time:  7.87 sec
+ 
+ ----- TASK No. 3 -----     Started at 13:15:21 on February 12, 2026
+ 
+ sma_farfield_cut get_field ( source : sequence(ref(sma_main_po)))
+ 
+  No. of field points:                      903                      
+  No. of PO points (source):              15521                      
+                                                                      
+ Total task time:  0.00 sec
+ 
+ ----- TASK No. 4 -----     Started at 13:15:21 on February 12, 2026
+ 
+ sma_farfield_cut add_field ( source : sequence(ref(sma_sub_po),
+ ref(sma_gaussian_beam)))
+ 
+  No. of field points:                      903                      
+  No. of PO points (source):             157620                      
+                                                                      
+ Total task time:  0.10 sec
+ 
+ ----- TASK No. 5 -----     Started at 13:15:21 on February 12, 2026
+ 
+ sma_farfield_grid get_field ( source : sequence(ref(sma_main_po)))
+ 
+  No. of field points:                    90601                      
+  No. of PO points (source):              15521                      
+                                                                      
+ Total task time:  0.51 sec
+ 
+ ----- TASK No. 6 -----     Started at 13:15:22 on February 12, 2026
+ 
+ sma_farfield_grid add_field ( source : sequence(ref(sma_gaussian_beam),
+ ref(sma_sub_po)))
+ 
+  No. of field points:                    90601                      
+  No. of PO points (source):             157620                      
+                                                                      
+ Total task time: 26.55 sec
+ 
+ ----- END OF TASKS -----     Completed at 13:15:48 on February 12, 2026
+ 
+ Total time was 36.11 sec

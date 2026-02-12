@@ -1,0 +1,21 @@
+<OutputFiles>
+ <File SubObject="unknown" Path="Job_02.tci" Hash="a1c281d6b3264e2f85c6c96f4a684995" Format="Text" Object="unknown" Type="tci"/>
+ <File SubObject="unknown" Path="Job_02.tor" Hash="d9a2b22b5bd130364e0354fd847b6f6b" Format="Text" Object="unknown" Type="tor"/>
+ <File SubObject="unknown" Path="Job_02.out" Hash="d47940c655227bdff3724d43c04c9820" Format="Text" Object="unknown" Type="out"/>
+ <File SubObject="unknown" Path="sma_sub_gbfeed_poptd.cur" Hash="c0a9628883ddaeb0deca6b66e0fc8cbf" Format="Bin" Object="unknown" Type="Currents:Standard"/>
+ <File SubObject="unknown" Path="sma_main_gbfeed_poptd.cur" Hash="f7e571cf62f0788588f9b6d7c16191d9" Format="Bin" Object="unknown" Type="Currents:Standard"/>
+ <File Quantity="E" SubObject="unknown" Path="sma_cassegrain_ff_gbfeed_poptd.cut" Hash="67e70a65fd12110f26c7935f9b927fd9" Format="Ticra" Object="sma_farfield_cut" Type="Cut:Spherical">
+  <Parameter Name="Frequency" Values=" 230.609583076923" Unit="GHz"/>
+  <Parameter Name="Phi" Values="[0.000000000000000E+000;90.0000000000000;3]" Unit="deg"/>
+  <Parameter Name="Theta" Values="[-0.200000000000000;0.200000000000000;301]" Unit="deg"/>
+  <Scan Type="polar"/>
+ </File>
+ <File Quantity="E" SubObject="unknown" Path="sma_cassegrain_ff_gbfeed_poptd.grd" Hash="1650ed0ba7df37cc3b249191ebb8e3f9" Format="Ticra" Object="sma_farfield_grid" Type="Grid:Spherical">
+  <Parameter Name="Frequency" Values=" 230.609583076923" Unit="GHz"/>
+  <Parameter Name="El" Values="[-0.200000000000000;0.200000000000000;301]" Unit="deg"/>
+  <Parameter Name="Az" Values="[-0.200000000000000;0.200000000000000;301]" Unit="deg"/>
+  <Scan Type="azimuth_over_elevation"/>
+ </File>
+ <File Path="comments.txt" Format="Text" Type="Comments"/>
+ <File Path="screenoutput.txt" Format="Text" Type="Screen"/>
+</OutputFiles>
