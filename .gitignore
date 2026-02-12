@@ -1,3 +1,6 @@
+# GRASP Current files
+*.cur
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
