@@ -1,0 +1,17 @@
+COMMAND OBJECT sma_sub_po get_currents ( source :  &
+sequence(ref(sma_gaussian_beam)), auto_convergence_of_po : on,  &
+convergence_on_scatterer : sequence(ref(sma_main_reflector)),  &
+convergence_on_output_grid : sequence(ref(sma_farfield_cut),  &
+ref(sma_farfield_grid))) sma_po_sub 
+COMMAND OBJECT sma_main_po get_currents ( source : sequence(ref(sma_sub_po)),  &
+auto_convergence_of_po : on, convergence_on_output_grid :  &
+sequence(ref(sma_farfield_cut), ref(sma_farfield_grid))) sma_po_main 
+COMMAND OBJECT sma_farfield_cut get_field ( source :  &
+sequence(ref(sma_main_po))) sma_po_far_field_main 
+COMMAND OBJECT sma_farfield_cut add_field ( source : sequence(ref(sma_sub_po),  &
+ref(sma_gaussian_beam))) sma_po_add_field_feed 
+COMMAND OBJECT sma_farfield_grid get_field ( source :  &
+sequence(ref(sma_main_po))) 
+COMMAND OBJECT sma_farfield_grid add_field ( source :  &
+sequence(ref(sma_gaussian_beam), ref(sma_sub_po))) 
+QUIT 

@@ -1,0 +1,31 @@
+ Tci file: Job_05.tci
+ Out file: Job_05.out
+ Log file: Job_05.log
+ 
+ 
+ TICRA Tools 21.0 (Windows amd64/em64t 64-bit)
+ 
+ 
+ TICRA Tools found  24 CPU threads
+ Enabled products: CHAMP 3D, GRASP
+ 
+ ----- TASK No. 1 -----     Started at 14:46:55 on February 12, 2026
+ 
+ sec_surface_grid get_field ( source : sequence(ref(sma_gaussian_beam)))
+ 
+  No. of surface grid points:             90601                      
+                                                                      
+ Total task time:  0.14 sec
+ 
+ ----- TASK No. 2 -----     Started at 14:46:55 on February 12, 2026
+ 
+ main_surface_grid get_field ( source : sequence(ref(sma_sub_po)))
+ 
+  No. of surface grid points:             90601                      
+  No. of PO points (source):             157620                      
+                                                                      
+ Total task time:  7.09 sec
+ 
+ ----- END OF TASKS -----     Completed at 14:47:02 on February 12, 2026
+ 
+ Total time was 7.93 sec

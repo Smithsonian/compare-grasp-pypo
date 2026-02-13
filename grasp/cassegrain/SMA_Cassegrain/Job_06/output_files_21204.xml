@@ -1,0 +1,13 @@
+<OutputFiles>
+ <File SubObject="unknown" Path="Job_06.tci" Hash="4961c3036ee7f75c6fa48f0666db553d" Format="Text" Object="unknown" Type="tci"/>
+ <File SubObject="unknown" Path="Job_06.tor" Hash="2571e43ea0066b3235cd63f2d071ee69" Format="Text" Object="unknown" Type="tor"/>
+ <File SubObject="unknown" Path="Job_06.out" Hash="868a2e249ca02785afe85c491f17e615" Format="Text" Object="unknown" Type="out"/>
+ <File Quantity="E" SubObject="unknown" Path="sma_cassegrain_aperture_gbfeed_po.grd" Hash="78664b064b595a51e74e51c8f106945e" IsNearField="1" Format="Ticra" Object="aperture_grid" Type="Grid:Planar">
+  <Parameter Name="Frequency" Values=" 230.609583076923" Unit="GHz"/>
+  <Parameter Name="Phi" Values="[0.000000000000000E+000;360.000000000000;181]" Unit="deg"/>
+  <Parameter Name="Rho" Values="[0.000000000000000E+000;3.00000000000000;301]" Unit="m"/>
+  <Scan Type="rho_phi"/>
+ </File>
+ <File Path="comments.txt" Format="Text" Type="Comments"/>
+ <File Path="screenoutput.txt" Format="Text" Type="Screen"/>
+</OutputFiles>

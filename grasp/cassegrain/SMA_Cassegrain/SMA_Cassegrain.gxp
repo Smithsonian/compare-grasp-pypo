@@ -1,0 +1,294 @@
+[Comment]
+
+[TOR file]
+working/SMA_Cassegrain.tor
+[TCI file]
+working/SMA_Cassegrain.tci
+[Project setup]
+<!DOCTYPE Project>
+<Project version="21.0.0" application="TICRA Tools">
+ <Results>
+  <Analysis Name="Job_01" Path="Job_01">
+   <Objects Path="Job_01.tor"/>
+   <Commands Path="Job_01.tci"/>
+   <Output Path="output_files_33616.xml"/>
+   <Job Name="Job_01" JobHidden="false" JobStatus="Job Finished" JobOutputSpec="output_files_33616.xml" StartTime="2026-02-12T13:12:46" NumCommands="0" JobProcessID="33616"/>
+  </Analysis>
+  <Analysis Name="Job_02" Path="Job_02">
+   <Objects Path="Job_02.tor"/>
+   <Commands Path="Job_02.tci"/>
+   <Output Path="output_files_30940.xml"/>
+   <Job Name="Job_02" JobHidden="false" JobStatus="Job Finished" JobOutputSpec="output_files_30940.xml" StartTime="2026-02-12T13:15:12" NumCommands="0" JobProcessID="30940"/>
+  </Analysis>
+  <Analysis Name="Job_03" Path="Job_03">
+   <Objects Path="Job_03.tor"/>
+   <Commands Path="Job_03.tci"/>
+   <Output Path="output_files_19464.xml"/>
+   <Job Name="Job_03" JobHidden="false" JobStatus="Job Finished" JobOutputSpec="output_files_19464.xml" StartTime="2026-02-12T14:40:30" NumCommands="0" JobProcessID="19464"/>
+  </Analysis>
+  <Analysis Name="Job_04" Path="Job_04">
+   <Objects Path="Job_04.tor"/>
+   <Commands Path="Job_04.tci"/>
+   <Output Path="output_files_30032.xml"/>
+   <Job Name="Job_04" JobHidden="false" JobStatus="Job Finished" JobOutputSpec="output_files_30032.xml" StartTime="2026-02-12T14:41:23" NumCommands="0" JobProcessID="30032"/>
+  </Analysis>
+  <Analysis Name="Job_05" Path="Job_05">
+   <Objects Path="Job_05.tor"/>
+   <Commands Path="Job_05.tci"/>
+   <Output Path="output_files_25752.xml"/>
+   <Job Name="Job_05" JobHidden="false" JobStatus="Job Finished" JobOutputSpec="output_files_25752.xml" StartTime="2026-02-12T14:46:54" NumCommands="0" JobProcessID="25752"/>
+  </Analysis>
+  <Analysis Name="Job_06" Path="Job_06">
+   <Objects Path="Job_06.tor"/>
+   <Commands Path="Job_06.tci"/>
+   <Output Path="output_files_21204.xml"/>
+   <Job Name="Job_06" JobHidden="false" JobStatus="Job Finished" JobOutputSpec="output_files_21204.xml" StartTime="2026-02-12T15:57:11" NumCommands="0" JobProcessID="21204"/>
+  </Analysis>
+  <Analysis Name="Job_07" Path="Job_07">
+   <Objects Path="Job_07.tor"/>
+   <Commands Path="Job_07.tci"/>
+   <Output Path="output_files_45748.xml"/>
+   <Job Name="Job_07" JobHidden="false" JobStatus="Job Finished" JobOutputSpec="output_files_45748.xml" StartTime="2026-02-13T10:06:48" NumCommands="0" JobProcessID="45748"/>
+  </Analysis>
+ </Results>
+ <ResultWindows>
+  <PlotWidget type="Spectrogram">
+   <Title text="%Grid_1_Job% → %Grid_1_Full Title%" font="MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"/>
+   <Axis fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" id="0" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" enabled="1" useMinor="0" inverted="0" useFixedStep="0" spacing="2" minimum="-0.168251" useMajor="1" startAt="0" margin="0" resetZoomBehaviour="RangeLimit" stepMajor="10" maximum="0.168251" stepMinor="5" text="%Y-Left Title%">
+    <PenMajor styleString="SolidLine" color_r="192" color_b="192" color_g="192" color_a="255" width="0" style="1"/>
+   </Axis>
+   <Axis id="1" enabled="1" startAt="0" margin="20" minimum="-3.14157" colorBarWidth="20" spacing="2" text="%Y-Right Title%" resetZoomBehaviour="RangeLimit" useFixedStep="0" stepMajor="10" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" stepMinor="5" useMinor="0" useMajor="0" maximum="3.13997" inverted="0" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0"/>
+   <Axis fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" id="2" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" enabled="1" useMinor="0" inverted="0" useFixedStep="0" spacing="2" minimum="-0.175" useMajor="1" startAt="0" margin="0" resetZoomBehaviour="Regular" stepMajor="10" maximum="0.175" stepMinor="5" text="%X-Bottom Title%">
+    <PenMajor styleString="SolidLine" color_r="192" color_b="192" color_g="192" color_a="255" width="0" style="1"/>
+   </Axis>
+   <Axis Undefined="1"/>
+   <Canvas color_r="255" minorTickLength="4" color_b="255" majorTickLength="8" color_g="255" color_a="255" frameAroundExported="1" axisLineWidth="0"/>
+   <Grid/>
+   <Legend bgmode="0" activelegend="1" maxcolumns="1" externalalignment="1" externalsizeratio="0.29999999999999999" textwidthmargin="4" legendvisible="0">
+    <bgcolor color_r="255" color_b="255" color_g="255" color_a="255"/>
+    <borderpen styleString="SolidLine" color_r="160" color_b="164" color_g="160" color_a="255" width="1" style="1"/>
+    <internalposition>
+     <horizontal>1000000</horizontal>
+     <vertical>0</vertical>
+    </internalposition>
+    <legendordering/>
+   </Legend>
+   <SpectrogramData uuid="{b8df9759-5b50-4f9a-9bd9-7861a6944eee}">
+    <EDIFile time="2026-02-13T10:08:40" name="Job_07/sma_cassegrain_seccur_gbfeed_po.grd" xmlHeader="&lt;!DOCTYPE FileMetaData>&#xa;&lt;Parameters>&#xa; &lt;File Quantity=&quot;J&quot; SubObject=&quot;unknown&quot; Path=&quot;sma_cassegrain_seccur_gbfeed_po.grd&quot; Hash=&quot;da3c9b1a4ed4c522f57a063d7bcd00b5&quot; Format=&quot;Ticra&quot; Object=&quot;sec_surface_grid&quot; Type=&quot;Grid:Surface&quot;>&#xa;  &lt;Parameter Name=&quot;Frequency&quot; Values=&quot; 230.609583076923&quot; Unit=&quot;GHz&quot;/>&#xa;  &lt;Parameter Name=&quot;Y&quot; Values=&quot;[-0.175000000000000;0.175000000000000;301]&quot; Unit=&quot;m&quot;/>&#xa;  &lt;Parameter Name=&quot;X&quot; Values=&quot;[-0.175000000000000;0.175000000000000;301]&quot; Unit=&quot;m&quot;/>&#xa; &lt;/File>&#xa;&lt;/Parameters>&#xa;"/>
+    <Font data="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,12,-1,5,50,0,0,0,0,0"/>
+    <Legend text="sec_surface_grid → J_co → 230.60958 GHz"/>
+    <Parameter length="0" class="Frequency" begin="0"/>
+    <Parameter length="0" class="ProjectionComponents:Ludwig3" begin="0"/>
+    <Parameter length="301" class="X" begin="0"/>
+    <Parameter length="301" class="Y" begin="0"/>
+    <Variable nameEDX="" className="FieldComponents:E"/>
+    <Axes xAxis="X" yAxis="Y" xName="x" zUnit="rad" zName="Phase" xUnit="m" title="sec_surface_grid → J_co → 230.60958 GHz" yName="y" yUnit="m"/>
+    <Format to="3"/>
+    <DisplayMode Contours="true" NormalisationFactor="0" Image="true"/>
+    <ContourParameters ContourParametersInitialized="1">
+     <cereal>
+      <contourParameters>
+       <cereal_class_version>2</cereal_class_version>
+       <contourvalues size="dynamic">
+        <value>
+         <first>-3.1415926535897931</first>
+         <second>
+          <cereal_class_version>1</cereal_class_version>
+          <value>
+           <cereal_class_version>0</cereal_class_version>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>-2.3561944901923448</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>-1.5707963267948966</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>-0.78539816339744828</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>0</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>0.78539816339744828</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>1.5707963267948966</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>2.3561944901923448</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>3.1415926535897931</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+       </contourvalues>
+       <contour_type>2</contour_type>
+       <user_relative_db>3.1399733917515302</user_relative_db>
+       <default_color>#ff000000</default_color>
+       <polarization>0</polarization>
+       <path_loss>0</path_loss>
+       <gain_offset>0</gain_offset>
+       <contour_labels>1</contour_labels>
+       <label_interval>35</label_interval>
+       <font_size>8</font_size>
+       <font_weight>50</font_weight>
+       <beampeak_label>0</beampeak_label>
+       <interpolation>0</interpolation>
+       <legend>0</legend>
+       <interp_density>1</interp_density>
+       <default_thickness>4</default_thickness>
+       <options>0</options>
+       <rain_model>0</rain_model>
+       <availability>0.99919999999999998</availability>
+       <beampeak_label_text/>
+       <m_luminence>120</m_luminence>
+       <contour_label_text>dB</contour_label_text>
+      </contourParameters>
+     </cereal>
+    </ContourParameters>
+   </SpectrogramData>
+   <legendordering>
+    <legendorderingentry uuid="{b8df9759-5b50-4f9a-9bd9-7861a6944eee}"/>
+   </legendordering>
+   <ColorMap>
+    <ColorStop color_r="0" color_b="128" color_g="0" color_a="255" value="0"/>
+    <ColorStop color_r="0" color_b="255" color_g="255" color_a="255" value="0.25"/>
+    <ColorStop color_r="0" color_b="0" color_g="255" color_a="255" value="0.5"/>
+    <ColorStop color_r="255" color_b="0" color_g="255" color_a="255" value="0.75"/>
+    <ColorStop color_r="255" color_b="0" color_g="0" color_a="255" value="1"/>
+   </ColorMap>
+   <FixedAspectRatio enabled="true" mode="1">
+    <MinimumRect left="-0.17499999999999999" top="-0.17499999999999999" height="0.34999999999999998" width="0.34999999999999998"/>
+   </FixedAspectRatio>
+   <Window normalWidth="929" isMaximized="0" isFullscreen="0" isMinimized="0" normalY="168" normalHeight="860" normalX="160"/>
+  </PlotWidget>
+  <PlotStyleModel/>
+  <GridStyleModel/>
+ </ResultWindows>
+ <WizardData>
+  <ReflectorWizard>
+   <Axial-FdRatio Value="0.29999999999999999"/>
+   <Axial-FocalLength Unit="m" Value="0.29999999999999999"/>
+   <Axial-Frequency Unit="GHz" Value="20"/>
+   <Axial-HalfAngle Unit="deg" Value="30"/>
+   <Axial-MainDiameter Unit="m" Value="1"/>
+   <Axial-Mode Value="0"/>
+   <Axial-Prefix Value="ring_focus_"/>
+   <Axial-SubDiameter Value="0.14999999999999999"/>
+   <Axial-SubDiameterAbsolute Unit="m" Value="0.14999999999999999"/>
+   <Axial-Thickness Unit="m" Value="0"/>
+   <Axial-WaveguideDiameter Unit="m" Value="0"/>
+   <Axial-WaveguideLength Unit="m" Value="0"/>
+   <Axial-exteriorDiameter Unit="m" Value="0"/>
+   <Axial-useRelative Value="1"/>
+   <Dual-Angle1 Value="0"/>
+   <Dual-Angle2 Value="0"/>
+   <Dual-CreateVariables Value="1"/>
+   <Dual-Diameter Unit="m" Value="6"/>
+   <Dual-Eccentricity Value="1.061861232"/>
+   <Dual-FocalLength Unit="m" Value="2.52"/>
+   <Dual-FocalLengthRelative Value="0.41999999999999998"/>
+   <Dual-FociDistance Unit="m" Value="4.9929266671199999"/>
+   <Dual-FociDistanceRelative Value="1.9813201060000001"/>
+   <Dual-Frequency Unit="GHz" Value="230.60958307692303"/>
+   <Dual-Mizuguchi Value="1"/>
+   <Dual-Prefix Value="sma_"/>
+   <Dual-UseRelative Value="1"/>
+   <Main-SelectFrequency Value="0"/>
+   <Single-CreateVariables Value="0"/>
+   <Single-Diameter Unit="m" Value="1"/>
+   <Single-FocalLength Unit="m" Value="0.59999999999999998"/>
+   <Single-FocalLengthRelative Value="0.59999999999999998"/>
+   <Single-Frequency Unit="GHz" Value="12"/>
+   <Single-Offset Unit="m" Value="0"/>
+   <Single-OffsetRelative Value="0"/>
+   <Single-Prefix Value="single_"/>
+   <Single-UseRelative Value="1"/>
+  </ReflectorWizard>
+ </WizardData>
+ <view_configuration>
+  <view enable_psi_slider="no" show_surfaces="yes" show_rulers="yes" position="0.2998574674129486,-0.6996766328811646,0.9392924308776855" upVector="-0.2308956980705261,-0.1096068620681763,0.9667848348617554" perspective_view="no" orientation_type="0" enable_phi_slider="no" size="-1x-1" maximized="yes" name="view_1" viewCenter="-0.5368727445602417,-1.18440854549408,0.6845020055770874" minimized="no" show_wire_grid="yes" collapsed_view_settings_entries="" scale="4" enable_theta_slider="no" pos="0x0" locked_phi_theta="no"/>
+ </view_configuration>
+ <optimisation_configuration current_tab="Press 'New Manager' to create an optimisation manager"/>
+ <uq_configuration current_tab="Press 'New Manager' to create an uncertainty quantification manager"/>
+ <projectSettings/>
+</Project>

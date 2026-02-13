@@ -1,0 +1,17 @@
+<OutputFiles>
+ <File SubObject="unknown" Path="Job_04.tci" Hash="cb639978cc667e2871733793bbc162f7" Format="Text" Object="unknown" Type="tci"/>
+ <File SubObject="unknown" Path="Job_04.tor" Hash="053670d91835596386a55b7cf54ace96" Format="Text" Object="unknown" Type="tor"/>
+ <File SubObject="unknown" Path="Job_04.out" Hash="77de836b6cf279cf6b29166c1ac08299" Format="Text" Object="unknown" Type="out"/>
+ <File Quantity="J" SubObject="unknown" Path="sma_cassegrain_seccur_gbfeed_po.grd" Hash="f4726a0b966dbb7f16534639c04b32b0" Format="Ticra" Object="sec_surface_grid" Type="Grid:Surface">
+  <Parameter Name="Frequency" Values=" 230.609583076923" Unit="GHz"/>
+  <Parameter Name="Y" Values="[-0.175000000000000;0.175000000000000;301]" Unit="m"/>
+  <Parameter Name="X" Values="[-0.175000000000000;0.175000000000000;301]" Unit="m"/>
+ </File>
+ <File Quantity="J" SubObject="unknown" Path="sma_cassegrain_pricur_gbfeed_po.grd" Hash="1678f3e21ab32c8f48e2ad63885efba2" Format="Ticra" Object="main_surface_grid" Type="Grid:Surface">
+  <Parameter Name="Frequency" Values=" 230.609583076923" Unit="GHz"/>
+  <Parameter Name="Y" Values="[-3.00000000000000;3.00000000000000;301]" Unit="m"/>
+  <Parameter Name="X" Values="[-3.00000000000000;3.00000000000000;301]" Unit="m"/>
+ </File>
+ <File Path="comments.txt" Format="Text" Type="Comments"/>
+ <File Path="screenoutput.txt" Format="Text" Type="Screen"/>
+</OutputFiles>

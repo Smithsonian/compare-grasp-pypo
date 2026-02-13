@@ -1,3 +1,0 @@
-Run SMA Cassegrain antenna simulation with: 
-nearfield Gaussian Beam feed 
-PO only on both reflectors

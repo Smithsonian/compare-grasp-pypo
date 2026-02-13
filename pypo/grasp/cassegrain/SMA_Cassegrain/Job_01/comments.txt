@@ -1,3 +1,0 @@
-Run canonical Cassegrain antenna simulation with: 
-nearfield Gaussian Beam feed 
-PO+PTD on both reflectors

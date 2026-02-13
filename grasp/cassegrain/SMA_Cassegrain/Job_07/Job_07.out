@@ -1,0 +1,2363 @@
+ Program started at 10:06:49 on 13 February 2026
+ 
+ 
+ 
+                                     T I C R A   T o o l s
+                                     =====================
+ 
+  Antenna design software from TICRA
+ 
+ TICRA Tools 21.0 (Windows amd64/em64t 64-bit)
+ 
+ 
+ TICRA Tools found  24 CPU threads
+ 
+ Enabled products: CHAMP 3D, GRASP
+  Reading tor-file: Job_07.tor
+ 
+ 
+  *** Object name:  sma_design_main_focal_length_over_diameter
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_design_main_focal_length_over_diameter
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_focal_length
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wizard_focal_length
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_design_main_diameter
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_design_main_diameter
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_focal_length
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_distance_between_foci
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wizard_distance_between_foci
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_design_relative_distance_between_foci
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_design_relative_distance_between_foci
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_distance_between_foci
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_a
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wizard_a
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_design_sub_eccentricity
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_design_sub_eccentricity
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_a
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_design_angle_sub_main_axis
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_design_angle_sub_main_axis
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_asr
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wizard_asr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs2
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs2
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_asr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs1
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs1
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_asr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_r1
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wizard_r1
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs1
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_asr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_r2
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wizard_r2
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs2
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_asr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_M
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wizard_M
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_psi0
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wizard_psi0
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_psi1
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wizard_psi1
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_r1
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs1
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_asr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs1
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_asr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xm1
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xm1
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_psi1
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_r1
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs1
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_asr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs1
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_asr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_psi2
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wizard_psi2
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_r2
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs2
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_asr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs2
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_asr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xm2
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xm2
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_psi2
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_r2
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs2
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_asr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs2
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_asr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xm0
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xm0
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xm2
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_psi2
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_r2
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs2
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_asr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs2
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_asr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xm1
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_psi1
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_r1
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs1
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_asr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs1
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_asr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs0
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs0
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_zs1
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wizard_zs1
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_zs2
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wizard_zs2
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_main_reflector
+  *** Class name :  reflector
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_main_reflector
+  *** Class name :  reflector
+  *** Message    :  New values in object
+ 
+  Coordinate system: sma_global_coor
+  Rim: sma_main_rim
+  Surface No.    1 : sma_main_surface
+  Centre hole radius :   0.175000 m
+ 
+ 
+  *** Object name:  sma_global_coor
+  *** Class name :  coor_sys
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_global_coor
+  *** Class name :  coor_sys
+  *** Message    :  New values in object
+ 
+  Z_axis :     0.000000    0.000000    1.000000
+ 
+ 
+  *** Object name:  sma_main_surface
+  *** Class name :  paraboloid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_main_surface
+  *** Class name :  paraboloid
+  *** Message    :  New values in object
+ 
+ 
+  Focal length     :    2.52000 m
+   and in SI units :    2.52000 meter
+ 
+ 
+  *** Object name:  sma_main_rim
+  *** Class name :  elliptical_rim
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_main_rim
+  *** Class name :  elliptical_rim
+  *** Message    :  Definition of elliptical_rim
+ 
+  The rim centre is placed at
+    x :    0.00000 m
+    y :    0.00000 m
+  and in SI units
+    x :    0.00000     meter
+    y :    0.00000     meter
+ 
+  The half axes of the ellipse are defined by
+    in x-direction :    3.00000 m
+    in y-direction :    3.00000 m
+  and in SI units
+    in x-direction :    3.00000     meter
+    in y-direction :    3.00000     meter
+ 
+  The rim limits in radii are
+    minimum :    3.00000     meter
+    maximum :    3.00000     meter
+ 
+  The rim limits in x direction are
+    minimum :   -3.00000     meter
+    maximum :    3.00000     meter
+ 
+  The rim limits in y direction are
+    minimum :   -3.00000     meter
+    maximum :    3.00000     meter
+ 
+ 
+  *** Object name:  sma_sub_reflector
+  *** Class name :  reflector
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_sub_reflector
+  *** Class name :  reflector
+  *** Message    :  New values in object
+ 
+  Coordinate system: sma_sub_coor
+  Rim: sma_sub_rim
+  Surface No.    1 : sma_sub_surface
+ 
+ 
+  *** Object name:  sma_sub_coor
+  *** Class name :  coor_sys
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_sub_coor
+  *** Class name :  coor_sys
+  *** Message    :  New values in object
+ 
+  Origin :   0.000000E+00 m     0.000000E+00 m     0.252000E+01 m
+  Base name : sma_global_coor
+  X_axis :     1.000000    0.000000    0.000000
+  Y_axis :     0.000000   -1.000000    0.000000
+  Z_axis :     0.000000    0.000000   -1.000000
+ 
+ 
+  *** Object name:  sma_sub_surface
+  *** Class name :  hyperboloid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_sub_surface
+  *** Class name :  hyperboloid
+  *** Message    :  New values in object
+ 
+ 
+  Distance between the vertices, 2a :    4.70205 m
+   and in SI units                  :    4.70205 meter
+ 
+  Distance between the foci, 2c     :    4.99293 m
+   and in SI units                  :    4.99293 meter
+ 
+    giving the eccentricity         :    1.06186
+ 
+ 
+  *** Object name:  sma_sub_rim
+  *** Class name :  elliptical_rim
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_sub_rim
+  *** Class name :  elliptical_rim
+  *** Message    :  Definition of elliptical_rim
+ 
+  The rim centre is placed at
+    x :    0.00000 m
+    y :    0.00000 m
+  and in SI units
+    x :    0.00000     meter
+    y :    0.00000     meter
+ 
+  The half axes of the ellipse are defined by
+    in x-direction :   0.175000 m
+    in y-direction :   0.175000 m
+  and in SI units
+    in x-direction :   0.175000     meter
+    in y-direction :   0.175000     meter
+ 
+  The rim limits in radii are
+    minimum :   0.175000     meter
+    maximum :   0.175000     meter
+ 
+  The rim limits in x direction are
+    minimum :  -0.175000     meter
+    maximum :   0.175000     meter
+ 
+  The rim limits in y direction are
+    minimum :  -0.175000     meter
+    maximum :   0.175000     meter
+ 
+ 
+  *** Object name:  sma_feed
+  *** Class name :  gaussian_beam_pattern
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_feed
+  *** Class name :  gaussian_beam_pattern
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_feed
+  *** Class name :  gaussian_beam_pattern
+  *** Message    :  New values in object
+ 
+  Frequency : sma_wavelengths
+  Coor_sys : sma_feed_coor
+ 
+ 
+  *** Object name:  sma_feed
+  *** Class name :  gaussian_beam_pattern
+  *** Message    :  Definition of common feed attributes
+ 
+ 
+ 
+  *** Object name:  sma_feed
+  *** Class name :  gaussian_beam_pattern
+  *** Message    :  Definition of gaussian feed
+ 
+ 
+  Taper angle :   2.04624 degrees
+ 
+  Taper compared to on-axis level :  -12.0000 dB
+ 
+  The imaginary displacement along the negative z-axis
+    is 344.743 wavelengths
+ 
+  The beam waist radius is 10.4755 wavelengths
+ 
+ 
+  *** Object name:  sma_wavelengths
+  *** Class name :  wavelength
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wavelengths
+  *** Class name :  wavelength
+  *** Message    :  New values in object
+ 
+  Frequency No.    1  Wavelength :   0.130000E-02
+ 
+ 
+  *** Object name:  sma_feed_coor
+  *** Class name :  coor_sys
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_feed_coor
+  *** Class name :  coor_sys
+  *** Message    :  New values in object
+ 
+  Origin :   0.000000E+00 m     0.000000E+00 m     0.499293E+01 m
+  Base name : sma_sub_coor
+  X_axis :     1.000000    0.000000    0.000000
+  Y_axis :     0.000000   -1.000000    0.000000
+  Z_axis :     0.000000    0.000000   -1.000000
+ 
+ 
+  *** Object name:  sma_main_po
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_main_po
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  New values in object
+ 
+  File name : sma_main_gbfeed_poptd.cur
+  Method : po
+  Frequency : sma_wavelengths
+  Scatterer : sma_main_reflector
+  Spill-over : on
+  Coordinate system : sma_global_coor
+ 
+ 
+  *** Object name:  sma_sub_po
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_sub_po
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  New values in object
+ 
+  File name : sma_sub_gbfeed_poptd.cur
+  Method : po
+  Frequency : sma_wavelengths
+  Scatterer : sma_sub_reflector
+  Coordinate system : sma_sub_coor
+ 
+ 
+  *** Object name:  sma_farfield_cut
+  *** Class name :  spherical_cut
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_farfield_cut
+  *** Class name :  spherical_cut
+  *** Message    :  New values in object
+ 
+  Frequency : sma_wavelengths
+  File name : sma_cassegrain_ff_gbfeed_poptd.cut
+  Coor_sys : sma_cut_coor
+  Theta range : start  -0.20000    end   0.20000    points   301
+  Phi range : start   0.00000    end  90.00000    points     3
+ 
+ 
+  *** Object name:  sma_cut_coor
+  *** Class name :  coor_sys
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_cut_coor
+  *** Class name :  coor_sys
+  *** Message    :  New values in object
+ 
+  Origin :   0.000000E+00 m     0.000000E+00 m     0.000000E+00 m
+  Base name : sma_global_coor
+  Z_axis :     0.000000    0.000000    1.000000
+ 
+ 
+  *** Object name:  sma_gaussian_beam
+  *** Class name :  gaussian_beam
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_gaussian_beam
+  *** Class name :  gaussian_beam
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_gaussian_beam
+  *** Class name :  gaussian_beam
+  *** Message    :  New values in object
+ 
+  Frequency : sma_wavelengths
+  Coor_sys : sma_feed_coor
+ 
+ 
+  *** Object name:  sma_gaussian_beam
+  *** Class name :  gaussian_beam
+  *** Message    :  Definition of common feed attributes
+ 
+ 
+ 
+  *** Object name:  sma_gaussian_beam
+  *** Class name :  gaussian_beam
+  *** Message    :  Definition of gaussian beam
+ 
+ 
+  Beam radius :   13.6710     mm
+ 
+  Phase-front radius of curvature:   0.00000     m
+ 
+ 
+  *** Object name:  sma_farfield_grid
+  *** Class name :  spherical_grid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_farfield_grid
+  *** Class name :  spherical_grid
+  *** Message    :  New values in object
+ 
+  Frequency : sma_wavelengths
+  File name : sma_cassegrain_ff_gbfeed_poptd.grd
+  Coor_sys : sma_global_coor
+  X range : start  -0.20000    end   0.20000    points   301
+  Y range : start  -0.20000    end   0.20000    points   301
+  Grid type : azimuth_over_elevation
+ 
+ 
+  *** Object name:  main_surface_grid
+  *** Class name :  surface_grid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  main_surface_grid
+  *** Class name :  surface_grid
+  *** Message    :  New values in object
+ 
+  Frequency : sma_wavelengths
+  File name : sma_cassegrain_pricur_gbfeed_po.grd
+  Scatterer : sma_main_reflector
+  polarisation_and_phase_coor_sys : sma_global_coor
+  Field_type : currents
+  Phase_adjustment : on
+  X_range : start -0.300000E+01    end  0.300000E+01    points   301
+  Unit of grid limits : m
+  Y_range : start -0.300000E+01    end  0.300000E+01    points   301
+ 
+ 
+  *** Object name:  sec_surface_grid
+  *** Class name :  surface_grid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sec_surface_grid
+  *** Class name :  surface_grid
+  *** Message    :  New values in object
+ 
+  Frequency : sma_wavelengths
+  File name : sma_cassegrain_seccur_gbfeed_po.grd
+  Scatterer : sma_sub_reflector
+  polarisation_and_phase_coor_sys : sma_subvertex_coor
+  Field_type : currents
+  Phase_adjustment : on
+  X_range : start -0.175000E+00    end  0.175000E+00    points   301
+  Unit of grid limits : m
+  Y_range : start -0.175000E+00    end  0.175000E+00    points   301
+ 
+ 
+  *** Object name:  sma_subvertex_coor
+  *** Class name :  coor_sys
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_subvertex_coor
+  *** Class name :  coor_sys
+  *** Message    :  New values in object
+ 
+  Origin :   0.000000E+00 m     0.000000E+00 m     0.237456E+01 m
+  Base name : sma_global_coor
+  X_axis :     1.000000    0.000000    0.000000
+  Y_axis :     0.000000   -1.000000    0.000000
+  Z_axis :     0.000000    0.000000   -1.000000
+ 
+ 
+  *** Object name:  aperture_grid
+  *** Class name :  planar_grid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  aperture_grid
+  *** Class name :  planar_grid
+  *** Message    :  New values in object
+ 
+  Frequency : sma_wavelengths
+  File name : sma_cassegrain_aperture_gbfeed_po.grd
+  Coor_sys : sma_sub_coor
+  X range : start  0.000000E+00    end  0.300000E+01    points   301
+  Unit of grid limits : m
+  Y range : start  0.000000E+00    end  0.360000E+03    points   181
+  Grid truncation : elliptical
+  Grid type : rho_phi
+ 
+ 
+  *** Object name:  sub_surface_currents_cut
+  *** Class name :  surface_cut
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sub_surface_currents_cut
+  *** Class name :  surface_cut
+  *** Message    :  New values in object
+ 
+  Frequency : sma_wavelengths
+  File name : sub_currents.cut
+  Scatterer : sma_sub_reflector
+  polarisation_and_phase_coor_sys : sma_sub_coor
+  Field_type : currents
+  Phase_adjustment : on
+  Rho range : start  0.000000E+00 m   end  0.175000E+00 m   points   175
+ 
+ 
+  *** Object name:  main_surface_currents_cut
+  *** Class name :  surface_cut
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  main_surface_currents_cut
+  *** Class name :  surface_cut
+  *** Message    :  New values in object
+ 
+  Frequency : sma_wavelengths
+  File name : main_currents.cut
+  Scatterer : sma_sub_reflector
+  polarisation_and_phase_coor_sys : sma_sub_coor
+  Field_type : currents
+  Phase_adjustment : on
+  Rho range : start  0.000000E+00 m   end  0.175000E+00 m   points   175
+ 
+ 
+  *** Object name:  main_Hfield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  main_Hfield_cut
+  *** Class name :  surface_cut
+  *** Message    :  New values in object
+ 
+  Frequency : sma_wavelengths
+  File name : main_Hfield.cut
+  Scatterer : sma_main_reflector
+  polarisation_and_phase_coor_sys : sma_global_coor
+  Field_type : incident_h_field
+  Phase_adjustment : on
+  Rho range : start  0.000000E+00 m   end  0.175000E+00 m   points   175
+ 
+ 
+  *** Object name:  sub_Hfield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sub_Hfield_cut
+  *** Class name :  surface_cut
+  *** Message    :  New values in object
+ 
+  Frequency : sma_wavelengths
+  File name : sub_Hfield.cut
+  Scatterer : sma_sub_reflector
+  polarisation_and_phase_coor_sys : sma_sub_coor
+  Field_type : incident_h_field
+  Phase_adjustment : on
+  Rho range : start  0.000000E+00 m   end  0.175000E+00 m   points   175
+ 
+ 
+  *** Object name:  sub_Efield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sub_Efield_cut
+  *** Class name :  surface_cut
+  *** Message    :  New values in object
+ 
+  Frequency : sma_wavelengths
+  File name : sub_Hfield.cut
+  Scatterer : sma_sub_reflector
+  polarisation_and_phase_coor_sys : sma_sub_coor
+  Field_type : incident_e_field
+  Phase_adjustment : on
+  Rho range : start  0.000000E+00 m   end  0.175000E+00 m   points   175
+ 
+ 
+  *** Object name:  surfacecut_phi_max
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  surfacecut_phi_max
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sub_Efield_cut
+  *** Class name :  surface_cut
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sub_Hfield_cut
+  *** Class name :  surface_cut
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  main_Hfield_cut
+  *** Class name :  surface_cut
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  main_surface_currents_cut
+  *** Class name :  surface_cut
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sub_surface_currents_cut
+  *** Class name :  surface_cut
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  surfacecut_phi_n
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  surfacecut_phi_n
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sub_Efield_cut
+  *** Class name :  surface_cut
+  *** Message    :  New values in object
+ 
+  Phi range : start   0.00000    end 315.00000    points     8
+ 
+ 
+  *** Object name:  sub_Hfield_cut
+  *** Class name :  surface_cut
+  *** Message    :  New values in object
+ 
+  Phi range : start   0.00000    end 315.00000    points     8
+ 
+ 
+  *** Object name:  main_Hfield_cut
+  *** Class name :  surface_cut
+  *** Message    :  New values in object
+ 
+  Phi range : start   0.00000    end 315.00000    points     8
+ 
+ 
+  *** Object name:  main_surface_currents_cut
+  *** Class name :  surface_cut
+  *** Message    :  New values in object
+ 
+  Phi range : start   0.00000    end 315.00000    points     8
+ 
+ 
+  *** Object name:  sub_surface_currents_cut
+  *** Class name :  surface_cut
+  *** Message    :  New values in object
+ 
+  Phi range : start   0.00000    end 315.00000    points     8
+ 
+ 
+  *** Object name:  main_Efield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  main_Efield_cut
+  *** Class name :  surface_cut
+  *** Message    :  New values in object
+ 
+  Frequency : sma_wavelengths
+  File name : main_Efield.cut
+  Scatterer : sma_main_reflector
+  polarisation_and_phase_coor_sys : sma_global_coor
+  Field_type : incident_e_field
+  Phase_adjustment : on
+  Rho range : start  0.000000E+00 m   end  0.175000E+00 m   points   175
+  Phi range : start   0.00000    end 315.00000    points     8
+ 
+ 
+  *** Object name:  view_1
+  *** Class name :  view
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  view_1
+  *** Class name :  view
+  *** Message    :  New values in object
+ 
+ 
+  Number of objects :      4
+ 
+  Definition of objects   :
+   No.  Name
+     1  output_points_plot_for_view_1
+     2  coor_sys_plot_for_view_1
+     3  feed_plot_for_view_1
+     4  reflector_plot_for_view_1
+ 
+ 
+ 
+  *** Object name:  output_points_plot_for_view_1
+  *** Class name :  output_points_plot
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  output_points_plot_for_view_1
+  *** Class name :  output_points_plot
+  *** Message    :  Definition of output_points_plot
+ 
+ 
+ 
+  *** Object name:  coor_sys_plot_for_view_1
+  *** Class name :  coor_sys_plot
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  coor_sys_plot_for_view_1
+  *** Class name :  coor_sys_plot
+  *** Message    :  Definition of coor_sys_plot
+ 
+ 
+ 
+  *** Object name:  feed_plot_for_view_1
+  *** Class name :  feed_plot
+  *** Message    :  Object created
+ 
+  Colour (RGB) :     0.721569    0.450980    0.200000
+ 
+ 
+  *** Object name:  feed_plot_for_view_1
+  *** Class name :  feed_plot
+  *** Message    :  Definition of feed_plot
+ 
+ 
+ 
+  *** Object name:  reflector_plot_for_view_1
+  *** Class name :  reflector_plot
+  *** Message    :  Object created
+ 
+  Colour (RGB) :     0.721569    0.450980    0.200000
+ 
+ 
+  *** Object name:  reflector_plot_for_view_1
+  *** Class name :  reflector_plot
+  *** Message    :  Definition of reflector_plot
+ 
+ 
+ ----- TASK No. 1 -----     Started at 10:06:50 on February 13, 2026
+ sma_sub_po get_currents ( source : sequence(ref(sma_gaussian_beam)),
+ auto_convergence_of_po : on, convergence_on_scatterer :
+ sequence(ref(sma_main_reflector)), convergence_on_output_grid :
+ sequence(ref(sma_farfield_cut), ref(sma_farfield_grid)))
+ 
+ 
+  *** Object name:  sma_sub_po
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Get_currents message received
+ 
+  Source : sma_gaussian_beam
+  PO-auto-convergence selection : on
+  Convergence test on scatterer object : sma_main_reflector
+  Convergence test on output grid : sma_farfield_cut
+  Convergence test on output grid : sma_farfield_grid
+ 
+ 
+  *** Object name:  sma_sub_po
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Initialization
+ 
+ 
+  Auto-convergence with desired accuracy of -80.00 dB.
+ 
+  Face 1:
+  Max. values: po1/po2 = 8970/21530
+ 
+ PO convergence
+  Test-grid  Ref-grid    Freq  Beam  Grid       P_max   P_level  Accuracy
+    po1/po2   po1/po2                           [dBi]     [dBi]      [dB]
+      20/10     10/10       1     1     1      -34.51    -34.51     -0.17
+      20/10     10/10       1     1     2       41.01     41.01    -54.19
+      20/10     10/10       1     1     3       41.01     41.01    -51.63
+      40/10     20/10       1     1     1      -39.09    -39.09      0.28
+      40/10     20/10       1     1     2       40.99     40.99   -221.29  *
+      40/10     20/10       1     1     3       40.99     40.99   -221.47  *
+      80/10     40/10       1     1     1      -45.11    -45.11      3.49
+     160/10     80/10       1     1     1      -46.62    -46.62      2.60
+     320/10    160/10       1     1     1      -49.51    -49.51      0.28
+     640/10    320/10       1     1     1      -54.31    -54.31   -120.70  *
+     240/10    640/10       1     1     1      -54.31    -54.31      1.34
+     280/10    640/10       1     1     1      -54.31    -54.31     -2.48
+     300/10    640/10       1     1     1      -54.31    -54.31    -20.84
+     310/10    640/10       1     1     1      -54.31    -54.31    -63.08
+     315/10    640/10       1     1     1      -54.31    -54.31    -90.24  *
+ 
+ PO convergence
+  Test-grid  Ref-grid    Freq  Beam  Grid       P_max   P_level  Accuracy
+    po1/po2   po1/po2                           [dBi]     [dBi]      [dB]
+      10/20     10/10       1     1     1      -34.51    -34.51      3.63
+      10/20     10/10       1     1     2       41.01     41.01   -105.08  *
+      10/20     10/10       1     1     3       41.01     41.01    -86.55  *
+      10/40     10/20       1     1     1      -33.15    -33.15      2.14
+      10/80     10/40       1     1     1      -41.63    -41.63      1.49
+     10/160     10/80       1     1     1      -42.53    -42.53      0.30
+     10/320    10/160       1     1     1      -48.05    -48.05     -2.03
+     10/640    10/320       1     1     1      -51.07    -51.07     -2.26
+    10/1280    10/640       1     1     1      -55.68    -54.31     -6.78
+    10/2560   10/1280       1     1     1      -55.68    -54.31   -240.96  *
+     10/960   10/2560       1     1     1      -55.68    -54.31   -237.79  *
+     10/800   10/2560       1     1     1      -55.68    -54.31   -154.42  *
+     10/720   10/2560       1     1     1      -55.68    -54.31    -13.84
+     10/760   10/2560       1     1     1      -55.68    -54.31    -45.62
+     10/780   10/2560       1     1     1      -55.68    -54.31    -92.75  *
+  PO1 =       315 PO2 =       780 Face =     1,    Final PO-values from auto-convergence
+ 
+ ----- TASK No. 2 -----     Started at 10:06:51 on February 13, 2026
+ sma_main_po get_currents ( source : sequence(ref(sma_sub_po)),
+ auto_convergence_of_po : on, convergence_on_output_grid :
+ sequence(ref(sma_farfield_cut), ref(sma_farfield_grid)))
+ 
+ 
+  *** Object name:  sma_main_po
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Get_currents message received
+ 
+  Source : sma_sub_po
+  PO-auto-convergence selection : on
+  Convergence test on output grid : sma_farfield_cut
+  Convergence test on output grid : sma_farfield_grid
+ 
+ 
+  *** Object name:  sma_main_po
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Initialization
+ 
+ 
+  Auto-convergence with desired accuracy of -80.00 dB.
+ 
+  Face 1:
+  Max. values: po1/po2 = 153840/369230
+ 
+ PO convergence
+  Test-grid  Ref-grid    Freq  Beam  Grid       P_max   P_level  Accuracy
+    po1/po2   po1/po2                           [dBi]     [dBi]      [dB]
+      20/10     10/10       1     1     1       82.29     82.29    -11.07
+      20/10     10/10       1     1     2       82.29     82.29    -11.07
+      40/10     20/10       1     1     1       82.13     82.13    -42.17
+      40/10     20/10       1     1     2       82.13     82.13    -42.03
+      80/10     40/10       1     1     1       82.18     82.18    -47.87
+      80/10     40/10       1     1     2       82.18     82.18    -48.44
+     160/10     80/10       1     1     1       82.18     82.18    -53.73
+     160/10     80/10       1     1     2       82.18     82.18    -53.68
+     320/10    160/10       1     1     1       82.18     82.18    -59.18
+     320/10    160/10       1     1     2       82.18     82.18    -59.18
+     640/10    320/10       1     1     1       82.17     82.17   -257.33  *
+     640/10    320/10       1     1     2       82.17     82.17   -256.51  *
+     240/10    640/10       1     1     1       82.17     82.17    -61.06
+     240/10    640/10       1     1     2       82.17     82.17    -61.06
+     280/10    640/10       1     1     1       82.17     82.17   -188.31  *
+     280/10    640/10       1     1     2       82.17     82.17   -169.40  *
+     260/10    640/10       1     1     1       82.17     82.17    -89.18  *
+     260/10    640/10       1     1     2       82.17     82.17    -82.63  *
+     250/10    640/10       1     1     1       82.17     82.17    -70.12
+     250/10    640/10       1     1     2       82.17     82.17    -70.35
+     255/10    640/10       1     1     1       82.17     82.17    -76.80
+     255/10    640/10       1     1     2       82.17     82.17    -75.36
+ 
+ PO convergence
+  Test-grid  Ref-grid    Freq  Beam  Grid       P_max   P_level  Accuracy
+    po1/po2   po1/po2                           [dBi]     [dBi]      [dB]
+      10/20     10/10       1     1     1       82.29     82.29    -10.40
+      10/20     10/10       1     1     2       82.29     82.29     -9.24
+      10/40     10/20       1     1     1       82.29     82.29    -17.98
+      10/40     10/20       1     1     2       82.29     82.29    -15.24
+      10/80     10/40       1     1     1       82.29     82.29    -21.50
+      10/80     10/40       1     1     2       82.29     82.29    -21.50
+     10/160     10/80       1     1     1       82.29     82.29   -117.69  *
+     10/160     10/80       1     1     2       82.29     82.29    -79.48
+     10/320    10/160       1     1     2       82.29     82.29   -121.44  *
+     10/120    10/320       1     1     2       82.29     82.29   -121.84  *
+     10/100    10/320       1     1     2       82.29     82.29   -119.89  *
+      10/90    10/320       1     1     2       82.29     82.29   -122.46  *
+      10/85    10/320       1     1     2       82.29     82.29   -120.92  *
+      10/83    10/320       1     1     2       82.29     82.29    -91.59  *
+  PO1 =       260 PO2 =        83 Face =     1,    Final PO-values from auto-convergence
+ 
+  Name of currents file: sma_sub_gbfeed_poptd.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.610 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       315       780         1
+ 
+ 
+  Relative power hitting scatterer:    0.923746
+  Spill-over:     0.3445 dB
+ 
+ ----- TASK No. 3 -----     Started at 10:07:32 on February 13, 2026
+ sma_farfield_cut get_field ( source : sequence(ref(sma_main_po)))
+ 
+ 
+  *** Object name:  sma_farfield_cut
+  *** Class name :  spherical_cut
+  *** Message    :  Get_field message received
+ 
+  Source : sma_main_po
+ 
+  Name of currents file: sma_main_gbfeed_poptd.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.610 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       260        83         1
+ 
+ 
+ 
+  *** Object name:  sma_farfield_cut
+  *** Class name :  spherical_cut
+  *** Message    :  Field calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+ 
+ ----- TASK No. 4 -----     Started at 10:07:32 on February 13, 2026
+ sma_farfield_grid get_field ( source : sequence(ref(sma_main_po)))
+ 
+ 
+  *** Object name:  sma_farfield_grid
+  *** Class name :  spherical_grid
+  *** Message    :  Get_field message received
+ 
+  Source : sma_main_po
+ 
+  Name of currents file: sma_main_gbfeed_poptd.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.610 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       260        83         1
+ 
+ 
+ 
+  *** Object name:  sma_farfield_grid
+  *** Class name :  spherical_grid
+  *** Message    :  Field calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+ 
+ ----- TASK No. 5 -----     Started at 10:07:34 on February 13, 2026
+ sma_farfield_grid add_field ( source : sequence(ref(sma_gaussian_beam),
+ ref(sma_sub_po)))
+ 
+ 
+  *** Object name:  sma_farfield_grid
+  *** Class name :  spherical_grid
+  *** Message    :  Add_field message received
+ 
+  Source : sma_gaussian_beam
+  Source : sma_sub_po
+ 
+ 
+  *** Object name:  sma_farfield_grid
+  *** Class name :  spherical_grid
+  *** Message    :  Field calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+ 
+  Name of currents file: sma_sub_gbfeed_poptd.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.610 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       315       780         1
+ 
+ 
+ 
+  *** Object name:  sma_farfield_grid
+  *** Class name :  spherical_grid
+  *** Message    :  Field calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+ 
+ ----- TASK No. 6 -----     Started at 10:08:39 on February 13, 2026
+ sec_surface_grid get_field ( source : sequence(ref(sma_gaussian_beam)))
+ 
+ 
+  *** Object name:  sec_surface_grid
+  *** Class name :  surface_grid
+  *** Message    :  Get_field message received
+ 
+  Source : sma_gaussian_beam
+ 
+ ----- TASK No. 7 -----     Started at 10:08:40 on February 13, 2026
+ sub_Efield_cut get_field ( source : sequence(ref(sma_gaussian_beam)))
+ 
+ 
+  *** Object name:  sub_Efield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Get_field message received
+ 
+  Source : sma_gaussian_beam
+ 
+ 
+  *** Object name:  sub_Efield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :    0.00000 deg.
+  Field type : Incident E-field
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  sub_Efield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :   45.00000 deg.
+  Field type : Incident E-field
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  sub_Efield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :   90.00000 deg.
+  Field type : Incident E-field
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  sub_Efield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :  135.00000 deg.
+  Field type : Incident E-field
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  sub_Efield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :  180.00000 deg.
+  Field type : Incident E-field
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  sub_Efield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :  225.00000 deg.
+  Field type : Incident E-field
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  sub_Efield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :  270.00000 deg.
+  Field type : Incident E-field
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  sub_Efield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :  315.00000 deg.
+  Field type : Incident E-field
+  Polarisation type : linear
+ 
+ ----- TASK No. 8 -----     Started at 10:08:42 on February 13, 2026
+ sub_Hfield_cut get_field ( source : sequence(ref(sma_gaussian_beam)))
+ 
+ 
+  *** Object name:  sub_Hfield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Get_field message received
+ 
+  Source : sma_gaussian_beam
+ 
+ 
+  *** Object name:  sub_Hfield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :    0.00000 deg.
+  Field type : Incident H-field
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  sub_Hfield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :   45.00000 deg.
+  Field type : Incident H-field
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  sub_Hfield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :   90.00000 deg.
+  Field type : Incident H-field
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  sub_Hfield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :  135.00000 deg.
+  Field type : Incident H-field
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  sub_Hfield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :  180.00000 deg.
+  Field type : Incident H-field
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  sub_Hfield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :  225.00000 deg.
+  Field type : Incident H-field
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  sub_Hfield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :  270.00000 deg.
+  Field type : Incident H-field
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  sub_Hfield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :  315.00000 deg.
+  Field type : Incident H-field
+  Polarisation type : linear
+ 
+ ----- TASK No. 9 -----     Started at 10:08:43 on February 13, 2026
+ sub_surface_currents_cut get_field ( source : sequence(ref(sma_gaussian_beam)))
+ 
+ 
+  *** Object name:  sub_surface_currents_cut
+  *** Class name :  surface_cut
+  *** Message    :  Get_field message received
+ 
+  Source : sma_gaussian_beam
+ 
+ 
+  *** Object name:  sub_surface_currents_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :    0.00000 deg.
+  Field type : PO-currents
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  sub_surface_currents_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :   45.00000 deg.
+  Field type : PO-currents
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  sub_surface_currents_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :   90.00000 deg.
+  Field type : PO-currents
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  sub_surface_currents_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :  135.00000 deg.
+  Field type : PO-currents
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  sub_surface_currents_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :  180.00000 deg.
+  Field type : PO-currents
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  sub_surface_currents_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :  225.00000 deg.
+  Field type : PO-currents
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  sub_surface_currents_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :  270.00000 deg.
+  Field type : PO-currents
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  sub_surface_currents_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :  315.00000 deg.
+  Field type : PO-currents
+  Polarisation type : linear
+ 
+ ----- TASK No. 10 -----     Started at 10:08:45 on February 13, 2026
+ main_surface_grid get_field ( source : sequence(ref(sma_sub_po)))
+ 
+ 
+  *** Object name:  main_surface_grid
+  *** Class name :  surface_grid
+  *** Message    :  Get_field message received
+ 
+  Source : sma_sub_po
+ 
+  Name of currents file: sma_sub_gbfeed_poptd.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.610 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       315       780         1
+ 
+ 
+ ----- TASK No. 11 -----     Started at 10:09:11 on February 13, 2026
+ main_Efield_cut get_field ( source : sequence(ref(sma_sub_po)))
+ 
+ 
+  *** Object name:  main_Efield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Get_field message received
+ 
+  Source : sma_sub_po
+ 
+  Name of currents file: sma_sub_gbfeed_poptd.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.610 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       315       780         1
+ 
+ 
+ 
+  *** Object name:  main_Efield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :    0.00000 deg.
+  Field type : Incident E-field
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  main_Efield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :   45.00000 deg.
+  Field type : Incident E-field
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  main_Efield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :   90.00000 deg.
+  Field type : Incident E-field
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  main_Efield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :  135.00000 deg.
+  Field type : Incident E-field
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  main_Efield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :  180.00000 deg.
+  Field type : Incident E-field
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  main_Efield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :  225.00000 deg.
+  Field type : Incident E-field
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  main_Efield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :  270.00000 deg.
+  Field type : Incident E-field
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  main_Efield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :  315.00000 deg.
+  Field type : Incident E-field
+  Polarisation type : linear
+ 
+ ----- TASK No. 12 -----     Started at 10:09:13 on February 13, 2026
+ main_Hfield_cut get_field ( source : sequence(ref(sma_sub_po)))
+ 
+ 
+  *** Object name:  main_Hfield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Get_field message received
+ 
+  Source : sma_sub_po
+ 
+  Name of currents file: sma_sub_gbfeed_poptd.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.610 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       315       780         1
+ 
+ 
+ 
+  *** Object name:  main_Hfield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :    0.00000 deg.
+  Field type : Incident H-field
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  main_Hfield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :   45.00000 deg.
+  Field type : Incident H-field
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  main_Hfield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :   90.00000 deg.
+  Field type : Incident H-field
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  main_Hfield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :  135.00000 deg.
+  Field type : Incident H-field
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  main_Hfield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :  180.00000 deg.
+  Field type : Incident H-field
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  main_Hfield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :  225.00000 deg.
+  Field type : Incident H-field
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  main_Hfield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :  270.00000 deg.
+  Field type : Incident H-field
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  main_Hfield_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :  315.00000 deg.
+  Field type : Incident H-field
+  Polarisation type : linear
+ 
+ ----- TASK No. 13 -----     Started at 10:09:15 on February 13, 2026
+ main_surface_currents_cut get_field ( source : sequence(ref(sma_sub_po)))
+ 
+ 
+  *** Object name:  main_surface_currents_cut
+  *** Class name :  surface_cut
+  *** Message    :  Get_field message received
+ 
+  Source : sma_sub_po
+ 
+  Name of currents file: sma_sub_gbfeed_poptd.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.610 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       315       780         1
+ 
+ 
+ 
+  *** Object name:  main_surface_currents_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :    0.00000 deg.
+  Field type : PO-currents
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  main_surface_currents_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :   45.00000 deg.
+  Field type : PO-currents
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  main_surface_currents_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :   90.00000 deg.
+  Field type : PO-currents
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  main_surface_currents_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :  135.00000 deg.
+  Field type : PO-currents
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  main_surface_currents_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :  180.00000 deg.
+  Field type : PO-currents
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  main_surface_currents_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :  225.00000 deg.
+  Field type : PO-currents
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  main_surface_currents_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :  270.00000 deg.
+  Field type : PO-currents
+  Polarisation type : linear
+ 
+ 
+  *** Object name:  main_surface_currents_cut
+  *** Class name :  surface_cut
+  *** Message    :  Cut calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+  Phi angle :  315.00000 deg.
+  Field type : PO-currents
+  Polarisation type : linear
+ 
+ ----- END OF TASKS -----     Completed at 10:09:17 on February 13, 2026
+ Total time was 2:28 min
+ 
+ TICRA Tools SN: 008652
+ Program stopped at 10:09:17 on 13 February 2026
+ 

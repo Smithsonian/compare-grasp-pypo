@@ -1,0 +1,61 @@
+<OutputFiles>
+ <File SubObject="unknown" Path="Job_07.tci" Hash="ca652814052089b136e184a80088a98f" Format="Text" Object="unknown" Type="tci"/>
+ <File SubObject="unknown" Path="Job_07.tor" Hash="3ea54e74709fb30dc321a6785aa53b54" Format="Text" Object="unknown" Type="tor"/>
+ <File SubObject="unknown" Path="Job_07.out" Hash="6e0cecdbd7649f6bfd7f76699210343e" Format="Text" Object="unknown" Type="out"/>
+ <File SubObject="unknown" Path="sma_sub_gbfeed_poptd.cur" Hash="c0a9628883ddaeb0deca6b66e0fc8cbf" Format="Bin" Object="unknown" Type="Currents:Standard"/>
+ <File SubObject="unknown" Path="sma_main_gbfeed_poptd.cur" Hash="f7e571cf62f0788588f9b6d7c16191d9" Format="Bin" Object="unknown" Type="Currents:Standard"/>
+ <File Quantity="E" SubObject="unknown" Path="sma_cassegrain_ff_gbfeed_poptd.cut" Hash="95ab52cded4756cb48979b4169203d74" Format="Ticra" Object="sma_farfield_cut" Type="Cut:Spherical">
+  <Parameter Name="Frequency" Values=" 230.609583076923" Unit="GHz"/>
+  <Parameter Name="Phi" Values="[0.000000000000000E+000;90.0000000000000;3]" Unit="deg"/>
+  <Parameter Name="Theta" Values="[-0.200000000000000;0.200000000000000;301]" Unit="deg"/>
+  <Scan Type="polar"/>
+ </File>
+ <File Quantity="E" SubObject="unknown" Path="sma_cassegrain_ff_gbfeed_poptd.grd" Hash="1650ed0ba7df37cc3b249191ebb8e3f9" Format="Ticra" Object="sma_farfield_grid" Type="Grid:Spherical">
+  <Parameter Name="Frequency" Values=" 230.609583076923" Unit="GHz"/>
+  <Parameter Name="El" Values="[-0.200000000000000;0.200000000000000;301]" Unit="deg"/>
+  <Parameter Name="Az" Values="[-0.200000000000000;0.200000000000000;301]" Unit="deg"/>
+  <Scan Type="azimuth_over_elevation"/>
+ </File>
+ <File Quantity="J" SubObject="unknown" Path="sma_cassegrain_seccur_gbfeed_po.grd" Hash="da3c9b1a4ed4c522f57a063d7bcd00b5" Format="Ticra" Object="sec_surface_grid" Type="Grid:Surface">
+  <Parameter Name="Frequency" Values=" 230.609583076923" Unit="GHz"/>
+  <Parameter Name="Y" Values="[-0.175000000000000;0.175000000000000;301]" Unit="m"/>
+  <Parameter Name="X" Values="[-0.175000000000000;0.175000000000000;301]" Unit="m"/>
+ </File>
+ <File Quantity="H" SubObject="unknown" Path="sub_Hfield.cut" Hash="5588e5c3cc56f3215d25d37615c7be1d" Format="Ticra" Object="sub_Hfield_cut" Type="Cut:Surface">
+  <Parameter Name="Frequency" Values=" 230.609583076923" Unit="GHz"/>
+  <Parameter Name="Phi" Values="[0.000000000000000E+000;315.000000000000;8]" Unit="deg"/>
+  <Parameter Name="Rho" Values="[0.000000000000000E+000;0.175000000000000;175]" Unit="m"/>
+  <Scan Type="radial"/>
+ </File>
+ <File Quantity="J" SubObject="unknown" Path="sub_currents.cut" Hash="1e2eb620e730b6c81f8b1811081c5580" Format="Ticra" Object="sub_surface_currents_cut" Type="Cut:Surface">
+  <Parameter Name="Frequency" Values=" 230.609583076923" Unit="GHz"/>
+  <Parameter Name="Phi" Values="[0.000000000000000E+000;315.000000000000;8]" Unit="deg"/>
+  <Parameter Name="Rho" Values="[0.000000000000000E+000;0.175000000000000;175]" Unit="m"/>
+  <Scan Type="radial"/>
+ </File>
+ <File Quantity="J" SubObject="unknown" Path="sma_cassegrain_pricur_gbfeed_po.grd" Hash="1678f3e21ab32c8f48e2ad63885efba2" Format="Ticra" Object="main_surface_grid" Type="Grid:Surface">
+  <Parameter Name="Frequency" Values=" 230.609583076923" Unit="GHz"/>
+  <Parameter Name="Y" Values="[-3.00000000000000;3.00000000000000;301]" Unit="m"/>
+  <Parameter Name="X" Values="[-3.00000000000000;3.00000000000000;301]" Unit="m"/>
+ </File>
+ <File Quantity="E" SubObject="unknown" Path="main_Efield.cut" Hash="366f643e855f7d9f7adc702ead129b99" Format="Ticra" Object="main_Efield_cut" Type="Cut:Surface">
+  <Parameter Name="Frequency" Values=" 230.609583076923" Unit="GHz"/>
+  <Parameter Name="Phi" Values="[0.000000000000000E+000;315.000000000000;8]" Unit="deg"/>
+  <Parameter Name="Rho" Values="[0.000000000000000E+000;0.175000000000000;175]" Unit="m"/>
+  <Scan Type="radial"/>
+ </File>
+ <File Quantity="H" SubObject="unknown" Path="main_Hfield.cut" Hash="ed963d2c7faec7584d0915d367183385" Format="Ticra" Object="main_Hfield_cut" Type="Cut:Surface">
+  <Parameter Name="Frequency" Values=" 230.609583076923" Unit="GHz"/>
+  <Parameter Name="Phi" Values="[0.000000000000000E+000;315.000000000000;8]" Unit="deg"/>
+  <Parameter Name="Rho" Values="[0.000000000000000E+000;0.175000000000000;175]" Unit="m"/>
+  <Scan Type="radial"/>
+ </File>
+ <File Quantity="J" SubObject="unknown" Path="main_currents.cut" Hash="d24344aba2b065c49c4f9a7428f06fe8" Format="Ticra" Object="main_surface_currents_cut" Type="Cut:Surface">
+  <Parameter Name="Frequency" Values=" 230.609583076923" Unit="GHz"/>
+  <Parameter Name="Phi" Values="[0.000000000000000E+000;315.000000000000;8]" Unit="deg"/>
+  <Parameter Name="Rho" Values="[0.000000000000000E+000;0.175000000000000;175]" Unit="m"/>
+  <Scan Type="radial"/>
+ </File>
+ <File Path="comments.txt" Format="Text" Type="Comments"/>
+ <File Path="screenoutput.txt" Format="Text" Type="Screen"/>
+</OutputFiles>

@@ -1,0 +1,1265 @@
+ Program started at 15:57:12 on 12 February 2026
+ 
+ 
+ 
+                                     T I C R A   T o o l s
+                                     =====================
+ 
+  Antenna design software from TICRA
+ 
+ TICRA Tools 21.0 (Windows amd64/em64t 64-bit)
+ 
+ 
+ TICRA Tools found  24 CPU threads
+ 
+ Enabled products: CHAMP 3D, GRASP
+  Reading tor-file: Job_06.tor
+ 
+ 
+  *** Object name:  sma_design_main_focal_length_over_diameter
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_design_main_focal_length_over_diameter
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_focal_length
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wizard_focal_length
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_design_main_diameter
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_design_main_diameter
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_focal_length
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_distance_between_foci
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wizard_distance_between_foci
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_design_relative_distance_between_foci
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_design_relative_distance_between_foci
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_distance_between_foci
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_a
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wizard_a
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_design_sub_eccentricity
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_design_sub_eccentricity
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_a
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_design_angle_sub_main_axis
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_design_angle_sub_main_axis
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_asr
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wizard_asr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs2
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs2
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_asr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs1
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs1
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_asr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_r1
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wizard_r1
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs1
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_asr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_r2
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wizard_r2
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs2
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_asr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_M
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wizard_M
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_psi0
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wizard_psi0
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_psi1
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wizard_psi1
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_r1
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs1
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_asr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs1
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_asr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xm1
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xm1
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_psi1
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_r1
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs1
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_asr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs1
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_asr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_psi2
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wizard_psi2
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_r2
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs2
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_asr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs2
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_asr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xm2
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xm2
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_psi2
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_r2
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs2
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_asr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs2
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_asr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xm0
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xm0
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xm2
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_psi2
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_r2
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs2
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_asr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs2
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_asr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xm1
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_psi1
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_r1
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs1
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_asr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs1
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_asr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_bsr
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs0
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wizard_xs0
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_zs1
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wizard_zs1
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_wizard_zs2
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wizard_zs2
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  sma_main_reflector
+  *** Class name :  reflector
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_main_reflector
+  *** Class name :  reflector
+  *** Message    :  New values in object
+ 
+  Coordinate system: sma_global_coor
+  Rim: sma_main_rim
+  Surface No.    1 : sma_main_surface
+  Centre hole radius :   0.175000 m
+ 
+ 
+  *** Object name:  sma_global_coor
+  *** Class name :  coor_sys
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_global_coor
+  *** Class name :  coor_sys
+  *** Message    :  New values in object
+ 
+  Z_axis :     0.000000    0.000000    1.000000
+ 
+ 
+  *** Object name:  sma_main_surface
+  *** Class name :  paraboloid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_main_surface
+  *** Class name :  paraboloid
+  *** Message    :  New values in object
+ 
+ 
+  Focal length     :    2.52000 m
+   and in SI units :    2.52000 meter
+ 
+ 
+  *** Object name:  sma_main_rim
+  *** Class name :  elliptical_rim
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_main_rim
+  *** Class name :  elliptical_rim
+  *** Message    :  Definition of elliptical_rim
+ 
+  The rim centre is placed at
+    x :    0.00000 m
+    y :    0.00000 m
+  and in SI units
+    x :    0.00000     meter
+    y :    0.00000     meter
+ 
+  The half axes of the ellipse are defined by
+    in x-direction :    3.00000 m
+    in y-direction :    3.00000 m
+  and in SI units
+    in x-direction :    3.00000     meter
+    in y-direction :    3.00000     meter
+ 
+  The rim limits in radii are
+    minimum :    3.00000     meter
+    maximum :    3.00000     meter
+ 
+  The rim limits in x direction are
+    minimum :   -3.00000     meter
+    maximum :    3.00000     meter
+ 
+  The rim limits in y direction are
+    minimum :   -3.00000     meter
+    maximum :    3.00000     meter
+ 
+ 
+  *** Object name:  sma_sub_reflector
+  *** Class name :  reflector
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_sub_reflector
+  *** Class name :  reflector
+  *** Message    :  New values in object
+ 
+  Coordinate system: sma_sub_coor
+  Rim: sma_sub_rim
+  Surface No.    1 : sma_sub_surface
+ 
+ 
+  *** Object name:  sma_sub_coor
+  *** Class name :  coor_sys
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_sub_coor
+  *** Class name :  coor_sys
+  *** Message    :  New values in object
+ 
+  Origin :   0.000000E+00 m     0.000000E+00 m     0.252000E+01 m
+  Base name : sma_global_coor
+  X_axis :     1.000000    0.000000    0.000000
+  Y_axis :     0.000000   -1.000000    0.000000
+  Z_axis :     0.000000    0.000000   -1.000000
+ 
+ 
+  *** Object name:  sma_sub_surface
+  *** Class name :  hyperboloid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_sub_surface
+  *** Class name :  hyperboloid
+  *** Message    :  New values in object
+ 
+ 
+  Distance between the vertices, 2a :    4.70205 m
+   and in SI units                  :    4.70205 meter
+ 
+  Distance between the foci, 2c     :    4.99293 m
+   and in SI units                  :    4.99293 meter
+ 
+    giving the eccentricity         :    1.06186
+ 
+ 
+  *** Object name:  sma_sub_rim
+  *** Class name :  elliptical_rim
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_sub_rim
+  *** Class name :  elliptical_rim
+  *** Message    :  Definition of elliptical_rim
+ 
+  The rim centre is placed at
+    x :    0.00000 m
+    y :    0.00000 m
+  and in SI units
+    x :    0.00000     meter
+    y :    0.00000     meter
+ 
+  The half axes of the ellipse are defined by
+    in x-direction :   0.175000 m
+    in y-direction :   0.175000 m
+  and in SI units
+    in x-direction :   0.175000     meter
+    in y-direction :   0.175000     meter
+ 
+  The rim limits in radii are
+    minimum :   0.175000     meter
+    maximum :   0.175000     meter
+ 
+  The rim limits in x direction are
+    minimum :  -0.175000     meter
+    maximum :   0.175000     meter
+ 
+  The rim limits in y direction are
+    minimum :  -0.175000     meter
+    maximum :   0.175000     meter
+ 
+ 
+  *** Object name:  sma_feed
+  *** Class name :  gaussian_beam_pattern
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_feed
+  *** Class name :  gaussian_beam_pattern
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_feed
+  *** Class name :  gaussian_beam_pattern
+  *** Message    :  New values in object
+ 
+  Frequency : sma_wavelengths
+  Coor_sys : sma_feed_coor
+ 
+ 
+  *** Object name:  sma_feed
+  *** Class name :  gaussian_beam_pattern
+  *** Message    :  Definition of common feed attributes
+ 
+ 
+ 
+  *** Object name:  sma_feed
+  *** Class name :  gaussian_beam_pattern
+  *** Message    :  Definition of gaussian feed
+ 
+ 
+  Taper angle :   2.04624 degrees
+ 
+  Taper compared to on-axis level :  -12.0000 dB
+ 
+  The imaginary displacement along the negative z-axis
+    is 344.743 wavelengths
+ 
+  The beam waist radius is 10.4755 wavelengths
+ 
+ 
+  *** Object name:  sma_wavelengths
+  *** Class name :  wavelength
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_wavelengths
+  *** Class name :  wavelength
+  *** Message    :  New values in object
+ 
+  Frequency No.    1  Wavelength :   0.130000E-02
+ 
+ 
+  *** Object name:  sma_feed_coor
+  *** Class name :  coor_sys
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_feed_coor
+  *** Class name :  coor_sys
+  *** Message    :  New values in object
+ 
+  Origin :   0.000000E+00 m     0.000000E+00 m     0.499293E+01 m
+  Base name : sma_sub_coor
+  X_axis :     1.000000    0.000000    0.000000
+  Y_axis :     0.000000   -1.000000    0.000000
+  Z_axis :     0.000000    0.000000   -1.000000
+ 
+ 
+  *** Object name:  sma_main_po
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_main_po
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  New values in object
+ 
+  File name : sma_main_gbfeed_poptd.cur
+  Method : po
+  Frequency : sma_wavelengths
+  Scatterer : sma_main_reflector
+  Spill-over : on
+  Coordinate system : sma_global_coor
+ 
+ 
+  *** Object name:  sma_sub_po
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_sub_po
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  New values in object
+ 
+  File name : sma_sub_gbfeed_poptd.cur
+  Method : po
+  Frequency : sma_wavelengths
+  Scatterer : sma_sub_reflector
+  Coordinate system : sma_sub_coor
+ 
+ 
+  *** Object name:  sma_farfield_cut
+  *** Class name :  spherical_cut
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_farfield_cut
+  *** Class name :  spherical_cut
+  *** Message    :  New values in object
+ 
+  Frequency : sma_wavelengths
+  File name : sma_cassegrain_ff_gbfeed_poptd.cut
+  Coor_sys : sma_cut_coor
+  Theta range : start  -0.20000    end   0.20000    points   301
+  Phi range : start   0.00000    end  90.00000    points     3
+ 
+ 
+  *** Object name:  sma_cut_coor
+  *** Class name :  coor_sys
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_cut_coor
+  *** Class name :  coor_sys
+  *** Message    :  New values in object
+ 
+  Origin :   0.000000E+00 m     0.000000E+00 m     0.000000E+00 m
+  Base name : sma_global_coor
+  Z_axis :     0.000000    0.000000    1.000000
+ 
+ 
+  *** Object name:  sma_gaussian_beam
+  *** Class name :  gaussian_beam
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_gaussian_beam
+  *** Class name :  gaussian_beam
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_gaussian_beam
+  *** Class name :  gaussian_beam
+  *** Message    :  New values in object
+ 
+  Frequency : sma_wavelengths
+  Coor_sys : sma_feed_coor
+ 
+ 
+  *** Object name:  sma_gaussian_beam
+  *** Class name :  gaussian_beam
+  *** Message    :  Definition of common feed attributes
+ 
+ 
+ 
+  *** Object name:  sma_gaussian_beam
+  *** Class name :  gaussian_beam
+  *** Message    :  Definition of gaussian beam
+ 
+ 
+  Beam radius :   13.6710     mm
+ 
+  Phase-front radius of curvature:   0.00000     m
+ 
+ 
+  *** Object name:  sma_farfield_grid
+  *** Class name :  spherical_grid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_farfield_grid
+  *** Class name :  spherical_grid
+  *** Message    :  New values in object
+ 
+  Frequency : sma_wavelengths
+  File name : sma_cassegrain_ff_gbfeed_poptd.grd
+  Coor_sys : sma_global_coor
+  X range : start  -0.20000    end   0.20000    points   301
+  Y range : start  -0.20000    end   0.20000    points   301
+  Grid type : azimuth_over_elevation
+ 
+ 
+  *** Object name:  main_surface_grid
+  *** Class name :  surface_grid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  main_surface_grid
+  *** Class name :  surface_grid
+  *** Message    :  New values in object
+ 
+  Frequency : sma_wavelengths
+  File name : sma_cassegrain_pricur_gbfeed_po.grd
+  Scatterer : sma_main_reflector
+  polarisation_and_phase_coor_sys : sma_global_coor
+  Field_type : currents
+  Phase_adjustment : on
+  X_range : start -0.300000E+01    end  0.300000E+01    points   301
+  Unit of grid limits : m
+  Y_range : start -0.300000E+01    end  0.300000E+01    points   301
+ 
+ 
+  *** Object name:  sec_surface_grid
+  *** Class name :  surface_grid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sec_surface_grid
+  *** Class name :  surface_grid
+  *** Message    :  New values in object
+ 
+  Frequency : sma_wavelengths
+  File name : sma_cassegrain_seccur_gbfeed_po.grd
+  Scatterer : sma_sub_reflector
+  polarisation_and_phase_coor_sys : sma_subvertex_coor
+  Field_type : currents
+  Phase_adjustment : on
+  X_range : start -0.175000E+00    end  0.175000E+00    points   301
+  Unit of grid limits : m
+  Y_range : start -0.175000E+00    end  0.175000E+00    points   301
+ 
+ 
+  *** Object name:  sma_subvertex_coor
+  *** Class name :  coor_sys
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_subvertex_coor
+  *** Class name :  coor_sys
+  *** Message    :  New values in object
+ 
+  Origin :   0.000000E+00 m     0.000000E+00 m     0.237456E+01 m
+  Base name : sma_global_coor
+  X_axis :     1.000000    0.000000    0.000000
+  Y_axis :     0.000000   -1.000000    0.000000
+  Z_axis :     0.000000    0.000000   -1.000000
+ 
+ 
+  *** Object name:  aperture_grid
+  *** Class name :  planar_grid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  aperture_grid
+  *** Class name :  planar_grid
+  *** Message    :  New values in object
+ 
+  Frequency : sma_wavelengths
+  File name : sma_cassegrain_aperture_gbfeed_po.grd
+  Coor_sys : sma_sub_coor
+  X range : start  0.000000E+00    end  0.300000E+01    points   301
+  Unit of grid limits : m
+  Y range : start  0.000000E+00    end  0.360000E+03    points   181
+  Grid truncation : elliptical
+  Grid type : rho_phi
+ 
+ 
+  *** Object name:  view_1
+  *** Class name :  view
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  view_1
+  *** Class name :  view
+  *** Message    :  New values in object
+ 
+ 
+  Number of objects :      4
+ 
+  Definition of objects   :
+   No.  Name
+     1  output_points_plot_for_view_1
+     2  coor_sys_plot_for_view_1
+     3  feed_plot_for_view_1
+     4  reflector_plot_for_view_1
+ 
+ 
+ 
+  *** Object name:  output_points_plot_for_view_1
+  *** Class name :  output_points_plot
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  output_points_plot_for_view_1
+  *** Class name :  output_points_plot
+  *** Message    :  Definition of output_points_plot
+ 
+ 
+ 
+  *** Object name:  coor_sys_plot_for_view_1
+  *** Class name :  coor_sys_plot
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  coor_sys_plot_for_view_1
+  *** Class name :  coor_sys_plot
+  *** Message    :  Definition of coor_sys_plot
+ 
+ 
+ 
+  *** Object name:  feed_plot_for_view_1
+  *** Class name :  feed_plot
+  *** Message    :  Object created
+ 
+  Colour (RGB) :     0.721569    0.450980    0.200000
+ 
+ 
+  *** Object name:  feed_plot_for_view_1
+  *** Class name :  feed_plot
+  *** Message    :  Definition of feed_plot
+ 
+ 
+ 
+  *** Object name:  reflector_plot_for_view_1
+  *** Class name :  reflector_plot
+  *** Message    :  Object created
+ 
+  Colour (RGB) :     0.721569    0.450980    0.200000
+ 
+ 
+  *** Object name:  reflector_plot_for_view_1
+  *** Class name :  reflector_plot
+  *** Message    :  Definition of reflector_plot
+ 
+ 
+ ----- TASK No. 1 -----     Started at 15:57:12 on February 12, 2026
+ aperture_grid get_field ( source : sequence(ref(sma_main_po)))
+ 
+ 
+  *** Object name:  aperture_grid
+  *** Class name :  planar_grid
+  *** Message    :  Get_field message received
+ 
+  Source : sma_main_po
+ 
+ 
+  *** Object name:  sma_main_po
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Initialization
+ 
+ 
+  Name of currents file: sma_main_gbfeed_poptd.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.610 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       260        83         1
+ 
+ 
+ 
+  *** Object name:  aperture_grid
+  *** Class name :  planar_grid
+  *** Message    :  Field calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+ 
+ ----- END OF TASKS -----     Completed at 15:57:13 on February 12, 2026
+ Total time was 1.36 sec
+ 
+ TICRA Tools SN: 008652
+ Program stopped at 15:57:13 on 12 February 2026
+ 

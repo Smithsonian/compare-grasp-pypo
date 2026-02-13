@@ -1,0 +1,23 @@
+ Tci file: Job_06.tci
+ Out file: Job_06.out
+ Log file: Job_06.log
+ 
+ 
+ TICRA Tools 21.0 (Windows amd64/em64t 64-bit)
+ 
+ 
+ TICRA Tools found  24 CPU threads
+ Enabled products: CHAMP 3D, GRASP
+ 
+ ----- TASK No. 1 -----     Started at 15:57:12 on February 12, 2026
+ 
+ aperture_grid get_field ( source : sequence(ref(sma_main_po)))
+ 
+  No. of field points:                    42375                      
+  No. of PO points (source):              15521                      
+                                                                      
+ Total task time:  0.62 sec
+ 
+ ----- END OF TASKS -----     Completed at 15:57:13 on February 12, 2026
+ 
+ Total time was 1.36 sec
