@@ -203,7 +203,7 @@ def plotBeamCut(grid, field, cut, gmode='uv', comp='Ex', figax=None, phase=True,
     return fig, ax
 
 
-def plotGraspBeamCut(field, cut, grid='rect', comp=0, comp_name='E', figax=None, phase=True, title=None, label=None, vmax=None, vmin=None, norm=True, **kwargs):
+def plotGraspBeamCut(field, cut, grid='rect', comp=0, comp_name='E', figax=None, phase=True, title=None, label=None, vmax=None, vmin=None, norm=True, phase_offset=0, **kwargs):
     
     comps = ["x", "y", "z"]
     cuts = ["x", "y", "d"]
@@ -260,7 +260,7 @@ def plotGraspBeamCut(field, cut, grid='rect', comp=0, comp_name='E', figax=None,
         
     if isinstance(ax, np.ndarray):
         ampplt = ax[0].plot(x*1e3, 20*np.log10(np.abs(y)), label=label, **kwargs)
-        phsplt = ax[1].plot(x*1e3, np.angle(y), label=label, **kwargs)
+        phsplt = ax[1].plot(x*1e3, np.angle(y*np.exp(1j*phase_offset)), label=label, **kwargs)
 
 
         ax[0].set_ylabel("Amplitude (dB)")
