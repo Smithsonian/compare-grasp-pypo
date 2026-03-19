@@ -1,0 +1,136 @@
+ Tci file: Job_12.tci
+ Out file: Job_12.out
+ Log file: Job_12.log
+ 
+ 
+ TICRA Tools 21.0 (Windows amd64/em64t 64-bit)
+ 
+ 
+ TICRA Tools found  24 CPU threads
+ Enabled products: CHAMP 3D, GRASP
+ 
+ ----- TASK No. 1 -----     Started at 11:54:15 on March 19, 2026
+ 
+ sma_sub_po get_currents ( source : sequence(ref(sma_gaussian_beam)),
+ auto_convergence_of_po : on, convergence_on_scatterer :
+ sequence(ref(sma_main_reflector)), convergence_on_output_grid :
+ sequence(ref(sma_farfield_cut), ref(sma_farfield_grid)))
+ 
+  PO1 =       315 PO2 =       780 Face =     1,    Final PO-values from auto-convergence 
+ 
+  Calculating currents.
+  No. of PO-points (target):             157620                      
+ Estimated task time:  0.15 sec, Estimated remaining time:  0.00 sec  
+ 
+  Relative power hitting scatterer:    0.936782
+  Spill-over:     0.2836 dB
+                                                                      
+ Total task time:  0.24 sec
+ 
+ ----- TASK No. 2 -----     Started at 11:54:15 on March 19, 2026
+ 
+ sma_main_po get_currents ( source : sequence(ref(sma_sub_po)),
+ auto_convergence_of_po : on, convergence_on_output_grid :
+ sequence(ref(sma_farfield_cut), ref(sma_farfield_grid)))
+ 
+  PO1 =       260 PO2 =        83 Face =     1,    Final PO-values from auto-convergence 
+ 
+  Calculating currents.
+  No. of PO-points (target):              15521                      
+  No. of PO points (source):             157620                      
+ Estimated task time:  4.73 sec, Estimated remaining time:  0.00 sec  
+ 
+  Relative power hitting scatterer:    0.923746
+  Spill-over:     0.3445 dB
+                                                                      
+ Total task time:  7.63 sec
+ 
+ ----- TASK No. 3 -----     Started at 11:54:23 on March 19, 2026
+ 
+ sma_farfield_cut get_field ( source : sequence(ref(sma_main_po)))
+ 
+  No. of field points:                      903                      
+  No. of PO points (source):              15521                      
+                                                                      
+ Total task time:  0.00 sec
+ 
+ ----- TASK No. 4 -----     Started at 11:54:23 on March 19, 2026
+ 
+ sma_farfield_grid get_field ( source : sequence(ref(sma_main_po)))
+ 
+  No. of field points:                    90601                      
+  No. of PO points (source):              15521                      
+                                                                      
+ Total task time:  0.50 sec
+ 
+ ----- TASK No. 5 -----     Started at 11:54:24 on March 19, 2026
+ 
+ sec_currents_grid get_field ( source : sequence(ref(sma_gaussian_beam)))
+ 
+  No. of surface grid points:             90601                      
+                                                                      
+ Total task time:  0.11 sec
+ 
+ ----- TASK No. 6 -----     Started at 11:54:24 on March 19, 2026
+ 
+ sub_Efield_cut get_field ( source : sequence(ref(sma_gaussian_beam)))
+ 
+  No. of surface cuts:                        8                      
+                                                                      
+ Total task time:  0.00 sec
+ 
+ ----- TASK No. 7 -----     Started at 11:54:24 on March 19, 2026
+ 
+ sub_Hfield_cut get_field ( source : sequence(ref(sma_gaussian_beam)))
+ 
+  No. of surface cuts:                        8                      
+                                                                      
+ Total task time:  0.00 sec
+ 
+ ----- TASK No. 8 -----     Started at 11:54:24 on March 19, 2026
+ 
+ sub_surface_currents_cut get_field ( source : sequence(ref(sma_gaussian_beam)))
+ 
+  No. of surface cuts:                        8                      
+                                                                      
+ Total task time:  0.00 sec
+ 
+ ----- TASK No. 9 -----     Started at 11:54:24 on March 19, 2026
+ 
+ main_currents_grid get_field ( source : sequence(ref(sma_sub_po)))
+ 
+  No. of surface grid points:             90601                      
+  No. of PO points (source):             157620                      
+                                                                      
+ Total task time:  7.48 sec
+ 
+ ----- TASK No. 10 -----     Started at 11:54:31 on March 19, 2026
+ 
+ main_Efield_cut get_field ( source : sequence(ref(sma_sub_po)))
+ 
+  No. of surface cuts:                        8                      
+  No. of PO points (source):             157620                      
+                                                                      
+ Total task time:  0.70 sec
+ 
+ ----- TASK No. 11 -----     Started at 11:54:32 on March 19, 2026
+ 
+ main_Hfield_cut get_field ( source : sequence(ref(sma_sub_po)))
+ 
+  No. of surface cuts:                        8                      
+  No. of PO points (source):             157620                      
+                                                                      
+ Total task time:  0.63 sec
+ 
+ ----- TASK No. 12 -----     Started at 11:54:33 on March 19, 2026
+ 
+ main_surface_currents_cut get_field ( source : sequence(ref(sma_sub_po)))
+ 
+  No. of surface cuts:                        8                      
+  No. of PO points (source):             157620                      
+                                                                      
+ Total task time:  0.62 sec
+ 
+ ----- END OF TASKS -----     Completed at 11:54:33 on March 19, 2026
+ 
+ Total time was 18.76 sec

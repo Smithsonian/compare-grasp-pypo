@@ -1,0 +1,1 @@
+Run with PTD but no secondary or feed contribution to farfields
