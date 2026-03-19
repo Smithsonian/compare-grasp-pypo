@@ -1,4 +1,4 @@
- Program started at 11:54:15 on 19 March 2026
+ Program started at 12:57:14 on 19 March 2026
  
  
  
@@ -1463,7 +1463,7 @@
   *** Message    :  Definition of reflector_plot
  
  
- ----- TASK No. 1 -----     Started at 11:54:15 on March 19, 2026
+ ----- TASK No. 1 -----     Started at 12:57:15 on March 19, 2026
  sma_sub_po get_currents ( source : sequence(ref(sma_gaussian_beam)),
  auto_convergence_of_po : on, convergence_on_scatterer :
  sequence(ref(sma_main_reflector)), convergence_on_output_grid :
@@ -1533,7 +1533,7 @@
   Relative power hitting scatterer:    0.936782
   Spill-over:     0.2836 dB
  
- ----- TASK No. 2 -----     Started at 11:54:15 on March 19, 2026
+ ----- TASK No. 2 -----     Started at 12:57:15 on March 19, 2026
  sma_main_po get_currents ( source : sequence(ref(sma_sub_po)),
  auto_convergence_of_po : on, convergence_on_output_grid :
  sequence(ref(sma_farfield_cut), ref(sma_farfield_grid)))
@@ -1622,40 +1622,7 @@
   Relative power hitting scatterer:    0.923746
   Spill-over:     0.3445 dB
  
- ----- TASK No. 3 -----     Started at 11:54:23 on March 19, 2026
- sma_farfield_cut get_field ( source : sequence(ref(sma_main_po)))
- 
- 
-  *** Object name:  sma_farfield_cut
-  *** Class name :  spherical_cut
-  *** Message    :  Get_field message received
- 
-  Source : sma_main_po
- 
-  Name of currents file: sma_main_gbfeed_poptd.cur
- 
-  Control values found in the file:
-    No. of frequencies: 1
-    No. of beams      : 1
-    No. of faces      : 1
-    No. of edges      : 0
-    No. of gaps       : 0
- 
-  Frequency number  1 : 230.610 GHz
- 
-    Face No.      PO1       PO2     Partitions
-          1       260        83         1
- 
- 
- 
-  *** Object name:  sma_farfield_cut
-  *** Class name :  spherical_cut
-  *** Message    :  Field calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
- 
- ----- TASK No. 4 -----     Started at 11:54:23 on March 19, 2026
+ ----- TASK No. 3 -----     Started at 12:57:23 on March 19, 2026
  sma_farfield_grid get_field ( source : sequence(ref(sma_main_po)))
  
  
@@ -1688,7 +1655,7 @@
   Frequency No. :     1
   Beam No. :     1
  
- ----- TASK No. 5 -----     Started at 11:54:24 on March 19, 2026
+ ----- TASK No. 4 -----     Started at 12:57:23 on March 19, 2026
  sec_currents_grid get_field ( source : sequence(ref(sma_gaussian_beam)))
  
  
@@ -1698,301 +1665,27 @@
  
   Source : sma_gaussian_beam
  
- ----- TASK No. 6 -----     Started at 11:54:24 on March 19, 2026
- sub_Efield_cut get_field ( source : sequence(ref(sma_gaussian_beam)))
+ ----- TASK No. 5 -----     Started at 12:57:24 on March 19, 2026
+ main_Efield_grid get_field ( source : sequence(ref(sma_gaussian_beam)))
  
  
-  *** Object name:  sub_Efield_cut
-  *** Class name :  surface_cut
+  *** Object name:  main_Efield_grid
+  *** Class name :  surface_grid
   *** Message    :  Get_field message received
  
   Source : sma_gaussian_beam
  
- 
-  *** Object name:  sub_Efield_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :    0.00000 deg.
-  Field type : Incident E-field
-  Polarisation type : linear
+ ----- TASK No. 6 -----     Started at 12:57:24 on March 19, 2026
+ sec_Efield_grid get_field ( source : sequence(ref(sma_gaussian_beam)))
  
  
-  *** Object name:  sub_Efield_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :   45.00000 deg.
-  Field type : Incident E-field
-  Polarisation type : linear
- 
- 
-  *** Object name:  sub_Efield_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :   90.00000 deg.
-  Field type : Incident E-field
-  Polarisation type : linear
- 
- 
-  *** Object name:  sub_Efield_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :  135.00000 deg.
-  Field type : Incident E-field
-  Polarisation type : linear
- 
- 
-  *** Object name:  sub_Efield_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :  180.00000 deg.
-  Field type : Incident E-field
-  Polarisation type : linear
- 
- 
-  *** Object name:  sub_Efield_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :  225.00000 deg.
-  Field type : Incident E-field
-  Polarisation type : linear
- 
- 
-  *** Object name:  sub_Efield_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :  270.00000 deg.
-  Field type : Incident E-field
-  Polarisation type : linear
- 
- 
-  *** Object name:  sub_Efield_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :  315.00000 deg.
-  Field type : Incident E-field
-  Polarisation type : linear
- 
- ----- TASK No. 7 -----     Started at 11:54:24 on March 19, 2026
- sub_Hfield_cut get_field ( source : sequence(ref(sma_gaussian_beam)))
- 
- 
-  *** Object name:  sub_Hfield_cut
-  *** Class name :  surface_cut
+  *** Object name:  sec_Efield_grid
+  *** Class name :  surface_grid
   *** Message    :  Get_field message received
  
   Source : sma_gaussian_beam
  
- 
-  *** Object name:  sub_Hfield_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :    0.00000 deg.
-  Field type : Incident H-field
-  Polarisation type : linear
- 
- 
-  *** Object name:  sub_Hfield_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :   45.00000 deg.
-  Field type : Incident H-field
-  Polarisation type : linear
- 
- 
-  *** Object name:  sub_Hfield_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :   90.00000 deg.
-  Field type : Incident H-field
-  Polarisation type : linear
- 
- 
-  *** Object name:  sub_Hfield_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :  135.00000 deg.
-  Field type : Incident H-field
-  Polarisation type : linear
- 
- 
-  *** Object name:  sub_Hfield_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :  180.00000 deg.
-  Field type : Incident H-field
-  Polarisation type : linear
- 
- 
-  *** Object name:  sub_Hfield_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :  225.00000 deg.
-  Field type : Incident H-field
-  Polarisation type : linear
- 
- 
-  *** Object name:  sub_Hfield_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :  270.00000 deg.
-  Field type : Incident H-field
-  Polarisation type : linear
- 
- 
-  *** Object name:  sub_Hfield_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :  315.00000 deg.
-  Field type : Incident H-field
-  Polarisation type : linear
- 
- ----- TASK No. 8 -----     Started at 11:54:24 on March 19, 2026
- sub_surface_currents_cut get_field ( source : sequence(ref(sma_gaussian_beam)))
- 
- 
-  *** Object name:  sub_surface_currents_cut
-  *** Class name :  surface_cut
-  *** Message    :  Get_field message received
- 
-  Source : sma_gaussian_beam
- 
- 
-  *** Object name:  sub_surface_currents_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :    0.00000 deg.
-  Field type : PO-currents
-  Polarisation type : linear
- 
- 
-  *** Object name:  sub_surface_currents_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :   45.00000 deg.
-  Field type : PO-currents
-  Polarisation type : linear
- 
- 
-  *** Object name:  sub_surface_currents_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :   90.00000 deg.
-  Field type : PO-currents
-  Polarisation type : linear
- 
- 
-  *** Object name:  sub_surface_currents_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :  135.00000 deg.
-  Field type : PO-currents
-  Polarisation type : linear
- 
- 
-  *** Object name:  sub_surface_currents_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :  180.00000 deg.
-  Field type : PO-currents
-  Polarisation type : linear
- 
- 
-  *** Object name:  sub_surface_currents_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :  225.00000 deg.
-  Field type : PO-currents
-  Polarisation type : linear
- 
- 
-  *** Object name:  sub_surface_currents_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :  270.00000 deg.
-  Field type : PO-currents
-  Polarisation type : linear
- 
- 
-  *** Object name:  sub_surface_currents_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :  315.00000 deg.
-  Field type : PO-currents
-  Polarisation type : linear
- 
- ----- TASK No. 9 -----     Started at 11:54:24 on March 19, 2026
+ ----- TASK No. 7 -----     Started at 12:57:24 on March 19, 2026
  main_currents_grid get_field ( source : sequence(ref(sma_sub_po)))
  
  
@@ -2017,12 +1710,12 @@
           1       315       780         1
  
  
- ----- TASK No. 10 -----     Started at 11:54:31 on March 19, 2026
- main_Efield_cut get_field ( source : sequence(ref(sma_sub_po)))
+ ----- TASK No. 8 -----     Started at 12:57:31 on March 19, 2026
+ main_Efield_grid get_field ( source : sequence(ref(sma_sub_po)))
  
  
-  *** Object name:  main_Efield_cut
-  *** Class name :  surface_cut
+  *** Object name:  main_Efield_grid
+  *** Class name :  surface_grid
   *** Message    :  Get_field message received
  
   Source : sma_sub_po
@@ -2042,323 +1735,9 @@
           1       315       780         1
  
  
- 
-  *** Object name:  main_Efield_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :    0.00000 deg.
-  Field type : Incident E-field
-  Polarisation type : linear
- 
- 
-  *** Object name:  main_Efield_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :   45.00000 deg.
-  Field type : Incident E-field
-  Polarisation type : linear
- 
- 
-  *** Object name:  main_Efield_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :   90.00000 deg.
-  Field type : Incident E-field
-  Polarisation type : linear
- 
- 
-  *** Object name:  main_Efield_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :  135.00000 deg.
-  Field type : Incident E-field
-  Polarisation type : linear
- 
- 
-  *** Object name:  main_Efield_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :  180.00000 deg.
-  Field type : Incident E-field
-  Polarisation type : linear
- 
- 
-  *** Object name:  main_Efield_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :  225.00000 deg.
-  Field type : Incident E-field
-  Polarisation type : linear
- 
- 
-  *** Object name:  main_Efield_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :  270.00000 deg.
-  Field type : Incident E-field
-  Polarisation type : linear
- 
- 
-  *** Object name:  main_Efield_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :  315.00000 deg.
-  Field type : Incident E-field
-  Polarisation type : linear
- 
- ----- TASK No. 11 -----     Started at 11:54:32 on March 19, 2026
- main_Hfield_cut get_field ( source : sequence(ref(sma_sub_po)))
- 
- 
-  *** Object name:  main_Hfield_cut
-  *** Class name :  surface_cut
-  *** Message    :  Get_field message received
- 
-  Source : sma_sub_po
- 
-  Name of currents file: sma_sub_gbfeed_poptd.cur
- 
-  Control values found in the file:
-    No. of frequencies: 1
-    No. of beams      : 1
-    No. of faces      : 1
-    No. of edges      : 0
-    No. of gaps       : 0
- 
-  Frequency number  1 : 230.610 GHz
- 
-    Face No.      PO1       PO2     Partitions
-          1       315       780         1
- 
- 
- 
-  *** Object name:  main_Hfield_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :    0.00000 deg.
-  Field type : Incident H-field
-  Polarisation type : linear
- 
- 
-  *** Object name:  main_Hfield_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :   45.00000 deg.
-  Field type : Incident H-field
-  Polarisation type : linear
- 
- 
-  *** Object name:  main_Hfield_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :   90.00000 deg.
-  Field type : Incident H-field
-  Polarisation type : linear
- 
- 
-  *** Object name:  main_Hfield_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :  135.00000 deg.
-  Field type : Incident H-field
-  Polarisation type : linear
- 
- 
-  *** Object name:  main_Hfield_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :  180.00000 deg.
-  Field type : Incident H-field
-  Polarisation type : linear
- 
- 
-  *** Object name:  main_Hfield_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :  225.00000 deg.
-  Field type : Incident H-field
-  Polarisation type : linear
- 
- 
-  *** Object name:  main_Hfield_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :  270.00000 deg.
-  Field type : Incident H-field
-  Polarisation type : linear
- 
- 
-  *** Object name:  main_Hfield_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :  315.00000 deg.
-  Field type : Incident H-field
-  Polarisation type : linear
- 
- ----- TASK No. 12 -----     Started at 11:54:33 on March 19, 2026
- main_surface_currents_cut get_field ( source : sequence(ref(sma_sub_po)))
- 
- 
-  *** Object name:  main_surface_currents_cut
-  *** Class name :  surface_cut
-  *** Message    :  Get_field message received
- 
-  Source : sma_sub_po
- 
-  Name of currents file: sma_sub_gbfeed_poptd.cur
- 
-  Control values found in the file:
-    No. of frequencies: 1
-    No. of beams      : 1
-    No. of faces      : 1
-    No. of edges      : 0
-    No. of gaps       : 0
- 
-  Frequency number  1 : 230.610 GHz
- 
-    Face No.      PO1       PO2     Partitions
-          1       315       780         1
- 
- 
- 
-  *** Object name:  main_surface_currents_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :    0.00000 deg.
-  Field type : PO-currents
-  Polarisation type : linear
- 
- 
-  *** Object name:  main_surface_currents_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :   45.00000 deg.
-  Field type : PO-currents
-  Polarisation type : linear
- 
- 
-  *** Object name:  main_surface_currents_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :   90.00000 deg.
-  Field type : PO-currents
-  Polarisation type : linear
- 
- 
-  *** Object name:  main_surface_currents_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :  135.00000 deg.
-  Field type : PO-currents
-  Polarisation type : linear
- 
- 
-  *** Object name:  main_surface_currents_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :  180.00000 deg.
-  Field type : PO-currents
-  Polarisation type : linear
- 
- 
-  *** Object name:  main_surface_currents_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :  225.00000 deg.
-  Field type : PO-currents
-  Polarisation type : linear
- 
- 
-  *** Object name:  main_surface_currents_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :  270.00000 deg.
-  Field type : PO-currents
-  Polarisation type : linear
- 
- 
-  *** Object name:  main_surface_currents_cut
-  *** Class name :  surface_cut
-  *** Message    :  Cut calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
-  Phi angle :  315.00000 deg.
-  Field type : PO-currents
-  Polarisation type : linear
- 
- ----- END OF TASKS -----     Completed at 11:54:33 on March 19, 2026
- Total time was 18.76 sec
+ ----- END OF TASKS -----     Completed at 12:57:41 on March 19, 2026
+ Total time was 27.00 sec
  
  TICRA Tools SN: 008652
- Program stopped at 11:54:33 on 19 March 2026
+ Program stopped at 12:57:41 on 19 March 2026
  

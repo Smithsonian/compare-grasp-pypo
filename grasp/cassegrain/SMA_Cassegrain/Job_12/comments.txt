@@ -1,1 +1,1 @@
-Run with PO only, no feed or secondary contributions to farfield
+Rerun PO only, no sec, no feed with more grids
