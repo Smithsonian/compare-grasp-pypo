@@ -1,0 +1,51 @@
+<OutputFiles>
+ <File SubObject="unknown" Path="Job_12.tci" Type="tci" Format="Text" Object="unknown" Hash="1a8a9cc5988ab9639d3db58f61caa032"/>
+ <File SubObject="unknown" Path="Job_12.tor" Type="tor" Format="Text" Object="unknown" Hash="ea297c2e1a3fadbf3b74118c4dee97f0"/>
+ <File SubObject="unknown" Path="Job_12.out" Type="out" Format="Text" Object="unknown" Hash="43097a51fb6e9806090054315c4e9d4f"/>
+ <File SubObject="unknown" Path="sma_sub_gbfeed_poptd.cur" Type="Currents:Standard" Format="Bin" Object="unknown" Hash="c0a9628883ddaeb0deca6b66e0fc8cbf"/>
+ <File SubObject="unknown" Path="sma_main_gbfeed_poptd.cur" Type="Currents:Standard" Format="Bin" Object="unknown" Hash="f7e571cf62f0788588f9b6d7c16191d9"/>
+ <File Quantity="J" SubObject="unknown" Path="sma_cassegrain_seccur_gbfeed_po.grd" Type="Grid:Surface" Format="Ticra" Object="sec_currents_grid" Hash="1ea29a9ab72ff1d5b7970be5df23d774">
+  <Parameter Name="Frequency" Unit="GHz" Values=" 230.609583076923"/>
+  <Parameter Name="Y" Unit="m" Values="[-0.175000000000000;0.175000000000000;301]"/>
+  <Parameter Name="X" Unit="m" Values="[-0.175000000000000;0.175000000000000;301]"/>
+ </File>
+ <File Quantity="E" SubObject="unknown" Path="sma_cassegrain_secE_gbfeed_po.grd" Type="Grid:Surface" Format="Ticra" Object="sec_Efield_grid" Hash="710ab06ce42f02dec5ac02756cda5145">
+  <Parameter Name="Frequency" Unit="GHz" Values=" 230.609583076923"/>
+  <Parameter Name="Y" Unit="m" Values="[-0.175000000000000;0.175000000000000;301]"/>
+  <Parameter Name="X" Unit="m" Values="[-0.175000000000000;0.175000000000000;301]"/>
+ </File>
+ <File Quantity="H" SubObject="unknown" Path="sma_cassegrain_secH_gbfeed_po.grd" Type="Grid:Surface" Format="Ticra" Object="sec_Hfield_grid" Hash="c68166aab0d3eb0e062d7a7ec5161cf6">
+  <Parameter Name="Frequency" Unit="GHz" Values=" 230.609583076923"/>
+  <Parameter Name="Y" Unit="m" Values="[-0.175000000000000;0.175000000000000;301]"/>
+  <Parameter Name="X" Unit="m" Values="[-0.175000000000000;0.175000000000000;301]"/>
+ </File>
+ <File Quantity="J" SubObject="unknown" Path="sma_cassegrain_pricur_gbfeed_po.grd" Type="Grid:Surface" Format="Ticra" Object="main_currents_grid" Hash="1678f3e21ab32c8f48e2ad63885efba2">
+  <Parameter Name="Frequency" Unit="GHz" Values=" 230.609583076923"/>
+  <Parameter Name="Y" Unit="m" Values="[-3.00000000000000;3.00000000000000;301]"/>
+  <Parameter Name="X" Unit="m" Values="[-3.00000000000000;3.00000000000000;301]"/>
+ </File>
+ <File Quantity="E" SubObject="unknown" Path="sma_cassegrain_priE_gbfeed_po.grd" Type="Grid:Surface" Format="Ticra" Object="main_Efield_grid" Hash="74dec725869de0bdb6d6a6c6661cc9e4">
+  <Parameter Name="Frequency" Unit="GHz" Values=" 230.609583076923"/>
+  <Parameter Name="Y" Unit="m" Values="[-3.00000000000000;3.00000000000000;301]"/>
+  <Parameter Name="X" Unit="m" Values="[-3.00000000000000;3.00000000000000;301]"/>
+ </File>
+ <File Quantity="H" SubObject="unknown" Path="sma_cassegrain_priH_gbfeed_po.grd" Type="Grid:Surface" Format="Ticra" Object="main_Hfield_grid" Hash="8ba90c5cc1dd704c9fd6a0024f1a378a">
+  <Parameter Name="Frequency" Unit="GHz" Values=" 230.609583076923"/>
+  <Parameter Name="Y" Unit="m" Values="[-3.00000000000000;3.00000000000000;301]"/>
+  <Parameter Name="X" Unit="m" Values="[-3.00000000000000;3.00000000000000;301]"/>
+ </File>
+ <File Quantity="E" SubObject="unknown" Path="sma_cassegrain_ff_gbfeed_Efield.grd" Type="Grid:Spherical" Format="Ticra" Object="sma_farfield_E_grid" Hash="6486a2b3ea358c3a6d7d1c6c32660042">
+  <Parameter Name="Frequency" Unit="GHz" Values=" 230.609583076923"/>
+  <Parameter Name="El" Unit="deg" Values="[-0.200000000000000;0.200000000000000;301]"/>
+  <Parameter Name="Az" Unit="deg" Values="[-0.200000000000000;0.200000000000000;301]"/>
+  <Scan Type="azimuth_over_elevation"/>
+ </File>
+ <File Quantity="H" SubObject="unknown" Path="sma_cassegrain_ff_gbfeed_Hfield.grd" Type="Grid:Spherical" Format="Ticra" Object="sma_farfield_H_grid" Hash="be8a977febe6e5b9498e6048c1e17613">
+  <Parameter Name="Frequency" Unit="GHz" Values=" 230.609583076923"/>
+  <Parameter Name="El" Unit="deg" Values="[-0.200000000000000;0.200000000000000;301]"/>
+  <Parameter Name="Az" Unit="deg" Values="[-0.200000000000000;0.200000000000000;301]"/>
+  <Scan Type="azimuth_over_elevation"/>
+ </File>
+ <File Path="comments.txt" Type="Comments" Format="Text"/>
+ <File Path="screenoutput.txt" Type="Screen" Format="Text"/>
+</OutputFiles>

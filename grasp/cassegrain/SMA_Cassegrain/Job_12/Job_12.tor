@@ -240,13 +240,13 @@ sma_gaussian_beam  gaussian_beam
   phase_front_radius : 0.0 m
 )
  
-sma_farfield_grid  spherical_grid  
+sma_farfield_E_grid  spherical_grid  
 (
   coor_sys         : ref(sma_global_coor),
   grid_type        : azimuth_over_elevation,
   x_range          : struct(start: -0.2, end: 0.2, np: 301),
   y_range          : struct(start: -0.2, end: 0.2, np: 301),
-  file_name        : sma_cassegrain_ff_gbfeed_poptd.grd,
+  file_name        : sma_cassegrain_ff_gbfeed_Efield.grd,
   frequency        : ref(sma_wavelengths)
 )
  
@@ -399,6 +399,41 @@ sec_Efield_grid  surface_grid
   frequency        : ref(sma_wavelengths)
 )
  
+sec_Hfield_grid  surface_grid  
+(
+  scatterer        : ref(sma_sub_reflector),
+  x_range          : struct(start: -0.175, end: 0.175, np: 301, unit: m),
+  y_range          : struct(start: -0.175, end: 0.175, np: 301),
+  field_type       : incident_h_field,
+  polarisation_and_phase_coor_sys : ref(sma_subvertex_coor),
+  phase_adjustment : on,
+  file_name        : sma_cassegrain_secH_gbfeed_po.grd,
+  frequency        : ref(sma_wavelengths)
+)
+ 
+main_Hfield_grid  surface_grid  
+(
+  scatterer        : ref(sma_main_reflector),
+  x_range          : struct(start: -3.0, end: 3.0, np: 301, unit: m),
+  y_range          : struct(start: -3.0, end: 3.0, np: 301),
+  field_type       : incident_h_field,
+  polarisation_and_phase_coor_sys : ref(sma_global_coor),
+  phase_adjustment : on,
+  file_name        : sma_cassegrain_priH_gbfeed_po.grd,
+  frequency        : ref(sma_wavelengths)
+)
+ 
+sma_farfield_H_grid  spherical_grid  
+(
+  coor_sys         : ref(sma_global_coor),
+  grid_type        : azimuth_over_elevation,
+  x_range          : struct(start: -0.2, end: 0.2, np: 301),
+  y_range          : struct(start: -0.2, end: 0.2, np: 301),
+  e_h              : h_field,
+  file_name        : sma_cassegrain_ff_gbfeed_Hfield.grd,
+  frequency        : ref(sma_wavelengths)
+)
+ 
 //DO NOT MODIFY OBJECTS BELOW THIS LINE.
 //THESE OBJECTS ARE CREATED AND MANAGED BY THE
 //GRAPHICAL USER INTERFACE AND SHOULD NOT BE
@@ -427,5 +462,5 @@ reflector_plot_for_view_1  reflector_plot
   surface_colour   : struct(r: 0.72156862745098, g: 0.450980392156863, b: 0.2)
 )
  
- //$$ Saved at 12:57:14 on 19.03.2026 by TICRA Tools 21.0 SN=008652
+ //$$ Saved at 13:21:29 on 19.03.2026 by TICRA Tools 21.0 SN=008652
   

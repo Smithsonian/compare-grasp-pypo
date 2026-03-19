@@ -1,1 +1,1 @@
-Rerun PO only, no sec, no feed with more grids
+Run PO, no sec, no feed on farfield, with E and H fields

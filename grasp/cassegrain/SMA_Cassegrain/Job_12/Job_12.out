@@ -1,4 +1,4 @@
- Program started at 12:57:14 on 19 March 2026
+ Program started at 13:21:30 on 19 March 2026
  
  
  
@@ -1051,18 +1051,18 @@
   Phase-front radius of curvature:   0.00000     m
  
  
-  *** Object name:  sma_farfield_grid
+  *** Object name:  sma_farfield_E_grid
   *** Class name :  spherical_grid
   *** Message    :  Object created
  
  
  
-  *** Object name:  sma_farfield_grid
+  *** Object name:  sma_farfield_E_grid
   *** Class name :  spherical_grid
   *** Message    :  New values in object
  
   Frequency : sma_wavelengths
-  File name : sma_cassegrain_ff_gbfeed_poptd.grd
+  File name : sma_cassegrain_ff_gbfeed_Efield.grd
   Coor_sys : sma_global_coor
   X range : start  -0.20000    end   0.20000    points   301
   Y range : start  -0.20000    end   0.20000    points   301
@@ -1392,6 +1392,67 @@
   Y_range : start -0.175000E+00    end  0.175000E+00    points   301
  
  
+  *** Object name:  sec_Hfield_grid
+  *** Class name :  surface_grid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sec_Hfield_grid
+  *** Class name :  surface_grid
+  *** Message    :  New values in object
+ 
+  Frequency : sma_wavelengths
+  File name : sma_cassegrain_secH_gbfeed_po.grd
+  Scatterer : sma_sub_reflector
+  polarisation_and_phase_coor_sys : sma_subvertex_coor
+  Field_type : incident_h_field
+  Phase_adjustment : on
+  X_range : start -0.175000E+00    end  0.175000E+00    points   301
+  Unit of grid limits : m
+  Y_range : start -0.175000E+00    end  0.175000E+00    points   301
+ 
+ 
+  *** Object name:  main_Hfield_grid
+  *** Class name :  surface_grid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  main_Hfield_grid
+  *** Class name :  surface_grid
+  *** Message    :  New values in object
+ 
+  Frequency : sma_wavelengths
+  File name : sma_cassegrain_priH_gbfeed_po.grd
+  Scatterer : sma_main_reflector
+  polarisation_and_phase_coor_sys : sma_global_coor
+  Field_type : incident_h_field
+  Phase_adjustment : on
+  X_range : start -0.300000E+01    end  0.300000E+01    points   301
+  Unit of grid limits : m
+  Y_range : start -0.300000E+01    end  0.300000E+01    points   301
+ 
+ 
+  *** Object name:  sma_farfield_H_grid
+  *** Class name :  spherical_grid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  sma_farfield_H_grid
+  *** Class name :  spherical_grid
+  *** Message    :  New values in object
+ 
+  Frequency : sma_wavelengths
+  File name : sma_cassegrain_ff_gbfeed_Hfield.grd
+  Coor_sys : sma_global_coor
+  E_H : h_field
+  X range : start  -0.20000    end   0.20000    points   301
+  Y range : start  -0.20000    end   0.20000    points   301
+  Grid type : azimuth_over_elevation
+ 
+ 
   *** Object name:  view_1
   *** Class name :  view
   *** Message    :  Object created
@@ -1463,11 +1524,11 @@
   *** Message    :  Definition of reflector_plot
  
  
- ----- TASK No. 1 -----     Started at 12:57:15 on March 19, 2026
+ ----- TASK No. 1 -----     Started at 13:21:30 on March 19, 2026
  sma_sub_po get_currents ( source : sequence(ref(sma_gaussian_beam)),
  auto_convergence_of_po : on, convergence_on_scatterer :
  sequence(ref(sma_main_reflector)), convergence_on_output_grid :
- sequence(ref(sma_farfield_cut), ref(sma_farfield_grid)))
+ sequence(ref(sma_farfield_cut), ref(sma_farfield_E_grid)))
  
  
   *** Object name:  sma_sub_po
@@ -1478,7 +1539,7 @@
   PO-auto-convergence selection : on
   Convergence test on scatterer object : sma_main_reflector
   Convergence test on output grid : sma_farfield_cut
-  Convergence test on output grid : sma_farfield_grid
+  Convergence test on output grid : sma_farfield_E_grid
  
  
   *** Object name:  sma_sub_po
@@ -1533,10 +1594,10 @@
   Relative power hitting scatterer:    0.936782
   Spill-over:     0.2836 dB
  
- ----- TASK No. 2 -----     Started at 12:57:15 on March 19, 2026
+ ----- TASK No. 2 -----     Started at 13:21:30 on March 19, 2026
  sma_main_po get_currents ( source : sequence(ref(sma_sub_po)),
  auto_convergence_of_po : on, convergence_on_output_grid :
- sequence(ref(sma_farfield_cut), ref(sma_farfield_grid)))
+ sequence(ref(sma_farfield_cut), ref(sma_farfield_E_grid)))
  
  
   *** Object name:  sma_main_po
@@ -1546,7 +1607,7 @@
   Source : sma_sub_po
   PO-auto-convergence selection : on
   Convergence test on output grid : sma_farfield_cut
-  Convergence test on output grid : sma_farfield_grid
+  Convergence test on output grid : sma_farfield_E_grid
  
  
   *** Object name:  sma_main_po
@@ -1622,40 +1683,7 @@
   Relative power hitting scatterer:    0.923746
   Spill-over:     0.3445 dB
  
- ----- TASK No. 3 -----     Started at 12:57:23 on March 19, 2026
- sma_farfield_grid get_field ( source : sequence(ref(sma_main_po)))
- 
- 
-  *** Object name:  sma_farfield_grid
-  *** Class name :  spherical_grid
-  *** Message    :  Get_field message received
- 
-  Source : sma_main_po
- 
-  Name of currents file: sma_main_gbfeed_poptd.cur
- 
-  Control values found in the file:
-    No. of frequencies: 1
-    No. of beams      : 1
-    No. of faces      : 1
-    No. of edges      : 0
-    No. of gaps       : 0
- 
-  Frequency number  1 : 230.610 GHz
- 
-    Face No.      PO1       PO2     Partitions
-          1       260        83         1
- 
- 
- 
-  *** Object name:  sma_farfield_grid
-  *** Class name :  spherical_grid
-  *** Message    :  Field calculated
- 
-  Frequency No. :     1
-  Beam No. :     1
- 
- ----- TASK No. 4 -----     Started at 12:57:23 on March 19, 2026
+ ----- TASK No. 3 -----     Started at 13:21:38 on March 19, 2026
  sec_currents_grid get_field ( source : sequence(ref(sma_gaussian_beam)))
  
  
@@ -1665,17 +1693,7 @@
  
   Source : sma_gaussian_beam
  
- ----- TASK No. 5 -----     Started at 12:57:24 on March 19, 2026
- main_Efield_grid get_field ( source : sequence(ref(sma_gaussian_beam)))
- 
- 
-  *** Object name:  main_Efield_grid
-  *** Class name :  surface_grid
-  *** Message    :  Get_field message received
- 
-  Source : sma_gaussian_beam
- 
- ----- TASK No. 6 -----     Started at 12:57:24 on March 19, 2026
+ ----- TASK No. 4 -----     Started at 13:21:38 on March 19, 2026
  sec_Efield_grid get_field ( source : sequence(ref(sma_gaussian_beam)))
  
  
@@ -1685,7 +1703,17 @@
  
   Source : sma_gaussian_beam
  
- ----- TASK No. 7 -----     Started at 12:57:24 on March 19, 2026
+ ----- TASK No. 5 -----     Started at 13:21:39 on March 19, 2026
+ sec_Hfield_grid get_field ( source : sequence(ref(sma_gaussian_beam)))
+ 
+ 
+  *** Object name:  sec_Hfield_grid
+  *** Class name :  surface_grid
+  *** Message    :  Get_field message received
+ 
+  Source : sma_gaussian_beam
+ 
+ ----- TASK No. 6 -----     Started at 13:21:39 on March 19, 2026
  main_currents_grid get_field ( source : sequence(ref(sma_sub_po)))
  
  
@@ -1710,7 +1738,7 @@
           1       315       780         1
  
  
- ----- TASK No. 8 -----     Started at 12:57:31 on March 19, 2026
+ ----- TASK No. 7 -----     Started at 13:21:46 on March 19, 2026
  main_Efield_grid get_field ( source : sequence(ref(sma_sub_po)))
  
  
@@ -1735,9 +1763,100 @@
           1       315       780         1
  
  
- ----- END OF TASKS -----     Completed at 12:57:41 on March 19, 2026
- Total time was 27.00 sec
+ ----- TASK No. 8 -----     Started at 13:21:56 on March 19, 2026
+ main_Hfield_grid get_field ( source : sequence(ref(sma_sub_po)))
+ 
+ 
+  *** Object name:  main_Hfield_grid
+  *** Class name :  surface_grid
+  *** Message    :  Get_field message received
+ 
+  Source : sma_sub_po
+ 
+  Name of currents file: sma_sub_gbfeed_poptd.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.610 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       315       780         1
+ 
+ 
+ ----- TASK No. 9 -----     Started at 13:22:04 on March 19, 2026
+ sma_farfield_E_grid get_field ( source : sequence(ref(sma_main_po)))
+ 
+ 
+  *** Object name:  sma_farfield_E_grid
+  *** Class name :  spherical_grid
+  *** Message    :  Get_field message received
+ 
+  Source : sma_main_po
+ 
+  Name of currents file: sma_main_gbfeed_poptd.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.610 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       260        83         1
+ 
+ 
+ 
+  *** Object name:  sma_farfield_E_grid
+  *** Class name :  spherical_grid
+  *** Message    :  Field calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+ 
+ ----- TASK No. 10 -----     Started at 13:22:04 on March 19, 2026
+ sma_farfield_H_grid get_field ( source : sequence(ref(sma_main_po)))
+ 
+ 
+  *** Object name:  sma_farfield_H_grid
+  *** Class name :  spherical_grid
+  *** Message    :  Get_field message received
+ 
+  Source : sma_main_po
+ 
+  Name of currents file: sma_main_gbfeed_poptd.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.610 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       260        83         1
+ 
+ 
+ 
+  *** Object name:  sma_farfield_H_grid
+  *** Class name :  spherical_grid
+  *** Message    :  Field calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+ 
+ ----- END OF TASKS -----     Completed at 13:22:05 on March 19, 2026
+ Total time was 35.40 sec
  
  TICRA Tools SN: 008652
- Program stopped at 12:57:41 on 19 March 2026
+ Program stopped at 13:22:05 on 19 March 2026
  
