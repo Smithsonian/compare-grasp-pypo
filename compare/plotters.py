@@ -53,7 +53,7 @@ def plotGraspBeam2D(field, comp=0, comp_name='E', title=None, vmax=None, vmin=No
     return fig, ax
 
 
-def plotBeam2D(grid, field, comp='Ex', correct_phase=1, title=None, vmax=None, vmin=None, norm=True):
+def plotBeam2D(grid, field, comp='Ex', farfield=False, correct_phase=1, title=None, vmax=None, vmin=None, norm=True):
 
     k = field["k"]
     
@@ -76,8 +76,12 @@ def plotBeam2D(grid, field, comp='Ex', correct_phase=1, title=None, vmax=None, v
 
 
     fig, ax = plt.subplots(1,2, figsize=(12,5))
-    ampplt = ax[0].pcolormesh(grid["x"], grid["y"], 20*np.log10(np.abs(field[comp])), cmap=amp_cmap, vmin=vmin, vmax=vmax)
-    phsplt = ax[1].pcolormesh(grid["x"], grid["y"], np.angle(field[comp]*phase_factor), cmap=phs_cmap)
+    if farfield:
+        ampplt = ax[0].pcolormesh(np.rad2deg(grid["x"]*np.cos(grid["y"])), np.rad2deg(grid["x"]*np.sin(grid["y"])), 20*np.log10(np.abs(field[comp])), cmap=amp_cmap, vmin=vmin, vmax=vmax)
+        phsplt = ax[1].pcolormesh(np.rad2deg(grid["x"]*np.cos(grid["y"])), np.rad2deg(grid["x"]*np.sin(grid["y"])), np.angle(field[comp]*phase_factor), cmap=phs_cmap)
+    else:
+        ampplt = ax[0].pcolormesh(grid["x"], grid["y"], 20*np.log10(np.abs(field[comp])), cmap=amp_cmap, vmin=vmin, vmax=vmax)
+        phsplt = ax[1].pcolormesh(grid["x"], grid["y"], np.angle(field[comp]*phase_factor), cmap=phs_cmap)
 
 
     ax[0].set_title("Amplitude (dB)")
@@ -86,8 +90,12 @@ def plotBeam2D(grid, field, comp='Ex', correct_phase=1, title=None, vmax=None, v
     cax = []
     for a in ax:
         a.set_aspect("equal")
-        a.set_ylabel("y (mm)")
-        a.set_xlabel("x (mm)")
+        if farfield:
+            a.set_ylabel("Az (°)")
+            a.set_xlabel("El (°)")
+        else:
+            a.set_ylabel("y (mm)")
+            a.set_xlabel("x (mm)")
 
         divider = make_axes_locatable(a)
         cax.append(divider.append_axes('right', size='5%', pad=0.05))
@@ -101,7 +109,7 @@ def plotBeam2D(grid, field, comp='Ex', correct_phase=1, title=None, vmax=None, v
     
     return fig, ax
 
-def plotBeamCut(grid, field, cut, gmode='uv', comp='Ex', figax=None, phase=True, correct_phase=0, title=None, label=None, vmax=None, vmin=None, norm=True, **kwargs):
+def plotBeamCut(grid, field, cut, gmode='uv', comp='Ex', figax=None, phase=True, farfield=False, correct_phase=0, title=None, label=None, vmax=None, vmin=None, norm=True, **kwargs):
     
     cuts = ["x", "y", "d"]
 
@@ -114,7 +122,7 @@ def plotBeamCut(grid, field, cut, gmode='uv', comp='Ex', figax=None, phase=True,
     k = field['k']
     
     if cut == 'x':
-        if gmode == 'xy' or gmode == 'AoE':
+        if gmode == 'xy':
             x = grid['x'][:,int((shape[1]-1)/2)]
             z = grid['z'][:,int((shape[1]-1)/2)]
             y = field[comp][:,int((shape[1]-1)/2)]
@@ -122,8 +130,13 @@ def plotBeamCut(grid, field, cut, gmode='uv', comp='Ex', figax=None, phase=True,
             x = np.concat((grid['x'][::-1,int(shape[1]/2)], grid['x'][:,0]))
             z = np.concat((grid['z'][::-1,int(shape[1]/2)], grid['z'][:,0]))
             y = np.concat((field[comp][::-1,int(shape[1]/2)], field[comp][:,0]))
+        else: # AoE grid
+            r = grid['x'][:,int((shape[1]-1)/2)]
+            phi = grid['y'][:,int((shape[1]-1)/2)]
+            x = np.rad2deg(r*np.cos(phi))
+            y = field[comp][:,int((shape[1]-1)/2)]
     elif cut == 'y':
-        if gmode =='xy' or gmode == 'AoE':
+        if gmode =='xy':
             x = grid['y'][int((shape[0]-1)/2),:]
             z = grid['z'][int((shape[0]-1)/2),:]
             y = field[comp][int((shape[0]-1)/2),:]
@@ -131,8 +144,13 @@ def plotBeamCut(grid, field, cut, gmode='uv', comp='Ex', figax=None, phase=True,
             x = np.concat((grid['y'][::-1,int(shape[1]*3/4)], grid['y'][:,int(shape[1]/4)]))
             z = np.concat((grid['z'][::-1,int(shape[1]*3/4)], grid['z'][:,int(shape[1]/4)]))
             y = np.concat((field[comp][::-1,int(shape[1]*3/4)], field[comp][:,int(shape[1]/4)]))
+        else: # AoE grid
+            r = grid['x'][int((shape[0]-1)/2),:]
+            phi = grid['y'][int((shape[0]-1)/2),:]
+            x = np.rad2deg(r*np.sin(phi))
+            y = field[comp][int((shape[0]-1)/2),:]
     else: # cut == 'd'
-        if gmode =='xy' or gmode == 'AoE':
+        if gmode =='xy':
             # Only works with square grids
             x = np.sign(np.diagonal(grid['x']))*np.sqrt(np.diagonal(grid['x'])**2 + np.diagonal(grid['y'])**2)
             z = np.diagonal(grid.z)
@@ -141,6 +159,11 @@ def plotBeamCut(grid, field, cut, gmode='uv', comp='Ex', figax=None, phase=True,
             x = np.sqrt(2)*np.concat((grid['x'][::-1,int(shape[1]*5/8)], grid['x'][:,int(shape[1]/8)]))
             z = np.concat((grid['z'][::-1,int(shape[1]*5/8)], grid['z'][:,int(shape[1]/8)]))
             y = np.concat((field[comp][::-1,int(shape[1]*5/8)], field[comp][:,int(shape[1]/8)]))
+        else: # AoE grid
+            r = np.sign(np.diagonal(grid['y']))*np.diagonal(grid['x'])
+            phi = np.diagonal(grid['y'])
+            x = np.rad2deg(r)
+            y = np.diagonal(field[comp])
     
     if label is None:
         label = f"{cut}-cut ${comp[0]}_{comp[1]}$"
@@ -171,7 +194,7 @@ def plotBeamCut(grid, field, cut, gmode='uv', comp='Ex', figax=None, phase=True,
         if phase and correct_phase:
             phase_factor = np.exp(correct_phase*1j*k*z)
         else:
-            phase_factor = np.ones_like(grid['z'])
+            phase_factor = np.ones_like(x)
         
         ampplt = ax[0].plot(x, 20*np.log10(np.abs(y)), label=label, **kwargs)
         phsplt = ax[1].plot(x, np.angle(y*phase_factor), label=label, **kwargs)
@@ -180,7 +203,10 @@ def plotBeamCut(grid, field, cut, gmode='uv', comp='Ex', figax=None, phase=True,
         ax[1].set_ylabel("Phase (rad)")
 
         for a in ax:
-            a.set_xlabel(f"r (mm)")
+            if farfield:
+                a.set_xlabel("$\theta$ (°)")
+            else:
+                a.set_xlabel("r (mm)")
             a.legend()
         
         if figax is None:
@@ -190,7 +216,10 @@ def plotBeamCut(grid, field, cut, gmode='uv', comp='Ex', figax=None, phase=True,
 
         ax.legend()
         ax.set_ylabel("Amplitude (dB)")
-        ax.set_xlabel(f"r (mm)")
+        if farfield:
+            ax.set_xlabel("$\theta$ (°)")
+        else:
+            ax.set_xlabel("r (mm)")
         
         if figax is None:
             ax.set_ylim((vmin, vmax))
@@ -203,7 +232,7 @@ def plotBeamCut(grid, field, cut, gmode='uv', comp='Ex', figax=None, phase=True,
     return fig, ax
 
 
-def plotGraspBeamCut(field, cut, grid='rect', comp=0, comp_name='E', figax=None, phase=True, title=None, label=None, vmax=None, vmin=None, norm=True, phase_offset=0, **kwargs):
+def plotGraspBeamCut(field, cut, grid='rect', comp=0, comp_name='E', figax=None, phase=True, farfield=False, title=None, label=None, vmax=None, vmin=None, norm=True, phase_offset=0, **kwargs):
     
     comps = ["x", "y", "z"]
     cuts = ["x", "y", "d"]
@@ -236,6 +265,9 @@ def plotGraspBeamCut(field, cut, grid='rect', comp=0, comp_name='E', figax=None,
         else:
             x = field.positions[0][:,int(shape[1]/8) - 1]
             y = field.field[:,int(shape[1]/8) - 1,comp]
+            
+    if not farfield:
+        x = x*1e3
     
     if label is None:
         label = f"{cut}-cut ${comp_name}_{comps[comp]}$"
@@ -259,25 +291,31 @@ def plotGraspBeamCut(field, cut, grid='rect', comp=0, comp_name='E', figax=None,
         fig, ax = figax
         
     if isinstance(ax, np.ndarray):
-        ampplt = ax[0].plot(x*1e3, 20*np.log10(np.abs(y)), label=label, **kwargs)
-        phsplt = ax[1].plot(x*1e3, np.angle(y*np.exp(1j*phase_offset)), label=label, **kwargs)
+        ampplt = ax[0].plot(x, 20*np.log10(np.abs(y)), label=label, **kwargs)
+        phsplt = ax[1].plot(x, np.angle(y*np.exp(1j*phase_offset)), label=label, **kwargs)
 
 
         ax[0].set_ylabel("Amplitude (dB)")
         ax[1].set_ylabel("Phase (rad)")
 
         for a in ax:
-            a.set_xlabel(f"r (mm)")
+            if farfield:
+                a.set_xlabel("$\\theta$ (°)")
+            else:
+                a.set_xlabel("r (mm)")
             a.legend()
         
         if figax is None:
             ax[0].set_ylim((vmin, vmax+1))
     else:
-        ampplt = ax.plot(x*1e3, 20*np.log10(np.abs(y)), label=label, **kwargs)
+        ampplt = ax.plot(x, 20*np.log10(np.abs(y)), label=label, **kwargs)
 
         ax.legend()
         ax.set_ylabel("Amplitude (dB)")
-        ax.set_xlabel(f"r (mm)")
+        if farfield:
+            ax.set_xlabel("$\theta$ (°)")
+        else:
+            ax.set_xlabel("r (mm)")
         
         if figax is None:
             ax.set_ylim((vmin, vmax))
