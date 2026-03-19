@@ -100,3 +100,191 @@ def plotBeam2D(grid, field, comp='Ex', correct_phase=1, title=None, vmax=None, v
     fig.tight_layout()
     
     return fig, ax
+
+def plotBeamCut(grid, field, cut, gmode='uv', comp='Ex', figax=None, phase=True, correct_phase=0, title=None, label=None, vmax=None, vmin=None, norm=True, **kwargs):
+    
+    cuts = ["x", "y", "d"]
+
+    if isinstance(cut, int):
+        cut = cuts[cut]
+    
+    # Only works with uv grids over full disc with sizes divisible by 8
+    
+    shape = grid['x'].shape
+    k = field['k']
+    
+    if cut == 'x':
+        if gmode == 'xy' or gmode == 'AoE':
+            x = grid['x'][:,int((shape[1]-1)/2)]
+            z = grid['z'][:,int((shape[1]-1)/2)]
+            y = field[comp][:,int((shape[1]-1)/2)]
+        elif gmode == 'uv':
+            x = np.concat((grid['x'][::-1,int(shape[1]/2)], grid['x'][:,0]))
+            z = np.concat((grid['z'][::-1,int(shape[1]/2)], grid['z'][:,0]))
+            y = np.concat((field[comp][::-1,int(shape[1]/2)], field[comp][:,0]))
+    elif cut == 'y':
+        if gmode =='xy' or gmode == 'AoE':
+            x = grid['y'][int((shape[0]-1)/2),:]
+            z = grid['z'][int((shape[0]-1)/2),:]
+            y = field[comp][int((shape[0]-1)/2),:]
+        elif gmode == 'uv':
+            x = np.concat((grid['y'][::-1,int(shape[1]*3/4)], grid['y'][:,int(shape[1]/4)]))
+            z = np.concat((grid['z'][::-1,int(shape[1]*3/4)], grid['z'][:,int(shape[1]/4)]))
+            y = np.concat((field[comp][::-1,int(shape[1]*3/4)], field[comp][:,int(shape[1]/4)]))
+    else: # cut == 'd'
+        if gmode =='xy' or gmode == 'AoE':
+            # Only works with square grids
+            x = np.sign(np.diagonal(grid['x']))*np.sqrt(np.diagonal(grid['x'])**2 + np.diagonal(grid['y'])**2)
+            z = np.diagonal(grid.z)
+            y = np.diagonal(field[comp])
+        elif gmode == 'uv':
+            x = np.sqrt(2)*np.concat((grid['x'][::-1,int(shape[1]*5/8)], grid['x'][:,int(shape[1]/8)]))
+            z = np.concat((grid['z'][::-1,int(shape[1]*5/8)], grid['z'][:,int(shape[1]/8)]))
+            y = np.concat((field[comp][::-1,int(shape[1]*5/8)], field[comp][:,int(shape[1]/8)]))
+    
+    if label is None:
+        label = f"{cut}-cut ${comp[0]}_{comp[1]}$"
+    else:
+        label = f"{label} ${comp[0]}_{comp[1]}$"
+    
+    if vmax is None:
+        vmax = 20*np.log10(np.max(np.abs(y)))
+        if vmin is None:
+            vmin = 20*np.log10(np.min(np.abs(y)))
+        else:
+            vmin = vmax + vmin
+
+    if figax is None:
+        if phase:
+            fig, ax = plt.subplots(1,2, figsize=(10,5))
+        else:
+            fig = plt.figure(figsize=(5,5))
+            ax = fig.gca()
+    else:
+        fig, ax = figax
+        
+    if isinstance(ax, np.ndarray):
+        
+        if isinstance(correct_phase, bool):
+            correct_phase = int(correct_phase)
+        
+        if phase and correct_phase:
+            phase_factor = np.exp(correct_phase*1j*k*z)
+        else:
+            phase_factor = np.ones_like(grid['z'])
+        
+        ampplt = ax[0].plot(x, 20*np.log10(np.abs(y)), label=label, **kwargs)
+        phsplt = ax[1].plot(x, np.angle(y*phase_factor), label=label, **kwargs)
+
+        ax[0].set_ylabel("Amplitude (dB)")
+        ax[1].set_ylabel("Phase (rad)")
+
+        for a in ax:
+            a.set_xlabel(f"r (mm)")
+            a.legend()
+        
+        if figax is None:
+            ax[0].set_ylim((vmin, vmax+1))
+    else:
+        ampplt = ax.plot(x, 20*np.log10(np.abs(y)), label=label, **kwargs)
+
+        ax.legend()
+        ax.set_ylabel("Amplitude (dB)")
+        ax.set_xlabel(f"r (mm)")
+        
+        if figax is None:
+            ax.set_ylim((vmin, vmax))
+        
+    if title is not None:
+        fig.suptitle(title)
+
+    fig.tight_layout()
+    
+    return fig, ax
+
+
+def plotGraspBeamCut(field, cut, grid='rect', comp=0, comp_name='E', figax=None, phase=True, title=None, label=None, vmax=None, vmin=None, norm=True, **kwargs):
+    
+    comps = ["x", "y", "z"]
+    cuts = ["x", "y", "d"]
+
+    shape = field.positions[0].shape
+    if isinstance(cut, int):
+        cut = cuts[cut]
+    
+    # Only works with uv grids over full disc
+    
+    if cut == 'x':
+        if grid=='rect':
+            x = field.positions[0][int(shape[1]/2),:]
+            y = field.field[:,int(shape[1]/2), comp]
+        else:
+            x = field.positions[0][:,0]
+            y = field.field[:,0,comp]
+    elif cut == 'y':
+        if grid=='rect':
+            x = field.positions[1][:,int(shape[1]/2)]
+            y = field.field[int(shape[0]/2),:,comp]
+        else:
+            x = field.positions[0][:,int(shape[1]/4) - 1]
+            y = field.field[:,int(shape[1]/4) - 1,comp]
+    else: # cut == 'd'
+        if grid=='rect':
+            # Only works with square grids
+            x = np.sign(np.diagonal(field.positions[0]))*np.sqrt(np.diagonal(field.positions[0])**2 + np.diagonal(field.positions[1])**2)
+            y = np.diagonal(field.field[:,:,comp])
+        else:
+            x = field.positions[0][:,int(shape[1]/8) - 1]
+            y = field.field[:,int(shape[1]/8) - 1,comp]
+    
+    if label is None:
+        label = f"{cut}-cut ${comp_name}_{comps[comp]}$"
+    else:
+        label = f"{label} ${comp_name}_{comps[comp]}$"
+    
+    if vmax is None:
+        vmax = 20*np.log10(np.max(np.abs(y)))
+        if vmin is None:
+            vmin = 20*np.log10(np.min(np.abs(y)))
+        else:
+            vmin = vmax + vmin
+
+    if figax is None:
+        if phase:
+            fig, ax = plt.subplots(1,2, figsize=(10,5))
+        else:
+            fig = plt.figure(figsize=(5,5))
+            ax = fig.gca()
+    else:
+        fig, ax = figax
+        
+    if isinstance(ax, np.ndarray):
+        ampplt = ax[0].plot(x*1e3, 20*np.log10(np.abs(y)), label=label, **kwargs)
+        phsplt = ax[1].plot(x*1e3, np.angle(y), label=label, **kwargs)
+
+
+        ax[0].set_ylabel("Amplitude (dB)")
+        ax[1].set_ylabel("Phase (rad)")
+
+        for a in ax:
+            a.set_xlabel(f"r (mm)")
+            a.legend()
+        
+        if figax is None:
+            ax[0].set_ylim((vmin, vmax+1))
+    else:
+        ampplt = ax.plot(x*1e3, 20*np.log10(np.abs(y)), label=label, **kwargs)
+
+        ax.legend()
+        ax.set_ylabel("Amplitude (dB)")
+        ax.set_xlabel(f"r (mm)")
+        
+        if figax is None:
+            ax.set_ylim((vmin, vmax))
+        
+    if title is not None:
+        fig.suptitle(title)
+
+    fig.tight_layout()
+    
+    return fig, ax
