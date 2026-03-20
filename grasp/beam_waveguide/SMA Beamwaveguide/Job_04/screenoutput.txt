@@ -1,0 +1,386 @@
+ Tci file: Job_04.tci
+ Out file: Job_04.out
+ Log file: Job_04.log
+ 
+ 
+ TICRA Tools 21.0 (Windows amd64/em64t 64-bit)
+ 
+ 
+ TICRA Tools found  24 CPU threads
+ Enabled products: CHAMP 3D, GRASP
+ WARNING: Message from object Secondary_PO:
+ A non-zero number of PTD-points have been specified in 'ptd_points'.
+ However, neither PTD-elements nor PTD-field will be calculated
+ as the attribute 'method' has been set to 'po'.
+ To perform the PTD-calculation, change 'method' to 'ptd' or 'po_plus_ptd'.
+ 
+ WARNING: Message from object M3_PO:
+ A non-zero number of PTD-points have been specified in 'ptd_points'.
+ However, neither PTD-elements nor PTD-field will be calculated
+ as the attribute 'method' has been set to 'po'.
+ To perform the PTD-calculation, change 'method' to 'ptd' or 'po_plus_ptd'.
+ 
+ 
+ ----- TASK No. 1 -----     Started at 11:00:44 on March 20, 2026
+ 
+ M6_PO get_currents ( source : sequence(ref(VirtualFeed)),
+ auto_convergence_of_po : on, convergence_on_scatterer :
+ sequence(ref(Ellipsoidal_M5)))
+ 
+  PO1 =       160 PO2 =       400 Face =     1,    Final PO-values from auto-convergence 
+ 
+  Calculating currents.
+  No. of PO-points (target):              41351                      
+ Estimated task time:  0.08 sec, Estimated remaining time:  0.00 sec  
+ 
+  Relative power hitting scatterer:    1.00000
+  Spill-over:     0.0000 dB
+                                                                      
+ Total task time:  0.10 sec
+ 
+ ----- TASK No. 2 -----     Started at 11:00:44 on March 20, 2026
+ 
+ M6_Efield_grid get_field ( source : sequence(ref(VirtualFeed)))
+ 
+  No. of surface grid points:             90601                      
+                                                                      
+ Total task time:  0.11 sec
+ 
+ ----- TASK No. 3 -----     Started at 11:00:44 on March 20, 2026
+ 
+ M6_Hfield_grid get_field ( source : sequence(ref(VirtualFeed)))
+ 
+  No. of surface grid points:             90601                      
+                                                                      
+ Total task time:  0.11 sec
+ 
+ ----- TASK No. 4 -----     Started at 11:00:44 on March 20, 2026
+ 
+ M6_Current_grid get_field ( source : sequence(ref(VirtualFeed)))
+ 
+  No. of surface grid points:             90601                      
+                                                                      
+ Total task time:  0.11 sec
+ 
+ ----- TASK No. 5 -----     Started at 11:00:45 on March 20, 2026
+ 
+ M5_PO get_currents ( source : sequence(ref(M6_PO)), auto_convergence_of_po :
+ on, convergence_on_scatterer : sequence(ref(Ellipsoidal_M4)),
+ convergence_on_output_grid : sequence(ref(Cal_Load_grid)))
+ 
+  PO1 =        23 PO2 =        59 Face =     1,    Final PO-values from auto-convergence 
+ 
+  Calculating currents.
+  No. of PO-points (target):                951                      
+  No. of PO points (source):              41351                      
+ Estimated task time:  0.45 sec, Estimated remaining time:  0.00 sec  
+ 
+  Relative power hitting scatterer:    1.00000
+  Spill-over:    -0.0000 dB
+                                                                      
+ Total task time:  0.52 sec
+ 
+ ----- TASK No. 6 -----     Started at 11:00:45 on March 20, 2026
+ 
+ M5_Efield_grid get_field ( source : sequence(ref(M6_PO)))
+ 
+  No. of surface grid points:             90601                      
+  No. of PO points (source):              41351                      
+                                                                      
+ Total task time:  2.53 sec
+ 
+ ----- TASK No. 7 -----     Started at 11:00:48 on March 20, 2026
+ 
+ M5_Hfield_grid get_field ( source : sequence(ref(M6_PO)))
+ 
+  No. of surface grid points:             90601                      
+  No. of PO points (source):              41351                      
+                                                                      
+ Total task time:  1.97 sec
+ 
+ ----- TASK No. 8 -----     Started at 11:00:50 on March 20, 2026
+ 
+ M5_Current_grid get_field ( source : sequence(ref(M6_PO)))
+ 
+  No. of surface grid points:             90601                      
+  No. of PO points (source):              41351                      
+                                                                      
+ Total task time:  1.98 sec
+ 
+ ----- TASK No. 9 -----     Started at 11:00:52 on March 20, 2026
+ 
+ M4_PO get_currents ( source : sequence(ref(M5_PO)), auto_convergence_of_po :
+ on, convergence_on_scatterer : sequence(ref(Flat_M3)))
+ 
+  PO1 =        32 PO2 =        69 Face =     1,    Final PO-values from auto-convergence 
+ 
+  Calculating currents.
+  No. of PO-points (target):               1527                      
+  No. of PO points (source):                951                      
+ Estimated task time:  0.04 sec, Estimated remaining time:  0.00 sec  
+ 
+  Relative power hitting scatterer:    1.00000
+  Spill-over:    -0.0000 dB
+                                                                      
+ Total task time:  0.04 sec
+ 
+ ----- TASK No. 10 -----     Started at 11:00:52 on March 20, 2026
+ 
+ M4_Efield_grid get_field ( source : sequence(ref(M5_PO)))
+ 
+  No. of surface grid points:             22801                      
+  No. of PO points (source):                951                      
+                                                                      
+ Total task time:  0.04 sec
+ 
+ ----- TASK No. 11 -----     Started at 11:00:52 on March 20, 2026
+ 
+ M4_Hfield_grid get_field ( source : sequence(ref(M5_PO)))
+ 
+  No. of surface grid points:             22801                      
+  No. of PO points (source):                951                      
+                                                                      
+ Total task time:  0.04 sec
+ 
+ ----- TASK No. 12 -----     Started at 11:00:52 on March 20, 2026
+ 
+ M4_Current_grid get_field ( source : sequence(ref(M5_PO)))
+ 
+  No. of surface grid points:             22801                      
+  No. of PO points (source):                951                      
+                                                                      
+ Total task time:  0.04 sec
+ 
+ ----- TASK No. 13 -----     Started at 11:00:52 on March 20, 2026
+ 
+ M3_PO get_currents ( source : sequence(ref(M4_PO)), auto_convergence_of_po :
+ on, convergence_on_scatterer : sequence(ref(Subreflector_M2)),
+ convergence_on_output_grid : sequence(ref(Output_cut_large),
+ ref(Output_grid_large)))
+ 
+  PO1 =        26 PO2 =        20 Face =     1,    Final PO-values from auto-convergence 
+ 
+  Calculating currents.
+  No. of PO-points (target):                425                      
+  No. of PO points (source):               1527                      
+ Estimated task time:  0.03 sec, Estimated remaining time:  0.00 sec  
+ 
+  Relative power hitting scatterer:    0.999999
+  Spill-over:     0.0000 dB
+                                                                      
+ Total task time:  0.04 sec
+ 
+ ----- TASK No. 14 -----     Started at 11:00:52 on March 20, 2026
+ 
+ M3_Efield_grid get_field ( source : sequence(ref(M4_PO)))
+ 
+  No. of surface grid points:             22801                      
+  No. of PO points (source):               1527                      
+                                                                      
+ Total task time:  0.06 sec
+ 
+ ----- TASK No. 15 -----     Started at 11:00:52 on March 20, 2026
+ 
+ M3_Hfield_grid get_field ( source : sequence(ref(M4_PO)))
+ 
+  No. of surface grid points:             22801                      
+  No. of PO points (source):               1527                      
+                                                                      
+ Total task time:  0.05 sec
+ 
+ ----- TASK No. 16 -----     Started at 11:00:52 on March 20, 2026
+ 
+ M3_Current_grid get_field ( source : sequence(ref(M4_PO)))
+ 
+  No. of surface grid points:             22801                      
+  No. of PO points (source):               1527                      
+                                                                      
+ Total task time:  0.05 sec
+ 
+ ----- TASK No. 17 -----     Started at 11:00:52 on March 20, 2026
+ 
+ Secondary_PO get_currents ( source : sequence(ref(M3_PO)),
+ auto_convergence_of_po : on, convergence_on_scatterer :
+ sequence(ref(Primary_M1)), convergence_on_output_grid :
+ sequence(ref(Output_cut_large), ref(Output_grid_large)))
+ 
+  PO1 =       315 PO2 =       780 Face =     1,    Final PO-values from auto-convergence 
+ 
+  Calculating currents.
+  No. of PO-points (target):             157620                      
+  No. of PO points (source):                425                      
+ Estimated task time:  0.16 sec, Estimated remaining time:  0.00 sec  
+ 
+  Relative power hitting scatterer:    0.949897
+  Spill-over:     0.2232 dB
+                                                                      
+ Total task time:  0.32 sec
+ 
+ ----- TASK No. 18 -----     Started at 11:00:52 on March 20, 2026
+ 
+ Secondary_Efield_grid get_field ( source : sequence(ref(M3_PO)))
+ 
+  No. of surface grid points:             90601                      
+  No. of PO points (source):                425                      
+                                                                      
+ Total task time:  0.14 sec
+ 
+ ----- TASK No. 19 -----     Started at 11:00:53 on March 20, 2026
+ 
+ Secondary_Hfield_grid get_field ( source : sequence(ref(M3_PO)))
+ 
+  No. of surface grid points:             90601                      
+  No. of PO points (source):                425                      
+                                                                      
+ Total task time:  0.13 sec
+ 
+ ----- TASK No. 20 -----     Started at 11:00:53 on March 20, 2026
+ 
+ Secondary_Currents_grid get_field ( source : sequence(ref(M3_PO)))
+ 
+  No. of surface grid points:             90601                      
+  No. of PO points (source):                425                      
+                                                                      
+ Total task time:  0.13 sec
+ 
+ ----- TASK No. 21 -----     Started at 11:00:53 on March 20, 2026
+ 
+ Primary_PO get_currents ( source : sequence(ref(Secondary_PO)),
+ auto_convergence_of_po : on, convergence_on_output_grid :
+ sequence(ref(Output_cut_large), ref(Output_grid_large)))
+ 
+  PO1 =       380 PO2 =       740 Face =     1,    Final PO-values from auto-convergence 
+ 
+  Calculating currents.
+  No. of PO-points (target):             192499                      
+  No. of PO points (source):             157620                      
+ Estimated task time: 44.43 sec, Estimated remaining time:  0.74 sec  
+ 
+  Relative power hitting scatterer:    0.936475
+  Spill-over:     0.2850 dB
+                                                                      
+ Total task time: 45.03 sec
+ 
+ ----- TASK No. 22 -----     Started at 11:01:38 on March 20, 2026
+ 
+ Primary_Efield_grid get_field ( source : sequence(ref(Secondary_PO)))
+ 
+  No. of surface grid points:             90601                      
+  No. of PO points (source):             157620                      
+                                                                      
+ Total task time:  8.90 sec
+ 
+ ----- TASK No. 23 -----     Started at 11:01:47 on March 20, 2026
+ 
+ Primary_Hfield_grid get_field ( source : sequence(ref(Secondary_PO)))
+ 
+  No. of surface grid points:             90601                      
+  No. of PO points (source):             157620                      
+                                                                      
+ Total task time:  7.09 sec
+ 
+ ----- TASK No. 24 -----     Started at 11:01:54 on March 20, 2026
+ 
+ Output_cut get_field ( source : sequence(ref(Primary_PO)))
+ 
+  No. of field points:                     1204                      
+  No. of PO points (source):             192499                      
+                                                                      
+ Total task time:  0.13 sec
+ 
+ ----- TASK No. 25 -----     Started at 11:01:54 on March 20, 2026
+ 
+ Primary_Currents_grid get_field ( source : sequence(ref(Secondary_PO)))
+ 
+  No. of surface grid points:             90601                      
+  No. of PO points (source):             157620                      
+                                                                      
+ Total task time:  6.98 sec
+ 
+ ----- TASK No. 26 -----     Started at 11:02:01 on March 20, 2026
+ 
+ Output_cut add_field ( source : sequence(ref(Secondary_PO), ref(M3_PO)))
+ 
+  No. of field points:                     1204                      
+  No. of PO points (source):             157620                      
+  No. of PO points (source):                425                      
+                                                                      
+ Total task time:  0.12 sec
+ 
+ ----- TASK No. 27 -----     Started at 11:02:01 on March 20, 2026
+ 
+ Output_cut_large get_field ( source : sequence(ref(Primary_PO)))
+ 
+  No. of field points:                     4004                      
+  No. of PO points (source):             192499                      
+                                                                      
+ Total task time:  0.28 sec
+ 
+ ----- TASK No. 28 -----     Started at 11:02:02 on March 20, 2026
+ 
+ Output_cut_large add_field ( source : sequence(ref(Secondary_PO), ref(M3_PO)))
+ 
+  No. of field points:                     4004                      
+  No. of PO points (source):             157620                      
+  No. of PO points (source):                425                      
+                                                                      
+ Total task time:  0.24 sec
+ 
+ ----- TASK No. 29 -----     Started at 11:02:02 on March 20, 2026
+ 
+ Output_grid get_field ( source : sequence(ref(Primary_PO)))
+ 
+  No. of field points:                    90601                      
+  No. of PO points (source):             192499                      
+                                                                      
+ Total task time:  4.81 sec
+ 
+ ----- TASK No. 30 -----     Started at 11:02:07 on March 20, 2026
+ 
+ Output_grid add_field ( source : sequence(ref(Secondary_PO), ref(M3_PO)))
+ 
+  No. of field points:                    90601                      
+  No. of PO points (source):             157620                      
+  No. of PO points (source):                425                      
+                                                                      
+ Total task time: 24.44 sec
+ 
+ ----- TASK No. 31 -----     Started at 11:02:31 on March 20, 2026
+ 
+ Output_grid_large get_field ( source : sequence(ref(Primary_PO)))
+ 
+  No. of field points:                  1002001                      
+  No. of PO points (source):             192499                      
+                                                                      
+ Total task time: 52.02 sec
+ 
+ ----- TASK No. 32 -----     Started at 11:03:23 on March 20, 2026
+ 
+ Output_cut_large add_field ( source : sequence(ref(Secondary_PO), ref(M3_PO)))
+ 
+  No. of field points:                     4004                      
+  No. of PO points (source):             157620                      
+  No. of PO points (source):                425                      
+                                                                      
+ Total task time:  0.26 sec
+ 
+ ----- END OF TASKS -----     Completed at 11:03:24 on March 20, 2026
+ 
+ INFO: 2 WARNINGS ENCOUNTERED.
+ 
+ WARNING NO. 1
+ Message from object Secondary_PO:
+ A non-zero number of PTD-points have been specified in 'ptd_points'.
+ However, neither PTD-elements nor PTD-field will be calculated
+ as the attribute 'method' has been set to 'po'.
+ To perform the PTD-calculation, change 'method' to 'ptd' or 'po_plus_ptd'.
+ 
+ WARNING NO. 2
+ Message from object M3_PO:
+ A non-zero number of PTD-points have been specified in 'ptd_points'.
+ However, neither PTD-elements nor PTD-field will be calculated
+ as the attribute 'method' has been set to 'po'.
+ To perform the PTD-calculation, change 'method' to 'ptd' or 'po_plus_ptd'.
+ 
+ 
+ Total time was 2:40 min

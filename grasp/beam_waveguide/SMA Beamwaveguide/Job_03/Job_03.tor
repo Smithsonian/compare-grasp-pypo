@@ -1,0 +1,597 @@
+Primary_M1  reflector  
+(
+  coor_sys         : ref(Primary_coor),
+  surfaces         : sequence(ref(Primary_Surface)),
+  rim              : ref(Primary_Rim),
+  centre_hole_radius : 175.0 mm
+)
+ 
+Primary_coor  coor_sys  
+(
+)
+ 
+Primary_Surface  paraboloid  
+(
+  focal_length     : 2520.0 mm
+)
+ 
+Primary_Rim  elliptical_rim  
+(
+  half_axis        : struct(x: 3000.0 mm, y: 3000.0 mm)
+)
+ 
+Subreflector_M2  reflector  
+(
+  coor_sys         : ref(Secondary_coor),
+  surfaces         : sequence(ref(Secondary_Surface)),
+  rim              : ref(Secondary_Rim)
+)
+ 
+Secondary_coor  coor_sys  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 2520.0 mm),
+  y_axis           : struct(x: 0.0, y: -1.0, z: 0.0),
+  base             : ref(Primary_coor)
+)
+ 
+Secondary_Surface  hyperboloid  
+(
+  vertex_distance  : 4702.053 mm,
+  foci_distance    : 4992.927 mm
+)
+ 
+Secondary_Rim  elliptical_rim  
+(
+  half_axis        : struct(x: 175.0 mm, y: 175.0 mm)
+)
+ 
+Frequencies  frequency  
+(
+  frequency_list   : sequence(230.0 GHz)
+)
+ 
+Primary_PO  po_single_face_scatterer  
+(
+  frequency        : ref(Frequencies),
+  scatterer        : ref(Primary_M1),
+  method           : po,
+  po_points        : struct(po1: 315, po2: 275),
+  spill_over       : on,
+  coor_sys         : ref(Primary_coor),
+  file_name        : main_po.cur
+)
+ 
+Secondary_PO  po_single_face_scatterer  
+(
+  frequency        : ref(Frequencies),
+  scatterer        : ref(Subreflector_M2),
+  method           : po,
+  po_points        : struct(po1: 320, po2: 800),
+  ptd_points       : sequence
+    (    struct(edge: -1, ptd: 780)
+    ),
+  spill_over       : on,
+  coor_sys         : ref(Primary_coor),
+  file_name        : sub_po.cur
+)
+ 
+VirtualFeed  gaussian_beam  
+(
+  frequency        : ref(Frequencies),
+  coor_sys         : ref(Virtual_feed_coor),
+  beam_radius      : 30.25 mm,
+  phase_front_radius : -1291.8 mm
+)
+ 
+M3_input_coor_sys  coor_sys_grasp_angles  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 4415.5 mm),
+  base             : ref(Secondary_coor)
+)
+ 
+M3_output_coor_sys  coor_sys_grasp_angles  
+(
+  theta            : 90.0,
+  psi              : 180.0,
+  base             : ref(M3_input_coor_sys)
+)
+ 
+M3_plane  plane  
+(
+  normal           : struct(x: -1.0, y: 0.0, z: 1.0)
+)
+ 
+M3_elliptical_rim  elliptical_rim  
+(
+  half_axis        : struct(x: 75.0 mm, y: 75.0 mm)
+)
+ 
+Flat_M3  reflector  
+(
+  coor_sys         : ref(M3_input_coor_sys),
+  surfaces         : sequence(ref(M3_plane)),
+  rim              : ref(M3_elliptical_rim)
+)
+ 
+Elevation_Angle_coor_sys  coor_sys_grasp_angles  
+(
+  psi              : 90.0,
+  base             : ref(M3_output_coor_sys)
+)
+ 
+M4_input_coor_sys  coor_sys_grasp_angles  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 435.1 mm),
+  base             : ref(Elevation_Angle_coor_sys)
+)
+ 
+M4_output_coor_sys  coor_sys_grasp_angles  
+(
+  theta            : 130.134,
+  base             : ref(M4_input_coor_sys)
+)
+ 
+M4_elliptical_rim  elliptical_rim  
+(
+  half_axis        : struct(x: 75.0 mm, y: 75.0 mm)
+)
+ 
+Ellipsoidal_M4  reflector  
+(
+  coor_sys         : ref(M4_input_coor_sys),
+  surfaces         : sequence(ref(M4_conical_surface)),
+  rim              : ref(M4_elliptical_rim)
+)
+ 
+M4_conical_surface  conical_surface  
+(
+  r1               : -4901.1 mm,
+  r2               : -330.69 mm,
+  theta_i          : -24.933,
+  theta_n          : -24.933
+)
+ 
+M5_input_coor_sys  coor_sys_grasp_angles  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 1295.64 mm),
+  base             : ref(M4_output_coor_sys)
+)
+ 
+M5_output_coor_sys  coor_sys_grasp_angles  
+(
+  theta            : -130.134,
+  base             : ref(M5_input_coor_sys)
+)
+ 
+M5_conical_surface  conical_surface  
+(
+  r1               : -964.95 mm,
+  r2               : -2941.0 mm,
+  theta_i          : 24.933,
+  theta_n          : 24.933
+)
+ 
+M5_elliptical_rim  elliptical_rim  
+(
+  half_axis        : struct(x: 150.0 mm, y: 150.0 mm)
+)
+ 
+Ellipsoidal_M5  reflector  
+(
+  coor_sys         : ref(M5_input_coor_sys),
+  surfaces         : sequence(ref(M5_conical_surface)),
+  rim              : ref(M5_elliptical_rim)
+)
+ 
+M6_input_coor_sys  coor_sys_grasp_angles  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 400.0 mm),
+  base             : ref(M5_output_coor_sys)
+)
+ 
+M6_output_coor_sys  coor_sys_grasp_angles  
+(
+  theta            : 90.0,
+  phi              : -90.0,
+  base             : ref(M6_input_coor_sys)
+)
+ 
+M6_plane  plane  
+(
+  normal           : struct(x: 0.0, y: 1.0, z: 1.0)
+)
+ 
+M6_elliptical_rim  elliptical_rim  
+(
+  half_axis        : struct(x: 140.0 mm, y: 140.0 mm)
+)
+ 
+Flat_M6  reflector  
+(
+  coor_sys         : ref(M6_input_coor_sys),
+  surfaces         : sequence(ref(M6_plane)),
+  rim              : ref(M6_elliptical_rim)
+)
+ 
+M3_PO  po_single_face_scatterer  
+(
+  frequency        : ref(Frequencies),
+  scatterer        : ref(Flat_M3),
+  method           : po,
+  po_points        : struct(po1: 42, po2: 85),
+  ptd_points       : sequence
+    (    struct(edge: -1, ptd: 103)
+    ),
+  spill_over       : on,
+  coor_sys         : ref(M3_output_coor_sys),
+  file_name        : M3_PO.cur
+)
+ 
+M4_PO  po_single_face_scatterer  
+(
+  frequency        : ref(Frequencies),
+  scatterer        : ref(Ellipsoidal_M4),
+  method           : po,
+  po_points        : struct(po1: 37, po2: 108),
+  spill_over       : on,
+  coor_sys         : ref(M4_output_coor_sys),
+  file_name        : M4_PO.cur
+)
+ 
+M5_PO  po_single_face_scatterer  
+(
+  frequency        : ref(Frequencies),
+  scatterer        : ref(Ellipsoidal_M5),
+  method           : po,
+  po_points        : struct(po1: 130, po2: 285),
+  spill_over       : on,
+  coor_sys         : ref(M5_output_coor_sys),
+  file_name        : M5_PO.cur
+)
+ 
+M6_PO  po_single_face_scatterer  
+(
+  frequency        : ref(Frequencies),
+  scatterer        : ref(Flat_M6),
+  method           : po,
+  po_points        : struct(po1: 160, po2: 460),
+  spill_over       : on,
+  file_name        : M6_PO.cur
+)
+ 
+Virtual_feed_coor  coor_sys_grasp_angles  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: -780.0 mm),
+  psi              : 45.0,
+  base             : ref(Receiver_coor_sys)
+)
+ 
+Output_cut  spherical_cut  
+(
+  coor_sys         : ref(Output_cut_coor_sys),
+  theta_range      : struct(start: -0.2, end: 0.2, np: 301),
+  phi_range        : struct(start: 0.0, end: 135.0, np: 4),
+  file_name        : Output.cut,
+  frequency        : ref(Frequencies)
+)
+ 
+Output_grid  spherical_grid  
+(
+  coor_sys         : ref(Primary_coor),
+  grid_type        : azimuth_over_elevation,
+  x_range          : struct(start: -0.2, end: 0.2, np: 301),
+  y_range          : struct(start: -0.2, end: 0.2, np: 301),
+  file_name        : Output.grd,
+  frequency        : ref(Frequencies)
+)
+ 
+Primary_Efield_grid  surface_grid  
+(
+  scatterer        : ref(Primary_M1),
+  x_range          : struct(start: -3.0, end: 3.0, np: 301, unit: m),
+  y_range          : struct(start: -3.0, end: 3.0, np: 301),
+  polarisation_and_phase_coor_sys : ref(Primary_coor),
+  phase_adjustment : on,
+  file_name        : Primary_Efield,
+  frequency        : ref(Frequencies)
+)
+ 
+Cal_Load_Pol_coor_sys  coor_sys_grasp_angles  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 330.69 mm),
+  psi              : 45.0,
+  base             : ref(M4_output_coor_sys)
+)
+ 
+Cal_Load_grid  planar_grid  
+(
+  coor_sys         : ref(Cal_Load_Pol_coor_sys),
+  x_range          : struct(start: -50.0, end: 50.0, np: 201, unit: mm),
+  y_range          : struct(start: -50.0, end: 50.0, np: 201),
+  file_name        : Cal_Load.grd,
+  frequency        : ref(Frequencies)
+)
+ 
+Cal_Load_coor_sys  coor_sys_grasp_angles  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 330.69 mm),
+  base             : ref(M4_output_coor_sys)
+)
+ 
+Cal_Load_plane  plane  
+(
+)
+ 
+Cal_Load_Rim  rectangular_rim  
+(
+  side_lengths     : struct(x: 60.0 mm, y: 60.0 mm)
+)
+ 
+Receiver_coor_sys  coor_sys_grasp_angles  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 1761.0 mm),
+  theta            : 180.0,
+  base             : ref(M6_output_coor_sys)
+)
+ 
+Secondary_Efield_grid  surface_grid  
+(
+  scatterer        : ref(Subreflector_M2),
+  x_range          : struct(start: -0.175, end: 0.175, np: 301, unit: m),
+  y_range          : struct(start: -0.175, end: 0.175, np: 301),
+  polarisation_and_phase_coor_sys : ref(Secondary_coor),
+  phase_adjustment : on,
+  file_name        : Secondary_Efield,
+  frequency        : ref(Frequencies)
+)
+ 
+Primary_Hfield_grid  surface_grid  
+(
+  scatterer        : ref(Primary_M1),
+  x_range          : struct(start: -3.0, end: 3.0, np: 301, unit: m),
+  y_range          : struct(start: -3.0, end: 3.0, np: 301),
+  field_type       : incident_h_field,
+  polarisation_and_phase_coor_sys : ref(Primary_coor),
+  phase_adjustment : on,
+  file_name        : Primary_Hfield,
+  frequency        : ref(Frequencies)
+)
+ 
+Secondary_Hfield_grid  surface_grid  
+(
+  scatterer        : ref(Subreflector_M2),
+  x_range          : struct(start: -0.175, end: 0.175, np: 301, unit: m),
+  y_range          : struct(start: -0.175, end: 0.175, np: 301),
+  field_type       : incident_h_field,
+  polarisation_and_phase_coor_sys : ref(Secondary_coor),
+  phase_adjustment : on,
+  file_name        : Secondary_Hfield,
+  frequency        : ref(Frequencies)
+)
+ 
+Primary_Currents_grid  surface_grid  
+(
+  scatterer        : ref(Primary_M1),
+  x_range          : struct(start: -3.0, end: 3.0, np: 301, unit: m),
+  y_range          : struct(start: -3.0, end: 3.0, np: 301),
+  field_type       : currents,
+  polarisation_and_phase_coor_sys : ref(Primary_coor),
+  phase_adjustment : on,
+  file_name        : Primary_Currents,
+  frequency        : ref(Frequencies)
+)
+ 
+Secondary_Currents_grid  surface_grid  
+(
+  scatterer        : ref(Subreflector_M2),
+  x_range          : struct(start: -0.175, end: 0.175, np: 301, unit: m),
+  y_range          : struct(start: -0.175, end: 0.175, np: 301),
+  field_type       : currents,
+  polarisation_and_phase_coor_sys : ref(Secondary_coor),
+  phase_adjustment : on,
+  file_name        : Secondary_Currents,
+  frequency        : ref(Frequencies)
+)
+ 
+M3_Efield_grid  surface_grid  
+(
+  scatterer        : ref(Flat_M3),
+  x_range          : struct(start: -75.0, end: 75.0, np: 151, unit: mm),
+  y_range          : struct(start: -75.0, end: 75.0, np: 151),
+  polarisation_and_phase_coor_sys : ref(Elevation_Angle_coor_sys),
+  phase_adjustment : on,
+  file_name        : M3_Efield.grd,
+  frequency        : ref(Frequencies)
+)
+ 
+M4_Efield_grid  surface_grid  
+(
+  scatterer        : ref(Ellipsoidal_M4),
+  x_range          : struct(start: -75.0, end: 75.0, np: 151, unit: mm),
+  y_range          : struct(start: -75.0, end: 75.0, np: 151),
+  polarisation_and_phase_coor_sys : ref(M4_input_coor_sys),
+  phase_adjustment : on,
+  file_name        : M4_Efield.grd,
+  frequency        : ref(Frequencies)
+)
+ 
+M5_Efield_grid  surface_grid  
+(
+  scatterer        : ref(Ellipsoidal_M5),
+  x_range          : struct(start: -150.0, end: 150.0, np: 301, unit: mm),
+  y_range          : struct(start: -150.0, end: 150.0, np: 301),
+  polarisation_and_phase_coor_sys : ref(M5_input_coor_sys),
+  phase_adjustment : on,
+  file_name        : M5_Efield.grd,
+  frequency        : ref(Frequencies)
+)
+ 
+M6_Efield_grid  surface_grid  
+(
+  scatterer        : ref(Flat_M6),
+  x_range          : struct(start: -150.0, end: 150.0, np: 301, unit: mm),
+  y_range          : struct(start: -150.0, end: 150.0, np: 301),
+  polarisation_and_phase_coor_sys : ref(M6_output_coor_sys),
+  phase_adjustment : on,
+  file_name        : M6_Efield.grd,
+  frequency        : ref(Frequencies)
+)
+ 
+Output_cut_coor_sys  coor_sys_grasp_angles  
+(
+  psi              : -45.0,
+  base             : ref(Primary_coor)
+)
+ 
+Output_cut_large  spherical_cut  
+(
+  coor_sys         : ref(Output_cut_coor_sys),
+  theta_range      : struct(start: -2.0, end: 2.0, np: 1001),
+  phi_range        : struct(start: 0.0, end: 135.0, np: 4),
+  file_name        : Output_large.cut,
+  frequency        : ref(Frequencies)
+)
+ 
+Output_grid_large  spherical_grid  
+(
+  coor_sys         : ref(Primary_coor),
+  grid_type        : azimuth_over_elevation,
+  x_range          : struct(start: -2.0, end: 2.0, np: 1001),
+  y_range          : struct(start: -2.0, end: 2.0, np: 1001),
+  file_name        : Output_large.grd,
+  frequency        : ref(Frequencies)
+)
+ 
+M3_Hfield_grid  surface_grid  
+(
+  scatterer        : ref(Flat_M3),
+  x_range          : struct(start: -75.0, end: 75.0, np: 151, unit: mm),
+  y_range          : struct(start: -75.0, end: 75.0, np: 151),
+  field_type       : incident_h_field,
+  polarisation_and_phase_coor_sys : ref(Elevation_Angle_coor_sys),
+  phase_adjustment : on,
+  file_name        : M3_Hfield.grd,
+  frequency        : ref(Frequencies)
+)
+ 
+M3_Current_grid  surface_grid  
+(
+  scatterer        : ref(Flat_M3),
+  x_range          : struct(start: -75.0, end: 75.0, np: 151, unit: mm),
+  y_range          : struct(start: -75.0, end: 75.0, np: 151),
+  field_type       : currents,
+  polarisation_and_phase_coor_sys : ref(Elevation_Angle_coor_sys),
+  phase_adjustment : on,
+  file_name        : M3_Current.grd,
+  frequency        : ref(Frequencies)
+)
+ 
+M4_Hfield_grid  surface_grid  
+(
+  scatterer        : ref(Ellipsoidal_M4),
+  x_range          : struct(start: -75.0, end: 75.0, np: 151, unit: mm),
+  y_range          : struct(start: -75.0, end: 75.0, np: 151),
+  field_type       : incident_h_field,
+  polarisation_and_phase_coor_sys : ref(M4_input_coor_sys),
+  phase_adjustment : on,
+  file_name        : M4_Hfield.grd,
+  frequency        : ref(Frequencies)
+)
+ 
+M4_Current_grid  surface_grid  
+(
+  scatterer        : ref(Ellipsoidal_M4),
+  x_range          : struct(start: -75.0, end: 75.0, np: 151, unit: mm),
+  y_range          : struct(start: -75.0, end: 75.0, np: 151),
+  field_type       : currents,
+  polarisation_and_phase_coor_sys : ref(M4_input_coor_sys),
+  phase_adjustment : on,
+  file_name        : M4_Current.grd,
+  frequency        : ref(Frequencies)
+)
+ 
+M5_Hfield_grid  surface_grid  
+(
+  scatterer        : ref(Ellipsoidal_M5),
+  x_range          : struct(start: -150.0, end: 150.0, np: 301, unit: mm),
+  y_range          : struct(start: -150.0, end: 150.0, np: 301),
+  field_type       : incident_h_field,
+  polarisation_and_phase_coor_sys : ref(M5_input_coor_sys),
+  phase_adjustment : on,
+  file_name        : M5_Hfield.grd,
+  frequency        : ref(Frequencies)
+)
+ 
+M5_Current_grid  surface_grid  
+(
+  scatterer        : ref(Ellipsoidal_M5),
+  x_range          : struct(start: -150.0, end: 150.0, np: 301, unit: mm),
+  y_range          : struct(start: -150.0, end: 150.0, np: 301),
+  field_type       : currents,
+  polarisation_and_phase_coor_sys : ref(M5_input_coor_sys),
+  phase_adjustment : on,
+  file_name        : M5_Currents.grd,
+  frequency        : ref(Frequencies)
+)
+ 
+M6_Hfield_grid  surface_grid  
+(
+  scatterer        : ref(Flat_M6),
+  x_range          : struct(start: -150.0, end: 150.0, np: 301, unit: mm),
+  y_range          : struct(start: -150.0, end: 150.0, np: 301),
+  field_type       : incident_h_field,
+  polarisation_and_phase_coor_sys : ref(M6_output_coor_sys),
+  phase_adjustment : on,
+  file_name        : M6_Hfield.grd,
+  frequency        : ref(Frequencies)
+)
+ 
+M6_Current_grid  surface_grid  
+(
+  scatterer        : ref(Flat_M6),
+  x_range          : struct(start: -150.0, end: 150.0, np: 301, unit: mm),
+  y_range          : struct(start: -150.0, end: 150.0, np: 301),
+  field_type       : currents,
+  polarisation_and_phase_coor_sys : ref(M6_output_coor_sys),
+  phase_adjustment : on,
+  file_name        : M6_Currents.grd,
+  frequency        : ref(Frequencies)
+)
+ 
+//DO NOT MODIFY OBJECTS BELOW THIS LINE.
+//THESE OBJECTS ARE CREATED AND MANAGED BY THE
+//GRAPHICAL USER INTERFACE AND SHOULD NOT BE
+//MODIFIED MANUALLY!
+view_1  view  
+(
+  objects          : sequence(ref(view_1_reflector_plot),ref(view_1_coor_sys_plot),ref(view_1_feed_plot),
+ref(view_1_output_points_plot),ref(gaussian_beam_tube))
+)
+ 
+view_1_reflector_plot  reflector_plot  
+(
+  x_lines          : 0,
+  y_lines          : 0
+)
+ 
+view_1_coor_sys_plot  coor_sys_plot  
+(
+  axis_length      : 0.1 m
+)
+ 
+view_1_feed_plot  feed_plot  
+(
+)
+ 
+view_1_output_points_plot  output_points_plot  
+(
+)
+ 
+gaussian_beam_tube  gaussian_beam_tube  
+(
+  objects          : sequence(ref(VirtualFeed)),
+  beam_path_range  : struct(start: 0.0 mm, end: 10.0 m, number_of_cross_sections: 32)
+)
+ 
+ //$$ Saved at 10:41:58 on 20.03.2026 by TICRA Tools 21.0 SN=008652
+  

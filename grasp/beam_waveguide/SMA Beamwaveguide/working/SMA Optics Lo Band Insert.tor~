@@ -1,0 +1,712 @@
+Primary_M1  reflector  
+(
+  coor_sys         : ref(Primary_coor),
+  surface          : ref(Primary_Surface),
+  rim              : ref(Primary_Rim),
+  centre_hole_radius : 175.0 mm
+)
+ 
+Primary_coor  coor_sys  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 0.0 mm)
+)
+ 
+Primary_Surface  paraboloid  
+(
+  focal_length     : 2520.0 mm,
+  vertex           : struct(x: 0.0 mm, y: 0.0 mm, z: 0.0 mm)
+)
+ 
+Primary_Rim  elliptical_rim  
+(
+  centre           : struct(x: 0.0 mm, y: 0.0 mm),
+  half_axis        : struct(x: 3000.0 mm, y: 3000.0 mm)
+)
+ 
+Subreflector_M2  reflector  
+(
+  coor_sys         : ref(Secondary_coor),
+  surface          : ref(Secondary_Surface),
+  rim              : ref(Secondary_Rim),
+  centre_hole_radius : 0.0 mm
+)
+ 
+Secondary_coor  coor_sys  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 2520.0 mm),
+  y_axis           : struct(x: 0.0, y: -1.0, z: 0.0),
+  base             : ref(Primary_coor)
+)
+ 
+Secondary_Surface  hyperboloid  
+(
+  vertex_distance  : 4702.053 mm,
+  foci_distance    : 4992.927 mm
+)
+ 
+Secondary_Rim  elliptical_rim  
+(
+  centre           : struct(x: 0.0 mm, y: 0.0 mm),
+  half_axis        : struct(x: 175.0 mm, y: 175.0 mm)
+)
+ 
+Cass_Focus  gaussian_beam_pattern  
+(
+  frequency        : ref(Frequencies),
+  coor_sys         : ref(Cass_feed_coor),
+  taper_angle      : 2.0,
+  taper            : -10.0
+)
+ 
+Frequencies  frequency  
+(
+  frequency_list   : sequence(230.0 GHz)
+)
+ 
+Cass_feed_coor  coor_sys  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 4992.267 mm),
+  y_axis           : struct(x: 0.0, y: -1.0, z: 0.0),
+  base             : ref(Secondary_coor)
+)
+ 
+GaussianHorn_Output_cut  spherical_cut  
+(
+  coor_sys         : ref(Output_Beam_coor),
+  theta_range      : struct(start: -1.0, end: 1.0, np: 1601),
+  phi_range        : struct(start: 0.0, end: 180.0, np: 9),
+  near_dist        : 0.0 mm,
+  file_name        : " ",
+  frequency        : ref(Frequencies)
+)
+ 
+Output_Beam_coor  coor_sys  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 0.0 mm),
+  x_axis           : struct(x: 0.7071067812, y: 0.7071067812, z: 0.0),
+  y_axis           : struct(x: -0.7071067812, y: 0.7071067812, z: 0.0),
+  base             : ref(Primary_coor)
+)
+ 
+Primary_PO  po_single_face_scatterer  
+(
+  frequency        : ref(Frequencies),
+  scatterer        : ref(Primary_M1),
+  po_points        : struct(po1: 315, po2: 275),
+  spill_over       : on,
+  coor_sys         : ref(Primary_coor),
+  file_name        : main_po.cur
+)
+ 
+Secondary_PO  po_single_face_scatterer  
+(
+  frequency        : ref(Frequencies),
+  scatterer        : ref(Subreflector_M2),
+  po_points        : struct(po1: 320, po2: 800),
+  ptd_points       : sequence
+    (    struct(edge: -1, ptd: 780)
+    ),
+  spill_over       : on,
+  coor_sys         : ref(Primary_coor),
+  file_name        : sub_po.cur
+)
+ 
+VirtualFeed  gaussian_beam  
+(
+  frequency        : ref(Frequencies),
+  coor_sys         : ref(Virtual_feed_coor),
+  beam_radius      : 30.25 mm,
+  phase_front_radius : -1291.8 mm
+)
+ 
+M3_input_coor_sys  coor_sys_grasp_angles  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 4415.5 mm),
+  theta            : 180.0,
+  base             : ref(Secondary_coor)
+)
+ 
+M3_coor_sys  coor_sys_grasp_angles  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 0.0 mm),
+  theta            : 45.0,
+  base             : ref(M3_input_coor_sys)
+)
+ 
+M3_output_coor_sys  coor_sys_grasp_angles  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 0.0 mm),
+  theta            : 45.0,
+  base             : ref(M3_coor_sys)
+)
+ 
+M3_plane  plane  
+(
+  point            : struct(x: 0.0 mm, y: 0.0 mm, z: 0.0 mm)
+)
+ 
+M3_elliptical_rim  elliptical_rim  
+(
+  centre           : struct(x: 0.0 mm, y: 0.0 mm),
+  half_axis        : struct(x: 106.0 mm, y: 75.0 mm)
+)
+ 
+Flat_M3  reflector  
+(
+  coor_sys         : ref(M3_coor_sys),
+  surface          : ref(M3_plane),
+  rim              : ref(M3_elliptical_rim),
+  centre_hole_radius : 0.0 mm
+)
+ 
+Zenith_Angle_coor_sys  coor_sys_grasp_angles  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 0.0 mm),
+  psi              : -45.0,
+  base             : ref(M3_output_coor_sys)
+)
+ 
+M4_input_coor_sys  coor_sys_grasp_angles  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 435.1 mm),
+  theta            : 180.0,
+  base             : ref(Zenith_Angle_coor_sys)
+)
+ 
+M4_coor_sys  coor_sys_grasp_angles  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 0.0 mm),
+  theta            : -24.933,
+  base             : ref(M4_input_coor_sys)
+)
+ 
+M4_output_coor_sys  coor_sys_grasp_angles  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 0.0 mm),
+  theta            : -24.933,
+  base             : ref(M4_coor_sys)
+)
+ 
+M4_elliptical_rim  elliptical_rim  
+(
+  centre           : struct(x: 0.0 mm, y: 0.0 mm),
+  half_axis        : struct(x: 80.0 mm, y: 75.0 mm)
+)
+ 
+Ellipsoidal_M4  reflector  
+(
+  coor_sys         : ref(M4_coor_sys),
+  surface          : ref(M4_conical_surface),
+  rim              : ref(M4_elliptical_rim),
+  centre_hole_radius : 0.0 mm
+)
+ 
+M4_conical_surface  conical_surface  
+(
+  r1               : 4230.0 mm,
+  r2               : 334.3 mm,
+  theta_i          : 24.933,
+  theta_n          : 0.0
+)
+ 
+M5_input_coor_sys  coor_sys_grasp_angles  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 1295.6 mm),
+  theta            : 180.0,
+  base             : ref(M4_output_coor_sys)
+)
+ 
+M5_coor_sys  coor_sys_grasp_angles  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 0.0 mm),
+  theta            : 24.933,
+  base             : ref(M5_input_coor_sys)
+)
+ 
+M5_output_coor_sys  coor_sys_grasp_angles  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 0.0 mm),
+  theta            : 24.933,
+  base             : ref(M5_coor_sys)
+)
+ 
+M5_conical_surface  conical_surface  
+(
+  r1               : 1166.9 mm,
+  r2               : 1925.4 mm,
+  theta_i          : 24.933,
+  theta_n          : 0.0
+)
+ 
+M5_elliptical_rim  elliptical_rim  
+(
+  centre           : struct(x: 0.0 mm, y: 0.0 mm),
+  half_axis        : struct(x: 170.0 mm, y: 150.0 mm)
+)
+ 
+Ellipsoidal_M5  reflector  
+(
+  coor_sys         : ref(M5_coor_sys),
+  surface          : ref(M5_conical_surface),
+  rim              : ref(M5_elliptical_rim),
+  centre_hole_radius : 0.0 mm
+)
+ 
+M6_input_coor_sys  coor_sys_grasp_angles  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 400.0 mm),
+  theta            : 180.0,
+  base             : ref(M5_output_coor_sys)
+)
+ 
+M6_coor_sys  coor_sys_grasp_angles  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 0.0 mm),
+  theta            : 45.0,
+  phi              : 90.0,
+  base             : ref(M6_input_coor_sys)
+)
+ 
+M6_output_coor_sys  coor_sys_grasp_angles  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 0.0 mm),
+  theta            : 45.0,
+  phi              : 90.0,
+  base             : ref(M6_coor_sys)
+)
+ 
+M6_plane  plane  
+(
+  point            : struct(x: 0.0 mm, y: 0.0 mm, z: 0.0 mm)
+)
+ 
+M6_elliptical_rim  elliptical_rim  
+(
+  centre           : struct(x: 0.0 mm, y: 0.0 mm),
+  half_axis        : struct(x: 175.0 mm, y: 140.0 mm)
+)
+ 
+Flat_M6  reflector  
+(
+  coor_sys         : ref(M6_coor_sys),
+  surface          : ref(M6_plane),
+  rim              : ref(M6_elliptical_rim),
+  centre_hole_radius : 0.0 mm
+)
+ 
+Receiver_coor_sys  coor_sys_grasp_angles  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 1761.0 mm),
+  theta            : 180.0,
+  base             : ref(M6_output_coor_sys)
+)
+ 
+M3_PO  po_single_face_scatterer  
+(
+  frequency        : ref(Frequencies),
+  scatterer        : ref(Flat_M3),
+  po_points        : struct(po1: 42, po2: 85),
+  ptd_points       : sequence
+    (    struct(edge: -1, ptd: 103)
+    ),
+  coor_sys         : ref(M3_coor_sys),
+  file_name        : M3_PO.cur
+)
+ 
+M4_PO  po_single_face_scatterer  
+(
+  frequency        : ref(Frequencies),
+  scatterer        : ref(Ellipsoidal_M4),
+  method           : po,
+  po_points        : struct(po1: 37, po2: 108),
+  coor_sys         : ref(M4_coor_sys),
+  file_name        : M4_PO.cur
+)
+ 
+M5_PO  po_single_face_scatterer  
+(
+  frequency        : ref(Frequencies),
+  scatterer        : ref(Ellipsoidal_M5),
+  method           : po,
+  po_points        : struct(po1: 130, po2: 285),
+  coor_sys         : ref(M5_coor_sys),
+  file_name        : M5_PO.cur
+)
+ 
+M6_PO  po_single_face_scatterer  
+(
+  frequency        : ref(Frequencies),
+  scatterer        : ref(Flat_M6),
+  method           : po,
+  po_points        : struct(po1: 160, po2: 460),
+  coor_sys         : ref(M6_coor_sys),
+  file_name        : M6_PO.cur
+)
+ 
+VirtualFeed_Reference_Output_cut  spherical_cut  
+(
+  coor_sys         : ref(Reference_Output_Beam_coor),
+  theta_range      : struct(start: -1.0, end: 1.0, np: 1601),
+  phi_range        : struct(start: 0.0, end: 180.0, np: 9),
+  near_dist        : 0.0 mm,
+  file_name        : " ",
+  frequency        : ref(Frequencies)
+)
+ 
+Reference_Output_Beam_coor  coor_sys_grasp_angles  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 0.0 mm),
+  base             : ref(Primary_coor)
+)
+ 
+Virtual_feed_coor  coor_sys_grasp_angles  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 780.0 mm),
+  theta            : 180.0,
+  psi              : 45.0,
+  base             : ref(Lens_coor_sys)
+)
+ 
+GaussianHorn_Primary_grid  surface_grid  
+(
+  scatterer        : ref(Primary_M1),
+  x_range          : struct(start: -3.0, end: 3.0, np: 601, unit: m),
+  y_range          : struct(start: -3.0, end: 3.0, np: 601),
+  field_type       : reflected_e_field,
+  polarisation_and_phase_coor_sys : ref(Output_Beam_coor),
+  file_name        : primary_grid.grd,
+  frequency        : ref(Frequencies)
+)
+ 
+LensM_coor_sys  coor_sys_grasp_angles  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 0.0 mm),
+  theta            : 180.0,
+  base             : ref(Lens_coor_sys)
+)
+ 
+LensM_conical_surface  conical_surface  
+(
+  r1               : 780.0 mm,
+  r2               : 104.0 mm,
+  theta_i          : 0.0,
+  theta_n          : 0.0
+)
+ 
+LensM_rim  elliptical_rim  
+(
+  centre           : struct(x: 0.0 mm, y: 0.0 mm),
+  half_axis        : struct(x: 40.0 mm, y: 40.0 mm)
+)
+ 
+LensM  reflector  
+(
+  coor_sys         : ref(LensM_coor_sys),
+  surface          : ref(LensM_conical_surface),
+  rim              : ref(LensM_rim),
+  centre_hole_radius : 0.0 mm
+)
+ 
+Feed_coor_sys  coor_sys  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 104.0 mm),
+  x_axis           : struct(x: -1.0, y: 0.0, z: -0.1224646799E-15),
+  base             : ref(LensM_coor_sys)
+)
+ 
+SMA240_Horn  tabulated_pattern  
+(
+  frequency        : ref(Frequencies),
+  coor_sys         : ref(Feed_coor_sys),
+  file_name        : SMA-230GHz_beam.cut,
+  power_norm       : on,
+  phase_reference  : struct(x: 0.0 mm, y: 0.0 mm, z: 0.0 mm),
+  near_dist        : 0.0 mm
+)
+ 
+SMA230_Gaussian  gaussian_beam_pattern  
+(
+  frequency        : ref(Frequencies),
+  coor_sys         : ref(Feed_coor_sys),
+  taper_angle      : 8.15,
+  taper            : -12.0
+)
+ 
+SMA230Horn_Output_grid  spherical_grid  
+(
+  coor_sys         : ref(Primary_coor),
+  x_range          : struct(start: -0.1E-02, end: 0.1E-02, np: 361),
+  y_range          : struct(start: -0.1E-02, end: 0.1E-02, np: 361),
+  polarisation_modification : struct(status: on, coor_sys: ref(Output_Beam_coor)),
+  near_dist        : 0.0 mm,
+  file_name        : " ",
+  frequency        : ref(Frequencies)
+)
+ 
+SMA230Horn_Output_cut  spherical_cut  
+(
+  coor_sys         : ref(Output_Beam_coor),
+  theta_range      : struct(start: -1.0, end: 1.0, np: 1601),
+  phi_range        : struct(start: 0.0, end: 180.0, np: 9),
+  near_dist        : 0.0 mm,
+  file_name        : " ",
+  frequency        : ref(Frequencies)
+)
+ 
+SMA230Horn_Primary_grid  surface_grid  
+(
+  scatterer        : ref(Primary_M1),
+  x_range          : struct(start: -3.0, end: 3.0, np: 601, unit: m),
+  y_range          : struct(start: -3.0, end: 3.0, np: 601),
+  field_type       : reflected_e_field,
+  polarisation_and_phase_coor_sys : ref(Output_Beam_coor),
+  file_name        : primary_grid.grd,
+  frequency        : ref(Frequencies)
+)
+ 
+VirtualFeed_Primary_grid  surface_grid  
+(
+  scatterer        : ref(Primary_M1),
+  x_range          : struct(start: -3.0, end: 3.0, np: 601, unit: m),
+  y_range          : struct(start: -3.0, end: 3.0, np: 601),
+  field_type       : reflected_e_field,
+  polarisation_and_phase_coor_sys : ref(Output_Beam_coor),
+  file_name        : primary_grid.grd,
+  frequency        : ref(Frequencies)
+)
+ 
+LensM_PO  po_single_face_scatterer  
+(
+  frequency        : ref(Frequencies),
+  scatterer        : ref(LensM),
+  method           : po,
+  po_points        : struct(po1: 12, po2: 27),
+  coor_sys         : ref(LensM_coor_sys),
+  file_name        : LensM_PO.cur
+)
+ 
+FeedHorn_cut  spherical_cut  
+(
+  coor_sys         : ref(Feed_coor_sys),
+  theta_range      : struct(start: 0.0, end: 90.0, np: 181),
+  phi_range        : struct(start: 0.0, end: 315.0, np: 8),
+  near_dist        : 0.0 mm,
+  file_name        : " ",
+  frequency        : ref(Frequencies)
+)
+ 
+GaussianHorn_Output_grid  spherical_grid  
+(
+  coor_sys         : ref(Primary_coor),
+  x_range          : struct(start: -0.1E-02, end: 0.1E-02, np: 361),
+  y_range          : struct(start: -0.1E-02, end: 0.1E-02, np: 361),
+  polarisation_modification : struct(status: on, coor_sys: ref(Output_Beam_coor)),
+  near_dist        : 0.0 mm,
+  file_name        : " ",
+  frequency        : ref(Frequencies)
+)
+ 
+VirtualFeed_Reference_Output_grid  spherical_grid  
+(
+  coor_sys         : ref(Primary_coor),
+  x_range          : struct(start: -0.1E-02, end: 0.1E-02, np: 361),
+  y_range          : struct(start: -0.1E-02, end: 0.1E-02, np: 361),
+  polarisation_modification : struct(status: on, coor_sys: ref(Output_Beam_coor)),
+  near_dist        : 0.0 mm,
+  file_name        : " ",
+  frequency        : ref(Frequencies)
+)
+ 
+Combiner_Grid_coor_sys  coor_sys  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 654.0 mm),
+  base             : ref(M6_output_coor_sys)
+)
+ 
+Combiner_Grid_Output_coor_sys  coor_sys  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 0.0 mm),
+  x_axis           : struct(x: 0.6123233996E-16, y: 0.0, z: -1.0),
+  base             : ref(Combiner_Grid_coor_sys)
+)
+ 
+TurningMirror2_coor_sys  coor_sys  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 385.0 mm),
+  base             : ref(Combiner_Grid_Output_coor_sys)
+)
+ 
+TurningMirror2_Output_coor_sys  coor_sys_grasp_angles  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 0.0 mm),
+  theta            : -90.0,
+  base             : ref(TurningMirror2_coor_sys)
+)
+ 
+TurningMirror1_coor_sys  coor_sys  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 343.0 mm),
+  base             : ref(TurningMirror2_Output_coor_sys)
+)
+ 
+TurningMirror1_Output_coor_sys  coor_sys_grasp_angles  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 0.0 mm),
+  theta            : -131.8,
+  base             : ref(TurningMirror1_coor_sys)
+)
+ 
+LOInjectionGrid_coor_sys  coor_sys  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 174.1 mm),
+  base             : ref(TurningMirror1_Output_coor_sys)
+)
+ 
+LOInjectionGrid_Output_coor_sys  coor_sys_grasp_angles  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 0.0 mm),
+  theta            : 131.8,
+  base             : ref(LOInjectionGrid_coor_sys)
+)
+ 
+CryostatWindow_coor_sys  coor_sys  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 185.9 mm),
+  base             : ref(LOInjectionGrid_Output_coor_sys)
+)
+ 
+Lens_coor_sys  coor_sys  
+(
+  origin           : struct(x: 0.0 mm, y: 0.0 mm, z: 109.0 mm),
+  base             : ref(CryostatWindow_coor_sys)
+)
+ 
+CryostatWindow_rim  elliptical_rim  
+(
+  centre           : struct(x: 0.0 mm, y: 0.0 mm),
+  half_axis        : struct(x: 100.0 mm, y: 100.0 mm)
+)
+ 
+CryostatWindow_plane  plane  
+(
+  point            : struct(x: 0.0 mm, y: 0.0 mm, z: 0.0 mm)
+)
+ 
+CryostatWindow_Aperture  reflector  
+(
+  coor_sys         : ref(CryostatWindow_coor_sys),
+  surface          : ref(CryostatWindow_plane),
+  rim              : ref(CryostatWindow_rim),
+  centre_hole_radius : 38.0 mm
+)
+ 
+LOInjectionGrid_rim  elliptical_rim  
+(
+  centre           : struct(x: 0.0 mm, y: 0.0 mm),
+  half_axis        : struct(x: 54.8 mm, y: 50.0 mm)
+)
+ 
+LOInjectionGrid_plane  plane  
+(
+  point            : struct(x: 0.0 mm, y: 0.0 mm, z: 0.0 mm),
+  normal           : struct(x: 0.44732162, y: 0.0, z: 1.0)
+)
+ 
+LOInjectionGrid  reflector  
+(
+  coor_sys         : ref(LOInjectionGrid_Output_coor_sys),
+  surface          : ref(LOInjectionGrid_plane),
+  rim              : ref(LOInjectionGrid_rim),
+  centre_hole_radius : 0.0 mm
+)
+ 
+TurningMirror1_rim  elliptical_rim  
+(
+  centre           : struct(x: 0.0 mm, y: 0.0 mm),
+  half_axis        : struct(x: 65.7 mm, y: 60.0 mm)
+)
+
+TurningMirror1_plane  plane  
+(
+  point            : struct(x: 0.0 mm, y: 0.0 mm, z: 0.0 mm),
+  normal           : struct(x: -0.44732162, y: 0.0, z: 1.0)
+)
+ 
+TurningMirror1  reflector  
+(
+  coor_sys         : ref(TurningMirror1_Output_coor_sys),
+  surface          : ref(TurningMirror1_plane),
+  rim              : ref(TurningMirror1_rim),
+  centre_hole_radius : 0.0 mm
+)
+
+TurningMirror2_rim  elliptical_rim  
+(
+  centre           : struct(x: 0.0 mm, y: 0.0 mm),
+  half_axis        : struct(x: 109.6 mm, y: 77.5 mm)
+)
+
+TurningMirror2_plane  plane  
+(
+  point            : struct(x: 0.0 mm, y: 0.0 mm, z: 0.0 mm),
+  normal           : struct(x: 1.0, y: 0.0, z: 1.0)
+)
+ 
+TurningMirror2  reflector  
+(
+  coor_sys         : ref(TurningMirror2_Output_coor_sys),
+  surface          : ref(TurningMirror2_plane),
+  rim              : ref(TurningMirror2_rim),
+  centre_hole_radius : 0.0 mm
+)
+ 
+//DO NOT MODIFY OBJECTS BELOW THIS LINE.
+//THESE OBJECTS ARE CREATED AND MANAGED BY THE
+//GRAPHICAL USER INTERFACE AND SHOULD NOT BE
+//MODIFIED MANUALLY!
+view_1  view  
+(
+  objects          : sequence(ref(view_1_reflector_plot),ref(view_1_coor_sys_plot),ref(view_1_feed_plot),
+ref(view_1_output_points_plot),ref(Cass_Focus_plot),ref(gaussian_beam_tube),ref(gaussian_beam_tube_01)),
+  show_hide        : struct(reflectors: show, coordinate_systems: show, feeds: show, output_points: show, 
+struts: show, tabulated_meshes: show, boxes: show, plates: show, wires: show, mom_meshes: hide, 
+apertures_in_screen: show, lenses: show, tabulated_planar_sources: show, plane_waves: show, dgr_intercostals: 
+show, cad_files: show, rooftop_mirrors: show, loads: show)
+)
+ 
+view_1_reflector_plot  reflector_plot  
+(
+)
+ 
+view_1_coor_sys_plot  coor_sys_plot  
+(
+)
+ 
+view_1_feed_plot  feed_plot  
+(
+)
+ 
+view_1_output_points_plot  output_points_plot  
+(
+)
+ 
+Cass_Focus_plot  feed_plot  
+(
+  objects          : sequence(ref(Cass_Focus))
+)
+ 
+gaussian_beam_tube  gaussian_beam_tube  
+(
+  objects          : sequence(ref(SMA230_Gaussian)),
+  beam_path_range  : struct(start: 0.0 mm, end: 9.0 m, number_of_cross_sections: 64),
+  power_level      : -12.0
+)
+ 
+gaussian_beam_tube_01  gaussian_beam_tube  
+(
+  objects          : sequence(ref(VirtualFeed)),
+  beam_path_range  : struct(start: 0.0 mm, end: 1.0 mm, number_of_cross_sections: 8)
+)
+ 
+ //$$ Saved at 14:51:45 on 22.04.2016 by GRASP ver. 10.0.1 SN=002815
+  

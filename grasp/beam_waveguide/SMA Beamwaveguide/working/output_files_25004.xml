@@ -1,0 +1,4 @@
+ <OutputFiles>
+  <File Path="Job_03.log" Type="log" Format="Text" Object="unknown"/>
+  <File Path="Job_03.out" Type="out" Format="Text" Object="unknown"/>
+ </OutputFiles>

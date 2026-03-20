@@ -1,0 +1,55 @@
+COMMAND OBJECT SMA240_LensM_PO get_currents ( source :  &
+sequence(ref(SMA240_Horn)), auto_convergence_of_po : on,  &
+convergence_on_scatterer : sequence(ref(SMA240_LOInjectionGrid)),  &
+field_accuracy : -100.0) cmd_15 
+COMMAND OBJECT SMA240_LOInjectionGrid_PO get_currents ( source :  &
+sequence(ref(SMA240_LensM_PO)), auto_convergence_of_po : on,  &
+convergence_on_scatterer : sequence(ref(SMA240_TurningMirror1)), field_accuracy  &
+: -100.0) dual_po_sub 
+COMMAND OBJECT SMA240_TurningMirror1_PO get_currents ( source :  &
+sequence(ref(SMA240_LOInjectionGrid_PO)), auto_convergence_of_po : on,  &
+convergence_on_scatterer : sequence(ref(SMA240_TurningMirror2)), field_accuracy  &
+: -100.0) cmd_19 
+COMMAND OBJECT SMA240_TurningMirror2_PO get_currents ( source :  &
+sequence(ref(SMA240_TurningMirror1_PO)), auto_convergence_of_po : on,  &
+convergence_on_scatterer : sequence(ref(CombinerMirror)), field_accuracy :  &
+-100.0) cmd_20 
+COMMAND OBJECT CombinerMirror_PO get_currents ( source :  &
+sequence(ref(SMA240_TurningMirror2_PO)), auto_convergence_of_po : on,  &
+convergence_on_scatterer : sequence(ref(Flat_M6)), field_accuracy : -100.0)  &
+cmd_21 
+COMMAND OBJECT M6_PO get_currents ( source : sequence(ref(CombinerMirror_PO)),  &
+auto_convergence_of_po : on, convergence_on_scatterer :  &
+sequence(ref(Ellipsoidal_M5)), field_accuracy : -100.0) cmd_22 
+COMMAND OBJECT M5_PO get_currents ( source : sequence(ref(M6_PO)),  &
+auto_convergence_of_po : on, convergence_on_scatterer :  &
+sequence(ref(Ellipsoidal_M4)), convergence_on_output_grid :  &
+sequence(ref(SMA200_Cal_Load_grid)), field_accuracy : -100.0) cmd_1 
+COMMAND OBJECT SMA240_Cal_Load_grid get_field ( source : sequence(ref(M5_PO)))  &
+cmd_24 
+COMMAND OBJECT M4_PO get_currents ( source : sequence(ref(M5_PO)),  &
+auto_convergence_of_po : on, convergence_on_scatterer : sequence(ref(Flat_M3)),  &
+field_accuracy : -100.0) cmd_2 
+COMMAND OBJECT M3_PO get_currents ( source : sequence(ref(M4_PO)),  &
+auto_convergence_of_po : on, convergence_on_scatterer :  &
+sequence(ref(Subreflector_M2)), field_accuracy : -100.0) cmd_3 
+COMMAND OBJECT Secondary_PO get_currents ( source : sequence(ref(M3_PO)),  &
+auto_convergence_of_po : on, convergence_on_scatterer :  &
+sequence(ref(Primary_M1)), convergence_on_output_grid :  &
+sequence(ref(SMA240_Horn_Output_cut), ref(SMA240_Horn_Output_grid)),  &
+field_accuracy : -100.0) cmd_4 
+COMMAND OBJECT Primary_PO get_currents ( source : sequence(ref(Secondary_PO)),  &
+auto_convergence_of_po : on, convergence_on_output_grid :  &
+sequence(ref(SMA240_Horn_Output_cut), ref(SMA240_Horn_Output_grid)),  &
+field_accuracy : -100.0) dual_po_main 
+COMMAND OBJECT SMA240_Horn_Output_cut get_field ( source :  &
+sequence(ref(Primary_PO))) dual_get_field 
+COMMAND OBJECT SMA240_Horn_Output_cut add_field ( source :  &
+sequence(ref(Secondary_PO))) dual_add_field_feed 
+COMMAND OBJECT SMA240_Horn_Output_grid get_field ( source :  &
+sequence(ref(Primary_PO))) cmd_9 
+COMMAND OBJECT SMA240_Horn_Output_grid add_field ( source :  &
+sequence(ref(Secondary_PO))) cmd_10 
+COMMAND OBJECT SMA240_Horn_Primary_grid get_field ( source :  &
+sequence(ref(Secondary_PO))) cmd_13 
+QUIT 

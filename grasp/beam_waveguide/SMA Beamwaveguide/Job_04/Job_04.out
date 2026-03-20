@@ -1,0 +1,2733 @@
+ Program started at 11:00:44 on 20 March 2026
+ 
+ 
+ 
+                                     T I C R A   T o o l s
+                                     =====================
+ 
+  Antenna design software from TICRA
+ 
+ TICRA Tools 21.0 (Windows amd64/em64t 64-bit)
+ 
+ 
+ TICRA Tools found  24 CPU threads
+ 
+ Enabled products: CHAMP 3D, GRASP
+  Reading tor-file: Job_04.tor
+ 
+ 
+  *** Object name:  Primary_M1
+  *** Class name :  reflector
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Primary_M1
+  *** Class name :  reflector
+  *** Message    :  New values in object
+ 
+  Coordinate system: Primary_coor
+  Rim: Primary_Rim
+  Surface No.    1 : Primary_Surface
+  Centre hole radius :    175.000 mm
+ 
+ 
+  *** Object name:  Primary_coor
+  *** Class name :  coor_sys
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Primary_coor
+  *** Class name :  coor_sys
+  *** Message    :  New values in object
+ 
+  Z_axis :     0.000000    0.000000    1.000000
+ 
+ 
+  *** Object name:  Primary_Surface
+  *** Class name :  paraboloid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Primary_Surface
+  *** Class name :  paraboloid
+  *** Message    :  New values in object
+ 
+ 
+  Focal length     :    2520.00 mm
+   and in SI units :    2.52000 meter
+ 
+ 
+  *** Object name:  Primary_Rim
+  *** Class name :  elliptical_rim
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Primary_Rim
+  *** Class name :  elliptical_rim
+  *** Message    :  Definition of elliptical_rim
+ 
+ 
+  The half axes of the ellipse are defined by
+    in x-direction :    3000.00 mm
+    in y-direction :    3000.00 mm
+  and in SI units
+    in x-direction :    3.00000     meter
+    in y-direction :    3.00000     meter
+ 
+  The rim limits in radii are
+    minimum :    3.00000     meter
+    maximum :    3.00000     meter
+ 
+  The rim limits in x direction are
+    minimum :   -3.00000     meter
+    maximum :    3.00000     meter
+ 
+  The rim limits in y direction are
+    minimum :   -3.00000     meter
+    maximum :    3.00000     meter
+ 
+ 
+  *** Object name:  Subreflector_M2
+  *** Class name :  reflector
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Subreflector_M2
+  *** Class name :  reflector
+  *** Message    :  New values in object
+ 
+  Coordinate system: Secondary_coor
+  Rim: Secondary_Rim
+  Surface No.    1 : Secondary_Surface
+ 
+ 
+  *** Object name:  Secondary_coor
+  *** Class name :  coor_sys
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Secondary_coor
+  *** Class name :  coor_sys
+  *** Message    :  New values in object
+ 
+  Origin :   0.000000E+00 mm    0.000000E+00 mm    0.252000E+04 mm
+  Base name : Primary_coor
+  Y_axis :     0.000000   -1.000000    0.000000
+  Z_axis :     0.000000    0.000000   -1.000000
+ 
+ 
+  *** Object name:  Secondary_Surface
+  *** Class name :  hyperboloid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Secondary_Surface
+  *** Class name :  hyperboloid
+  *** Message    :  New values in object
+ 
+ 
+  Distance between the vertices, 2a :    4702.05 mm
+   and in SI units                  :    4.70205 meter
+ 
+  Distance between the foci, 2c     :    4992.93 mm
+   and in SI units                  :    4.99293 meter
+ 
+    giving the eccentricity         :    1.06186
+ 
+ 
+  *** Object name:  Secondary_Rim
+  *** Class name :  elliptical_rim
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Secondary_Rim
+  *** Class name :  elliptical_rim
+  *** Message    :  Definition of elliptical_rim
+ 
+ 
+  The half axes of the ellipse are defined by
+    in x-direction :    175.000 mm
+    in y-direction :    175.000 mm
+  and in SI units
+    in x-direction :   0.175000     meter
+    in y-direction :   0.175000     meter
+ 
+  The rim limits in radii are
+    minimum :   0.175000     meter
+    maximum :   0.175000     meter
+ 
+  The rim limits in x direction are
+    minimum :  -0.175000     meter
+    maximum :   0.175000     meter
+ 
+  The rim limits in y direction are
+    minimum :  -0.175000     meter
+    maximum :   0.175000     meter
+ 
+ 
+  *** Object name:  Frequencies
+  *** Class name :  frequency
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Frequencies
+  *** Class name :  frequency
+  *** Message    :  New values in object
+ 
+  Frequency No.    1  :   0.230000E+03 GHz
+ 
+ 
+  *** Object name:  Primary_PO
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Primary_PO
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  New values in object
+ 
+  File name : main_po.cur
+  Method : po
+  Frequency : Frequencies
+  Scatterer : Primary_M1
+  Spill-over : on
+  Coordinate system : Primary_coor
+  PO grid limits :    PO1 =   315  PO2 =   275
+ 
+ 
+  *** Object name:  Secondary_PO
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Secondary_PO
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  New values in object
+ 
+  File name : sub_po.cur
+  Method : po
+  Frequency : Frequencies
+  Scatterer : Subreflector_M2
+  Spill-over : on
+  Coordinate system : Primary_coor
+  PO grid limits :    PO1 =   320  PO2 =   800
+  No. of PTD points for edge no.    0:    PTD points =   780
+ 
+ 
+  *** Object name:  VirtualFeed
+  *** Class name :  gaussian_beam
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  VirtualFeed
+  *** Class name :  gaussian_beam
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  VirtualFeed
+  *** Class name :  gaussian_beam
+  *** Message    :  New values in object
+ 
+  Frequency : Frequencies
+  Coor_sys : Virtual_feed_coor
+ 
+ 
+  *** Object name:  VirtualFeed
+  *** Class name :  gaussian_beam
+  *** Message    :  Definition of common feed attributes
+ 
+ 
+ 
+  *** Object name:  VirtualFeed
+  *** Class name :  gaussian_beam
+  *** Message    :  Definition of gaussian beam
+ 
+ 
+  Beam radius :   30.2500     mm
+ 
+  Phase-front radius of curvature:  -1291.80     mm
+ 
+ 
+  *** Object name:  M3_input_coor_sys
+  *** Class name :  coor_sys_grasp_angles
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  M3_input_coor_sys
+  *** Class name :  coor_sys_grasp_angles
+  *** Message    :  New values in object
+ 
+  Origin :   0.000000E+00 mm    0.000000E+00 mm    0.441550E+04 mm
+  Base name : Secondary_coor
+  Calculated axes:
+  X_axis :     1.000000    0.000000    0.000000
+  Y_axis :     0.000000    1.000000    0.000000
+  Z_axis :     0.000000    0.000000    1.000000
+ 
+ 
+  *** Object name:  M3_output_coor_sys
+  *** Class name :  coor_sys_grasp_angles
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  M3_output_coor_sys
+  *** Class name :  coor_sys_grasp_angles
+  *** Message    :  New values in object
+ 
+  Base name : M3_input_coor_sys
+  Theta  :    90.000000 deg.
+  Psi    :   180.000000 deg.
+  Calculated axes:
+  X_axis :    -0.000000    0.000000    1.000000
+  Y_axis :    -0.000000   -1.000000    0.000000
+  Z_axis :     1.000000    0.000000    0.000000
+ 
+ 
+  *** Object name:  M3_plane
+  *** Class name :  plane
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  M3_plane
+  *** Class name :  plane
+  *** Message    :  New values in object
+ 
+ 
+  The plane normal is
+    x : -1.00000
+    y : 0.00000
+    z : 1.00000
+ 
+ 
+  *** Object name:  M3_elliptical_rim
+  *** Class name :  elliptical_rim
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  M3_elliptical_rim
+  *** Class name :  elliptical_rim
+  *** Message    :  Definition of elliptical_rim
+ 
+ 
+  The half axes of the ellipse are defined by
+    in x-direction :    75.0000 mm
+    in y-direction :    75.0000 mm
+  and in SI units
+    in x-direction :   0.750000E-01 meter
+    in y-direction :   0.750000E-01 meter
+ 
+  The rim limits in radii are
+    minimum :   0.750000E-01 meter
+    maximum :   0.750000E-01 meter
+ 
+  The rim limits in x direction are
+    minimum :  -0.750000E-01 meter
+    maximum :   0.750000E-01 meter
+ 
+  The rim limits in y direction are
+    minimum :  -0.750000E-01 meter
+    maximum :   0.750000E-01 meter
+ 
+ 
+  *** Object name:  Flat_M3
+  *** Class name :  reflector
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Flat_M3
+  *** Class name :  reflector
+  *** Message    :  New values in object
+ 
+  Coordinate system: M3_input_coor_sys
+  Rim: M3_elliptical_rim
+  Surface No.    1 : M3_plane
+ 
+ 
+  *** Object name:  Elevation_Angle_coor_sys
+  *** Class name :  coor_sys_grasp_angles
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Elevation_Angle_coor_sys
+  *** Class name :  coor_sys_grasp_angles
+  *** Message    :  New values in object
+ 
+  Base name : M3_output_coor_sys
+  Psi    :    90.000000 deg.
+  Calculated axes:
+  X_axis :     0.000000    1.000000    0.000000
+  Y_axis :    -1.000000    0.000000    0.000000
+  Z_axis :     0.000000    0.000000    1.000000
+ 
+ 
+  *** Object name:  M4_input_coor_sys
+  *** Class name :  coor_sys_grasp_angles
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  M4_input_coor_sys
+  *** Class name :  coor_sys_grasp_angles
+  *** Message    :  New values in object
+ 
+  Origin :   0.000000E+00 mm    0.000000E+00 mm    0.435100E+03 mm
+  Base name : Elevation_Angle_coor_sys
+  Calculated axes:
+  X_axis :     1.000000    0.000000    0.000000
+  Y_axis :     0.000000    1.000000    0.000000
+  Z_axis :     0.000000    0.000000    1.000000
+ 
+ 
+  *** Object name:  M4_output_coor_sys
+  *** Class name :  coor_sys_grasp_angles
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  M4_output_coor_sys
+  *** Class name :  coor_sys_grasp_angles
+  *** Message    :  New values in object
+ 
+  Base name : M4_input_coor_sys
+  Theta  :   130.134000 deg.
+  Calculated axes:
+  X_axis :    -0.644577    0.000000   -0.764539
+  Y_axis :     0.000000    1.000000    0.000000
+  Z_axis :     0.764539    0.000000   -0.644577
+ 
+ 
+  *** Object name:  M4_elliptical_rim
+  *** Class name :  elliptical_rim
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  M4_elliptical_rim
+  *** Class name :  elliptical_rim
+  *** Message    :  Definition of elliptical_rim
+ 
+ 
+  The half axes of the ellipse are defined by
+    in x-direction :    75.0000 mm
+    in y-direction :    75.0000 mm
+  and in SI units
+    in x-direction :   0.750000E-01 meter
+    in y-direction :   0.750000E-01 meter
+ 
+  The rim limits in radii are
+    minimum :   0.750000E-01 meter
+    maximum :   0.750000E-01 meter
+ 
+  The rim limits in x direction are
+    minimum :  -0.750000E-01 meter
+    maximum :   0.750000E-01 meter
+ 
+  The rim limits in y direction are
+    minimum :  -0.750000E-01 meter
+    maximum :   0.750000E-01 meter
+ 
+ 
+  *** Object name:  Ellipsoidal_M4
+  *** Class name :  reflector
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Ellipsoidal_M4
+  *** Class name :  reflector
+  *** Message    :  New values in object
+ 
+  Coordinate system: M4_input_coor_sys
+  Rim: M4_elliptical_rim
+  Surface No.    1 : M4_conical_surface
+ 
+ 
+  *** Object name:  M4_conical_surface
+  *** Class name :  conical_surface
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  M4_conical_surface
+  *** Class name :  conical_surface
+  *** Message    :  New values in object
+ 
+ 
+  r1 of conical surface :   -4901.10 mm
+   and in SI units      :   -4.90110 meter
+ 
+  r2 of conical surface :   -330.690 mm
+   and in SI units      :  -0.330690 meter
+ 
+  theta_n           :   -24.9330     degrees
+ 
+  theta_i           :   -24.9330     degrees
+ 
+  The generated surface is a ellipsoid with
+ 
+    half vertex distance, a  :    2.61590 m
+    half foci distance, c    :    2.34738 m
+    eccentricity, e          :   0.897352
+    effective focal length, f:  -0.309788
+    conic constant, K        :  -0.805241
+    Radius of curvature, R   :  -0.509470 m
+ 
+ 
+  *** Object name:  M5_input_coor_sys
+  *** Class name :  coor_sys_grasp_angles
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  M5_input_coor_sys
+  *** Class name :  coor_sys_grasp_angles
+  *** Message    :  New values in object
+ 
+  Origin :   0.000000E+00 mm    0.000000E+00 mm    0.129564E+04 mm
+  Base name : M4_output_coor_sys
+  Calculated axes:
+  X_axis :     1.000000    0.000000    0.000000
+  Y_axis :     0.000000    1.000000    0.000000
+  Z_axis :     0.000000    0.000000    1.000000
+ 
+ 
+  *** Object name:  M5_output_coor_sys
+  *** Class name :  coor_sys_grasp_angles
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  M5_output_coor_sys
+  *** Class name :  coor_sys_grasp_angles
+  *** Message    :  New values in object
+ 
+  Base name : M5_input_coor_sys
+  Theta  :  -130.134000 deg.
+  Calculated axes:
+  X_axis :    -0.644577    0.000000    0.764539
+  Y_axis :     0.000000    1.000000    0.000000
+  Z_axis :    -0.764539    0.000000   -0.644577
+ 
+ 
+  *** Object name:  M5_conical_surface
+  *** Class name :  conical_surface
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  M5_conical_surface
+  *** Class name :  conical_surface
+  *** Message    :  New values in object
+ 
+ 
+  r1 of conical surface :   -964.950 mm
+   and in SI units      :  -0.964950 meter
+ 
+  r2 of conical surface :   -2941.00 mm
+   and in SI units      :   -2.94100 meter
+ 
+  theta_n           :    24.9330     degrees
+ 
+  theta_i           :    24.9330     degrees
+ 
+  The generated surface is a ellipsoid with
+ 
+    half vertex distance, a  :    1.95298 m
+    half foci distance, c    :    1.21677 m
+    eccentricity, e          :   0.623033
+    effective focal length, f:  -0.726563
+    conic constant, K        :  -0.388170
+    Radius of curvature, R   :   -1.19489 m
+ 
+ 
+  *** Object name:  M5_elliptical_rim
+  *** Class name :  elliptical_rim
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  M5_elliptical_rim
+  *** Class name :  elliptical_rim
+  *** Message    :  Definition of elliptical_rim
+ 
+ 
+  The half axes of the ellipse are defined by
+    in x-direction :    150.000 mm
+    in y-direction :    150.000 mm
+  and in SI units
+    in x-direction :   0.150000     meter
+    in y-direction :   0.150000     meter
+ 
+  The rim limits in radii are
+    minimum :   0.150000     meter
+    maximum :   0.150000     meter
+ 
+  The rim limits in x direction are
+    minimum :  -0.150000     meter
+    maximum :   0.150000     meter
+ 
+  The rim limits in y direction are
+    minimum :  -0.150000     meter
+    maximum :   0.150000     meter
+ 
+ 
+  *** Object name:  Ellipsoidal_M5
+  *** Class name :  reflector
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Ellipsoidal_M5
+  *** Class name :  reflector
+  *** Message    :  New values in object
+ 
+  Coordinate system: M5_input_coor_sys
+  Rim: M5_elliptical_rim
+  Surface No.    1 : M5_conical_surface
+ 
+ 
+  *** Object name:  M6_input_coor_sys
+  *** Class name :  coor_sys_grasp_angles
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  M6_input_coor_sys
+  *** Class name :  coor_sys_grasp_angles
+  *** Message    :  New values in object
+ 
+  Origin :   0.000000E+00 mm    0.000000E+00 mm    0.400000E+03 mm
+  Base name : M5_output_coor_sys
+  Calculated axes:
+  X_axis :     1.000000    0.000000    0.000000
+  Y_axis :     0.000000    1.000000    0.000000
+  Z_axis :     0.000000    0.000000    1.000000
+ 
+ 
+  *** Object name:  M6_output_coor_sys
+  *** Class name :  coor_sys_grasp_angles
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  M6_output_coor_sys
+  *** Class name :  coor_sys_grasp_angles
+  *** Message    :  New values in object
+ 
+  Base name : M6_input_coor_sys
+  Theta  :    90.000000 deg.
+  Phi    :   -90.000000 deg.
+  Calculated axes:
+  X_axis :     1.000000    0.000000   -0.000000
+  Y_axis :     0.000000    0.000000    1.000000
+  Z_axis :     0.000000   -1.000000    0.000000
+ 
+ 
+  *** Object name:  M6_plane
+  *** Class name :  plane
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  M6_plane
+  *** Class name :  plane
+  *** Message    :  New values in object
+ 
+ 
+  The plane normal is
+    x : 0.00000
+    y : 1.00000
+    z : 1.00000
+ 
+ 
+  *** Object name:  M6_elliptical_rim
+  *** Class name :  elliptical_rim
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  M6_elliptical_rim
+  *** Class name :  elliptical_rim
+  *** Message    :  Definition of elliptical_rim
+ 
+ 
+  The half axes of the ellipse are defined by
+    in x-direction :    140.000 mm
+    in y-direction :    140.000 mm
+  and in SI units
+    in x-direction :   0.140000     meter
+    in y-direction :   0.140000     meter
+ 
+  The rim limits in radii are
+    minimum :   0.140000     meter
+    maximum :   0.140000     meter
+ 
+  The rim limits in x direction are
+    minimum :  -0.140000     meter
+    maximum :   0.140000     meter
+ 
+  The rim limits in y direction are
+    minimum :  -0.140000     meter
+    maximum :   0.140000     meter
+ 
+ 
+  *** Object name:  Flat_M6
+  *** Class name :  reflector
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Flat_M6
+  *** Class name :  reflector
+  *** Message    :  New values in object
+ 
+  Coordinate system: M6_input_coor_sys
+  Rim: M6_elliptical_rim
+  Surface No.    1 : M6_plane
+ 
+ 
+  *** Object name:  M3_PO
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  M3_PO
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  New values in object
+ 
+  File name : M3_PO.cur
+  Method : po
+  Frequency : Frequencies
+  Scatterer : Flat_M3
+  Spill-over : on
+  Coordinate system : M3_output_coor_sys
+  PO grid limits :    PO1 =    42  PO2 =    85
+  No. of PTD points for edge no.    0:    PTD points =   103
+ 
+ 
+  *** Object name:  M4_PO
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  M4_PO
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  New values in object
+ 
+  File name : M4_PO.cur
+  Method : po
+  Frequency : Frequencies
+  Scatterer : Ellipsoidal_M4
+  Spill-over : on
+  Coordinate system : M4_output_coor_sys
+  PO grid limits :    PO1 =    37  PO2 =   108
+ 
+ 
+  *** Object name:  M5_PO
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  M5_PO
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  New values in object
+ 
+  File name : M5_PO.cur
+  Method : po
+  Frequency : Frequencies
+  Scatterer : Ellipsoidal_M5
+  Spill-over : on
+  Coordinate system : M5_output_coor_sys
+  PO grid limits :    PO1 =   130  PO2 =   285
+ 
+ 
+  *** Object name:  M6_PO
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  M6_PO
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  New values in object
+ 
+  File name : M6_PO.cur
+  Method : po
+  Frequency : Frequencies
+  Scatterer : Flat_M6
+  Spill-over : on
+  PO grid limits :    PO1 =   160  PO2 =   460
+ 
+ 
+  *** Object name:  Virtual_feed_coor
+  *** Class name :  coor_sys_grasp_angles
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Virtual_feed_coor
+  *** Class name :  coor_sys_grasp_angles
+  *** Message    :  New values in object
+ 
+  Origin :   0.000000E+00 mm    0.000000E+00 mm   -0.780000E+03 mm
+  Base name : Receiver_coor_sys
+  Psi    :    45.000000 deg.
+  Calculated axes:
+  X_axis :     0.707107    0.707107    0.000000
+  Y_axis :    -0.707107    0.707107    0.000000
+  Z_axis :     0.000000    0.000000    1.000000
+ 
+ 
+  *** Object name:  Output_cut
+  *** Class name :  spherical_cut
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Output_cut
+  *** Class name :  spherical_cut
+  *** Message    :  New values in object
+ 
+  Frequency : Frequencies
+  File name : Output.cut
+  Coor_sys : Output_cut_coor_sys
+  Theta range : start  -0.20000    end   0.20000    points   301
+  Phi range : start   0.00000    end 135.00000    points     4
+ 
+ 
+  *** Object name:  Output_grid
+  *** Class name :  spherical_grid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Output_grid
+  *** Class name :  spherical_grid
+  *** Message    :  New values in object
+ 
+  Frequency : Frequencies
+  File name : Output.grd
+  Coor_sys : Primary_coor
+  X range : start  -0.20000    end   0.20000    points   301
+  Y range : start  -0.20000    end   0.20000    points   301
+  Grid type : azimuth_over_elevation
+ 
+ 
+  *** Object name:  Primary_Efield_grid
+  *** Class name :  surface_grid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Primary_Efield_grid
+  *** Class name :  surface_grid
+  *** Message    :  New values in object
+ 
+  Frequency : Frequencies
+  File name : Primary_Efield
+  Scatterer : Primary_M1
+  polarisation_and_phase_coor_sys : Primary_coor
+  Phase_adjustment : on
+  X_range : start -0.300000E+01    end  0.300000E+01    points   301
+  Unit of grid limits : m
+  Y_range : start -0.300000E+01    end  0.300000E+01    points   301
+ 
+ 
+  *** Object name:  Cal_Load_Pol_coor_sys
+  *** Class name :  coor_sys_grasp_angles
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Cal_Load_Pol_coor_sys
+  *** Class name :  coor_sys_grasp_angles
+  *** Message    :  New values in object
+ 
+  Origin :   0.000000E+00 mm    0.000000E+00 mm    0.330690E+03 mm
+  Base name : M4_output_coor_sys
+  Psi    :    45.000000 deg.
+  Calculated axes:
+  X_axis :     0.707107    0.707107    0.000000
+  Y_axis :    -0.707107    0.707107    0.000000
+  Z_axis :     0.000000    0.000000    1.000000
+ 
+ 
+  *** Object name:  Cal_Load_grid
+  *** Class name :  planar_grid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Cal_Load_grid
+  *** Class name :  planar_grid
+  *** Message    :  New values in object
+ 
+  Frequency : Frequencies
+  File name : Cal_Load.grd
+  Coor_sys : Cal_Load_Pol_coor_sys
+  X range : start -0.500000E+02    end  0.500000E+02    points   201
+  Unit of grid limits : mm
+  Y range : start -0.500000E+02    end  0.500000E+02    points   201
+ 
+ 
+  *** Object name:  Cal_Load_coor_sys
+  *** Class name :  coor_sys_grasp_angles
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Cal_Load_coor_sys
+  *** Class name :  coor_sys_grasp_angles
+  *** Message    :  New values in object
+ 
+  Origin :   0.000000E+00 mm    0.000000E+00 mm    0.330690E+03 mm
+  Base name : M4_output_coor_sys
+  Calculated axes:
+  X_axis :     1.000000    0.000000    0.000000
+  Y_axis :     0.000000    1.000000    0.000000
+  Z_axis :     0.000000    0.000000    1.000000
+ 
+ 
+  *** Object name:  Cal_Load_plane
+  *** Class name :  plane
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Cal_Load_plane
+  *** Class name :  plane
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  Cal_Load_Rim
+  *** Class name :  rectangular_rim
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Cal_Load_Rim
+  *** Class name :  rectangular_rim
+  *** Message    :  Definition of rectangular_rim
+ 
+ 
+  The side lengths of the rectangle are defined by
+    in x-direction :    60.0000 mm
+    in y-direction :    60.0000 mm
+  and in SI units
+    in x-direction :   0.600000E-01 meter
+    in y-direction :   0.600000E-01 meter
+ 
+  The rim limits in radii are
+    minimum :   0.300000E-01 meter
+    maximum :   0.424264E-01 meter
+ 
+  The rim limits in x direction are
+    minimum :  -0.300000E-01 meter
+    maximum :   0.300000E-01 meter
+ 
+  The rim limits in y direction are
+    minimum :  -0.300000E-01 meter
+    maximum :   0.300000E-01 meter
+ 
+ 
+  *** Object name:  Receiver_coor_sys
+  *** Class name :  coor_sys_grasp_angles
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Receiver_coor_sys
+  *** Class name :  coor_sys_grasp_angles
+  *** Message    :  New values in object
+ 
+  Origin :   0.000000E+00 mm    0.000000E+00 mm    0.176100E+04 mm
+  Base name : M6_output_coor_sys
+  Theta  :   180.000000 deg.
+  Calculated axes:
+  X_axis :    -1.000000    0.000000   -0.000000
+  Y_axis :     0.000000    1.000000    0.000000
+  Z_axis :     0.000000    0.000000   -1.000000
+ 
+ 
+  *** Object name:  Secondary_Efield_grid
+  *** Class name :  surface_grid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Secondary_Efield_grid
+  *** Class name :  surface_grid
+  *** Message    :  New values in object
+ 
+  Frequency : Frequencies
+  File name : Secondary_Efield
+  Scatterer : Subreflector_M2
+  polarisation_and_phase_coor_sys : Secondary_coor
+  Phase_adjustment : on
+  X_range : start -0.175000E+00    end  0.175000E+00    points   301
+  Unit of grid limits : m
+  Y_range : start -0.175000E+00    end  0.175000E+00    points   301
+ 
+ 
+  *** Object name:  Primary_Hfield_grid
+  *** Class name :  surface_grid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Primary_Hfield_grid
+  *** Class name :  surface_grid
+  *** Message    :  New values in object
+ 
+  Frequency : Frequencies
+  File name : Primary_Hfield
+  Scatterer : Primary_M1
+  polarisation_and_phase_coor_sys : Primary_coor
+  Field_type : incident_h_field
+  Phase_adjustment : on
+  X_range : start -0.300000E+01    end  0.300000E+01    points   301
+  Unit of grid limits : m
+  Y_range : start -0.300000E+01    end  0.300000E+01    points   301
+ 
+ 
+  *** Object name:  Secondary_Hfield_grid
+  *** Class name :  surface_grid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Secondary_Hfield_grid
+  *** Class name :  surface_grid
+  *** Message    :  New values in object
+ 
+  Frequency : Frequencies
+  File name : Secondary_Hfield
+  Scatterer : Subreflector_M2
+  polarisation_and_phase_coor_sys : Secondary_coor
+  Field_type : incident_h_field
+  Phase_adjustment : on
+  X_range : start -0.175000E+00    end  0.175000E+00    points   301
+  Unit of grid limits : m
+  Y_range : start -0.175000E+00    end  0.175000E+00    points   301
+ 
+ 
+  *** Object name:  Primary_Currents_grid
+  *** Class name :  surface_grid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Primary_Currents_grid
+  *** Class name :  surface_grid
+  *** Message    :  New values in object
+ 
+  Frequency : Frequencies
+  File name : Primary_Currents
+  Scatterer : Primary_M1
+  polarisation_and_phase_coor_sys : Primary_coor
+  Field_type : currents
+  Phase_adjustment : on
+  X_range : start -0.300000E+01    end  0.300000E+01    points   301
+  Unit of grid limits : m
+  Y_range : start -0.300000E+01    end  0.300000E+01    points   301
+ 
+ 
+  *** Object name:  Secondary_Currents_grid
+  *** Class name :  surface_grid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Secondary_Currents_grid
+  *** Class name :  surface_grid
+  *** Message    :  New values in object
+ 
+  Frequency : Frequencies
+  File name : Secondary_Currents
+  Scatterer : Subreflector_M2
+  polarisation_and_phase_coor_sys : Secondary_coor
+  Field_type : currents
+  Phase_adjustment : on
+  X_range : start -0.175000E+00    end  0.175000E+00    points   301
+  Unit of grid limits : m
+  Y_range : start -0.175000E+00    end  0.175000E+00    points   301
+ 
+ 
+  *** Object name:  M3_Efield_grid
+  *** Class name :  surface_grid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  M3_Efield_grid
+  *** Class name :  surface_grid
+  *** Message    :  New values in object
+ 
+  Frequency : Frequencies
+  File name : M3_Efield.grd
+  Scatterer : Flat_M3
+  polarisation_and_phase_coor_sys : Elevation_Angle_coor_sys
+  Phase_adjustment : on
+  X_range : start -0.750000E+02    end  0.750000E+02    points   151
+  Unit of grid limits : mm
+  Y_range : start -0.750000E+02    end  0.750000E+02    points   151
+ 
+ 
+  *** Object name:  M4_Efield_grid
+  *** Class name :  surface_grid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  M4_Efield_grid
+  *** Class name :  surface_grid
+  *** Message    :  New values in object
+ 
+  Frequency : Frequencies
+  File name : M4_Efield.grd
+  Scatterer : Ellipsoidal_M4
+  polarisation_and_phase_coor_sys : M4_input_coor_sys
+  Phase_adjustment : on
+  X_range : start -0.750000E+02    end  0.750000E+02    points   151
+  Unit of grid limits : mm
+  Y_range : start -0.750000E+02    end  0.750000E+02    points   151
+ 
+ 
+  *** Object name:  M5_Efield_grid
+  *** Class name :  surface_grid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  M5_Efield_grid
+  *** Class name :  surface_grid
+  *** Message    :  New values in object
+ 
+  Frequency : Frequencies
+  File name : M5_Efield.grd
+  Scatterer : Ellipsoidal_M5
+  polarisation_and_phase_coor_sys : M5_input_coor_sys
+  Phase_adjustment : on
+  X_range : start -0.150000E+03    end  0.150000E+03    points   301
+  Unit of grid limits : mm
+  Y_range : start -0.150000E+03    end  0.150000E+03    points   301
+ 
+ 
+  *** Object name:  M6_Efield_grid
+  *** Class name :  surface_grid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  M6_Efield_grid
+  *** Class name :  surface_grid
+  *** Message    :  New values in object
+ 
+  Frequency : Frequencies
+  File name : M6_Efield.grd
+  Scatterer : Flat_M6
+  polarisation_and_phase_coor_sys : M6_output_coor_sys
+  Phase_adjustment : on
+  X_range : start -0.150000E+03    end  0.150000E+03    points   301
+  Unit of grid limits : mm
+  Y_range : start -0.150000E+03    end  0.150000E+03    points   301
+ 
+ 
+  *** Object name:  Output_cut_coor_sys
+  *** Class name :  coor_sys_grasp_angles
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Output_cut_coor_sys
+  *** Class name :  coor_sys_grasp_angles
+  *** Message    :  New values in object
+ 
+  Base name : Primary_coor
+  Psi    :   -45.000000 deg.
+  Calculated axes:
+  X_axis :     0.707107   -0.707107    0.000000
+  Y_axis :     0.707107    0.707107    0.000000
+  Z_axis :     0.000000    0.000000    1.000000
+ 
+ 
+  *** Object name:  Output_cut_large
+  *** Class name :  spherical_cut
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Output_cut_large
+  *** Class name :  spherical_cut
+  *** Message    :  New values in object
+ 
+  Frequency : Frequencies
+  File name : Output_large.cut
+  Coor_sys : Output_cut_coor_sys
+  Theta range : start  -2.00000    end   2.00000    points  1001
+  Phi range : start   0.00000    end 135.00000    points     4
+ 
+ 
+  *** Object name:  Output_grid_large
+  *** Class name :  spherical_grid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Output_grid_large
+  *** Class name :  spherical_grid
+  *** Message    :  New values in object
+ 
+  Frequency : Frequencies
+  File name : Output_large.grd
+  Coor_sys : Primary_coor
+  X range : start  -2.00000    end   2.00000    points  1001
+  Y range : start  -2.00000    end   2.00000    points  1001
+  Grid type : azimuth_over_elevation
+ 
+ 
+  *** Object name:  M3_Hfield_grid
+  *** Class name :  surface_grid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  M3_Hfield_grid
+  *** Class name :  surface_grid
+  *** Message    :  New values in object
+ 
+  Frequency : Frequencies
+  File name : M3_Hfield.grd
+  Scatterer : Flat_M3
+  polarisation_and_phase_coor_sys : Elevation_Angle_coor_sys
+  Field_type : incident_h_field
+  Phase_adjustment : on
+  X_range : start -0.750000E+02    end  0.750000E+02    points   151
+  Unit of grid limits : mm
+  Y_range : start -0.750000E+02    end  0.750000E+02    points   151
+ 
+ 
+  *** Object name:  M3_Current_grid
+  *** Class name :  surface_grid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  M3_Current_grid
+  *** Class name :  surface_grid
+  *** Message    :  New values in object
+ 
+  Frequency : Frequencies
+  File name : M3_Current.grd
+  Scatterer : Flat_M3
+  polarisation_and_phase_coor_sys : Elevation_Angle_coor_sys
+  Field_type : currents
+  Phase_adjustment : on
+  X_range : start -0.750000E+02    end  0.750000E+02    points   151
+  Unit of grid limits : mm
+  Y_range : start -0.750000E+02    end  0.750000E+02    points   151
+ 
+ 
+  *** Object name:  M4_Hfield_grid
+  *** Class name :  surface_grid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  M4_Hfield_grid
+  *** Class name :  surface_grid
+  *** Message    :  New values in object
+ 
+  Frequency : Frequencies
+  File name : M4_Hfield.grd
+  Scatterer : Ellipsoidal_M4
+  polarisation_and_phase_coor_sys : M4_input_coor_sys
+  Field_type : incident_h_field
+  Phase_adjustment : on
+  X_range : start -0.750000E+02    end  0.750000E+02    points   151
+  Unit of grid limits : mm
+  Y_range : start -0.750000E+02    end  0.750000E+02    points   151
+ 
+ 
+  *** Object name:  M4_Current_grid
+  *** Class name :  surface_grid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  M4_Current_grid
+  *** Class name :  surface_grid
+  *** Message    :  New values in object
+ 
+  Frequency : Frequencies
+  File name : M4_Current.grd
+  Scatterer : Ellipsoidal_M4
+  polarisation_and_phase_coor_sys : M4_input_coor_sys
+  Field_type : currents
+  Phase_adjustment : on
+  X_range : start -0.750000E+02    end  0.750000E+02    points   151
+  Unit of grid limits : mm
+  Y_range : start -0.750000E+02    end  0.750000E+02    points   151
+ 
+ 
+  *** Object name:  M5_Hfield_grid
+  *** Class name :  surface_grid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  M5_Hfield_grid
+  *** Class name :  surface_grid
+  *** Message    :  New values in object
+ 
+  Frequency : Frequencies
+  File name : M5_Hfield.grd
+  Scatterer : Ellipsoidal_M5
+  polarisation_and_phase_coor_sys : M5_input_coor_sys
+  Field_type : incident_h_field
+  Phase_adjustment : on
+  X_range : start -0.150000E+03    end  0.150000E+03    points   301
+  Unit of grid limits : mm
+  Y_range : start -0.150000E+03    end  0.150000E+03    points   301
+ 
+ 
+  *** Object name:  M5_Current_grid
+  *** Class name :  surface_grid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  M5_Current_grid
+  *** Class name :  surface_grid
+  *** Message    :  New values in object
+ 
+  Frequency : Frequencies
+  File name : M5_Currents.grd
+  Scatterer : Ellipsoidal_M5
+  polarisation_and_phase_coor_sys : M5_input_coor_sys
+  Field_type : currents
+  Phase_adjustment : on
+  X_range : start -0.150000E+03    end  0.150000E+03    points   301
+  Unit of grid limits : mm
+  Y_range : start -0.150000E+03    end  0.150000E+03    points   301
+ 
+ 
+  *** Object name:  M6_Hfield_grid
+  *** Class name :  surface_grid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  M6_Hfield_grid
+  *** Class name :  surface_grid
+  *** Message    :  New values in object
+ 
+  Frequency : Frequencies
+  File name : M6_Hfield.grd
+  Scatterer : Flat_M6
+  polarisation_and_phase_coor_sys : M6_output_coor_sys
+  Field_type : incident_h_field
+  Phase_adjustment : on
+  X_range : start -0.150000E+03    end  0.150000E+03    points   301
+  Unit of grid limits : mm
+  Y_range : start -0.150000E+03    end  0.150000E+03    points   301
+ 
+ 
+  *** Object name:  M6_Current_grid
+  *** Class name :  surface_grid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  M6_Current_grid
+  *** Class name :  surface_grid
+  *** Message    :  New values in object
+ 
+  Frequency : Frequencies
+  File name : M6_Currents.grd
+  Scatterer : Flat_M6
+  polarisation_and_phase_coor_sys : M6_output_coor_sys
+  Field_type : currents
+  Phase_adjustment : on
+  X_range : start -0.150000E+03    end  0.150000E+03    points   301
+  Unit of grid limits : mm
+  Y_range : start -0.150000E+03    end  0.150000E+03    points   301
+ 
+ 
+  *** Object name:  view_1
+  *** Class name :  view
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  view_1
+  *** Class name :  view
+  *** Message    :  New values in object
+ 
+ 
+  Number of objects :      5
+ 
+  Definition of objects   :
+   No.  Name
+     1  view_1_reflector_plot
+     2  view_1_coor_sys_plot
+     3  view_1_feed_plot
+     4  view_1_output_points_plot
+     5  gaussian_beam_tube
+ 
+ 
+ 
+  *** Object name:  view_1_reflector_plot
+  *** Class name :  reflector_plot
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  view_1_reflector_plot
+  *** Class name :  reflector_plot
+  *** Message    :  Definition of reflector_plot
+ 
+ 
+  Lines along x-axis :   0
+ 
+  Lines along y-axis :   0
+ 
+ 
+  *** Object name:  view_1_coor_sys_plot
+  *** Class name :  coor_sys_plot
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  view_1_coor_sys_plot
+  *** Class name :  coor_sys_plot
+  *** Message    :  Definition of coor_sys_plot
+ 
+ 
+  Length of coordinate system axis :   0.100000 m
+   and in SI units                 :   0.100000 meter
+ 
+ 
+  *** Object name:  view_1_feed_plot
+  *** Class name :  feed_plot
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  view_1_feed_plot
+  *** Class name :  feed_plot
+  *** Message    :  Definition of feed_plot
+ 
+ 
+ 
+  *** Object name:  view_1_output_points_plot
+  *** Class name :  output_points_plot
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  view_1_output_points_plot
+  *** Class name :  output_points_plot
+  *** Message    :  Definition of output_points_plot
+ 
+ 
+ 
+  *** Object name:  gaussian_beam_tube
+  *** Class name :  gaussian_beam_tube
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  gaussian_beam_tube
+  *** Class name :  gaussian_beam_tube
+  *** Message    :  Definition of ray_plot
+ 
+ 
+  Beam path range :
+  Start: 0.000000000000000E+000 mm
+  End  : 10.0000000000000 m
+   and in SI units
+  Start: 0.000000000000000E+000 meter
+  End  : 10.0000000000000 meter
+  Number of cross sections: 32
+ 
+  number of objects: 1
+ 
+    No.  Plot objects
+     1   VirtualFeed
+ 
+ ----- TASK No. 1 -----     Started at 11:00:44 on March 20, 2026
+ M6_PO get_currents ( source : sequence(ref(VirtualFeed)),
+ auto_convergence_of_po : on, convergence_on_scatterer :
+ sequence(ref(Ellipsoidal_M5)))
+ 
+ 
+  *** Object name:  M6_PO
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Get_currents message received
+ 
+  Source : VirtualFeed
+  PO-auto-convergence selection : on
+  Convergence test on scatterer object : Ellipsoidal_M5
+ 
+ 
+  *** Object name:  M6_PO
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Initialization
+ 
+ 
+  Auto-convergence with desired accuracy of -80.00 dB.
+ 
+  Face 1:
+  Max. values: po1/po2 = 7150/17180
+ 
+ PO convergence
+  Test-grid  Ref-grid       P_max   P_level  Accuracy
+    po1/po2   po1/po2       [dBi]     [dBi]      [dB]
+      20/10     10/10      -25.25    -25.25      5.56
+      40/10     20/10      -24.53    -24.53     -0.30
+      80/10     40/10      -30.05    -30.05     -1.39
+     160/10     80/10      -34.09    -34.09     -6.99
+     320/10    160/10      -34.37    -34.37    -86.84  *
+     120/10    320/10      -34.37    -34.37    -11.39
+     140/10    320/10      -34.37    -34.37    -21.92
+     150/10    320/10      -34.37    -34.37    -37.34
+     155/10    320/10      -34.37    -34.37    -59.00
+     158/10    320/10      -34.37    -34.37    -75.04
+ 
+ PO convergence
+  Test-grid  Ref-grid       P_max   P_level  Accuracy
+    po1/po2   po1/po2       [dBi]     [dBi]      [dB]
+      10/20     10/10      -25.25    -25.25      2.62
+      10/40     10/20      -25.49    -25.49      0.67
+      10/80     10/40      -25.49    -25.49     -4.51
+     10/160     10/80      -25.49    -25.49     -6.48
+     10/320    10/160      -25.49    -25.49    -16.33
+     10/640    10/320      -25.49    -25.49    -47.44
+    10/1280    10/640      -25.49    -25.49   -250.49  *
+     10/480   10/1280      -25.49    -25.49   -238.38  *
+     10/400   10/1280      -25.49    -25.49    -82.20  *
+     10/360   10/1280      -25.49    -25.49    -58.75
+     10/380   10/1280      -25.49    -25.49    -69.04
+     10/390   10/1280      -25.49    -25.49    -70.41
+  PO1 =       160 PO2 =       400 Face =     1,    Final PO-values from auto-convergence
+ 
+  Relative power hitting scatterer:    1.00000
+  Spill-over:     0.0000 dB
+ 
+ ----- TASK No. 2 -----     Started at 11:00:44 on March 20, 2026
+ M6_Efield_grid get_field ( source : sequence(ref(VirtualFeed)))
+ 
+ 
+  *** Object name:  M6_Efield_grid
+  *** Class name :  surface_grid
+  *** Message    :  Get_field message received
+ 
+  Source : VirtualFeed
+ 
+ ----- TASK No. 3 -----     Started at 11:00:44 on March 20, 2026
+ M6_Hfield_grid get_field ( source : sequence(ref(VirtualFeed)))
+ 
+ 
+  *** Object name:  M6_Hfield_grid
+  *** Class name :  surface_grid
+  *** Message    :  Get_field message received
+ 
+  Source : VirtualFeed
+ 
+ ----- TASK No. 4 -----     Started at 11:00:44 on March 20, 2026
+ M6_Current_grid get_field ( source : sequence(ref(VirtualFeed)))
+ 
+ 
+  *** Object name:  M6_Current_grid
+  *** Class name :  surface_grid
+  *** Message    :  Get_field message received
+ 
+  Source : VirtualFeed
+ 
+ ----- TASK No. 5 -----     Started at 11:00:45 on March 20, 2026
+ M5_PO get_currents ( source : sequence(ref(M6_PO)), auto_convergence_of_po :
+ on, convergence_on_scatterer : sequence(ref(Ellipsoidal_M4)),
+ convergence_on_output_grid : sequence(ref(Cal_Load_grid)))
+ 
+ 
+  *** Object name:  M5_PO
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Get_currents message received
+ 
+  Source : M6_PO
+  PO-auto-convergence selection : on
+  Convergence test on scatterer object : Ellipsoidal_M4
+  Convergence test on output grid : Cal_Load_grid
+ 
+ 
+  *** Object name:  M5_PO
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Initialization
+ 
+ 
+  Auto-convergence with desired accuracy of -80.00 dB.
+ 
+  Face 1:
+  Max. values: po1/po2 = 7670/18410
+ 
+ PO convergence
+  Test-grid  Ref-grid    Freq  Beam  Grid       P_max   P_level  Accuracy
+    po1/po2   po1/po2                           [dBi]     [dBi]      [dB]
+      20/10     10/10       1     1     1      -27.46    -27.46    -20.84
+      20/10     10/10       1     1     2      -24.58    -24.58    -11.57
+      40/10     20/10       1     1     1      -27.46    -27.46    -84.79  *
+      40/10     20/10       1     1     2      -24.58    -24.58    -53.74
+      80/10     40/10       1     1     2      -24.58    -24.58    -97.13  *
+      30/10     80/10       1     1     2      -24.58    -24.58    -96.90  *
+      25/10     80/10       1     1     2      -24.58    -24.58    -94.48  *
+      23/10     80/10       1     1     2      -24.58    -24.58    -88.84  *
+      22/10     80/10       1     1     2      -24.58    -24.58    -76.42
+ 
+ PO convergence
+  Test-grid  Ref-grid    Freq  Beam  Grid       P_max   P_level  Accuracy
+    po1/po2   po1/po2                           [dBi]     [dBi]      [dB]
+      10/20     10/10       1     1     1      -27.46    -27.46     -8.31
+      10/20     10/10       1     1     2      -24.58    -24.58     -7.38
+      10/40     10/20       1     1     1      -27.46    -27.46    -14.34
+      10/40     10/20       1     1     2      -24.58    -24.58    -11.92
+      10/80     10/40       1     1     1      -27.46    -27.46    -49.51
+      10/80     10/40       1     1     2      -24.58    -24.58    -29.71
+     10/160     10/80       1     1     1      -27.46    -27.46   -104.03  *
+     10/160     10/80       1     1     2      -24.58    -24.58   -105.13  *
+      10/60    10/160       1     1     1      -27.46    -27.46   -101.10  *
+      10/60    10/160       1     1     2      -24.58    -24.58    -84.93  *
+      10/50    10/160       1     1     1      -27.46    -27.46    -95.14  *
+      10/50    10/160       1     1     2      -24.58    -24.58    -49.52
+      10/55    10/160       1     1     2      -24.58    -24.58    -67.19
+      10/58    10/160       1     1     2      -24.58    -24.58    -77.19
+      10/59    10/160       1     1     2      -24.58    -24.58    -81.11  *
+  PO1 =        23 PO2 =        59 Face =     1,    Final PO-values from auto-convergence
+ 
+  Name of currents file: M6_PO.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       160       400         1
+ 
+ 
+  Relative power hitting scatterer:    1.00000
+  Spill-over:    -0.0000 dB
+ 
+ ----- TASK No. 6 -----     Started at 11:00:45 on March 20, 2026
+ M5_Efield_grid get_field ( source : sequence(ref(M6_PO)))
+ 
+ 
+  *** Object name:  M5_Efield_grid
+  *** Class name :  surface_grid
+  *** Message    :  Get_field message received
+ 
+  Source : M6_PO
+ 
+  Name of currents file: M6_PO.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       160       400         1
+ 
+ 
+ ----- TASK No. 7 -----     Started at 11:00:48 on March 20, 2026
+ M5_Hfield_grid get_field ( source : sequence(ref(M6_PO)))
+ 
+ 
+  *** Object name:  M5_Hfield_grid
+  *** Class name :  surface_grid
+  *** Message    :  Get_field message received
+ 
+  Source : M6_PO
+ 
+  Name of currents file: M6_PO.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       160       400         1
+ 
+ 
+ ----- TASK No. 8 -----     Started at 11:00:50 on March 20, 2026
+ M5_Current_grid get_field ( source : sequence(ref(M6_PO)))
+ 
+ 
+  *** Object name:  M5_Current_grid
+  *** Class name :  surface_grid
+  *** Message    :  Get_field message received
+ 
+  Source : M6_PO
+ 
+  Name of currents file: M6_PO.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       160       400         1
+ 
+ 
+ ----- TASK No. 9 -----     Started at 11:00:52 on March 20, 2026
+ M4_PO get_currents ( source : sequence(ref(M5_PO)), auto_convergence_of_po :
+ on, convergence_on_scatterer : sequence(ref(Flat_M3)))
+ 
+ 
+  *** Object name:  M4_PO
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Get_currents message received
+ 
+  Source : M5_PO
+  PO-auto-convergence selection : on
+  Convergence test on scatterer object : Flat_M3
+ 
+ 
+  *** Object name:  M4_PO
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Initialization
+ 
+ 
+  Auto-convergence with desired accuracy of -80.00 dB.
+ 
+  Face 1:
+  Max. values: po1/po2 = 3830/9200
+ 
+ PO convergence
+  Test-grid  Ref-grid       P_max   P_level  Accuracy
+    po1/po2   po1/po2       [dBi]     [dBi]      [dB]
+      20/10     10/10      -29.79    -29.79    -10.38
+      40/10     20/10      -29.79    -29.79    -21.52
+      80/10     40/10      -29.79    -29.79   -182.35  *
+      30/10     80/10      -29.79    -29.79    -68.19
+      35/10     80/10      -29.79    -29.79   -115.24  *
+      33/10     80/10      -29.79    -29.79    -93.66  *
+      32/10     80/10      -29.79    -29.79    -84.20  *
+      31/10     80/10      -29.79    -29.79    -75.70
+ 
+ PO convergence
+  Test-grid  Ref-grid       P_max   P_level  Accuracy
+    po1/po2   po1/po2       [dBi]     [dBi]      [dB]
+      10/20     10/10      -29.79    -29.79     -6.94
+      10/40     10/20      -29.79    -29.79    -19.24
+      10/80     10/40      -29.79    -29.79    -43.33
+     10/160     10/80      -29.79    -29.79    -97.73  *
+      10/60    10/160      -29.79    -29.79    -77.14
+      10/70    10/160      -29.79    -29.79    -82.48  *
+      10/65    10/160      -29.79    -29.79    -76.47
+      10/68    10/160      -29.79    -29.79    -79.92
+      10/69    10/160      -29.79    -29.79    -80.73  *
+  PO1 =        32 PO2 =        69 Face =     1,    Final PO-values from auto-convergence
+ 
+  Name of currents file: M5_PO.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1        23        59         1
+ 
+ 
+  Relative power hitting scatterer:    1.00000
+  Spill-over:    -0.0000 dB
+ 
+ ----- TASK No. 10 -----     Started at 11:00:52 on March 20, 2026
+ M4_Efield_grid get_field ( source : sequence(ref(M5_PO)))
+ 
+ 
+  *** Object name:  M4_Efield_grid
+  *** Class name :  surface_grid
+  *** Message    :  Get_field message received
+ 
+  Source : M5_PO
+ 
+  Name of currents file: M5_PO.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1        23        59         1
+ 
+ 
+ ----- TASK No. 11 -----     Started at 11:00:52 on March 20, 2026
+ M4_Hfield_grid get_field ( source : sequence(ref(M5_PO)))
+ 
+ 
+  *** Object name:  M4_Hfield_grid
+  *** Class name :  surface_grid
+  *** Message    :  Get_field message received
+ 
+  Source : M5_PO
+ 
+  Name of currents file: M5_PO.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1        23        59         1
+ 
+ 
+ ----- TASK No. 12 -----     Started at 11:00:52 on March 20, 2026
+ M4_Current_grid get_field ( source : sequence(ref(M5_PO)))
+ 
+ 
+  *** Object name:  M4_Current_grid
+  *** Class name :  surface_grid
+  *** Message    :  Get_field message received
+ 
+  Source : M5_PO
+ 
+  Name of currents file: M5_PO.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1        23        59         1
+ 
+ 
+ ----- TASK No. 13 -----     Started at 11:00:52 on March 20, 2026
+ M3_PO get_currents ( source : sequence(ref(M4_PO)), auto_convergence_of_po :
+ on, convergence_on_scatterer : sequence(ref(Subreflector_M2)),
+ convergence_on_output_grid : sequence(ref(Output_cut_large),
+ ref(Output_grid_large)))
+ 
+ 
+  *** Object name:  M3_PO
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Get_currents message received
+ 
+  Source : M4_PO
+  PO-auto-convergence selection : on
+  Convergence test on scatterer object : Subreflector_M2
+  Convergence test on output grid : Output_cut_large
+  Convergence test on output grid : Output_grid_large
+ 
+ 
+  *** Object name:  M3_PO
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Initialization
+ 
+ 
+  Auto-convergence with desired accuracy of -80.00 dB.
+ 
+  Face 1:
+  Max. values: po1/po2 = 3830/9200
+ 
+ PO convergence
+  Test-grid  Ref-grid    Freq  Beam  Grid       P_max   P_level  Accuracy
+    po1/po2   po1/po2                           [dBi]     [dBi]      [dB]
+      20/10     10/10       1     1     1      -47.63    -47.63    -39.18
+      20/10     10/10       1     1     2       39.44     39.44    -48.96
+      20/10     10/10       1     1     3       39.44     39.44    -38.82
+      40/10     20/10       1     1     1      -47.63    -47.63    -74.74
+      40/10     20/10       1     1     2       39.44     39.44    -79.05
+      40/10     20/10       1     1     3       39.44     39.44    -76.66
+      80/10     40/10       1     1     1      -47.63    -47.63   -138.07  *
+      80/10     40/10       1     1     2       39.44     39.44   -149.78  *
+      80/10     40/10       1     1     3       39.44     39.44   -140.83  *
+      30/10     80/10       1     1     1      -47.63    -47.63    -86.69  *
+      30/10     80/10       1     1     2       39.44     39.44    -87.31  *
+      30/10     80/10       1     1     3       39.44     39.44    -86.32  *
+      25/10     80/10       1     1     1      -47.63    -47.63    -79.98
+      25/10     80/10       1     1     2       39.44     39.44    -82.22  *
+      25/10     80/10       1     1     3       39.44     39.44    -81.47  *
+      28/10     80/10       1     1     1      -47.63    -47.63    -83.11  *
+      27/10     80/10       1     1     1      -47.63    -47.63    -82.02  *
+      27/10     80/10       1     1     2       39.44     39.44    -83.75  *
+      27/10     80/10       1     1     3       39.44     39.44    -82.30  *
+      26/10     80/10       1     1     1      -47.63    -47.63    -80.68  *
+      26/10     80/10       1     1     2       39.44     39.44    -83.06  *
+      26/10     80/10       1     1     3       39.44     39.44    -81.39  *
+ 
+ PO convergence
+  Test-grid  Ref-grid    Freq  Beam  Grid       P_max   P_level  Accuracy
+    po1/po2   po1/po2                           [dBi]     [dBi]      [dB]
+      10/20     10/10       1     1     1      -47.63    -47.63    -55.63
+      10/20     10/10       1     1     2       39.44     39.44    -62.34
+      10/20     10/10       1     1     3       39.44     39.44    -45.45
+      10/40     10/20       1     1     1      -47.63    -47.63    -82.33  *
+      10/40     10/20       1     1     2       39.44     39.44    -83.67  *
+      10/40     10/20       1     1     3       39.44     39.44    -80.03  *
+      10/15     10/40       1     1     1      -47.63    -47.63    -76.13
+      10/15     10/40       1     1     2       39.44     39.44    -76.86
+      10/15     10/40       1     1     3       39.44     39.44    -62.19
+      10/18     10/40       1     1     1      -47.63    -47.63    -81.12  *
+      10/18     10/40       1     1     2       39.44     39.44    -84.19  *
+      10/18     10/40       1     1     3       39.44     39.44    -73.46
+      10/19     10/40       1     1     3       39.44     39.44    -77.22
+  PO1 =        26 PO2 =        20 Face =     1,    Final PO-values from auto-convergence
+ 
+  Name of currents file: M4_PO.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1        32        69         1
+ 
+ 
+  Relative power hitting scatterer:    0.999999
+  Spill-over:     0.0000 dB
+ 
+ ----- TASK No. 14 -----     Started at 11:00:52 on March 20, 2026
+ M3_Efield_grid get_field ( source : sequence(ref(M4_PO)))
+ 
+ 
+  *** Object name:  M3_Efield_grid
+  *** Class name :  surface_grid
+  *** Message    :  Get_field message received
+ 
+  Source : M4_PO
+ 
+  Name of currents file: M4_PO.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1        32        69         1
+ 
+ 
+ ----- TASK No. 15 -----     Started at 11:00:52 on March 20, 2026
+ M3_Hfield_grid get_field ( source : sequence(ref(M4_PO)))
+ 
+ 
+  *** Object name:  M3_Hfield_grid
+  *** Class name :  surface_grid
+  *** Message    :  Get_field message received
+ 
+  Source : M4_PO
+ 
+  Name of currents file: M4_PO.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1        32        69         1
+ 
+ 
+ ----- TASK No. 16 -----     Started at 11:00:52 on March 20, 2026
+ M3_Current_grid get_field ( source : sequence(ref(M4_PO)))
+ 
+ 
+  *** Object name:  M3_Current_grid
+  *** Class name :  surface_grid
+  *** Message    :  Get_field message received
+ 
+  Source : M4_PO
+ 
+  Name of currents file: M4_PO.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1        32        69         1
+ 
+ 
+ ----- TASK No. 17 -----     Started at 11:00:52 on March 20, 2026
+ Secondary_PO get_currents ( source : sequence(ref(M3_PO)),
+ auto_convergence_of_po : on, convergence_on_scatterer :
+ sequence(ref(Primary_M1)), convergence_on_output_grid :
+ sequence(ref(Output_cut_large), ref(Output_grid_large)))
+ 
+ 
+  *** Object name:  Secondary_PO
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Get_currents message received
+ 
+  Source : M3_PO
+  PO-auto-convergence selection : on
+  Convergence test on scatterer object : Primary_M1
+  Convergence test on output grid : Output_cut_large
+  Convergence test on output grid : Output_grid_large
+ 
+ 
+  *** Object name:  Secondary_PO
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Initialization
+ 
+ 
+  Auto-convergence with desired accuracy of -80.00 dB.
+ 
+  Face 1:
+  Max. values: po1/po2 = 8940/21480
+ 
+ PO convergence
+  Test-grid  Ref-grid    Freq  Beam  Grid       P_max   P_level  Accuracy
+    po1/po2   po1/po2                           [dBi]     [dBi]      [dB]
+      20/10     10/10       1     1     1      -33.86    -33.86      0.05
+      20/10     10/10       1     1     2       48.12     48.12     -4.98
+      20/10     10/10       1     1     3       48.12     48.12     -4.98
+      40/10     20/10       1     1     1      -40.46    -40.46      2.00
+      40/10     20/10       1     1     2       44.14     44.14   -111.10  *
+      40/10     20/10       1     1     3       42.68     42.68    -64.38
+      80/10     40/10       1     1     1      -43.49    -43.49      2.30
+      80/10     40/10       1     1     3       42.68     42.68   -239.36  *
+     160/10     80/10       1     1     1      -47.64    -47.64      2.73
+     320/10    160/10       1     1     1      -48.09    -48.09     -3.57
+     640/10    320/10       1     1     1      -55.82    -55.82   -122.86  *
+     240/10    640/10       1     1     1      -55.82    -55.82      2.60
+     280/10    640/10       1     1     1      -55.82    -55.82     -0.83
+     300/10    640/10       1     1     1      -55.82    -55.82    -21.06
+     310/10    640/10       1     1     1      -55.82    -55.82    -64.41
+     315/10    640/10       1     1     1      -55.82    -55.82    -92.00  *
+ 
+ PO convergence
+  Test-grid  Ref-grid    Freq  Beam  Grid       P_max   P_level  Accuracy
+    po1/po2   po1/po2                           [dBi]     [dBi]      [dB]
+      10/20     10/10       1     1     1      -33.86    -33.86      2.43
+      10/20     10/10       1     1     2       48.12     48.12     -1.70
+      10/20     10/10       1     1     3       48.12     48.12     -1.03
+      10/40     10/20       1     1     1      -33.28    -33.28      2.22
+      10/40     10/20       1     1     2       41.18     44.14     -8.98
+      10/40     10/20       1     1     3       42.84     42.84     -1.16
+      10/80     10/40       1     1     1      -41.01    -41.01      0.88
+      10/80     10/40       1     1     2       41.18     44.14    -80.07  *
+      10/80     10/40       1     1     3       41.18     42.68    -22.47
+     10/160     10/80       1     1     1      -42.67    -42.67     -0.14
+     10/160     10/80       1     1     3       41.18     42.68   -238.50  *
+     10/320    10/160       1     1     1      -49.08    -49.08      1.32
+     10/640    10/320       1     1     1      -51.21    -51.21     -2.51
+    10/1280    10/640       1     1     1      -56.18    -55.82     -6.00
+    10/2560   10/1280       1     1     1      -56.18    -55.82   -237.19  *
+     10/960   10/2560       1     1     1      -56.18    -55.82   -234.78  *
+     10/800   10/2560       1     1     1      -56.18    -55.82   -160.08  *
+     10/720   10/2560       1     1     1      -56.18    -55.82    -11.06
+     10/760   10/2560       1     1     1      -56.18    -55.82    -48.31
+     10/780   10/2560       1     1     1      -56.18    -55.82    -97.11  *
+  PO1 =       315 PO2 =       780 Face =     1,    Final PO-values from auto-convergence
+ 
+  Name of currents file: M3_PO.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1        26        20         1
+ 
+ 
+  Relative power hitting scatterer:    0.949897
+  Spill-over:     0.2232 dB
+ 
+ ----- TASK No. 18 -----     Started at 11:00:52 on March 20, 2026
+ Secondary_Efield_grid get_field ( source : sequence(ref(M3_PO)))
+ 
+ 
+  *** Object name:  Secondary_Efield_grid
+  *** Class name :  surface_grid
+  *** Message    :  Get_field message received
+ 
+  Source : M3_PO
+ 
+  Name of currents file: M3_PO.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1        26        20         1
+ 
+ 
+ ----- TASK No. 19 -----     Started at 11:00:53 on March 20, 2026
+ Secondary_Hfield_grid get_field ( source : sequence(ref(M3_PO)))
+ 
+ 
+  *** Object name:  Secondary_Hfield_grid
+  *** Class name :  surface_grid
+  *** Message    :  Get_field message received
+ 
+  Source : M3_PO
+ 
+  Name of currents file: M3_PO.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1        26        20         1
+ 
+ 
+ ----- TASK No. 20 -----     Started at 11:00:53 on March 20, 2026
+ Secondary_Currents_grid get_field ( source : sequence(ref(M3_PO)))
+ 
+ 
+  *** Object name:  Secondary_Currents_grid
+  *** Class name :  surface_grid
+  *** Message    :  Get_field message received
+ 
+  Source : M3_PO
+ 
+  Name of currents file: M3_PO.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1        26        20         1
+ 
+ 
+ ----- TASK No. 21 -----     Started at 11:00:53 on March 20, 2026
+ Primary_PO get_currents ( source : sequence(ref(Secondary_PO)),
+ auto_convergence_of_po : on, convergence_on_output_grid :
+ sequence(ref(Output_cut_large), ref(Output_grid_large)))
+ 
+ 
+  *** Object name:  Primary_PO
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Get_currents message received
+ 
+  Source : Secondary_PO
+  PO-auto-convergence selection : on
+  Convergence test on output grid : Output_cut_large
+  Convergence test on output grid : Output_grid_large
+ 
+ 
+  *** Object name:  Primary_PO
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Initialization
+ 
+ 
+  Auto-convergence with desired accuracy of -80.00 dB.
+ 
+  Face 1:
+  Max. values: po1/po2 = 153430/368250
+ 
+ PO convergence
+  Test-grid  Ref-grid    Freq  Beam  Grid       P_max   P_level  Accuracy
+    po1/po2   po1/po2                           [dBi]     [dBi]      [dB]
+      20/10     10/10       1     1     1       82.19     82.19    -11.81
+      20/10     10/10       1     1     2       82.19     82.19     -5.20
+      40/10     20/10       1     1     1       82.05     82.05    -12.03
+      40/10     20/10       1     1     2       82.05     82.05     -6.92
+      80/10     40/10       1     1     1       82.09     82.09    -11.77
+      80/10     40/10       1     1     2       82.09     82.09    -13.28
+     160/10     80/10       1     1     1       82.09     82.09    -17.74
+     160/10     80/10       1     1     2       82.09     82.09    -20.33
+     320/10    160/10       1     1     1       82.08     82.08    -60.21
+     320/10    160/10       1     1     2       82.08     82.08    -28.86
+     640/10    320/10       1     1     1       82.08     82.08    -78.58
+     640/10    320/10       1     1     2       82.08     82.08    -78.02
+    1280/10    640/10       1     1     1       82.08     82.08   -233.83  *
+    1280/10    640/10       1     1     2       82.08     82.08   -230.53  *
+     480/10   1280/10       1     1     1       82.08     82.08   -232.60  *
+     480/10   1280/10       1     1     2       82.08     82.08   -229.32  *
+     400/10   1280/10       1     1     1       82.08     82.08   -232.09  *
+     400/10   1280/10       1     1     2       82.08     82.08    -89.84  *
+     360/10   1280/10       1     1     1       82.08     82.08    -87.03  *
+     360/10   1280/10       1     1     2       82.08     82.08    -78.40
+     380/10   1280/10       1     1     2       82.08     82.08    -80.92  *
+     370/10   1280/10       1     1     1       82.08     82.08   -117.74  *
+     370/10   1280/10       1     1     2       82.08     82.08    -79.71
+ 
+ PO convergence
+  Test-grid  Ref-grid    Freq  Beam  Grid       P_max   P_level  Accuracy
+    po1/po2   po1/po2                           [dBi]     [dBi]      [dB]
+      10/20     10/10       1     1     1       82.19     82.19     -8.02
+      10/20     10/10       1     1     2       82.19     82.19     -5.58
+      10/40     10/20       1     1     1       82.19     82.19    -10.37
+      10/40     10/20       1     1     2       82.19     82.19    -12.37
+      10/80     10/40       1     1     1       82.19     82.19    -17.46
+      10/80     10/40       1     1     2       82.19     82.19    -14.57
+     10/160     10/80       1     1     1       82.19     82.19    -16.96
+     10/160     10/80       1     1     2       82.19     82.19    -19.21
+     10/320    10/160       1     1     1       82.19     82.19    -20.63
+     10/320    10/160       1     1     2       82.19     82.19    -18.57
+     10/640    10/320       1     1     1       82.19     82.19    -29.98
+     10/640    10/320       1     1     2       82.19     82.19    -28.23
+    10/1280    10/640       1     1     1       82.19     82.19   -134.41  *
+    10/1280    10/640       1     1     2       82.19     82.19    -44.50
+    10/2560   10/1280       1     1     2       82.19     82.19   -129.45  *
+     10/960   10/2560       1     1     2       82.19     82.19   -133.15  *
+     10/800   10/2560       1     1     2       82.19     82.19   -129.71  *
+     10/720   10/2560       1     1     2       82.19     82.19    -69.95
+     10/760   10/2560       1     1     2       82.19     82.19   -129.14  *
+     10/740   10/2560       1     1     2       82.19     82.19   -113.95  *
+  PO1 =       380 PO2 =       740 Face =     1,    Final PO-values from auto-convergence
+ 
+  Name of currents file: sub_po.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       315       780         1
+ 
+ 
+  Relative power hitting scatterer:    0.936475
+  Spill-over:     0.2850 dB
+ 
+ ----- TASK No. 22 -----     Started at 11:01:38 on March 20, 2026
+ Primary_Efield_grid get_field ( source : sequence(ref(Secondary_PO)))
+ 
+ 
+  *** Object name:  Primary_Efield_grid
+  *** Class name :  surface_grid
+  *** Message    :  Get_field message received
+ 
+  Source : Secondary_PO
+ 
+  Name of currents file: sub_po.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       315       780         1
+ 
+ 
+ ----- TASK No. 23 -----     Started at 11:01:47 on March 20, 2026
+ Primary_Hfield_grid get_field ( source : sequence(ref(Secondary_PO)))
+ 
+ 
+  *** Object name:  Primary_Hfield_grid
+  *** Class name :  surface_grid
+  *** Message    :  Get_field message received
+ 
+  Source : Secondary_PO
+ 
+  Name of currents file: sub_po.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       315       780         1
+ 
+ 
+ ----- TASK No. 24 -----     Started at 11:01:54 on March 20, 2026
+ Output_cut get_field ( source : sequence(ref(Primary_PO)))
+ 
+ 
+  *** Object name:  Output_cut
+  *** Class name :  spherical_cut
+  *** Message    :  Get_field message received
+ 
+  Source : Primary_PO
+ 
+  Name of currents file: main_po.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       380       740         1
+ 
+ 
+ 
+  *** Object name:  Output_cut
+  *** Class name :  spherical_cut
+  *** Message    :  Field calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+ 
+ ----- TASK No. 25 -----     Started at 11:01:54 on March 20, 2026
+ Primary_Currents_grid get_field ( source : sequence(ref(Secondary_PO)))
+ 
+ 
+  *** Object name:  Primary_Currents_grid
+  *** Class name :  surface_grid
+  *** Message    :  Get_field message received
+ 
+  Source : Secondary_PO
+ 
+  Name of currents file: sub_po.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       315       780         1
+ 
+ 
+ ----- TASK No. 26 -----     Started at 11:02:01 on March 20, 2026
+ Output_cut add_field ( source : sequence(ref(Secondary_PO), ref(M3_PO)))
+ 
+ 
+  *** Object name:  Output_cut
+  *** Class name :  spherical_cut
+  *** Message    :  Add_field message received
+ 
+  Source : Secondary_PO
+  Source : M3_PO
+ 
+  Name of currents file: sub_po.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       315       780         1
+ 
+ 
+ 
+  *** Object name:  Output_cut
+  *** Class name :  spherical_cut
+  *** Message    :  Field calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+ 
+  Name of currents file: M3_PO.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1        26        20         1
+ 
+ 
+ 
+  *** Object name:  Output_cut
+  *** Class name :  spherical_cut
+  *** Message    :  Field calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+ 
+ ----- TASK No. 27 -----     Started at 11:02:01 on March 20, 2026
+ Output_cut_large get_field ( source : sequence(ref(Primary_PO)))
+ 
+ 
+  *** Object name:  Output_cut_large
+  *** Class name :  spherical_cut
+  *** Message    :  Get_field message received
+ 
+  Source : Primary_PO
+ 
+  Name of currents file: main_po.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       380       740         1
+ 
+ 
+ 
+  *** Object name:  Output_cut_large
+  *** Class name :  spherical_cut
+  *** Message    :  Field calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+ 
+ ----- TASK No. 28 -----     Started at 11:02:02 on March 20, 2026
+ Output_cut_large add_field ( source : sequence(ref(Secondary_PO), ref(M3_PO)))
+ 
+ 
+  *** Object name:  Output_cut_large
+  *** Class name :  spherical_cut
+  *** Message    :  Add_field message received
+ 
+  Source : Secondary_PO
+  Source : M3_PO
+ 
+  Name of currents file: sub_po.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       315       780         1
+ 
+ 
+ 
+  *** Object name:  Output_cut_large
+  *** Class name :  spherical_cut
+  *** Message    :  Field calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+ 
+  Name of currents file: M3_PO.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1        26        20         1
+ 
+ 
+ 
+  *** Object name:  Output_cut_large
+  *** Class name :  spherical_cut
+  *** Message    :  Field calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+ 
+ ----- TASK No. 29 -----     Started at 11:02:02 on March 20, 2026
+ Output_grid get_field ( source : sequence(ref(Primary_PO)))
+ 
+ 
+  *** Object name:  Output_grid
+  *** Class name :  spherical_grid
+  *** Message    :  Get_field message received
+ 
+  Source : Primary_PO
+ 
+  Name of currents file: main_po.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       380       740         1
+ 
+ 
+ 
+  *** Object name:  Output_grid
+  *** Class name :  spherical_grid
+  *** Message    :  Field calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+ 
+ ----- TASK No. 30 -----     Started at 11:02:07 on March 20, 2026
+ Output_grid add_field ( source : sequence(ref(Secondary_PO), ref(M3_PO)))
+ 
+ 
+  *** Object name:  Output_grid
+  *** Class name :  spherical_grid
+  *** Message    :  Add_field message received
+ 
+  Source : Secondary_PO
+  Source : M3_PO
+ 
+  Name of currents file: sub_po.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       315       780         1
+ 
+ 
+ 
+  *** Object name:  Output_grid
+  *** Class name :  spherical_grid
+  *** Message    :  Field calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+ 
+  Name of currents file: M3_PO.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1        26        20         1
+ 
+ 
+ 
+  *** Object name:  Output_grid
+  *** Class name :  spherical_grid
+  *** Message    :  Field calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+ 
+ ----- TASK No. 31 -----     Started at 11:02:31 on March 20, 2026
+ Output_grid_large get_field ( source : sequence(ref(Primary_PO)))
+ 
+ 
+  *** Object name:  Output_grid_large
+  *** Class name :  spherical_grid
+  *** Message    :  Get_field message received
+ 
+  Source : Primary_PO
+ 
+  Name of currents file: main_po.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       380       740         1
+ 
+ 
+ 
+  *** Object name:  Output_grid_large
+  *** Class name :  spherical_grid
+  *** Message    :  Field calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+ 
+ ----- TASK No. 32 -----     Started at 11:03:23 on March 20, 2026
+ Output_cut_large add_field ( source : sequence(ref(Secondary_PO), ref(M3_PO)))
+ 
+ 
+  *** Object name:  Output_cut_large
+  *** Class name :  spherical_cut
+  *** Message    :  Add_field message received
+ 
+  Source : Secondary_PO
+  Source : M3_PO
+ 
+  Name of currents file: sub_po.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       315       780         1
+ 
+ 
+ 
+  *** Object name:  Output_cut_large
+  *** Class name :  spherical_cut
+  *** Message    :  Field calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+ 
+  Name of currents file: M3_PO.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1        26        20         1
+ 
+ 
+ 
+  *** Object name:  Output_cut_large
+  *** Class name :  spherical_cut
+  *** Message    :  Field calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+ 
+ ----- END OF TASKS -----     Completed at 11:03:24 on March 20, 2026
+ Total time was 2:40 min
+ 
+ TICRA Tools SN: 008652
+ Program stopped at 11:03:24 on 20 March 2026
+ 

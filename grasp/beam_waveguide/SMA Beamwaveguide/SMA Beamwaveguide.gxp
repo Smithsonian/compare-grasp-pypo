@@ -1,0 +1,53 @@
+[Comment]
+Project comment
+[TOR file]
+working/SMA Beamwaveguide.tor
+[TCI file]
+working/SMA Beamwaveguide.tci
+[Project setup]
+<!DOCTYPE Project>
+<Project application="TICRA Tools" version="21.0.0">
+ <Results>
+  <Analysis Name="Job_01" Path="Job_01">
+   <Objects Path="Job_01.tor"/>
+   <Commands Path="Job_01.tci"/>
+   <Output Path="output_files_26636.xml"/>
+   <Job JobProcessID="26636" JobHidden="false" NumCommands="0" Name="Job_01" JobStatus="Job Finished" StartTime="2026-03-18T14:53:37" JobOutputSpec="output_files_26636.xml"/>
+  </Analysis>
+  <Analysis Name="Job_02" Path="Job_02">
+   <Objects Path="Job_02.tor"/>
+   <Commands Path="Job_02.tci"/>
+   <Output Path="output_files_58408.xml"/>
+   <Job JobProcessID="58408" JobHidden="false" NumCommands="0" Name="Job_02" JobStatus="Job Finished" StartTime="2026-03-20T10:41:07" JobOutputSpec="output_files_58408.xml"/>
+  </Analysis>
+  <Analysis Name="Job_03" Path="Job_03">
+   <Objects Path="Job_03.tor"/>
+   <Commands Path="Job_03.tci"/>
+   <Output Path="output_files_41248.xml"/>
+   <Job JobProcessID="41248" JobHidden="false" NumCommands="0" Name="Job_03" JobStatus="Job Finished" StartTime="2026-03-20T10:43:48" JobOutputSpec="output_files_41248.xml"/>
+  </Analysis>
+  <Analysis Name="Job_04" Path="Job_04">
+   <Objects Path="Job_04.tor"/>
+   <Commands Path="Job_04.tci"/>
+   <Output Path="output_files_26544.xml"/>
+   <Job JobProcessID="26544" JobHidden="false" NumCommands="0" Name="Job_04" JobStatus="Job Finished" StartTime="2026-03-20T11:00:43" JobOutputSpec="output_files_26544.xml"/>
+  </Analysis>
+  <Analysis Name="Job_05" Path="Job_05">
+   <Objects Path="Job_05.tor"/>
+   <Commands Path="Job_05.tci"/>
+   <Output Path="output_files_58372.xml"/>
+   <Job JobProcessID="58372" JobHidden="false" NumCommands="0" Name="Job_05" JobStatus="Job Finished" StartTime="2026-03-20T11:11:40" JobOutputSpec="output_files_58372.xml"/>
+  </Analysis>
+ </Results>
+ <ResultWindows>
+  <PlotStyleModel/>
+  <GridStyleModel/>
+ </ResultWindows>
+ <WizardData/>
+ <view_configuration>
+  <view size="1312x956" perspective_view="no" locked_phi_theta="no" pos="0x0" minimized="no" show_wire_grid="yes" collapsed_view_settings_entries="" scale="6.42527" name="view_1" enable_phi_slider="no" upVector="-0.3107323050498962,-0.1513658761978149,0.9383675456047058" enable_theta_slider="no" show_surfaces="yes" maximized="yes" show_rulers="yes" position="-1.114004969596863,1.402058601379395,-2.097671508789063" viewCenter="-1.926056385040283,0.9312600493431091,-2.44251823425293" orientation_type="0" enable_psi_slider="no"/>
+ </view_configuration>
+ <optimisation_configuration current_tab="Press 'New Manager' to create an optimisation manager"/>
+ <uq_configuration current_tab="Press 'New Manager' to create an uncertainty quantification manager"/>
+ <projectSettings/>
+</Project>
