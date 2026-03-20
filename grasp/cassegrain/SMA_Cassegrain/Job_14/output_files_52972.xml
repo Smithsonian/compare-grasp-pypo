@@ -1,0 +1,24 @@
+<OutputFiles>
+ <File SubObject="unknown" Path="Job_14.tci" Type="tci" Format="Text" Object="unknown" Hash="5b3e1bc96b35edfc55dbc028fa8ff8ef"/>
+ <File SubObject="unknown" Path="Job_14.tor" Type="tor" Format="Text" Object="unknown" Hash="8c46df7f6a84ee4a9e37d13f9696520e"/>
+ <File SubObject="unknown" Path="Job_14.out" Type="out" Format="Text" Object="unknown" Hash="bf870b3484e5db84ea5a7b16be0ca91b"/>
+ <File SubObject="unknown" Path="sma_sub_gbfeed_poptd.cur" Type="Currents:Standard" Format="Bin" Object="unknown" Hash="0e61e80b5caae8d4fef13fba3efeaf03"/>
+ <File SubObject="unknown" Path="sma_main_gbfeed_poptd.cur" Type="Currents:Standard" Format="Bin" Object="unknown" Hash="0793d79e49a7e70000039808ea75e73e"/>
+ <File Quantity="J" SubObject="unknown" Path="sma_cassegrain_seccur_gbfeed_po.grd" Type="Grid:Surface" Format="Ticra" Object="sec_currents_grid" Hash="74ca670c3e9bafc1bd5763f85697f745">
+  <Parameter Name="Frequency" Unit="GHz" Values=" 230.609583076923"/>
+  <Parameter Name="Y" Unit="m" Values="[-0.175000000000000;0.175000000000000;301]"/>
+  <Parameter Name="X" Unit="m" Values="[-0.175000000000000;0.175000000000000;301]"/>
+ </File>
+ <File Quantity="E" SubObject="unknown" Path="sma_cassegrain_secE_gbfeed_po.grd" Type="Grid:Surface" Format="Ticra" Object="sec_Efield_grid" Hash="ba4641b6dec930d2785fd3c3196dc0ba">
+  <Parameter Name="Frequency" Unit="GHz" Values=" 230.609583076923"/>
+  <Parameter Name="Y" Unit="m" Values="[-0.175000000000000;0.175000000000000;301]"/>
+  <Parameter Name="X" Unit="m" Values="[-0.175000000000000;0.175000000000000;301]"/>
+ </File>
+ <File Quantity="H" SubObject="unknown" Path="sma_cassegrain_secH_gbfeed_po.grd" Type="Grid:Surface" Format="Ticra" Object="sec_Hfield_grid" Hash="f4f9f033fd9cec335a5ba55fa90a565a">
+  <Parameter Name="Frequency" Unit="GHz" Values=" 230.609583076923"/>
+  <Parameter Name="Y" Unit="m" Values="[-0.175000000000000;0.175000000000000;301]"/>
+  <Parameter Name="X" Unit="m" Values="[-0.175000000000000;0.175000000000000;301]"/>
+ </File>
+ <File Path="comments.txt" Type="Comments" Format="Text"/>
+ <File Path="screenoutput.txt" Type="Screen" Format="Text"/>
+</OutputFiles>

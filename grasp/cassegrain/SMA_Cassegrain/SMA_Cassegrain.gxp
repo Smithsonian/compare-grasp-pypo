@@ -32,8 +32,1532 @@ working/SMA_Cassegrain.tci
    <Output Path="output_files_17236.xml"/>
    <Job JobProcessID="17236" JobHidden="false" NumCommands="0" Name="Job_12" JobStatus="Job Finished" StartTime="2026-03-19T13:21:29" JobOutputSpec="output_files_17236.xml"/>
   </Analysis>
+  <Analysis Name="Job_13" Path="Job_13">
+   <Objects Path="Job_13.tor"/>
+   <Commands Path="Job_13.tci"/>
+   <Output Path="output_files_55780.xml"/>
+   <Job JobProcessID="55780" JobHidden="false" NumCommands="0" Name="Job_13" JobStatus="Job Failed" StartTime="2026-03-20T10:18:46" JobOutputSpec="output_files_55780.xml"/>
+  </Analysis>
+  <Analysis Name="Job_14" Path="Job_14">
+   <Objects Path="Job_14.tor"/>
+   <Commands Path="Job_14.tci"/>
+   <Output Path="output_files_52972.xml"/>
+   <Job JobProcessID="52972" JobHidden="false" NumCommands="0" Name="Job_14" JobStatus="Job Finished" StartTime="2026-03-20T10:19:24" JobOutputSpec="output_files_52972.xml"/>
+  </Analysis>
  </Results>
  <ResultWindows>
+  <PlotWidget type="Spectrogram">
+   <Title text="%Grid_1_Job% → %Grid_1_Full Title%" font="MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"/>
+   <Axis inverted="0" resetZoomBehaviour="RangeLimit" id="0" enabled="1" text="%Y-Left Title%" minimum="-0.175" maximum="0.175" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" useMinor="0" useMajor="1" stepMajor="10" useFixedStep="0" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" margin="0" spacing="2" stepMinor="5" startAt="0">
+    <PenMajor color_a="255" color_r="192" color_b="192" style="1" color_g="192" styleString="SolidLine" width="0"/>
+   </Axis>
+   <Axis maximum="3.14144" id="1" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" colorBarWidth="20" useFixedStep="0" text="%Y-Right Title%" stepMinor="5" inverted="0" minimum="-3.14131" startAt="0" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" useMinor="0" enabled="1" useMajor="0" stepMajor="10" margin="20" resetZoomBehaviour="RangeLimit" spacing="2"/>
+   <Axis inverted="0" resetZoomBehaviour="Regular" id="2" enabled="1" text="%X-Bottom Title%" minimum="-0.189745" maximum="0.189745" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" useMinor="0" useMajor="1" stepMajor="10" useFixedStep="0" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" margin="0" spacing="2" stepMinor="5" startAt="0">
+    <PenMajor color_a="255" color_r="192" color_b="192" style="1" color_g="192" styleString="SolidLine" width="0"/>
+   </Axis>
+   <Axis Undefined="1"/>
+   <Canvas color_a="255" color_r="255" color_b="255" color_g="255" axisLineWidth="0" frameAroundExported="1" minorTickLength="4" majorTickLength="8"/>
+   <Grid/>
+   <Legend maxcolumns="1" externalsizeratio="0.29999999999999999" externalalignment="1" legendvisible="0" textwidthmargin="4" activelegend="1" bgmode="0">
+    <bgcolor color_a="255" color_r="255" color_b="255" color_g="255"/>
+    <borderpen color_a="255" color_r="160" color_b="164" style="1" color_g="160" styleString="SolidLine" width="1"/>
+    <internalposition>
+     <horizontal>1000000</horizontal>
+     <vertical>0</vertical>
+    </internalposition>
+    <legendordering/>
+   </Legend>
+   <SpectrogramData uuid="{ee9da121-2fc0-4533-ae3f-5f7c293a3b6d}">
+    <EDIFile time="2026-03-20T10:19:51" xmlHeader="&lt;!DOCTYPE FileMetaData>&#xa;&lt;Parameters>&#xa; &lt;File Quantity=&quot;J&quot; SubObject=&quot;unknown&quot; Path=&quot;sma_cassegrain_seccur_gbfeed_po.grd&quot; Type=&quot;Grid:Surface&quot; Format=&quot;Ticra&quot; Object=&quot;sec_currents_grid&quot; Hash=&quot;74ca670c3e9bafc1bd5763f85697f745&quot;>&#xa;  &lt;Parameter Name=&quot;Frequency&quot; Unit=&quot;GHz&quot; Values=&quot; 230.609583076923&quot;/>&#xa;  &lt;Parameter Name=&quot;Y&quot; Unit=&quot;m&quot; Values=&quot;[-0.175000000000000;0.175000000000000;301]&quot;/>&#xa;  &lt;Parameter Name=&quot;X&quot; Unit=&quot;m&quot; Values=&quot;[-0.175000000000000;0.175000000000000;301]&quot;/>&#xa; &lt;/File>&#xa;&lt;/Parameters>&#xa;" name="Job_14/sma_cassegrain_seccur_gbfeed_po.grd"/>
+    <Font data="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,12,-1,5,50,0,0,0,0,0"/>
+    <Legend text="sec_currents_grid → J_co → 230.60958 GHz"/>
+    <Parameter class="Frequency" length="0" begin="0"/>
+    <Parameter class="ProjectionComponents:Ludwig3" length="0" begin="0"/>
+    <Parameter class="X" length="301" begin="0"/>
+    <Parameter class="Y" length="301" begin="0"/>
+    <Variable className="FieldComponents:E" nameEDX=""/>
+    <Axes xName="x" zName="Phase" yUnit="m" title="sec_currents_grid → J_co → 230.60958 GHz" xAxis="X" xUnit="m" yName="y" zUnit="rad" yAxis="Y"/>
+    <Format to="3"/>
+    <DisplayMode Contours="true" Image="true" NormalisationFactor="0"/>
+    <ContourParameters ContourParametersInitialized="1">
+     <cereal>
+      <contourParameters>
+       <cereal_class_version>2</cereal_class_version>
+       <contourvalues size="dynamic">
+        <value>
+         <first>-3.1415926535897931</first>
+         <second>
+          <cereal_class_version>1</cereal_class_version>
+          <value>
+           <cereal_class_version>0</cereal_class_version>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>-2.3561944901923448</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>-1.5707963267948966</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>-0.78539816339744828</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>0</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>0.78539816339744828</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>1.5707963267948966</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>2.3561944901923448</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>3.1415926535897931</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+       </contourvalues>
+       <contour_type>2</contour_type>
+       <user_relative_db>3.1414430924405723</user_relative_db>
+       <default_color>#ff000000</default_color>
+       <polarization>0</polarization>
+       <path_loss>0</path_loss>
+       <gain_offset>0</gain_offset>
+       <contour_labels>1</contour_labels>
+       <label_interval>35</label_interval>
+       <font_size>8</font_size>
+       <font_weight>50</font_weight>
+       <beampeak_label>0</beampeak_label>
+       <interpolation>0</interpolation>
+       <legend>0</legend>
+       <interp_density>1</interp_density>
+       <default_thickness>4</default_thickness>
+       <options>0</options>
+       <rain_model>0</rain_model>
+       <availability>0.99919999999999998</availability>
+       <beampeak_label_text/>
+       <m_luminence>120</m_luminence>
+       <contour_label_text>dB</contour_label_text>
+      </contourParameters>
+     </cereal>
+    </ContourParameters>
+   </SpectrogramData>
+   <legendordering>
+    <legendorderingentry uuid="{ee9da121-2fc0-4533-ae3f-5f7c293a3b6d}"/>
+   </legendordering>
+   <ColorMap>
+    <ColorStop color_a="255" color_r="0" color_b="128" color_g="0" value="0"/>
+    <ColorStop color_a="255" color_r="0" color_b="255" color_g="255" value="0.25"/>
+    <ColorStop color_a="255" color_r="0" color_b="0" color_g="255" value="0.5"/>
+    <ColorStop color_a="255" color_r="255" color_b="0" color_g="255" value="0.75"/>
+    <ColorStop color_a="255" color_r="255" color_b="0" color_g="0" value="1"/>
+   </ColorMap>
+   <FixedAspectRatio enabled="true" mode="1">
+    <MinimumRect top="-0.17499999999999999" left="-0.17499999999999999" width="0.34999999999999998" height="0.34999999999999998"/>
+   </FixedAspectRatio>
+   <Window normalX="41" normalY="31" isMaximized="0" normalHeight="613" normalWidth="692" isFullscreen="0" isMinimized="0"/>
+  </PlotWidget>
+  <PlotWidget type="Spectrogram">
+   <Title text="%Grid_1_Job% → %Grid_1_Full Title%" font="MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"/>
+   <Axis inverted="0" resetZoomBehaviour="RangeLimit" id="0" enabled="1" text="%Y-Left Title%" minimum="-0.175" maximum="0.175" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" useMinor="0" useMajor="1" stepMajor="10" useFixedStep="0" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" margin="0" spacing="2" stepMinor="5" startAt="0">
+    <PenMajor color_a="255" color_r="192" color_b="192" style="1" color_g="192" styleString="SolidLine" width="0"/>
+   </Axis>
+   <Axis maximum="3.14159" id="1" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" colorBarWidth="20" useFixedStep="0" text="%Y-Right Title%" stepMinor="5" inverted="0" minimum="-3.14159" startAt="0" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" useMinor="0" enabled="1" useMajor="0" stepMajor="10" margin="20" resetZoomBehaviour="RangeLimit" spacing="2"/>
+   <Axis inverted="0" resetZoomBehaviour="Regular" id="2" enabled="1" text="%X-Bottom Title%" minimum="-0.205273" maximum="0.205273" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" useMinor="0" useMajor="1" stepMajor="10" useFixedStep="0" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" margin="0" spacing="2" stepMinor="5" startAt="0">
+    <PenMajor color_a="255" color_r="192" color_b="192" style="1" color_g="192" styleString="SolidLine" width="0"/>
+   </Axis>
+   <Axis Undefined="1"/>
+   <Canvas color_a="255" color_r="255" color_b="255" color_g="255" axisLineWidth="0" frameAroundExported="1" minorTickLength="4" majorTickLength="8"/>
+   <Grid/>
+   <Legend maxcolumns="1" externalsizeratio="0.29999999999999999" externalalignment="1" legendvisible="0" textwidthmargin="4" activelegend="1" bgmode="0">
+    <bgcolor color_a="255" color_r="255" color_b="255" color_g="255"/>
+    <borderpen color_a="255" color_r="160" color_b="164" style="1" color_g="160" styleString="SolidLine" width="1"/>
+    <internalposition>
+     <horizontal>1000000</horizontal>
+     <vertical>0</vertical>
+    </internalposition>
+    <legendordering/>
+   </Legend>
+   <SpectrogramData uuid="{0058a6e3-00c7-4b3c-bb7b-bedf8be98fbd}">
+    <EDIFile time="2026-03-20T10:19:51" xmlHeader="&lt;!DOCTYPE FileMetaData>&#xa;&lt;Parameters>&#xa; &lt;File Quantity=&quot;J&quot; SubObject=&quot;unknown&quot; Path=&quot;sma_cassegrain_seccur_gbfeed_po.grd&quot; Type=&quot;Grid:Surface&quot; Format=&quot;Ticra&quot; Object=&quot;sec_currents_grid&quot; Hash=&quot;74ca670c3e9bafc1bd5763f85697f745&quot;>&#xa;  &lt;Parameter Name=&quot;Frequency&quot; Unit=&quot;GHz&quot; Values=&quot; 230.609583076923&quot;/>&#xa;  &lt;Parameter Name=&quot;Y&quot; Unit=&quot;m&quot; Values=&quot;[-0.175000000000000;0.175000000000000;301]&quot;/>&#xa;  &lt;Parameter Name=&quot;X&quot; Unit=&quot;m&quot; Values=&quot;[-0.175000000000000;0.175000000000000;301]&quot;/>&#xa; &lt;/File>&#xa;&lt;/Parameters>&#xa;" name="Job_14/sma_cassegrain_seccur_gbfeed_po.grd"/>
+    <Font data="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,12,-1,5,50,0,0,0,0,0"/>
+    <Legend text="sec_currents_grid → J_cx → 230.60958 GHz"/>
+    <Parameter class="Frequency" length="0" begin="0"/>
+    <Parameter class="ProjectionComponents:Ludwig3" length="0" begin="1"/>
+    <Parameter class="X" length="301" begin="0"/>
+    <Parameter class="Y" length="301" begin="0"/>
+    <Variable className="FieldComponents:E" nameEDX=""/>
+    <Axes xName="x" zName="Phase" yUnit="m" title="sec_currents_grid → J_cx → 230.60958 GHz" xAxis="X" xUnit="m" yName="y" zUnit="rad" yAxis="Y"/>
+    <Format to="3"/>
+    <DisplayMode Contours="true" Image="true" NormalisationFactor="0"/>
+    <ContourParameters ContourParametersInitialized="1">
+     <cereal>
+      <contourParameters>
+       <cereal_class_version>2</cereal_class_version>
+       <contourvalues size="dynamic">
+        <value>
+         <first>-3.1415926535897931</first>
+         <second>
+          <cereal_class_version>1</cereal_class_version>
+          <value>
+           <cereal_class_version>0</cereal_class_version>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>-2.3561944901923448</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>-1.5707963267948966</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>-0.78539816339744828</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>0</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>0.78539816339744828</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>1.5707963267948966</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>2.3561944901923448</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>3.1415926535897931</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+       </contourvalues>
+       <contour_type>2</contour_type>
+       <user_relative_db>3.141590986027436</user_relative_db>
+       <default_color>#ff000000</default_color>
+       <polarization>0</polarization>
+       <path_loss>0</path_loss>
+       <gain_offset>0</gain_offset>
+       <contour_labels>1</contour_labels>
+       <label_interval>35</label_interval>
+       <font_size>8</font_size>
+       <font_weight>50</font_weight>
+       <beampeak_label>0</beampeak_label>
+       <interpolation>0</interpolation>
+       <legend>0</legend>
+       <interp_density>1</interp_density>
+       <default_thickness>4</default_thickness>
+       <options>0</options>
+       <rain_model>0</rain_model>
+       <availability>0.99919999999999998</availability>
+       <beampeak_label_text/>
+       <m_luminence>120</m_luminence>
+       <contour_label_text>dB</contour_label_text>
+      </contourParameters>
+     </cereal>
+    </ContourParameters>
+   </SpectrogramData>
+   <legendordering>
+    <legendorderingentry uuid="{0058a6e3-00c7-4b3c-bb7b-bedf8be98fbd}"/>
+   </legendordering>
+   <ColorMap>
+    <ColorStop color_a="255" color_r="0" color_b="128" color_g="0" value="0"/>
+    <ColorStop color_a="255" color_r="0" color_b="255" color_g="255" value="0.25"/>
+    <ColorStop color_a="255" color_r="0" color_b="0" color_g="255" value="0.5"/>
+    <ColorStop color_a="255" color_r="255" color_b="0" color_g="255" value="0.75"/>
+    <ColorStop color_a="255" color_r="255" color_b="0" color_g="0" value="1"/>
+   </ColorMap>
+   <FixedAspectRatio enabled="true" mode="1">
+    <MinimumRect top="-0.17499999999999999" left="-0.17499999999999999" width="0.34999999999999998" height="0.34999999999999998"/>
+   </FixedAspectRatio>
+   <Window normalX="47" normalY="660" isMaximized="0" normalHeight="584" normalWidth="698" isFullscreen="0" isMinimized="0"/>
+  </PlotWidget>
+  <PlotWidget type="Spectrogram">
+   <Title text="%Grid_1_Job% → %Grid_1_Full Title%" font="MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"/>
+   <Axis inverted="0" resetZoomBehaviour="RangeLimit" id="0" enabled="1" text="%Y-Left Title%" minimum="-0.175" maximum="0.175" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" useMinor="0" useMajor="1" stepMajor="10" useFixedStep="0" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" margin="0" spacing="2" stepMinor="5" startAt="0">
+    <PenMajor color_a="255" color_r="192" color_b="192" style="1" color_g="192" styleString="SolidLine" width="0"/>
+   </Axis>
+   <Axis maximum="3.14152" id="1" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" colorBarWidth="20" useFixedStep="0" text="%Y-Right Title%" stepMinor="5" inverted="0" minimum="-3.14132" startAt="0" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" useMinor="0" enabled="1" useMajor="0" stepMajor="10" margin="20" resetZoomBehaviour="RangeLimit" spacing="2"/>
+   <Axis inverted="0" resetZoomBehaviour="Regular" id="2" enabled="1" text="%X-Bottom Title%" minimum="-0.187993" maximum="0.187993" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" useMinor="0" useMajor="1" stepMajor="10" useFixedStep="0" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" margin="0" spacing="2" stepMinor="5" startAt="0">
+    <PenMajor color_a="255" color_r="192" color_b="192" style="1" color_g="192" styleString="SolidLine" width="0"/>
+   </Axis>
+   <Axis Undefined="1"/>
+   <Canvas color_a="255" color_r="255" color_b="255" color_g="255" axisLineWidth="0" frameAroundExported="1" minorTickLength="4" majorTickLength="8"/>
+   <Grid/>
+   <Legend maxcolumns="1" externalsizeratio="0.29999999999999999" externalalignment="1" legendvisible="0" textwidthmargin="4" activelegend="1" bgmode="0">
+    <bgcolor color_a="255" color_r="255" color_b="255" color_g="255"/>
+    <borderpen color_a="255" color_r="160" color_b="164" style="1" color_g="160" styleString="SolidLine" width="1"/>
+    <internalposition>
+     <horizontal>1000000</horizontal>
+     <vertical>0</vertical>
+    </internalposition>
+    <legendordering/>
+   </Legend>
+   <SpectrogramData uuid="{a19f6229-9f4b-4ad7-ae21-035e50b71e36}">
+    <EDIFile time="2026-03-20T10:19:51" xmlHeader="&lt;!DOCTYPE FileMetaData>&#xa;&lt;Parameters>&#xa; &lt;File Quantity=&quot;J&quot; SubObject=&quot;unknown&quot; Path=&quot;sma_cassegrain_seccur_gbfeed_po.grd&quot; Type=&quot;Grid:Surface&quot; Format=&quot;Ticra&quot; Object=&quot;sec_currents_grid&quot; Hash=&quot;74ca670c3e9bafc1bd5763f85697f745&quot;>&#xa;  &lt;Parameter Name=&quot;Frequency&quot; Unit=&quot;GHz&quot; Values=&quot; 230.609583076923&quot;/>&#xa;  &lt;Parameter Name=&quot;Y&quot; Unit=&quot;m&quot; Values=&quot;[-0.175000000000000;0.175000000000000;301]&quot;/>&#xa;  &lt;Parameter Name=&quot;X&quot; Unit=&quot;m&quot; Values=&quot;[-0.175000000000000;0.175000000000000;301]&quot;/>&#xa; &lt;/File>&#xa;&lt;/Parameters>&#xa;" name="Job_14/sma_cassegrain_seccur_gbfeed_po.grd"/>
+    <Font data="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,12,-1,5,50,0,0,0,0,0"/>
+    <Legend text="sec_currents_grid → J_z → 230.60958 GHz"/>
+    <Parameter class="Frequency" length="0" begin="0"/>
+    <Parameter class="ProjectionComponents:Ludwig3" length="0" begin="2"/>
+    <Parameter class="X" length="301" begin="0"/>
+    <Parameter class="Y" length="301" begin="0"/>
+    <Variable className="FieldComponents:E" nameEDX=""/>
+    <Axes xName="x" zName="Phase" yUnit="m" title="sec_currents_grid → J_z → 230.60958 GHz" xAxis="X" xUnit="m" yName="y" zUnit="rad" yAxis="Y"/>
+    <Format to="3"/>
+    <DisplayMode Contours="true" Image="true" NormalisationFactor="0"/>
+    <ContourParameters ContourParametersInitialized="1">
+     <cereal>
+      <contourParameters>
+       <cereal_class_version>2</cereal_class_version>
+       <contourvalues size="dynamic">
+        <value>
+         <first>-3.1415926535897931</first>
+         <second>
+          <cereal_class_version>1</cereal_class_version>
+          <value>
+           <cereal_class_version>0</cereal_class_version>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>-2.3561944901923448</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>-1.5707963267948966</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>-0.78539816339744828</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>0</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>0.78539816339744828</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>1.5707963267948966</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>2.3561944901923448</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>3.1415926535897931</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+       </contourvalues>
+       <contour_type>2</contour_type>
+       <user_relative_db>3.1415168104768627</user_relative_db>
+       <default_color>#ff000000</default_color>
+       <polarization>0</polarization>
+       <path_loss>0</path_loss>
+       <gain_offset>0</gain_offset>
+       <contour_labels>1</contour_labels>
+       <label_interval>35</label_interval>
+       <font_size>8</font_size>
+       <font_weight>50</font_weight>
+       <beampeak_label>0</beampeak_label>
+       <interpolation>0</interpolation>
+       <legend>0</legend>
+       <interp_density>1</interp_density>
+       <default_thickness>4</default_thickness>
+       <options>0</options>
+       <rain_model>0</rain_model>
+       <availability>0.99919999999999998</availability>
+       <beampeak_label_text/>
+       <m_luminence>120</m_luminence>
+       <contour_label_text>dB</contour_label_text>
+      </contourParameters>
+     </cereal>
+    </ContourParameters>
+   </SpectrogramData>
+   <legendordering>
+    <legendorderingentry uuid="{a19f6229-9f4b-4ad7-ae21-035e50b71e36}"/>
+   </legendordering>
+   <ColorMap>
+    <ColorStop color_a="255" color_r="0" color_b="128" color_g="0" value="0"/>
+    <ColorStop color_a="255" color_r="0" color_b="255" color_g="255" value="0.25"/>
+    <ColorStop color_a="255" color_r="0" color_b="0" color_g="255" value="0.5"/>
+    <ColorStop color_a="255" color_r="255" color_b="0" color_g="255" value="0.75"/>
+    <ColorStop color_a="255" color_r="255" color_b="0" color_g="0" value="1"/>
+   </ColorMap>
+   <FixedAspectRatio enabled="true" mode="1">
+    <MinimumRect top="-0.17499999999999999" left="-0.17499999999999999" width="0.34999999999999998" height="0.34999999999999998"/>
+   </FixedAspectRatio>
+   <Window normalX="613" normalY="94" isMaximized="0" normalHeight="593" normalWidth="666" isFullscreen="0" isMinimized="0"/>
+  </PlotWidget>
+  <PlotWidget type="Spectrogram">
+   <Title text="%Grid_1_Job% → %Grid_1_Full Title%" font="MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"/>
+   <Axis inverted="0" resetZoomBehaviour="RangeLimit" id="0" enabled="1" text="%Y-Left Title%" minimum="-0.175" maximum="0.175" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" useMinor="0" useMajor="1" stepMajor="10" useFixedStep="0" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" margin="0" spacing="2" stepMinor="5" startAt="0">
+    <PenMajor color_a="255" color_r="192" color_b="192" style="1" color_g="192" styleString="SolidLine" width="0"/>
+   </Axis>
+   <Axis maximum="179.993" id="1" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" colorBarWidth="20" useFixedStep="0" text="%Y-Right Title%" stepMinor="5" inverted="0" minimum="-179.995" startAt="0" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" useMinor="0" enabled="1" useMajor="0" stepMajor="10" margin="20" resetZoomBehaviour="RangeLimit" spacing="2"/>
+   <Axis inverted="0" resetZoomBehaviour="Regular" id="2" enabled="1" text="%X-Bottom Title%" minimum="-0.202057" maximum="0.202057" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" useMinor="0" useMajor="1" stepMajor="10" useFixedStep="0" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" margin="0" spacing="2" stepMinor="5" startAt="0">
+    <PenMajor color_a="255" color_r="192" color_b="192" style="1" color_g="192" styleString="SolidLine" width="0"/>
+   </Axis>
+   <Axis Undefined="1"/>
+   <Canvas color_a="255" color_r="255" color_b="255" color_g="255" axisLineWidth="0" frameAroundExported="1" minorTickLength="4" majorTickLength="8"/>
+   <Grid/>
+   <Legend maxcolumns="1" externalsizeratio="0.29999999999999999" externalalignment="1" legendvisible="0" textwidthmargin="4" activelegend="1" bgmode="0">
+    <bgcolor color_a="255" color_r="255" color_b="255" color_g="255"/>
+    <borderpen color_a="255" color_r="160" color_b="164" style="1" color_g="160" styleString="SolidLine" width="1"/>
+    <internalposition>
+     <horizontal>1000000</horizontal>
+     <vertical>0</vertical>
+    </internalposition>
+    <legendordering/>
+   </Legend>
+   <SpectrogramData uuid="{87b3ed56-1181-450b-b1e5-b93c417e1fe3}">
+    <EDIFile time="2026-03-19T13:21:38" xmlHeader="&lt;!DOCTYPE FileMetaData>&#xa;&lt;Parameters>&#xa; &lt;File Quantity=&quot;J&quot; SubObject=&quot;unknown&quot; Path=&quot;sma_cassegrain_seccur_gbfeed_po.grd&quot; Type=&quot;Grid:Surface&quot; Format=&quot;Ticra&quot; Object=&quot;sec_currents_grid&quot; Hash=&quot;1ea29a9ab72ff1d5b7970be5df23d774&quot;>&#xa;  &lt;Parameter Name=&quot;Frequency&quot; Unit=&quot;GHz&quot; Values=&quot; 230.609583076923&quot;/>&#xa;  &lt;Parameter Name=&quot;Y&quot; Unit=&quot;m&quot; Values=&quot;[-0.175000000000000;0.175000000000000;301]&quot;/>&#xa;  &lt;Parameter Name=&quot;X&quot; Unit=&quot;m&quot; Values=&quot;[-0.175000000000000;0.175000000000000;301]&quot;/>&#xa; &lt;/File>&#xa;&lt;/Parameters>&#xa;" name="Job_12/sma_cassegrain_seccur_gbfeed_po.grd"/>
+    <Font data="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,12,-1,5,50,0,0,0,0,0"/>
+    <Legend text="sec_currents_grid → J_co → 230.60958 GHz"/>
+    <Parameter class="Frequency" length="0" begin="0"/>
+    <Parameter class="ProjectionComponents:Ludwig3" length="0" begin="0"/>
+    <Parameter class="X" length="301" begin="0"/>
+    <Parameter class="Y" length="301" begin="0"/>
+    <Variable className="FieldComponents:E" nameEDX=""/>
+    <Axes xName="x" zName="Phase" yUnit="m" title="sec_currents_grid → J_co → 230.60958 GHz" xAxis="X" xUnit="m" yName="y" zUnit="deg" yAxis="Y"/>
+    <Format to="1"/>
+    <DisplayMode Contours="true" Image="true" NormalisationFactor="0"/>
+    <ContourParameters ContourParametersInitialized="1">
+     <cereal>
+      <contourParameters>
+       <cereal_class_version>2</cereal_class_version>
+       <contourvalues size="dynamic">
+        <value>
+         <first>-180</first>
+         <second>
+          <cereal_class_version>1</cereal_class_version>
+          <value>
+           <cereal_class_version>0</cereal_class_version>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>-135</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>-90</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>-45</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>0</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>45</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>90</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>135</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>180</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+       </contourvalues>
+       <contour_type>2</contour_type>
+       <user_relative_db>179.992629320459</user_relative_db>
+       <default_color>#ff000000</default_color>
+       <polarization>0</polarization>
+       <path_loss>0</path_loss>
+       <gain_offset>0</gain_offset>
+       <contour_labels>1</contour_labels>
+       <label_interval>35</label_interval>
+       <font_size>8</font_size>
+       <font_weight>50</font_weight>
+       <beampeak_label>0</beampeak_label>
+       <interpolation>0</interpolation>
+       <legend>0</legend>
+       <interp_density>1</interp_density>
+       <default_thickness>4</default_thickness>
+       <options>0</options>
+       <rain_model>0</rain_model>
+       <availability>0.99919999999999998</availability>
+       <beampeak_label_text/>
+       <m_luminence>120</m_luminence>
+       <contour_label_text>dB</contour_label_text>
+      </contourParameters>
+     </cereal>
+    </ContourParameters>
+   </SpectrogramData>
+   <legendordering>
+    <legendorderingentry uuid="{87b3ed56-1181-450b-b1e5-b93c417e1fe3}"/>
+   </legendordering>
+   <ColorMap>
+    <ColorStop color_a="255" color_r="0" color_b="128" color_g="0" value="0"/>
+    <ColorStop color_a="255" color_r="0" color_b="255" color_g="255" value="0.25"/>
+    <ColorStop color_a="255" color_r="0" color_b="0" color_g="255" value="0.5"/>
+    <ColorStop color_a="255" color_r="255" color_b="0" color_g="255" value="0.75"/>
+    <ColorStop color_a="255" color_r="255" color_b="0" color_g="0" value="1"/>
+   </ColorMap>
+   <FixedAspectRatio enabled="true" mode="1">
+    <MinimumRect top="-0.17499999999999999" left="-0.17499999999999999" width="0.34999999999999998" height="0.34999999999999998"/>
+   </FixedAspectRatio>
+   <Window normalX="16" normalY="108" isMaximized="0" normalHeight="563" normalWidth="680" isFullscreen="0" isMinimized="0"/>
+  </PlotWidget>
+  <PlotWidget type="Spectrogram">
+   <Title text="%Grid_1_Job% → %Grid_1_Full Title%" font="MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"/>
+   <Axis inverted="0" resetZoomBehaviour="RangeLimit" id="0" enabled="1" text="%Y-Left Title%" minimum="-0.177929" maximum="0.177929" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" useMinor="0" useMajor="1" stepMajor="10" useFixedStep="0" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" margin="0" spacing="2" stepMinor="5" startAt="0">
+    <PenMajor color_a="255" color_r="192" color_b="192" style="1" color_g="192" styleString="SolidLine" width="0"/>
+   </Axis>
+   <Axis maximum="3.14157" id="1" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" colorBarWidth="20" useFixedStep="0" text="%Y-Right Title%" stepMinor="5" inverted="0" minimum="-3.14144" startAt="0" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" useMinor="0" enabled="1" useMajor="0" stepMajor="10" margin="20" resetZoomBehaviour="RangeLimit" spacing="2"/>
+   <Axis inverted="0" resetZoomBehaviour="Regular" id="2" enabled="1" text="%X-Bottom Title%" minimum="-0.175" maximum="0.175" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" useMinor="0" useMajor="1" stepMajor="10" useFixedStep="0" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" margin="0" spacing="2" stepMinor="5" startAt="0">
+    <PenMajor color_a="255" color_r="192" color_b="192" style="1" color_g="192" styleString="SolidLine" width="0"/>
+   </Axis>
+   <Axis Undefined="1"/>
+   <Canvas color_a="255" color_r="255" color_b="255" color_g="255" axisLineWidth="0" frameAroundExported="1" minorTickLength="4" majorTickLength="8"/>
+   <Grid/>
+   <Legend maxcolumns="1" externalsizeratio="0.29999999999999999" externalalignment="1" legendvisible="0" textwidthmargin="4" activelegend="1" bgmode="0">
+    <bgcolor color_a="255" color_r="255" color_b="255" color_g="255"/>
+    <borderpen color_a="255" color_r="160" color_b="164" style="1" color_g="160" styleString="SolidLine" width="1"/>
+    <internalposition>
+     <horizontal>1000000</horizontal>
+     <vertical>0</vertical>
+    </internalposition>
+    <legendordering/>
+   </Legend>
+   <SpectrogramData uuid="{47a36fad-25da-4a2d-8a3d-8135a4e4f82b}">
+    <EDIFile time="2026-03-19T13:21:38" xmlHeader="&lt;!DOCTYPE FileMetaData>&#xa;&lt;Parameters>&#xa; &lt;File Quantity=&quot;J&quot; SubObject=&quot;unknown&quot; Path=&quot;sma_cassegrain_seccur_gbfeed_po.grd&quot; Type=&quot;Grid:Surface&quot; Format=&quot;Ticra&quot; Object=&quot;sec_currents_grid&quot; Hash=&quot;1ea29a9ab72ff1d5b7970be5df23d774&quot;>&#xa;  &lt;Parameter Name=&quot;Frequency&quot; Unit=&quot;GHz&quot; Values=&quot; 230.609583076923&quot;/>&#xa;  &lt;Parameter Name=&quot;Y&quot; Unit=&quot;m&quot; Values=&quot;[-0.175000000000000;0.175000000000000;301]&quot;/>&#xa;  &lt;Parameter Name=&quot;X&quot; Unit=&quot;m&quot; Values=&quot;[-0.175000000000000;0.175000000000000;301]&quot;/>&#xa; &lt;/File>&#xa;&lt;/Parameters>&#xa;" name="Job_12/sma_cassegrain_seccur_gbfeed_po.grd"/>
+    <Font data="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,12,-1,5,50,0,0,0,0,0"/>
+    <Legend text="sec_currents_grid → J_cx → 230.60958 GHz"/>
+    <Parameter class="Frequency" length="0" begin="0"/>
+    <Parameter class="ProjectionComponents:Ludwig3" length="0" begin="1"/>
+    <Parameter class="X" length="301" begin="0"/>
+    <Parameter class="Y" length="301" begin="0"/>
+    <Variable className="FieldComponents:E" nameEDX=""/>
+    <Axes xName="x" zName="Phase" yUnit="m" title="sec_currents_grid → J_cx → 230.60958 GHz" xAxis="X" xUnit="m" yName="y" zUnit="rad" yAxis="Y"/>
+    <Format to="3"/>
+    <DisplayMode Contours="true" Image="true" NormalisationFactor="0"/>
+    <ContourParameters ContourParametersInitialized="1">
+     <cereal>
+      <contourParameters>
+       <cereal_class_version>2</cereal_class_version>
+       <contourvalues size="dynamic">
+        <value>
+         <first>-3.1415926535897931</first>
+         <second>
+          <cereal_class_version>1</cereal_class_version>
+          <value>
+           <cereal_class_version>0</cereal_class_version>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>-2.3561944901923448</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>-1.5707963267948966</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>-0.78539816339744828</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>0</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>0.78539816339744828</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>1.5707963267948966</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>2.3561944901923448</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>3.1415926535897931</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+       </contourvalues>
+       <contour_type>2</contour_type>
+       <user_relative_db>3.1415706749527326</user_relative_db>
+       <default_color>#ff000000</default_color>
+       <polarization>0</polarization>
+       <path_loss>0</path_loss>
+       <gain_offset>0</gain_offset>
+       <contour_labels>1</contour_labels>
+       <label_interval>35</label_interval>
+       <font_size>8</font_size>
+       <font_weight>50</font_weight>
+       <beampeak_label>0</beampeak_label>
+       <interpolation>0</interpolation>
+       <legend>0</legend>
+       <interp_density>1</interp_density>
+       <default_thickness>4</default_thickness>
+       <options>0</options>
+       <rain_model>0</rain_model>
+       <availability>0.99919999999999998</availability>
+       <beampeak_label_text/>
+       <m_luminence>120</m_luminence>
+       <contour_label_text>dB</contour_label_text>
+      </contourParameters>
+     </cereal>
+    </ContourParameters>
+   </SpectrogramData>
+   <legendordering>
+    <legendorderingentry uuid="{47a36fad-25da-4a2d-8a3d-8135a4e4f82b}"/>
+   </legendordering>
+   <ColorMap>
+    <ColorStop color_a="255" color_r="0" color_b="128" color_g="0" value="0"/>
+    <ColorStop color_a="255" color_r="0" color_b="255" color_g="255" value="0.25"/>
+    <ColorStop color_a="255" color_r="0" color_b="0" color_g="255" value="0.5"/>
+    <ColorStop color_a="255" color_r="255" color_b="0" color_g="255" value="0.75"/>
+    <ColorStop color_a="255" color_r="255" color_b="0" color_g="0" value="1"/>
+   </ColorMap>
+   <FixedAspectRatio enabled="true" mode="1">
+    <MinimumRect top="-0.17499999999999999" left="-0.17499999999999999" width="0.34999999999999998" height="0.34999999999999998"/>
+   </FixedAspectRatio>
+   <Window normalX="14" normalY="222" isMaximized="0" normalHeight="648" normalWidth="681" isFullscreen="0" isMinimized="0"/>
+  </PlotWidget>
+  <PlotWidget type="Spectrogram">
+   <Title text="%Grid_1_Job% → %Grid_1_Full Title%" font="MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"/>
+   <Axis inverted="0" resetZoomBehaviour="RangeLimit" id="0" enabled="1" text="%Y-Left Title%" minimum="-0.17954" maximum="0.17954" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" useMinor="0" useMajor="1" stepMajor="10" useFixedStep="0" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" margin="0" spacing="2" stepMinor="5" startAt="0">
+    <PenMajor color_a="255" color_r="192" color_b="192" style="1" color_g="192" styleString="SolidLine" width="0"/>
+   </Axis>
+   <Axis maximum="179.997" id="1" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" colorBarWidth="20" useFixedStep="0" text="%Y-Right Title%" stepMinor="5" inverted="0" minimum="-180" startAt="0" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" useMinor="0" enabled="1" useMajor="0" stepMajor="10" margin="20" resetZoomBehaviour="RangeLimit" spacing="2"/>
+   <Axis inverted="0" resetZoomBehaviour="Regular" id="2" enabled="1" text="%X-Bottom Title%" minimum="-0.175" maximum="0.175" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" useMinor="0" useMajor="1" stepMajor="10" useFixedStep="0" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" margin="0" spacing="2" stepMinor="5" startAt="0">
+    <PenMajor color_a="255" color_r="192" color_b="192" style="1" color_g="192" styleString="SolidLine" width="0"/>
+   </Axis>
+   <Axis Undefined="1"/>
+   <Canvas color_a="255" color_r="255" color_b="255" color_g="255" axisLineWidth="0" frameAroundExported="1" minorTickLength="4" majorTickLength="8"/>
+   <Grid/>
+   <Legend maxcolumns="1" externalsizeratio="0.29999999999999999" externalalignment="1" legendvisible="0" textwidthmargin="4" activelegend="1" bgmode="0">
+    <bgcolor color_a="255" color_r="255" color_b="255" color_g="255"/>
+    <borderpen color_a="255" color_r="160" color_b="164" style="1" color_g="160" styleString="SolidLine" width="1"/>
+    <internalposition>
+     <horizontal>1000000</horizontal>
+     <vertical>0</vertical>
+    </internalposition>
+    <legendordering/>
+   </Legend>
+   <SpectrogramData uuid="{0ac90940-0c33-4bcf-9ec2-64eaf96506ec}">
+    <EDIFile time="2026-03-20T10:19:57" xmlHeader="&lt;!DOCTYPE FileMetaData>&#xa;&lt;Parameters>&#xa; &lt;File Quantity=&quot;E&quot; SubObject=&quot;unknown&quot; Path=&quot;sma_cassegrain_secE_gbfeed_po.grd&quot; Type=&quot;Grid:Surface&quot; Format=&quot;Ticra&quot; Object=&quot;sec_Efield_grid&quot; Hash=&quot;ba4641b6dec930d2785fd3c3196dc0ba&quot;>&#xa;  &lt;Parameter Name=&quot;Frequency&quot; Unit=&quot;GHz&quot; Values=&quot; 230.609583076923&quot;/>&#xa;  &lt;Parameter Name=&quot;Y&quot; Unit=&quot;m&quot; Values=&quot;[-0.175000000000000;0.175000000000000;301]&quot;/>&#xa;  &lt;Parameter Name=&quot;X&quot; Unit=&quot;m&quot; Values=&quot;[-0.175000000000000;0.175000000000000;301]&quot;/>&#xa; &lt;/File>&#xa;&lt;/Parameters>&#xa;" name="Job_14/sma_cassegrain_secE_gbfeed_po.grd"/>
+    <Font data="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,12,-1,5,50,0,0,0,0,0"/>
+    <Legend text="sec_Efield_grid → E_co → 230.60958 GHz"/>
+    <Parameter class="Frequency" length="0" begin="0"/>
+    <Parameter class="ProjectionComponents:Ludwig3" length="0" begin="0"/>
+    <Parameter class="X" length="301" begin="0"/>
+    <Parameter class="Y" length="301" begin="0"/>
+    <Variable className="FieldComponents:E" nameEDX=""/>
+    <Axes xName="x" zName="Phase" yUnit="m" title="sec_Efield_grid → E_co → 230.60958 GHz" xAxis="X" xUnit="m" yName="y" zUnit="deg" yAxis="Y"/>
+    <Format to="1"/>
+    <DisplayMode Contours="true" Image="true" NormalisationFactor="0"/>
+    <ContourParameters ContourParametersInitialized="1">
+     <cereal>
+      <contourParameters>
+       <cereal_class_version>2</cereal_class_version>
+       <contourvalues size="dynamic">
+        <value>
+         <first>-180</first>
+         <second>
+          <cereal_class_version>1</cereal_class_version>
+          <value>
+           <cereal_class_version>0</cereal_class_version>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>-135</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>-90</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>-45</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>0</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>45</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>90</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>135</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>180</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+       </contourvalues>
+       <contour_type>2</contour_type>
+       <user_relative_db>179.99715981075423</user_relative_db>
+       <default_color>#ff000000</default_color>
+       <polarization>0</polarization>
+       <path_loss>0</path_loss>
+       <gain_offset>0</gain_offset>
+       <contour_labels>1</contour_labels>
+       <label_interval>35</label_interval>
+       <font_size>8</font_size>
+       <font_weight>50</font_weight>
+       <beampeak_label>0</beampeak_label>
+       <interpolation>0</interpolation>
+       <legend>0</legend>
+       <interp_density>1</interp_density>
+       <default_thickness>4</default_thickness>
+       <options>0</options>
+       <rain_model>0</rain_model>
+       <availability>0.99919999999999998</availability>
+       <beampeak_label_text/>
+       <m_luminence>120</m_luminence>
+       <contour_label_text>dB</contour_label_text>
+      </contourParameters>
+     </cereal>
+    </ContourParameters>
+   </SpectrogramData>
+   <legendordering>
+    <legendorderingentry uuid="{0ac90940-0c33-4bcf-9ec2-64eaf96506ec}"/>
+   </legendordering>
+   <ColorMap>
+    <ColorStop color_a="255" color_r="0" color_b="128" color_g="0" value="0"/>
+    <ColorStop color_a="255" color_r="0" color_b="255" color_g="255" value="0.25"/>
+    <ColorStop color_a="255" color_r="0" color_b="0" color_g="255" value="0.5"/>
+    <ColorStop color_a="255" color_r="255" color_b="0" color_g="255" value="0.75"/>
+    <ColorStop color_a="255" color_r="255" color_b="0" color_g="0" value="1"/>
+   </ColorMap>
+   <FixedAspectRatio enabled="true" mode="1">
+    <MinimumRect top="-0.17499999999999999" left="-0.17499999999999999" width="0.34999999999999998" height="0.34999999999999998"/>
+   </FixedAspectRatio>
+   <Window normalX="48" normalY="132" isMaximized="0" normalHeight="597" normalWidth="641" isFullscreen="0" isMinimized="0"/>
+  </PlotWidget>
+  <PlotWidget type="Spectrogram">
+   <Title text="%Grid_1_Job% → %Grid_1_Full Title%" font="MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"/>
+   <Axis inverted="0" resetZoomBehaviour="RangeLimit" id="0" enabled="1" text="%Y-Left Title%" minimum="-0.175" maximum="0.175" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" useMinor="0" useMajor="1" stepMajor="10" useFixedStep="0" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" margin="0" spacing="2" stepMinor="5" startAt="0">
+    <PenMajor color_a="255" color_r="192" color_b="192" style="1" color_g="192" styleString="SolidLine" width="0"/>
+   </Axis>
+   <Axis maximum="179.992" id="1" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" colorBarWidth="20" useFixedStep="0" text="%Y-Right Title%" stepMinor="5" inverted="0" minimum="-180" startAt="0" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" useMinor="0" enabled="1" useMajor="0" stepMajor="10" margin="20" resetZoomBehaviour="RangeLimit" spacing="2"/>
+   <Axis inverted="0" resetZoomBehaviour="Regular" id="2" enabled="1" text="%X-Bottom Title%" minimum="-0.180182" maximum="0.180182" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" useMinor="0" useMajor="1" stepMajor="10" useFixedStep="0" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" margin="0" spacing="2" stepMinor="5" startAt="0">
+    <PenMajor color_a="255" color_r="192" color_b="192" style="1" color_g="192" styleString="SolidLine" width="0"/>
+   </Axis>
+   <Axis Undefined="1"/>
+   <Canvas color_a="255" color_r="255" color_b="255" color_g="255" axisLineWidth="0" frameAroundExported="1" minorTickLength="4" majorTickLength="8"/>
+   <Grid/>
+   <Legend maxcolumns="1" externalsizeratio="0.29999999999999999" externalalignment="1" legendvisible="0" textwidthmargin="4" activelegend="1" bgmode="0">
+    <bgcolor color_a="255" color_r="255" color_b="255" color_g="255"/>
+    <borderpen color_a="255" color_r="160" color_b="164" style="1" color_g="160" styleString="SolidLine" width="1"/>
+    <internalposition>
+     <horizontal>1000000</horizontal>
+     <vertical>0</vertical>
+    </internalposition>
+    <legendordering/>
+   </Legend>
+   <SpectrogramData uuid="{81b5afd6-fef1-4bf3-9153-46b6addb7db5}">
+    <EDIFile time="2026-03-20T10:19:57" xmlHeader="&lt;!DOCTYPE FileMetaData>&#xa;&lt;Parameters>&#xa; &lt;File Quantity=&quot;E&quot; SubObject=&quot;unknown&quot; Path=&quot;sma_cassegrain_secE_gbfeed_po.grd&quot; Type=&quot;Grid:Surface&quot; Format=&quot;Ticra&quot; Object=&quot;sec_Efield_grid&quot; Hash=&quot;ba4641b6dec930d2785fd3c3196dc0ba&quot;>&#xa;  &lt;Parameter Name=&quot;Frequency&quot; Unit=&quot;GHz&quot; Values=&quot; 230.609583076923&quot;/>&#xa;  &lt;Parameter Name=&quot;Y&quot; Unit=&quot;m&quot; Values=&quot;[-0.175000000000000;0.175000000000000;301]&quot;/>&#xa;  &lt;Parameter Name=&quot;X&quot; Unit=&quot;m&quot; Values=&quot;[-0.175000000000000;0.175000000000000;301]&quot;/>&#xa; &lt;/File>&#xa;&lt;/Parameters>&#xa;" name="Job_14/sma_cassegrain_secE_gbfeed_po.grd"/>
+    <Font data="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,12,-1,5,50,0,0,0,0,0"/>
+    <Legend text="sec_Efield_grid → E_cx → 230.60958 GHz"/>
+    <Parameter class="Frequency" length="0" begin="0"/>
+    <Parameter class="ProjectionComponents:Ludwig3" length="0" begin="1"/>
+    <Parameter class="X" length="301" begin="0"/>
+    <Parameter class="Y" length="301" begin="0"/>
+    <Variable className="FieldComponents:E" nameEDX=""/>
+    <Axes xName="x" zName="Phase" yUnit="m" title="sec_Efield_grid → E_cx → 230.60958 GHz" xAxis="X" xUnit="m" yName="y" zUnit="deg" yAxis="Y"/>
+    <Format to="1"/>
+    <DisplayMode Contours="true" Image="true" NormalisationFactor="0"/>
+    <ContourParameters ContourParametersInitialized="1">
+     <cereal>
+      <contourParameters>
+       <cereal_class_version>2</cereal_class_version>
+       <contourvalues size="dynamic">
+        <value>
+         <first>-180</first>
+         <second>
+          <cereal_class_version>1</cereal_class_version>
+          <value>
+           <cereal_class_version>0</cereal_class_version>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>-135</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>-90</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>-45</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>0</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>45</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>90</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>135</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>180</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+       </contourvalues>
+       <contour_type>2</contour_type>
+       <user_relative_db>179.99237814001435</user_relative_db>
+       <default_color>#ff000000</default_color>
+       <polarization>0</polarization>
+       <path_loss>0</path_loss>
+       <gain_offset>0</gain_offset>
+       <contour_labels>1</contour_labels>
+       <label_interval>35</label_interval>
+       <font_size>8</font_size>
+       <font_weight>50</font_weight>
+       <beampeak_label>0</beampeak_label>
+       <interpolation>0</interpolation>
+       <legend>0</legend>
+       <interp_density>1</interp_density>
+       <default_thickness>4</default_thickness>
+       <options>0</options>
+       <rain_model>0</rain_model>
+       <availability>0.99919999999999998</availability>
+       <beampeak_label_text/>
+       <m_luminence>120</m_luminence>
+       <contour_label_text>dB</contour_label_text>
+      </contourParameters>
+     </cereal>
+    </ContourParameters>
+   </SpectrogramData>
+   <legendordering>
+    <legendorderingentry uuid="{81b5afd6-fef1-4bf3-9153-46b6addb7db5}"/>
+   </legendordering>
+   <ColorMap>
+    <ColorStop color_a="255" color_r="0" color_b="128" color_g="0" value="0"/>
+    <ColorStop color_a="255" color_r="0" color_b="255" color_g="255" value="0.25"/>
+    <ColorStop color_a="255" color_r="0" color_b="0" color_g="255" value="0.5"/>
+    <ColorStop color_a="255" color_r="255" color_b="0" color_g="255" value="0.75"/>
+    <ColorStop color_a="255" color_r="255" color_b="0" color_g="0" value="1"/>
+   </ColorMap>
+   <FixedAspectRatio enabled="true" mode="1">
+    <MinimumRect top="-0.17499999999999999" left="-0.17499999999999999" width="0.34999999999999998" height="0.34999999999999998"/>
+   </FixedAspectRatio>
+   <Window normalX="633" normalY="114" isMaximized="0" normalHeight="601" normalWidth="669" isFullscreen="0" isMinimized="0"/>
+  </PlotWidget>
+  <PlotWidget type="Spectrogram">
+   <Title text="%Grid_1_Job% → %Grid_1_Full Title%" font="MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"/>
+   <Axis inverted="0" resetZoomBehaviour="RangeLimit" id="0" enabled="1" text="%Y-Left Title%" minimum="-0.186098" maximum="0.186098" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" useMinor="0" useMajor="1" stepMajor="10" useFixedStep="0" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" margin="0" spacing="2" stepMinor="5" startAt="0">
+    <PenMajor color_a="255" color_r="192" color_b="192" style="1" color_g="192" styleString="SolidLine" width="0"/>
+   </Axis>
+   <Axis maximum="3.14126" id="1" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" colorBarWidth="20" useFixedStep="0" text="%Y-Right Title%" stepMinor="5" inverted="0" minimum="-3.14123" startAt="0" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" useMinor="0" enabled="1" useMajor="0" stepMajor="10" margin="20" resetZoomBehaviour="RangeLimit" spacing="2"/>
+   <Axis inverted="0" resetZoomBehaviour="Regular" id="2" enabled="1" text="%X-Bottom Title%" minimum="-0.175" maximum="0.175" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" useMinor="0" useMajor="1" stepMajor="10" useFixedStep="0" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" margin="0" spacing="2" stepMinor="5" startAt="0">
+    <PenMajor color_a="255" color_r="192" color_b="192" style="1" color_g="192" styleString="SolidLine" width="0"/>
+   </Axis>
+   <Axis Undefined="1"/>
+   <Canvas color_a="255" color_r="255" color_b="255" color_g="255" axisLineWidth="0" frameAroundExported="1" minorTickLength="4" majorTickLength="8"/>
+   <Grid/>
+   <Legend maxcolumns="1" externalsizeratio="0.29999999999999999" externalalignment="1" legendvisible="0" textwidthmargin="4" activelegend="1" bgmode="0">
+    <bgcolor color_a="255" color_r="255" color_b="255" color_g="255"/>
+    <borderpen color_a="255" color_r="160" color_b="164" style="1" color_g="160" styleString="SolidLine" width="1"/>
+    <internalposition>
+     <horizontal>1000000</horizontal>
+     <vertical>0</vertical>
+    </internalposition>
+    <legendordering/>
+   </Legend>
+   <SpectrogramData uuid="{2e9ad4b9-9be7-4367-8d4b-96983acdcb1f}">
+    <EDIFile time="2026-03-20T10:19:57" xmlHeader="&lt;!DOCTYPE FileMetaData>&#xa;&lt;Parameters>&#xa; &lt;File Quantity=&quot;E&quot; SubObject=&quot;unknown&quot; Path=&quot;sma_cassegrain_secE_gbfeed_po.grd&quot; Type=&quot;Grid:Surface&quot; Format=&quot;Ticra&quot; Object=&quot;sec_Efield_grid&quot; Hash=&quot;ba4641b6dec930d2785fd3c3196dc0ba&quot;>&#xa;  &lt;Parameter Name=&quot;Frequency&quot; Unit=&quot;GHz&quot; Values=&quot; 230.609583076923&quot;/>&#xa;  &lt;Parameter Name=&quot;Y&quot; Unit=&quot;m&quot; Values=&quot;[-0.175000000000000;0.175000000000000;301]&quot;/>&#xa;  &lt;Parameter Name=&quot;X&quot; Unit=&quot;m&quot; Values=&quot;[-0.175000000000000;0.175000000000000;301]&quot;/>&#xa; &lt;/File>&#xa;&lt;/Parameters>&#xa;" name="Job_14/sma_cassegrain_secE_gbfeed_po.grd"/>
+    <Font data="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,12,-1,5,50,0,0,0,0,0"/>
+    <Legend text="sec_Efield_grid → E_z → 230.60958 GHz"/>
+    <Parameter class="Frequency" length="0" begin="0"/>
+    <Parameter class="ProjectionComponents:Ludwig3" length="0" begin="2"/>
+    <Parameter class="X" length="301" begin="0"/>
+    <Parameter class="Y" length="301" begin="0"/>
+    <Variable className="FieldComponents:E" nameEDX=""/>
+    <Axes xName="x" zName="Phase" yUnit="m" title="sec_Efield_grid → E_z → 230.60958 GHz" xAxis="X" xUnit="m" yName="y" zUnit="rad" yAxis="Y"/>
+    <Format to="3"/>
+    <DisplayMode Contours="true" Image="true" NormalisationFactor="0"/>
+    <ContourParameters ContourParametersInitialized="1">
+     <cereal>
+      <contourParameters>
+       <cereal_class_version>2</cereal_class_version>
+       <contourvalues size="dynamic">
+        <value>
+         <first>-3.1415926535897931</first>
+         <second>
+          <cereal_class_version>1</cereal_class_version>
+          <value>
+           <cereal_class_version>0</cereal_class_version>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>-2.3561944901923448</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>-1.5707963267948966</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>-0.78539816339744828</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>0</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>0.78539816339744828</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>1.5707963267948966</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>2.3561944901923448</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+        <value>
+         <first>3.1415926535897931</first>
+         <second>
+          <value>
+           <color>#ff000000</color>
+           <width>4</width>
+           <penstyle>1</penstyle>
+          </value>
+          <iseoc>false</iseoc>
+          <fillcolor>#ff000000</fillcolor>
+         </second>
+        </value>
+       </contourvalues>
+       <contour_type>2</contour_type>
+       <user_relative_db>3.1412618373424159</user_relative_db>
+       <default_color>#ff000000</default_color>
+       <polarization>0</polarization>
+       <path_loss>0</path_loss>
+       <gain_offset>0</gain_offset>
+       <contour_labels>1</contour_labels>
+       <label_interval>35</label_interval>
+       <font_size>8</font_size>
+       <font_weight>50</font_weight>
+       <beampeak_label>0</beampeak_label>
+       <interpolation>0</interpolation>
+       <legend>0</legend>
+       <interp_density>1</interp_density>
+       <default_thickness>4</default_thickness>
+       <options>0</options>
+       <rain_model>0</rain_model>
+       <availability>0.99919999999999998</availability>
+       <beampeak_label_text/>
+       <m_luminence>120</m_luminence>
+       <contour_label_text>dB</contour_label_text>
+      </contourParameters>
+     </cereal>
+    </ContourParameters>
+   </SpectrogramData>
+   <legendordering>
+    <legendorderingentry uuid="{2e9ad4b9-9be7-4367-8d4b-96983acdcb1f}"/>
+   </legendordering>
+   <ColorMap>
+    <ColorStop color_a="255" color_r="0" color_b="128" color_g="0" value="0"/>
+    <ColorStop color_a="255" color_r="0" color_b="255" color_g="255" value="0.25"/>
+    <ColorStop color_a="255" color_r="0" color_b="0" color_g="255" value="0.5"/>
+    <ColorStop color_a="255" color_r="255" color_b="0" color_g="255" value="0.75"/>
+    <ColorStop color_a="255" color_r="255" color_b="0" color_g="0" value="1"/>
+   </ColorMap>
+   <FixedAspectRatio enabled="true" mode="1">
+    <MinimumRect top="-0.17499999999999999" left="-0.17499999999999999" width="0.34999999999999998" height="0.34999999999999998"/>
+   </FixedAspectRatio>
+   <Window normalX="173" normalY="641" isMaximized="0" normalHeight="598" normalWidth="613" isFullscreen="0" isMinimized="0"/>
+  </PlotWidget>
   <PlotStyleModel/>
   <GridStyleModel/>
  </ResultWindows>
@@ -79,7 +1603,7 @@ working/SMA_Cassegrain.tci
   </ReflectorWizard>
  </WizardData>
  <view_configuration>
-  <view size="-1x-1" perspective_view="no" locked_phi_theta="no" pos="0x0" minimized="no" show_wire_grid="yes" collapsed_view_settings_entries="" scale="4" name="view_1" enable_phi_slider="no" upVector="-0.3187991678714752,-0.1238109320402145,0.9397006630897522" enable_theta_slider="no" show_surfaces="yes" maximized="yes" show_rulers="yes" position="0.161296933889389,-0.7594699859619141,0.9179661273956299" viewCenter="-0.7086194753646851,-1.11487865447998,0.5760142803192139" orientation_type="0" enable_psi_slider="no"/>
+  <view size="-1x-1" perspective_view="no" locked_phi_theta="no" pos="0x0" minimized="no" show_wire_grid="yes" collapsed_view_settings_entries="" scale="10.24" name="view_1" enable_phi_slider="no" upVector="0.03095120936632156,0.01111588999629021,0.9994587898254395" enable_theta_slider="no" show_surfaces="yes" maximized="yes" show_rulers="yes" position="0.5995151400566101,-0.9965513348579407,5.019399166107178" viewCenter="-0.3348060846328735,-1.351464152336121,5.052279949188232" orientation_type="0" enable_psi_slider="no"/>
  </view_configuration>
  <optimisation_configuration current_tab="Press 'New Manager' to create an optimisation manager"/>
  <uq_configuration current_tab="Press 'New Manager' to create an uncertainty quantification manager"/>

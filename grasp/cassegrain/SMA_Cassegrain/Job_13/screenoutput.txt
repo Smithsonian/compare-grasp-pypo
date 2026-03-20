@@ -1,0 +1,15 @@
+ Tci file: Job_13.tci
+ Out file: Job_13.out
+ Log file: Job_13.log
+ 
+ 
+ TICRA Tools 21.0 (Windows amd64/em64t 64-bit)
+ 
+ 
+ TICRA Tools found  24 CPU threads
+ Enabled products: CHAMP 3D, GRASP
+ 
+ ERROR: No calculations - one of the objects needed is missing (ghost)!
+ The missing object is plane_feed
+ 
+ Total time was 0.74 sec

@@ -439,15 +439,15 @@ feed_rim  elliptical_rim
   half_axis        : struct(x: 34.175 mm, y: 34.175 mm)
 )
  
+plane  plane  
+(
+)
+ 
 reflector  reflector  
 (
   coor_sys         : ref(sma_feed_coor),
   surfaces         : sequence(ref(plane_feed)),
   rim              : ref(feed_rim)
-)
- 
-plane_feed  plane  
-(
 )
  
 po_single_face_scatterer  po_single_face_scatterer  
@@ -493,5 +493,5 @@ reflector_plot_for_sma_sub_reflector_for_view_1  reflector_plot
   surface_colour   : struct(r: 0.72156862745098, g: 0.450980392156863, b: 0.2)
 )
  
- //$$ Saved at 10:34:26 on 20.03.2026 by TICRA Tools 21.0 SN=008652
+ //$$ Saved at 10:18:46 on 20.03.2026 by TICRA Tools 21.0 SN=008652
   

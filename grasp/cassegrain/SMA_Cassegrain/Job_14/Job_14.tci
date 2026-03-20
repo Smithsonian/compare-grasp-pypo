@@ -5,9 +5,9 @@ sequence(ref(po_single_face_scatterer)), auto_convergence_of_po : on,  &
 convergence_on_scatterer : sequence(ref(sma_main_reflector)),  &
 convergence_on_output_grid : sequence(ref(sma_farfield_cut),  &
 ref(sma_farfield_E_grid))) sma_po_sub 
-//COMMAND OBJECT sma_main_po get_currents ( source : sequence(ref(sma_sub_po)),  &
-//auto_convergence_of_po : on, convergence_on_output_grid :  &
-//sequence(ref(sma_farfield_cut), ref(sma_farfield_E_grid))) sma_po_main 
+COMMAND OBJECT sma_main_po get_currents ( source : sequence(ref(sma_sub_po)),  &
+auto_convergence_of_po : on, convergence_on_output_grid :  &
+sequence(ref(sma_farfield_cut), ref(sma_farfield_E_grid))) sma_po_main 
 //COMMAND OBJECT sma_farfield_E_grid add_field ( source :  &
 //sequence(ref(sma_gaussian_beam), ref(sma_sub_po))) 
 COMMAND OBJECT sec_currents_grid get_field ( source :  &
