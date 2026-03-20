@@ -1,1 +1,1 @@
-Run all, no PTD, with M3 and secondary contributions to the far field
+Run PO only, no M3 or Sec contributions to far field

@@ -42,17 +42,17 @@ sequence(ref(Secondary_PO)))
 COMMAND OBJECT Output_cut get_field ( source : sequence(ref(Primary_PO))) 
 COMMAND OBJECT Primary_Currents_grid get_field ( source :  &
 sequence(ref(Secondary_PO))) 
-COMMAND OBJECT Output_cut add_field ( source : sequence(ref(Secondary_PO),  &
-ref(M3_PO))) dual_add_field_feed 
+//COMMAND OBJECT Output_cut add_field ( source : sequence(ref(Secondary_PO),  &
+//ref(M3_PO))) dual_add_field_feed 
 COMMAND OBJECT Output_cut_large get_field ( source : sequence(ref(Primary_PO))) 
-COMMAND OBJECT Output_cut_large add_field ( source :  &
-sequence(ref(Secondary_PO), ref(M3_PO))) 
+//COMMAND OBJECT Output_cut_large add_field ( source :  &
+//sequence(ref(Secondary_PO), ref(M3_PO))) 
 COMMAND OBJECT Output_grid get_field ( source : sequence(ref(Primary_PO)))  &
 cmd_9 
-COMMAND OBJECT Output_grid add_field ( source : sequence(ref(Secondary_PO),  &
-ref(M3_PO))) cmd_10 
+//COMMAND OBJECT Output_grid add_field ( source : sequence(ref(Secondary_PO),  &
+//ref(M3_PO))) cmd_10 
 COMMAND OBJECT Output_grid_large get_field ( source :  &
 sequence(ref(Primary_PO))) 
-COMMAND OBJECT Output_cut_large add_field ( source :  &
-sequence(ref(Secondary_PO), ref(M3_PO))) 
+//COMMAND OBJECT Output_grid_large add_field ( source :  &
+//sequence(ref(Secondary_PO), ref(M3_PO))) 
 QUIT 

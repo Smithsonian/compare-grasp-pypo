@@ -1,0 +1,13 @@
+<OutputFiles>
+ <File Object="unknown" SubObject="unknown" Hash="99a8dc646c98056f94ed7a71fb75065d" Type="tci" Format="Text" Path="Job_02.tci"/>
+ <File Object="unknown" SubObject="unknown" Hash="aa68385153d234effd73ba3201b57259" Type="tor" Format="Text" Path="Job_02.tor"/>
+ <File Object="unknown" SubObject="unknown" Hash="31f2faf11dfd43a8dd288026c1ef1a7f" Type="out" Format="Text" Path="Job_02.out"/>
+ <File Object="Output_grid_large" SubObject="unknown" Quantity="E" Hash="ec62654d4e49c61d5cc0506da7f84a0d" Type="Grid:Spherical" Format="Ticra" Path="Output_large.grd">
+  <Parameter Unit="GHz" Values=" 230.000000000000" Name="Frequency"/>
+  <Parameter Unit="deg" Values="[-2.00000000000000;2.00000000000000;1001]" Name="El"/>
+  <Parameter Unit="deg" Values="[-2.00000000000000;2.00000000000000;1001]" Name="Az"/>
+  <Scan Type="azimuth_over_elevation"/>
+ </File>
+ <File Type="Comments" Format="Text" Path="comments.txt"/>
+ <File Type="Screen" Format="Text" Path="screenoutput.txt"/>
+</OutputFiles>

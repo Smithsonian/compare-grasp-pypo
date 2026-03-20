@@ -1,4 +1,4 @@
- Program started at 11:11:40 on 20 March 2026
+ Program started at 13:40:45 on 20 March 2026
  
  
  
@@ -793,10 +793,10 @@
  
   Origin :   0.000000E+00 mm    0.000000E+00 mm   -0.780000E+03 mm
   Base name : Receiver_coor_sys
-  Psi    :    45.000000 deg.
+  Psi    :    90.000000 deg.
   Calculated axes:
-  X_axis :     0.707107    0.707107    0.000000
-  Y_axis :    -0.707107    0.707107    0.000000
+  X_axis :     0.000000    1.000000    0.000000
+  Y_axis :    -1.000000    0.000000    0.000000
   Z_axis :     0.000000    0.000000    1.000000
  
  
@@ -1167,10 +1167,10 @@
   *** Message    :  New values in object
  
   Base name : Primary_coor
-  Psi    :   -45.000000 deg.
+  Psi    :     0.000000 deg.
   Calculated axes:
-  X_axis :     0.707107   -0.707107    0.000000
-  Y_axis :     0.707107    0.707107    0.000000
+  X_axis :     1.000000    0.000000    0.000000
+  Y_axis :     0.000000    1.000000    0.000000
   Z_axis :     0.000000    0.000000    1.000000
  
  
@@ -1569,7 +1569,7 @@
     No.  Plot objects
      1   VirtualFeed
  
- ----- TASK No. 1 -----     Started at 11:11:41 on March 20, 2026
+ ----- TASK No. 1 -----     Started at 13:40:45 on March 20, 2026
  M6_PO get_currents ( source : sequence(ref(VirtualFeed)),
  auto_convergence_of_po : on, convergence_on_scatterer :
  sequence(ref(Ellipsoidal_M5)))
@@ -1597,38 +1597,38 @@
  PO convergence
   Test-grid  Ref-grid       P_max   P_level  Accuracy
     po1/po2   po1/po2       [dBi]     [dBi]      [dB]
-      20/10     10/10      -25.25    -25.25      5.56
-      40/10     20/10      -24.53    -24.53     -0.30
-      80/10     40/10      -30.05    -30.05     -1.39
-     160/10     80/10      -34.09    -34.09     -6.99
-     320/10    160/10      -34.37    -34.37    -86.84  *
-     120/10    320/10      -34.37    -34.37    -11.39
-     140/10    320/10      -34.37    -34.37    -21.92
-     150/10    320/10      -34.37    -34.37    -37.34
-     155/10    320/10      -34.37    -34.37    -59.00
-     158/10    320/10      -34.37    -34.37    -75.04
+      20/10     10/10      -24.99    -24.99      5.19
+      40/10     20/10      -24.47    -24.47     -0.20
+      80/10     40/10      -29.41    -29.41      0.74
+     160/10     80/10      -33.74    -33.74     -5.38
+     320/10    160/10      -34.02    -34.02    -85.19  *
+     120/10    320/10      -34.02    -34.02    -10.33
+     140/10    320/10      -34.02    -34.02    -20.55
+     150/10    320/10      -34.02    -34.02    -35.72
+     155/10    320/10      -34.02    -34.02    -57.36
+     158/10    320/10      -34.02    -34.02    -73.40
  
  PO convergence
   Test-grid  Ref-grid       P_max   P_level  Accuracy
     po1/po2   po1/po2       [dBi]     [dBi]      [dB]
-      10/20     10/10      -25.25    -25.25      2.62
-      10/40     10/20      -25.49    -25.49      0.67
-      10/80     10/40      -25.49    -25.49     -4.51
-     10/160     10/80      -25.49    -25.49     -6.48
-     10/320    10/160      -25.49    -25.49    -16.33
-     10/640    10/320      -25.49    -25.49    -47.44
-    10/1280    10/640      -25.49    -25.49   -250.49  *
-     10/480   10/1280      -25.49    -25.49   -238.38  *
-     10/400   10/1280      -25.49    -25.49    -82.20  *
-     10/360   10/1280      -25.49    -25.49    -58.75
-     10/380   10/1280      -25.49    -25.49    -69.04
-     10/390   10/1280      -25.49    -25.49    -70.41
+      10/20     10/10      -24.99    -24.99      3.03
+      10/40     10/20      -24.96    -24.96      0.65
+      10/80     10/40      -25.62    -25.62     -3.35
+     10/160     10/80      -25.62    -25.62     -5.62
+     10/320    10/160      -25.62    -25.62    -14.58
+     10/640    10/320      -25.62    -25.62    -45.91
+    10/1280    10/640      -25.62    -25.62   -249.53  *
+     10/480   10/1280      -25.62    -25.62   -236.58  *
+     10/400   10/1280      -25.62    -25.62    -80.59  *
+     10/360   10/1280      -25.62    -25.62    -57.26
+     10/380   10/1280      -25.62    -25.62    -67.02
+     10/390   10/1280      -25.62    -25.62    -68.96
   PO1 =       160 PO2 =       400 Face =     1,    Final PO-values from auto-convergence
  
   Relative power hitting scatterer:    1.00000
   Spill-over:     0.0000 dB
  
- ----- TASK No. 2 -----     Started at 11:11:41 on March 20, 2026
+ ----- TASK No. 2 -----     Started at 13:40:45 on March 20, 2026
  M6_Efield_grid get_field ( source : sequence(ref(VirtualFeed)))
  
  
@@ -1638,7 +1638,7 @@
  
   Source : VirtualFeed
  
- ----- TASK No. 3 -----     Started at 11:11:41 on March 20, 2026
+ ----- TASK No. 3 -----     Started at 13:40:46 on March 20, 2026
  M6_Hfield_grid get_field ( source : sequence(ref(VirtualFeed)))
  
  
@@ -1648,7 +1648,7 @@
  
   Source : VirtualFeed
  
- ----- TASK No. 4 -----     Started at 11:11:41 on March 20, 2026
+ ----- TASK No. 4 -----     Started at 13:40:46 on March 20, 2026
  M6_Current_grid get_field ( source : sequence(ref(VirtualFeed)))
  
  
@@ -1658,7 +1658,7 @@
  
   Source : VirtualFeed
  
- ----- TASK No. 5 -----     Started at 11:11:41 on March 20, 2026
+ ----- TASK No. 5 -----     Started at 13:40:46 on March 20, 2026
  M5_PO get_currents ( source : sequence(ref(M6_PO)), auto_convergence_of_po :
  on, convergence_on_scatterer : sequence(ref(Ellipsoidal_M4)),
  convergence_on_output_grid : sequence(ref(Cal_Load_grid)))
@@ -1687,34 +1687,34 @@
  PO convergence
   Test-grid  Ref-grid    Freq  Beam  Grid       P_max   P_level  Accuracy
     po1/po2   po1/po2                           [dBi]     [dBi]      [dB]
-      20/10     10/10       1     1     1      -27.46    -27.46    -20.84
-      20/10     10/10       1     1     2      -24.58    -24.58    -11.57
-      40/10     20/10       1     1     1      -27.46    -27.46    -84.79  *
-      40/10     20/10       1     1     2      -24.58    -24.58    -53.74
-      80/10     40/10       1     1     2      -24.58    -24.58    -97.13  *
-      30/10     80/10       1     1     2      -24.58    -24.58    -96.90  *
-      25/10     80/10       1     1     2      -24.58    -24.58    -94.48  *
-      23/10     80/10       1     1     2      -24.58    -24.58    -88.84  *
-      22/10     80/10       1     1     2      -24.58    -24.58    -76.42
+      20/10     10/10       1     1     1      -27.46    -27.46    -20.69
+      20/10     10/10       1     1     2      -24.58    -24.58    -11.70
+      40/10     20/10       1     1     1      -27.46    -27.46    -84.41  *
+      40/10     20/10       1     1     2      -24.58    -24.58    -53.91
+      80/10     40/10       1     1     2      -24.58    -24.58    -96.71  *
+      30/10     80/10       1     1     2      -24.58    -24.58    -96.29  *
+      25/10     80/10       1     1     2      -24.58    -24.58    -93.49  *
+      23/10     80/10       1     1     2      -24.58    -24.58    -88.61  *
+      22/10     80/10       1     1     2      -24.58    -24.58    -76.74
  
  PO convergence
   Test-grid  Ref-grid    Freq  Beam  Grid       P_max   P_level  Accuracy
     po1/po2   po1/po2                           [dBi]     [dBi]      [dB]
-      10/20     10/10       1     1     1      -27.46    -27.46     -8.31
-      10/20     10/10       1     1     2      -24.58    -24.58     -7.38
-      10/40     10/20       1     1     1      -27.46    -27.46    -14.34
-      10/40     10/20       1     1     2      -24.58    -24.58    -11.92
-      10/80     10/40       1     1     1      -27.46    -27.46    -49.51
-      10/80     10/40       1     1     2      -24.58    -24.58    -29.71
-     10/160     10/80       1     1     1      -27.46    -27.46   -104.03  *
-     10/160     10/80       1     1     2      -24.58    -24.58   -105.13  *
-      10/60    10/160       1     1     1      -27.46    -27.46   -101.10  *
-      10/60    10/160       1     1     2      -24.58    -24.58    -84.93  *
-      10/50    10/160       1     1     1      -27.46    -27.46    -95.14  *
-      10/50    10/160       1     1     2      -24.58    -24.58    -49.52
-      10/55    10/160       1     1     2      -24.58    -24.58    -67.19
-      10/58    10/160       1     1     2      -24.58    -24.58    -77.19
-      10/59    10/160       1     1     2      -24.58    -24.58    -81.11  *
+      10/20     10/10       1     1     1      -27.46    -27.46     -8.28
+      10/20     10/10       1     1     2      -24.58    -24.58     -7.52
+      10/40     10/20       1     1     1      -27.46    -27.46    -14.21
+      10/40     10/20       1     1     2      -24.58    -24.58    -12.06
+      10/80     10/40       1     1     1      -27.46    -27.46    -49.38
+      10/80     10/40       1     1     2      -24.58    -24.58    -29.88
+     10/160     10/80       1     1     1      -27.46    -27.46   -104.10  *
+     10/160     10/80       1     1     2      -24.58    -24.58   -105.53  *
+      10/60    10/160       1     1     1      -27.46    -27.46   -100.05  *
+      10/60    10/160       1     1     2      -24.58    -24.58    -85.14  *
+      10/50    10/160       1     1     1      -27.46    -27.46    -94.45  *
+      10/50    10/160       1     1     2      -24.58    -24.58    -49.72
+      10/55    10/160       1     1     2      -24.58    -24.58    -67.29
+      10/58    10/160       1     1     2      -24.58    -24.58    -77.00
+      10/59    10/160       1     1     2      -24.58    -24.58    -81.10  *
   PO1 =        23 PO2 =        59 Face =     1,    Final PO-values from auto-convergence
  
   Name of currents file: M6_PO.cur
@@ -1735,7 +1735,7 @@
   Relative power hitting scatterer:    1.00000
   Spill-over:    -0.0000 dB
  
- ----- TASK No. 6 -----     Started at 11:11:42 on March 20, 2026
+ ----- TASK No. 6 -----     Started at 13:40:46 on March 20, 2026
  M5_Efield_grid get_field ( source : sequence(ref(M6_PO)))
  
  
@@ -1760,7 +1760,7 @@
           1       160       400         1
  
  
- ----- TASK No. 7 -----     Started at 11:11:44 on March 20, 2026
+ ----- TASK No. 7 -----     Started at 13:40:49 on March 20, 2026
  M5_Hfield_grid get_field ( source : sequence(ref(M6_PO)))
  
  
@@ -1785,7 +1785,7 @@
           1       160       400         1
  
  
- ----- TASK No. 8 -----     Started at 11:11:46 on March 20, 2026
+ ----- TASK No. 8 -----     Started at 13:40:51 on March 20, 2026
  M5_Current_grid get_field ( source : sequence(ref(M6_PO)))
  
  
@@ -1810,7 +1810,7 @@
           1       160       400         1
  
  
- ----- TASK No. 9 -----     Started at 11:11:48 on March 20, 2026
+ ----- TASK No. 9 -----     Started at 13:40:53 on March 20, 2026
  M4_PO get_currents ( source : sequence(ref(M5_PO)), auto_convergence_of_po :
  on, convergence_on_scatterer : sequence(ref(Flat_M3)))
  
@@ -1837,27 +1837,27 @@
  PO convergence
   Test-grid  Ref-grid       P_max   P_level  Accuracy
     po1/po2   po1/po2       [dBi]     [dBi]      [dB]
-      20/10     10/10      -29.79    -29.79    -10.38
-      40/10     20/10      -29.79    -29.79    -21.52
-      80/10     40/10      -29.79    -29.79   -182.35  *
-      30/10     80/10      -29.79    -29.79    -68.19
-      35/10     80/10      -29.79    -29.79   -115.24  *
-      33/10     80/10      -29.79    -29.79    -93.66  *
-      32/10     80/10      -29.79    -29.79    -84.20  *
-      31/10     80/10      -29.79    -29.79    -75.70
+      20/10     10/10      -29.79    -29.79    -10.11
+      40/10     20/10      -29.79    -29.79    -21.55
+      80/10     40/10      -29.79    -29.79   -182.43  *
+      30/10     80/10      -29.79    -29.79    -68.22
+      35/10     80/10      -29.79    -29.79   -115.31  *
+      33/10     80/10      -29.79    -29.79    -93.72  *
+      32/10     80/10      -29.79    -29.79    -84.25  *
+      31/10     80/10      -29.79    -29.79    -75.75
  
  PO convergence
   Test-grid  Ref-grid       P_max   P_level  Accuracy
     po1/po2   po1/po2       [dBi]     [dBi]      [dB]
-      10/20     10/10      -29.79    -29.79     -6.94
-      10/40     10/20      -29.79    -29.79    -19.24
-      10/80     10/40      -29.79    -29.79    -43.33
-     10/160     10/80      -29.79    -29.79    -97.73  *
-      10/60    10/160      -29.79    -29.79    -77.14
-      10/70    10/160      -29.79    -29.79    -82.48  *
-      10/65    10/160      -29.79    -29.79    -76.47
-      10/68    10/160      -29.79    -29.79    -79.92
-      10/69    10/160      -29.79    -29.79    -80.73  *
+      10/20     10/10      -29.79    -29.79     -6.92
+      10/40     10/20      -29.79    -29.79    -19.07
+      10/80     10/40      -29.79    -29.79    -43.43
+     10/160     10/80      -29.79    -29.79    -97.75  *
+      10/60    10/160      -29.79    -29.79    -77.01
+      10/70    10/160      -29.79    -29.79    -82.39  *
+      10/65    10/160      -29.79    -29.79    -76.60
+      10/68    10/160      -29.79    -29.79    -79.77
+      10/69    10/160      -29.79    -29.79    -80.42  *
   PO1 =        32 PO2 =        69 Face =     1,    Final PO-values from auto-convergence
  
   Name of currents file: M5_PO.cur
@@ -1878,7 +1878,7 @@
   Relative power hitting scatterer:    1.00000
   Spill-over:    -0.0000 dB
  
- ----- TASK No. 10 -----     Started at 11:11:48 on March 20, 2026
+ ----- TASK No. 10 -----     Started at 13:40:53 on March 20, 2026
  M4_Efield_grid get_field ( source : sequence(ref(M5_PO)))
  
  
@@ -1903,7 +1903,7 @@
           1        23        59         1
  
  
- ----- TASK No. 11 -----     Started at 11:11:48 on March 20, 2026
+ ----- TASK No. 11 -----     Started at 13:40:53 on March 20, 2026
  M4_Hfield_grid get_field ( source : sequence(ref(M5_PO)))
  
  
@@ -1928,7 +1928,7 @@
           1        23        59         1
  
  
- ----- TASK No. 12 -----     Started at 11:11:48 on March 20, 2026
+ ----- TASK No. 12 -----     Started at 13:40:54 on March 20, 2026
  M4_Current_grid get_field ( source : sequence(ref(M5_PO)))
  
  
@@ -1953,7 +1953,7 @@
           1        23        59         1
  
  
- ----- TASK No. 13 -----     Started at 11:11:48 on March 20, 2026
+ ----- TASK No. 13 -----     Started at 13:40:54 on March 20, 2026
  M3_PO get_currents ( source : sequence(ref(M4_PO)), auto_convergence_of_po :
  on, convergence_on_scatterer : sequence(ref(Subreflector_M2)),
  convergence_on_output_grid : sequence(ref(Output_cut_large),
@@ -1984,46 +1984,43 @@
  PO convergence
   Test-grid  Ref-grid    Freq  Beam  Grid       P_max   P_level  Accuracy
     po1/po2   po1/po2                           [dBi]     [dBi]      [dB]
-      20/10     10/10       1     1     1      -47.63    -47.63    -39.18
-      20/10     10/10       1     1     2       39.44     39.44    -48.96
-      20/10     10/10       1     1     3       39.44     39.44    -38.82
-      40/10     20/10       1     1     1      -47.63    -47.63    -74.74
-      40/10     20/10       1     1     2       39.44     39.44    -79.05
-      40/10     20/10       1     1     3       39.44     39.44    -76.66
-      80/10     40/10       1     1     1      -47.63    -47.63   -138.07  *
-      80/10     40/10       1     1     2       39.44     39.44   -149.78  *
-      80/10     40/10       1     1     3       39.44     39.44   -140.83  *
-      30/10     80/10       1     1     1      -47.63    -47.63    -86.69  *
-      30/10     80/10       1     1     2       39.44     39.44    -87.31  *
-      30/10     80/10       1     1     3       39.44     39.44    -86.32  *
-      25/10     80/10       1     1     1      -47.63    -47.63    -79.98
-      25/10     80/10       1     1     2       39.44     39.44    -82.22  *
-      25/10     80/10       1     1     3       39.44     39.44    -81.47  *
-      28/10     80/10       1     1     1      -47.63    -47.63    -83.11  *
-      27/10     80/10       1     1     1      -47.63    -47.63    -82.02  *
-      27/10     80/10       1     1     2       39.44     39.44    -83.75  *
-      27/10     80/10       1     1     3       39.44     39.44    -82.30  *
-      26/10     80/10       1     1     1      -47.63    -47.63    -80.68  *
-      26/10     80/10       1     1     2       39.44     39.44    -83.06  *
-      26/10     80/10       1     1     3       39.44     39.44    -81.39  *
+      20/10     10/10       1     1     1      -47.63    -47.63    -38.60
+      20/10     10/10       1     1     2       39.44     39.44    -48.98
+      20/10     10/10       1     1     3       39.44     39.44    -38.19
+      40/10     20/10       1     1     1      -47.63    -47.63    -74.73
+      40/10     20/10       1     1     2       39.44     39.44    -76.84
+      40/10     20/10       1     1     3       39.44     39.44    -76.93
+      80/10     40/10       1     1     1      -47.63    -47.63   -140.13  *
+      80/10     40/10       1     1     2       39.44     39.44   -152.84  *
+      80/10     40/10       1     1     3       39.44     39.44   -142.69  *
+      30/10     80/10       1     1     1      -47.63    -47.63    -87.97  *
+      30/10     80/10       1     1     2       39.44     39.44    -90.43  *
+      30/10     80/10       1     1     3       39.44     39.44    -87.71  *
+      25/10     80/10       1     1     1      -47.63    -47.63    -80.97  *
+      25/10     80/10       1     1     2       39.44     39.44    -83.31  *
+      25/10     80/10       1     1     3       39.44     39.44    -82.54  *
+      23/10     80/10       1     1     1      -47.63    -47.63    -77.40
+      23/10     80/10       1     1     2       39.44     39.44    -80.84  *
+      23/10     80/10       1     1     3       39.44     39.44    -80.51  *
+      24/10     80/10       1     1     1      -47.63    -47.63    -80.04  *
  
  PO convergence
   Test-grid  Ref-grid    Freq  Beam  Grid       P_max   P_level  Accuracy
     po1/po2   po1/po2                           [dBi]     [dBi]      [dB]
-      10/20     10/10       1     1     1      -47.63    -47.63    -55.63
-      10/20     10/10       1     1     2       39.44     39.44    -62.34
-      10/20     10/10       1     1     3       39.44     39.44    -45.45
-      10/40     10/20       1     1     1      -47.63    -47.63    -82.33  *
-      10/40     10/20       1     1     2       39.44     39.44    -83.67  *
-      10/40     10/20       1     1     3       39.44     39.44    -80.03  *
-      10/15     10/40       1     1     1      -47.63    -47.63    -76.13
-      10/15     10/40       1     1     2       39.44     39.44    -76.86
-      10/15     10/40       1     1     3       39.44     39.44    -62.19
-      10/18     10/40       1     1     1      -47.63    -47.63    -81.12  *
-      10/18     10/40       1     1     2       39.44     39.44    -84.19  *
-      10/18     10/40       1     1     3       39.44     39.44    -73.46
-      10/19     10/40       1     1     3       39.44     39.44    -77.22
-  PO1 =        26 PO2 =        20 Face =     1,    Final PO-values from auto-convergence
+      10/20     10/10       1     1     1      -47.63    -47.63    -55.29
+      10/20     10/10       1     1     2       39.44     39.44    -61.07
+      10/20     10/10       1     1     3       39.44     39.44    -45.05
+      10/40     10/20       1     1     1      -47.63    -47.63    -82.92  *
+      10/40     10/20       1     1     2       39.44     39.44    -85.94  *
+      10/40     10/20       1     1     3       39.44     39.44    -80.02  *
+      10/15     10/40       1     1     1      -47.63    -47.63    -75.52
+      10/15     10/40       1     1     2       39.44     39.44    -76.72
+      10/15     10/40       1     1     3       39.44     39.44    -61.68
+      10/18     10/40       1     1     1      -47.63    -47.63    -80.17  *
+      10/18     10/40       1     1     2       39.44     39.44    -81.31  *
+      10/18     10/40       1     1     3       39.44     39.44    -73.04
+      10/19     10/40       1     1     3       39.44     39.44    -76.15
+  PO1 =        24 PO2 =        20 Face =     1,    Final PO-values from auto-convergence
  
   Name of currents file: M4_PO.cur
  
@@ -2043,7 +2040,7 @@
   Relative power hitting scatterer:    0.999999
   Spill-over:     0.0000 dB
  
- ----- TASK No. 14 -----     Started at 11:11:49 on March 20, 2026
+ ----- TASK No. 14 -----     Started at 13:40:54 on March 20, 2026
  M3_Efield_grid get_field ( source : sequence(ref(M4_PO)))
  
  
@@ -2068,7 +2065,7 @@
           1        32        69         1
  
  
- ----- TASK No. 15 -----     Started at 11:11:49 on March 20, 2026
+ ----- TASK No. 15 -----     Started at 13:40:54 on March 20, 2026
  M3_Hfield_grid get_field ( source : sequence(ref(M4_PO)))
  
  
@@ -2093,7 +2090,7 @@
           1        32        69         1
  
  
- ----- TASK No. 16 -----     Started at 11:11:49 on March 20, 2026
+ ----- TASK No. 16 -----     Started at 13:40:54 on March 20, 2026
  M3_Current_grid get_field ( source : sequence(ref(M4_PO)))
  
  
@@ -2118,7 +2115,99 @@
           1        32        69         1
  
  
- ----- TASK No. 17 -----     Started at 11:11:49 on March 20, 2026
+ ----- TASK No. 17 -----     Started at 13:40:54 on March 20, 2026
+ Secondary_PO get_currents ( source : sequence(ref(M3_PO)),
+ auto_convergence_of_po : on, convergence_on_scatterer :
+ sequence(ref(Primary_M1)), convergence_on_output_grid :
+ sequence(ref(Output_cut_large), ref(Output_grid_large)))
+ 
+ 
+  *** Object name:  Secondary_PO
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Get_currents message received
+ 
+  Source : M3_PO
+  PO-auto-convergence selection : on
+  Convergence test on scatterer object : Primary_M1
+  Convergence test on output grid : Output_cut_large
+  Convergence test on output grid : Output_grid_large
+ 
+ 
+  *** Object name:  Secondary_PO
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Initialization
+ 
+ 
+  Auto-convergence with desired accuracy of -80.00 dB.
+ 
+  Face 1:
+  Max. values: po1/po2 = 8940/21480
+ 
+ PO convergence
+  Test-grid  Ref-grid    Freq  Beam  Grid       P_max   P_level  Accuracy
+    po1/po2   po1/po2                           [dBi]     [dBi]      [dB]
+      20/10     10/10       1     1     1      -33.86    -33.86     -0.00
+      20/10     10/10       1     1     2       42.74     42.74     -6.98
+      20/10     10/10       1     1     3       48.10     48.10     -5.04
+      40/10     20/10       1     1     1      -40.49    -40.49      2.04
+      40/10     20/10       1     1     2       41.59     41.59   -108.40  *
+      40/10     20/10       1     1     3       42.71     42.71    -64.47
+      80/10     40/10       1     1     1      -43.52    -43.52      2.17
+      80/10     40/10       1     1     3       42.71     42.71   -237.77  *
+     160/10     80/10       1     1     1      -47.66    -47.66      2.51
+     320/10    160/10       1     1     1      -48.22    -48.22     -3.43
+     640/10    320/10       1     1     1      -55.86    -55.86   -123.11  *
+     240/10    640/10       1     1     1      -55.86    -55.86      2.35
+     280/10    640/10       1     1     1      -55.86    -55.86     -1.06
+     300/10    640/10       1     1     1      -55.86    -55.86    -21.31
+     310/10    640/10       1     1     1      -55.86    -55.86    -64.66
+     315/10    640/10       1     1     1      -55.86    -55.86    -92.25  *
+ 
+ PO convergence
+  Test-grid  Ref-grid    Freq  Beam  Grid       P_max   P_level  Accuracy
+    po1/po2   po1/po2                           [dBi]     [dBi]      [dB]
+      10/20     10/10       1     1     1      -33.86    -33.86      2.38
+      10/20     10/10       1     1     2       42.74     42.74      1.69
+      10/20     10/10       1     1     3       48.10     48.10     -1.02
+      10/40     10/20       1     1     1      -33.28    -33.28      2.24
+      10/40     10/20       1     1     2       41.18     41.59     -5.47
+      10/40     10/20       1     1     3       42.85     42.85     -1.17
+      10/80     10/40       1     1     1      -41.07    -41.07      0.85
+      10/80     10/40       1     1     2       41.18     41.59    -75.85
+      10/80     10/40       1     1     3       41.18     42.71    -22.71
+     10/160     10/80       1     1     1      -42.85    -42.85      0.03
+     10/160     10/80       1     1     2       41.18     41.59   -237.73  *
+     10/160     10/80       1     1     3       41.18     42.71   -238.85  *
+     10/320    10/160       1     1     1      -49.24    -49.24     -0.35
+     10/640    10/320       1     1     1      -50.55    -50.55     -2.93
+    10/1280    10/640       1     1     1      -56.20    -55.86     -6.21
+    10/2560   10/1280       1     1     1      -56.20    -55.86   -237.21  *
+     10/960   10/2560       1     1     1      -56.20    -55.86   -236.67  *
+     10/800   10/2560       1     1     1      -56.20    -55.86   -160.25  *
+     10/720   10/2560       1     1     1      -56.20    -55.86    -13.64
+     10/760   10/2560       1     1     1      -56.20    -55.86    -48.54
+     10/780   10/2560       1     1     1      -56.20    -55.86    -97.30  *
+  PO1 =       315 PO2 =       780 Face =     1,    Final PO-values from auto-convergence
+ 
+  Name of currents file: M3_PO.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1        24        20         1
+ 
+ 
+  Relative power hitting scatterer:    0.949896
+  Spill-over:     0.2232 dB
+ 
+ ----- TASK No. 18 -----     Started at 13:40:54 on March 20, 2026
  Secondary_Efield_grid get_field ( source : sequence(ref(M3_PO)))
  
  
@@ -2140,10 +2229,10 @@
   Frequency number  1 : 230.000 GHz
  
     Face No.      PO1       PO2     Partitions
-          1        26        20         1
+          1        24        20         1
  
  
- ----- TASK No. 18 -----     Started at 11:11:49 on March 20, 2026
+ ----- TASK No. 19 -----     Started at 13:40:54 on March 20, 2026
  Secondary_Hfield_grid get_field ( source : sequence(ref(M3_PO)))
  
  
@@ -2165,10 +2254,10 @@
   Frequency number  1 : 230.000 GHz
  
     Face No.      PO1       PO2     Partitions
-          1        26        20         1
+          1        24        20         1
  
  
- ----- TASK No. 19 -----     Started at 11:11:49 on March 20, 2026
+ ----- TASK No. 20 -----     Started at 13:40:55 on March 20, 2026
  Secondary_Currents_grid get_field ( source : sequence(ref(M3_PO)))
  
  
@@ -2190,12 +2279,544 @@
   Frequency number  1 : 230.000 GHz
  
     Face No.      PO1       PO2     Partitions
-          1        26        20         1
+          1        24        20         1
  
  
- ----- END OF TASKS -----     Completed at 11:11:49 on March 20, 2026
- Total time was 9.13 sec
+ ----- TASK No. 21 -----     Started at 13:40:55 on March 20, 2026
+ Primary_PO get_currents ( source : sequence(ref(Secondary_PO)),
+ auto_convergence_of_po : on, convergence_on_output_grid :
+ sequence(ref(Output_cut_large), ref(Output_grid_large)))
+ 
+ 
+  *** Object name:  Primary_PO
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Get_currents message received
+ 
+  Source : Secondary_PO
+  PO-auto-convergence selection : on
+  Convergence test on output grid : Output_cut_large
+  Convergence test on output grid : Output_grid_large
+ 
+ 
+  *** Object name:  Primary_PO
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Initialization
+ 
+ 
+  Auto-convergence with desired accuracy of -80.00 dB.
+ 
+  Face 1:
+  Max. values: po1/po2 = 153430/368250
+ 
+ PO convergence
+  Test-grid  Ref-grid    Freq  Beam  Grid       P_max   P_level  Accuracy
+    po1/po2   po1/po2                           [dBi]     [dBi]      [dB]
+      20/10     10/10       1     1     1       82.19     82.19    -10.25
+      20/10     10/10       1     1     2       82.19     82.19     -5.19
+      40/10     20/10       1     1     1       82.05     82.05    -12.63
+      40/10     20/10       1     1     2       82.05     82.05     -6.92
+      80/10     40/10       1     1     1       82.09     82.09    -12.00
+      80/10     40/10       1     1     2       82.09     82.09    -13.28
+     160/10     80/10       1     1     1       82.09     82.09    -18.97
+     160/10     80/10       1     1     2       82.09     82.09    -20.34
+     320/10    160/10       1     1     1       82.08     82.08    -60.21
+     320/10    160/10       1     1     2       82.08     82.08    -28.91
+     640/10    320/10       1     1     1       82.08     82.08    -78.31
+     640/10    320/10       1     1     2       82.08     82.08    -76.26
+    1280/10    640/10       1     1     1       82.08     82.08   -232.44  *
+    1280/10    640/10       1     1     2       82.08     82.08   -230.53  *
+     480/10   1280/10       1     1     1       82.08     82.08   -231.25  *
+     480/10   1280/10       1     1     2       82.08     82.08   -229.32  *
+     400/10   1280/10       1     1     1       82.08     82.08   -230.78  *
+     400/10   1280/10       1     1     2       82.08     82.08    -92.00  *
+     360/10   1280/10       1     1     1       82.08     82.08    -82.16  *
+     360/10   1280/10       1     1     2       82.08     82.08    -80.28  *
+     340/10   1280/10       1     1     1       82.08     82.08    -80.02  *
+     340/10   1280/10       1     1     2       82.08     82.08    -80.42  *
+     330/10   1280/10       1     1     1       82.08     82.08    -77.45
+     330/10   1280/10       1     1     2       82.08     82.08    -74.01
+ 
+ PO convergence
+  Test-grid  Ref-grid    Freq  Beam  Grid       P_max   P_level  Accuracy
+    po1/po2   po1/po2                           [dBi]     [dBi]      [dB]
+      10/20     10/10       1     1     1       82.19     82.19     -8.68
+      10/20     10/10       1     1     2       82.19     82.19     -5.57
+      10/40     10/20       1     1     1       82.19     82.19    -10.36
+      10/40     10/20       1     1     2       82.19     82.19    -12.39
+      10/80     10/40       1     1     1       82.19     82.19    -12.35
+      10/80     10/40       1     1     2       82.19     82.19    -14.56
+     10/160     10/80       1     1     1       82.19     82.19    -15.56
+     10/160     10/80       1     1     2       82.19     82.19    -19.21
+     10/320    10/160       1     1     1       82.19     82.19    -18.57
+     10/320    10/160       1     1     2       82.19     82.19    -18.57
+     10/640    10/320       1     1     1       82.19     82.19    -28.34
+     10/640    10/320       1     1     2       82.19     82.19    -28.21
+    10/1280    10/640       1     1     1       82.19     82.19   -137.46  *
+    10/1280    10/640       1     1     2       82.19     82.19    -44.45
+    10/2560   10/1280       1     1     2       82.19     82.19   -133.51  *
+     10/960   10/2560       1     1     2       82.19     82.19   -135.86  *
+     10/800   10/2560       1     1     2       82.19     82.19   -135.15  *
+     10/720   10/2560       1     1     2       82.19     82.19    -69.91
+     10/760   10/2560       1     1     2       82.19     82.19   -134.39  *
+     10/740   10/2560       1     1     2       82.19     82.19   -113.92  *
+  PO1 =       340 PO2 =       740 Face =     1,    Final PO-values from auto-convergence
+ 
+  Name of currents file: sub_po.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       315       780         1
+ 
+ 
+  Relative power hitting scatterer:    0.936461
+  Spill-over:     0.2851 dB
+ 
+ ----- TASK No. 22 -----     Started at 13:41:41 on March 20, 2026
+ Primary_Efield_grid get_field ( source : sequence(ref(Secondary_PO)))
+ 
+ 
+  *** Object name:  Primary_Efield_grid
+  *** Class name :  surface_grid
+  *** Message    :  Get_field message received
+ 
+  Source : Secondary_PO
+ 
+  Name of currents file: sub_po.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       315       780         1
+ 
+ 
+ ----- TASK No. 23 -----     Started at 13:41:50 on March 20, 2026
+ Primary_Hfield_grid get_field ( source : sequence(ref(Secondary_PO)))
+ 
+ 
+  *** Object name:  Primary_Hfield_grid
+  *** Class name :  surface_grid
+  *** Message    :  Get_field message received
+ 
+  Source : Secondary_PO
+ 
+  Name of currents file: sub_po.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       315       780         1
+ 
+ 
+ ----- TASK No. 24 -----     Started at 13:41:59 on March 20, 2026
+ Output_cut get_field ( source : sequence(ref(Primary_PO)))
+ 
+ 
+  *** Object name:  Output_cut
+  *** Class name :  spherical_cut
+  *** Message    :  Get_field message received
+ 
+  Source : Primary_PO
+ 
+  Name of currents file: main_po.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       340       740         1
+ 
+ 
+ 
+  *** Object name:  Output_cut
+  *** Class name :  spherical_cut
+  *** Message    :  Field calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+ 
+ ----- TASK No. 25 -----     Started at 13:41:59 on March 20, 2026
+ Primary_Currents_grid get_field ( source : sequence(ref(Secondary_PO)))
+ 
+ 
+  *** Object name:  Primary_Currents_grid
+  *** Class name :  surface_grid
+  *** Message    :  Get_field message received
+ 
+  Source : Secondary_PO
+ 
+  Name of currents file: sub_po.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       315       780         1
+ 
+ 
+ ----- TASK No. 26 -----     Started at 13:42:07 on March 20, 2026
+ Output_cut add_field ( source : sequence(ref(Secondary_PO), ref(M3_PO)))
+ 
+ 
+  *** Object name:  Output_cut
+  *** Class name :  spherical_cut
+  *** Message    :  Add_field message received
+ 
+  Source : Secondary_PO
+  Source : M3_PO
+ 
+  Name of currents file: sub_po.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       315       780         1
+ 
+ 
+ 
+  *** Object name:  Output_cut
+  *** Class name :  spherical_cut
+  *** Message    :  Field calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+ 
+  Name of currents file: M3_PO.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1        24        20         1
+ 
+ 
+ 
+  *** Object name:  Output_cut
+  *** Class name :  spherical_cut
+  *** Message    :  Field calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+ 
+ ----- TASK No. 27 -----     Started at 13:42:07 on March 20, 2026
+ Output_cut_large get_field ( source : sequence(ref(Primary_PO)))
+ 
+ 
+  *** Object name:  Output_cut_large
+  *** Class name :  spherical_cut
+  *** Message    :  Get_field message received
+ 
+  Source : Primary_PO
+ 
+  Name of currents file: main_po.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       340       740         1
+ 
+ 
+ 
+  *** Object name:  Output_cut_large
+  *** Class name :  spherical_cut
+  *** Message    :  Field calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+ 
+ ----- TASK No. 28 -----     Started at 13:42:07 on March 20, 2026
+ Output_cut_large add_field ( source : sequence(ref(Secondary_PO), ref(M3_PO)))
+ 
+ 
+  *** Object name:  Output_cut_large
+  *** Class name :  spherical_cut
+  *** Message    :  Add_field message received
+ 
+  Source : Secondary_PO
+  Source : M3_PO
+ 
+  Name of currents file: sub_po.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       315       780         1
+ 
+ 
+ 
+  *** Object name:  Output_cut_large
+  *** Class name :  spherical_cut
+  *** Message    :  Field calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+ 
+  Name of currents file: M3_PO.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1        24        20         1
+ 
+ 
+ 
+  *** Object name:  Output_cut_large
+  *** Class name :  spherical_cut
+  *** Message    :  Field calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+ 
+ ----- TASK No. 29 -----     Started at 13:42:08 on March 20, 2026
+ Output_grid get_field ( source : sequence(ref(Primary_PO)))
+ 
+ 
+  *** Object name:  Output_grid
+  *** Class name :  spherical_grid
+  *** Message    :  Get_field message received
+ 
+  Source : Primary_PO
+ 
+  Name of currents file: main_po.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       340       740         1
+ 
+ 
+ 
+  *** Object name:  Output_grid
+  *** Class name :  spherical_grid
+  *** Message    :  Field calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+ 
+ ----- TASK No. 30 -----     Started at 13:42:13 on March 20, 2026
+ Output_grid add_field ( source : sequence(ref(Secondary_PO), ref(M3_PO)))
+ 
+ 
+  *** Object name:  Output_grid
+  *** Class name :  spherical_grid
+  *** Message    :  Add_field message received
+ 
+  Source : Secondary_PO
+  Source : M3_PO
+ 
+  Name of currents file: sub_po.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       315       780         1
+ 
+ 
+ 
+  *** Object name:  Output_grid
+  *** Class name :  spherical_grid
+  *** Message    :  Field calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+ 
+  Name of currents file: M3_PO.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1        24        20         1
+ 
+ 
+ 
+  *** Object name:  Output_grid
+  *** Class name :  spherical_grid
+  *** Message    :  Field calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+ 
+ ----- TASK No. 31 -----     Started at 13:42:50 on March 20, 2026
+ Output_grid_large get_field ( source : sequence(ref(Primary_PO)))
+ 
+ 
+  *** Object name:  Output_grid_large
+  *** Class name :  spherical_grid
+  *** Message    :  Get_field message received
+ 
+  Source : Primary_PO
+ 
+  Name of currents file: main_po.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       340       740         1
+ 
+ 
+ 
+  *** Object name:  Output_grid_large
+  *** Class name :  spherical_grid
+  *** Message    :  Field calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+ 
+ ----- TASK No. 32 -----     Started at 13:43:43 on March 20, 2026
+ Output_grid_large add_field ( source : sequence(ref(Secondary_PO), ref(M3_PO)))
+ 
+ 
+  *** Object name:  Output_grid_large
+  *** Class name :  spherical_grid
+  *** Message    :  Add_field message received
+ 
+  Source : Secondary_PO
+  Source : M3_PO
+ 
+  Name of currents file: sub_po.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       315       780         1
+ 
+ 
+ 
+  *** Object name:  Output_grid_large
+  *** Class name :  spherical_grid
+  *** Message    :  Field calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+ 
+  Name of currents file: M3_PO.cur
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 0
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 230.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1        24        20         1
+ 
+ 
+ 
+  *** Object name:  Output_grid_large
+  *** Class name :  spherical_grid
+  *** Message    :  Field calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+ 
+ ----- END OF TASKS -----     Completed at 13:44:27 on March 20, 2026
+ Total time was 3:42 min
  
  TICRA Tools SN: 008652
- Program stopped at 11:11:49 on 20 March 2026
+ Program stopped at 13:44:27 on 20 March 2026
  

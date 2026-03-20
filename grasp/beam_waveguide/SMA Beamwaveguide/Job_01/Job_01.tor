@@ -80,8 +80,7 @@ VirtualFeed  gaussian_beam
   frequency        : ref(Frequencies),
   coor_sys         : ref(Virtual_feed_coor),
   beam_radius      : 30.25 mm,
-  phase_front_radius : -1291.8 mm,
-  frequency_index_for_plot : 1
+  phase_front_radius : -1291.8 mm
 )
  
 M3_input_coor_sys  coor_sys_grasp_angles  
@@ -263,7 +262,7 @@ M6_PO  po_single_face_scatterer
 Virtual_feed_coor  coor_sys_grasp_angles  
 (
   origin           : struct(x: 0.0 mm, y: 0.0 mm, z: -780.0 mm),
-  psi              : 45.0,
+  psi              : 90.0,
   base             : ref(Receiver_coor_sys)
 )
  
@@ -340,7 +339,7 @@ Secondary_Efield_grid  surface_grid
   scatterer        : ref(Subreflector_M2),
   x_range          : struct(start: -0.175, end: 0.175, np: 301, unit: m),
   y_range          : struct(start: -0.175, end: 0.175, np: 301),
-  polarisation_and_phase_coor_sys : ref(Secondary_coor),
+  polarisation_and_phase_coor_sys : ref(Sec_phase_coor_sys_grasp_angles),
   phase_adjustment : on,
   file_name        : Secondary_Efield,
   frequency        : ref(Frequencies)
@@ -364,7 +363,7 @@ Secondary_Hfield_grid  surface_grid
   x_range          : struct(start: -0.175, end: 0.175, np: 301, unit: m),
   y_range          : struct(start: -0.175, end: 0.175, np: 301),
   field_type       : incident_h_field,
-  polarisation_and_phase_coor_sys : ref(Secondary_coor),
+  polarisation_and_phase_coor_sys : ref(Sec_phase_coor_sys_grasp_angles),
   phase_adjustment : on,
   file_name        : Secondary_Hfield,
   frequency        : ref(Frequencies)
@@ -388,7 +387,7 @@ Secondary_Currents_grid  surface_grid
   x_range          : struct(start: -0.175, end: 0.175, np: 301, unit: m),
   y_range          : struct(start: -0.175, end: 0.175, np: 301),
   field_type       : currents,
-  polarisation_and_phase_coor_sys : ref(Secondary_coor),
+  polarisation_and_phase_coor_sys : ref(Sec_phase_coor_sys_grasp_angles),
   phase_adjustment : on,
   file_name        : Secondary_Currents,
   frequency        : ref(Frequencies)
@@ -399,7 +398,7 @@ M3_Efield_grid  surface_grid
   scatterer        : ref(Flat_M3),
   x_range          : struct(start: -75.0, end: 75.0, np: 151, unit: mm),
   y_range          : struct(start: -75.0, end: 75.0, np: 151),
-  polarisation_and_phase_coor_sys : ref(Elevation_Angle_coor_sys),
+  polarisation_and_phase_coor_sys : ref(M3_phase_coor_sys_grasp_angles),
   phase_adjustment : on,
   file_name        : M3_Efield.grd,
   frequency        : ref(Frequencies)
@@ -410,7 +409,7 @@ M4_Efield_grid  surface_grid
   scatterer        : ref(Ellipsoidal_M4),
   x_range          : struct(start: -75.0, end: 75.0, np: 151, unit: mm),
   y_range          : struct(start: -75.0, end: 75.0, np: 151),
-  polarisation_and_phase_coor_sys : ref(M4_input_coor_sys),
+  polarisation_and_phase_coor_sys : ref(M4_phase_coor_sys_grasp_angles),
   phase_adjustment : on,
   file_name        : M4_Efield.grd,
   frequency        : ref(Frequencies)
@@ -421,7 +420,7 @@ M5_Efield_grid  surface_grid
   scatterer        : ref(Ellipsoidal_M5),
   x_range          : struct(start: -150.0, end: 150.0, np: 301, unit: mm),
   y_range          : struct(start: -150.0, end: 150.0, np: 301),
-  polarisation_and_phase_coor_sys : ref(M5_input_coor_sys),
+  polarisation_and_phase_coor_sys : ref(M5_phase_coor_sys_grasp_angles),
   phase_adjustment : on,
   file_name        : M5_Efield.grd,
   frequency        : ref(Frequencies)
@@ -432,7 +431,7 @@ M6_Efield_grid  surface_grid
   scatterer        : ref(Flat_M6),
   x_range          : struct(start: -150.0, end: 150.0, np: 301, unit: mm),
   y_range          : struct(start: -150.0, end: 150.0, np: 301),
-  polarisation_and_phase_coor_sys : ref(M6_output_coor_sys),
+  polarisation_and_phase_coor_sys : ref(M6_phase_coor_sys_grasp_angles),
   phase_adjustment : on,
   file_name        : M6_Efield.grd,
   frequency        : ref(Frequencies)
@@ -461,6 +460,132 @@ Output_grid_large  spherical_grid
   y_range          : struct(start: -2.0, end: 2.0, np: 1001),
   file_name        : Output_large.grd,
   frequency        : ref(Frequencies)
+)
+ 
+M3_Hfield_grid  surface_grid  
+(
+  scatterer        : ref(Flat_M3),
+  x_range          : struct(start: -75.0, end: 75.0, np: 151, unit: mm),
+  y_range          : struct(start: -75.0, end: 75.0, np: 151),
+  field_type       : incident_h_field,
+  polarisation_and_phase_coor_sys : ref(M3_phase_coor_sys_grasp_angles),
+  phase_adjustment : on,
+  file_name        : M3_Hfield.grd,
+  frequency        : ref(Frequencies)
+)
+ 
+M3_Current_grid  surface_grid  
+(
+  scatterer        : ref(Flat_M3),
+  x_range          : struct(start: -75.0, end: 75.0, np: 151, unit: mm),
+  y_range          : struct(start: -75.0, end: 75.0, np: 151),
+  field_type       : currents,
+  polarisation_and_phase_coor_sys : ref(M3_phase_coor_sys_grasp_angles),
+  phase_adjustment : on,
+  file_name        : M3_Current.grd,
+  frequency        : ref(Frequencies)
+)
+ 
+M4_Hfield_grid  surface_grid  
+(
+  scatterer        : ref(Ellipsoidal_M4),
+  x_range          : struct(start: -75.0, end: 75.0, np: 151, unit: mm),
+  y_range          : struct(start: -75.0, end: 75.0, np: 151),
+  field_type       : incident_h_field,
+  polarisation_and_phase_coor_sys : ref(M4_phase_coor_sys_grasp_angles),
+  phase_adjustment : on,
+  file_name        : M4_Hfield.grd,
+  frequency        : ref(Frequencies)
+)
+ 
+M4_Current_grid  surface_grid  
+(
+  scatterer        : ref(Ellipsoidal_M4),
+  x_range          : struct(start: -75.0, end: 75.0, np: 151, unit: mm),
+  y_range          : struct(start: -75.0, end: 75.0, np: 151),
+  field_type       : currents,
+  polarisation_and_phase_coor_sys : ref(M4_phase_coor_sys_grasp_angles),
+  phase_adjustment : on,
+  file_name        : M4_Current.grd,
+  frequency        : ref(Frequencies)
+)
+ 
+M5_Hfield_grid  surface_grid  
+(
+  scatterer        : ref(Ellipsoidal_M5),
+  x_range          : struct(start: -150.0, end: 150.0, np: 301, unit: mm),
+  y_range          : struct(start: -150.0, end: 150.0, np: 301),
+  field_type       : incident_h_field,
+  polarisation_and_phase_coor_sys : ref(M5_phase_coor_sys_grasp_angles),
+  phase_adjustment : on,
+  file_name        : M5_Hfield.grd,
+  frequency        : ref(Frequencies)
+)
+ 
+M5_Current_grid  surface_grid  
+(
+  scatterer        : ref(Ellipsoidal_M5),
+  x_range          : struct(start: -150.0, end: 150.0, np: 301, unit: mm),
+  y_range          : struct(start: -150.0, end: 150.0, np: 301),
+  field_type       : currents,
+  polarisation_and_phase_coor_sys : ref(M5_phase_coor_sys_grasp_angles),
+  phase_adjustment : on,
+  file_name        : M5_Currents.grd,
+  frequency        : ref(Frequencies)
+)
+ 
+M6_Hfield_grid  surface_grid  
+(
+  scatterer        : ref(Flat_M6),
+  x_range          : struct(start: -150.0, end: 150.0, np: 301, unit: mm),
+  y_range          : struct(start: -150.0, end: 150.0, np: 301),
+  field_type       : incident_h_field,
+  polarisation_and_phase_coor_sys : ref(M6_phase_coor_sys_grasp_angles),
+  phase_adjustment : on,
+  file_name        : M6_Hfield.grd,
+  frequency        : ref(Frequencies)
+)
+ 
+M6_Current_grid  surface_grid  
+(
+  scatterer        : ref(Flat_M6),
+  x_range          : struct(start: -150.0, end: 150.0, np: 301, unit: mm),
+  y_range          : struct(start: -150.0, end: 150.0, np: 301),
+  field_type       : currents,
+  polarisation_and_phase_coor_sys : ref(M6_phase_coor_sys_grasp_angles),
+  phase_adjustment : on,
+  file_name        : M6_Currents.grd,
+  frequency        : ref(Frequencies)
+)
+ 
+M6_phase_coor_sys_grasp_angles  coor_sys_grasp_angles  
+(
+  theta            : 180.0,
+  base             : ref(M6_input_coor_sys)
+)
+ 
+M5_phase_coor_sys_grasp_angles  coor_sys_grasp_angles  
+(
+  theta            : 180.0,
+  base             : ref(M5_input_coor_sys)
+)
+ 
+M4_phase_coor_sys_grasp_angles  coor_sys_grasp_angles  
+(
+  theta            : 180.0,
+  base             : ref(M4_input_coor_sys)
+)
+ 
+M3_phase_coor_sys_grasp_angles  coor_sys_grasp_angles  
+(
+  theta            : 180.0,
+  base             : ref(M3_input_coor_sys)
+)
+ 
+Sec_phase_coor_sys_grasp_angles  coor_sys_grasp_angles  
+(
+  theta            : 180.0,
+  base             : ref(Secondary_coor)
 )
  
 //DO NOT MODIFY OBJECTS BELOW THIS LINE.
@@ -498,5 +623,5 @@ gaussian_beam_tube  gaussian_beam_tube
   beam_path_range  : struct(start: 0.0 mm, end: 10.0 m, number_of_cross_sections: 32)
 )
  
- //$$ Saved at 14:53:37 on 18.03.2026 by TICRA Tools 21.0 SN=008652
+ //$$ Saved at 13:00:01 on 20.03.2026 by TICRA Tools 21.0 SN=008652
   

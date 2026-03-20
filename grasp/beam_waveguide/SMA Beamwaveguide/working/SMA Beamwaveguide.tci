@@ -24,37 +24,35 @@ sequence(ref(Output_cut_large), ref(Output_grid_large))) cmd_3
 COMMAND OBJECT M3_Efield_grid get_field ( source : sequence(ref(M4_PO))) 
 COMMAND OBJECT M3_Hfield_grid get_field ( source : sequence(ref(M4_PO))) 
 COMMAND OBJECT M3_Current_grid get_field ( source : sequence(ref(M4_PO))) 
-//COMMAND OBJECT Secondary_PO get_currents ( source : sequence(ref(M3_PO)),  &
-//auto_convergence_of_po : on, convergence_on_scatterer :  &
-//sequence(ref(Primary_M1)), convergence_on_output_grid :  &
-//sequence(ref(Output_cut_large), ref(Output_grid_large))) cmd_4 
+COMMAND OBJECT Secondary_PO get_currents ( source : sequence(ref(M3_PO)),  &
+auto_convergence_of_po : on, convergence_on_scatterer :  &
+sequence(ref(Primary_M1)), convergence_on_output_grid :  &
+sequence(ref(Output_cut_large), ref(Output_grid_large))) cmd_4 
 COMMAND OBJECT Secondary_Efield_grid get_field ( source : sequence(ref(M3_PO))) 
 COMMAND OBJECT Secondary_Hfield_grid get_field ( source : sequence(ref(M3_PO))) 
 COMMAND OBJECT Secondary_Currents_grid get_field ( source :  &
 sequence(ref(M3_PO))) 
-//COMMAND OBJECT Primary_PO get_currents ( source :  &
-//sequence(ref(Secondary_PO)), auto_convergence_of_po : on,  &
-//convergence_on_output_grid : sequence(ref(Output_cut_large),  &
-//ref(Output_grid_large))) dual_po_main 
-//COMMAND OBJECT Primary_Efield_grid get_field ( source :  &
-//sequence(ref(Secondary_PO))) 
-//COMMAND OBJECT Primary_Hfield_grid get_field ( source :  &
-//sequence(ref(Secondary_PO))) 
-//COMMAND OBJECT Output_cut get_field ( source : sequence(ref(Primary_PO))) 
-//COMMAND OBJECT Primary_Currents_grid get_field ( source :  &
-//sequence(ref(Secondary_PO))) 
-//COMMAND OBJECT Output_cut add_field ( source : sequence(ref(Secondary_PO),  &
-//ref(M3_PO))) dual_add_field_feed 
-//COMMAND OBJECT Output_cut_large get_field ( source :  &
-//sequence(ref(Primary_PO))) 
-//COMMAND OBJECT Output_cut_large add_field ( source :  &
-//sequence(ref(Secondary_PO), ref(M3_PO))) 
-//COMMAND OBJECT Output_grid get_field ( source : sequence(ref(Primary_PO)))  &
-//cmd_9 
-//COMMAND OBJECT Output_grid add_field ( source : sequence(ref(Secondary_PO),  &
-//ref(M3_PO))) cmd_10 
-//COMMAND OBJECT Output_grid_large get_field ( source :  &
-//sequence(ref(Primary_PO))) 
-//COMMAND OBJECT Output_cut_large add_field ( source :  &
-//sequence(ref(Secondary_PO), ref(M3_PO))) 
+COMMAND OBJECT Primary_PO get_currents ( source : sequence(ref(Secondary_PO)),  &
+auto_convergence_of_po : on, convergence_on_output_grid :  &
+sequence(ref(Output_cut_large), ref(Output_grid_large))) dual_po_main 
+COMMAND OBJECT Primary_Efield_grid get_field ( source :  &
+sequence(ref(Secondary_PO))) 
+COMMAND OBJECT Primary_Hfield_grid get_field ( source :  &
+sequence(ref(Secondary_PO))) 
+COMMAND OBJECT Output_cut get_field ( source : sequence(ref(Primary_PO))) 
+COMMAND OBJECT Primary_Currents_grid get_field ( source :  &
+sequence(ref(Secondary_PO))) 
+COMMAND OBJECT Output_cut add_field ( source : sequence(ref(Secondary_PO),  &
+ref(M3_PO))) dual_add_field_feed 
+COMMAND OBJECT Output_cut_large get_field ( source : sequence(ref(Primary_PO))) 
+COMMAND OBJECT Output_cut_large add_field ( source :  &
+sequence(ref(Secondary_PO), ref(M3_PO))) 
+COMMAND OBJECT Output_grid get_field ( source : sequence(ref(Primary_PO)))  &
+cmd_9 
+COMMAND OBJECT Output_grid add_field ( source : sequence(ref(Secondary_PO),  &
+ref(M3_PO))) cmd_10 
+COMMAND OBJECT Output_grid_large get_field ( source :  &
+sequence(ref(Primary_PO))) 
+COMMAND OBJECT Output_grid_large add_field ( source :  &
+sequence(ref(Secondary_PO), ref(M3_PO))) 
 QUIT 

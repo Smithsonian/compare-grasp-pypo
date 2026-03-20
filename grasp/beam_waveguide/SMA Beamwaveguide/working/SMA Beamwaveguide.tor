@@ -262,7 +262,7 @@ M6_PO  po_single_face_scatterer
 Virtual_feed_coor  coor_sys_grasp_angles  
 (
   origin           : struct(x: 0.0 mm, y: 0.0 mm, z: -780.0 mm),
-  psi              : 45.0,
+  psi              : 90.0,
   base             : ref(Receiver_coor_sys)
 )
  
@@ -439,7 +439,7 @@ M6_Efield_grid  surface_grid
  
 Output_cut_coor_sys  coor_sys_grasp_angles  
 (
-  psi              : -45.0,
+  psi              : 0.0,
   base             : ref(Primary_coor)
 )
  
@@ -623,5 +623,5 @@ gaussian_beam_tube  gaussian_beam_tube
   beam_path_range  : struct(start: 0.0 mm, end: 10.0 m, number_of_cross_sections: 32)
 )
  
- //$$ Saved at 11:29:12 on 20.03.2026 by TICRA Tools 21.0 SN=008652
+ //$$ Saved at 14:15:46 on 20.03.2026 by TICRA Tools 21.0 SN=008652
   

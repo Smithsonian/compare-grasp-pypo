@@ -1,1 +1,1 @@
-Run canonical model with PO+PTD, small and large output cuts/grids, contributions from Secondary and M3
+Run with PTD, M3 and Sec farfield contributions

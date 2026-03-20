@@ -53,6 +53,6 @@ cmd_9
 //ref(M3_PO))) cmd_10 
 COMMAND OBJECT Output_grid_large get_field ( source :  &
 sequence(ref(Primary_PO))) 
-//COMMAND OBJECT Output_cut_large add_field ( source :  &
+//COMMAND OBJECT Output_grid_large add_field ( source :  &
 //sequence(ref(Secondary_PO), ref(M3_PO))) 
 QUIT 
