@@ -9,7 +9,7 @@ import PyPO.Colormaps as cmaps
 amp_cmap = cmaps.parula
 phs_cmap = cmaps.parula
 
-def plotGraspBeam2D(field, comp=0, comp_name='E', title=None, vmax=None, vmin=None, norm=True):
+def plotGraspBeam2D(field, comp=0, comp_name='E', title=None, reim=False, vmax=None, vmin=None, norm=True):
     
     comps = ["x", "y", "z"]
     
@@ -18,21 +18,35 @@ def plotGraspBeam2D(field, comp=0, comp_name='E', title=None, vmax=None, vmin=No
     else:
         title = f"{title} ${comp_name}_{comps[comp]}$"
     
-    if vmax is None:
-        vmax = 20*np.log10(np.max(np.abs(field.field[:,:,comp])))
-        if vmin is None:
-            vmin = 20*np.log10(np.min(np.abs(field.field[:,:,comp])))
+    if reim:
+        if vmax is None:
+            vmax = max(np.max(np.real(field.field[:,:,comp])), np.max(np.imag(field.field[:,:,comp])), -np.min(np.real(field.field[:,:,comp])), -np.min(np.imag(field.field[:,:,comp])))
+            vmin = -vmax
         else:
-            vmin = vmax + vmin
+            if vmin is None:
+                vmin = -vmax
+    else:
+        if vmax is None:
+            vmax = 20*np.log10(np.max(np.abs(field.field[:,:,comp])))
+            if vmin is None:
+                vmin = 20*np.log10(np.min(np.abs(field.field[:,:,comp])))
+            else:
+                vmin = vmax + vmin
 
 
     fig, ax = plt.subplots(1,2, figsize=(12,5))
-    ampplt = ax[0].pcolormesh(field.positions[0], field.positions[1], 20*np.log10(np.abs(field.field[:,:,comp])), cmap=amp_cmap, vmin=vmin, vmax=vmax)
-    phsplt = ax[1].pcolormesh(field.positions[0], field.positions[1], np.angle(field.field[:,:,comp]), cmap=phs_cmap)
+    if reim:
+        ampplt = ax[0].pcolormesh(field.positions[0], field.positions[1], field.field[:,:,comp].real, cmap=amp_cmap, vmin=vmin, vmax=vmax)
+        phsplt = ax[1].pcolormesh(field.positions[0], field.positions[1], field.field[:,:,comp].imag, cmap=amp_cmap, vmin=vmin, vmax=vmax)
+        ax[0].set_title("Re(F) (√W)")
+        ax[1].set_title("Im(F) (√W)")
+    else:
+        ampplt = ax[0].pcolormesh(field.positions[0], field.positions[1], 20*np.log10(np.abs(field.field[:,:,comp])), cmap=amp_cmap, vmin=vmin, vmax=vmax)
+        phsplt = ax[1].pcolormesh(field.positions[0], field.positions[1], np.angle(field.field[:,:,comp]), cmap=phs_cmap)
+        ax[0].set_title("Amplitude (dB)")
+        ax[1].set_title("Phase (rad)")
 
 
-    ax[0].set_title("Amplitude (dB)")
-    ax[1].set_title("Phase (rad)")
 
     cax = []
     for a in ax:
