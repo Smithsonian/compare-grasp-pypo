@@ -6,55 +6,55 @@ working/SMA Beamwaveguide.tor
 working/SMA Beamwaveguide.tci
 [Project setup]
 <!DOCTYPE Project>
-<Project version="21.0.0" application="TICRA Tools">
+<Project application="TICRA Tools" version="21.0.0">
  <Results>
-  <Analysis Path="Job_01" Name="Job_01">
+  <Analysis Name="Job_01" Path="Job_01">
    <Objects Path="Job_01.tor"/>
    <Commands Path="Job_01.tci"/>
    <Output Path="output_files_37048.xml"/>
-   <Job NumCommands="0" JobHidden="false" JobStatus="Job Finished" JobProcessID="37048" Name="Job_01" JobOutputSpec="output_files_37048.xml" StartTime="2026-03-20T13:00:01"/>
+   <Job JobOutputSpec="output_files_37048.xml" JobStatus="Job Finished" NumCommands="0" StartTime="2026-03-20T13:00:01" Name="Job_01" JobProcessID="37048" JobHidden="false"/>
   </Analysis>
-  <Analysis Path="Job_02" Name="Job_02">
+  <Analysis Name="Job_02" Path="Job_02">
    <Objects Path="Job_02.tor"/>
    <Commands Path="Job_02.tci"/>
    <Output Path="output_files_46668.xml"/>
-   <Job NumCommands="0" JobHidden="false" JobStatus="Job Finished" JobProcessID="46668" Name="Job_02" JobOutputSpec="output_files_46668.xml" StartTime="2026-03-20T13:09:10"/>
+   <Job JobOutputSpec="output_files_46668.xml" JobStatus="Job Finished" NumCommands="0" StartTime="2026-03-20T13:09:10" Name="Job_02" JobProcessID="46668" JobHidden="false"/>
   </Analysis>
-  <Analysis Path="Job_03" Name="Job_03">
+  <Analysis Name="Job_03" Path="Job_03">
    <Objects Path="Job_03.tor"/>
    <Commands Path="Job_03.tci"/>
    <Output Path="output_files_54732.xml"/>
-   <Job NumCommands="0" JobHidden="false" JobStatus="Job Finished" JobProcessID="54732" Name="Job_03" JobOutputSpec="output_files_54732.xml" StartTime="2026-03-20T13:15:28"/>
+   <Job JobOutputSpec="output_files_54732.xml" JobStatus="Job Finished" NumCommands="0" StartTime="2026-03-20T13:15:28" Name="Job_03" JobProcessID="54732" JobHidden="false"/>
   </Analysis>
-  <Analysis Path="Job_04" Name="Job_04">
+  <Analysis Name="Job_04" Path="Job_04">
    <Objects Path="Job_04.tor"/>
    <Commands Path="Job_04.tci"/>
    <Output Path="output_files_17180.xml"/>
-   <Job NumCommands="0" JobHidden="false" JobStatus="Job Finished" JobProcessID="17180" Name="Job_04" JobOutputSpec="output_files_17180.xml" StartTime="2026-03-20T13:25:24"/>
+   <Job JobOutputSpec="output_files_17180.xml" JobStatus="Job Finished" NumCommands="0" StartTime="2026-03-20T13:25:24" Name="Job_04" JobProcessID="17180" JobHidden="false"/>
   </Analysis>
-  <Analysis Path="Job_05" Name="Job_05">
+  <Analysis Name="Job_05" Path="Job_05">
    <Objects Path="Job_05.tor"/>
    <Commands Path="Job_05.tci"/>
    <Output Path="output_files_56364.xml"/>
-   <Job NumCommands="0" JobHidden="false" JobStatus="Job Finished" JobProcessID="56364" Name="Job_05" JobOutputSpec="output_files_56364.xml" StartTime="2026-03-20T13:40:44"/>
+   <Job JobOutputSpec="output_files_56364.xml" JobStatus="Job Finished" NumCommands="0" StartTime="2026-03-20T13:40:44" Name="Job_05" JobProcessID="56364" JobHidden="false"/>
   </Analysis>
  </Results>
  <ResultWindows>
   <PlotWidget type="Spectrogram">
-   <Title font="MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0" text="%Grid_1_Job% → %Grid_1_Full Title%"/>
-   <Axis maximum="72.0793" minimum="-72.0793" spacing="2" useFixedStep="0" id="0" useMinor="0" stepMajor="10" resetZoomBehaviour="RangeLimit" stepMinor="5" margin="0" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" text="%Y-Left Title%" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" startAt="0" enabled="1" useMajor="1" inverted="0">
-    <PenMajor color_b="192" styleString="SolidLine" color_a="255" color_g="192" color_r="192" width="0" style="1"/>
+   <Title text="%Grid_1_Job% → %Grid_1_Full Title%" font="MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"/>
+   <Axis enabled="1" useFixedStep="0" margin="0" id="0" minimum="-120.652" text="%Y-Left Title%" resetZoomBehaviour="RangeLimit" stepMinor="5" maximum="120.652" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" stepMajor="10" useMajor="1" startAt="0" useMinor="0" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" inverted="0" spacing="2">
+    <PenMajor color_b="192" color_r="192" style="1" color_a="255" width="0" styleString="SolidLine" color_g="192"/>
    </Axis>
-   <Axis useFixedStep="0" stepMajor="10" margin="20" startAt="0" enabled="1" maximum="-26.7848" minimum="-92.7848" stepMinor="5" inverted="0" resetZoomBehaviour="RangeLimit" useMinor="0" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" id="1" useMajor="0" text="%Y-Right Title%" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" colorBarWidth="20" spacing="2"/>
-   <Axis maximum="75" minimum="-75" spacing="2" useFixedStep="0" id="2" useMinor="0" stepMajor="10" resetZoomBehaviour="Regular" stepMinor="5" margin="0" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" text="%X-Bottom Title%" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" startAt="0" enabled="1" useMajor="1" inverted="0">
-    <PenMajor color_b="192" styleString="SolidLine" color_a="255" color_g="192" color_r="192" width="0" style="1"/>
+   <Axis text="%Y-Right Title%" colorBarWidth="20" useMajor="0" margin="20" id="1" minimum="-92.7848" startAt="0" useFixedStep="0" enabled="1" inverted="0" stepMinor="5" useMinor="0" stepMajor="10" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" maximum="-26.7848" resetZoomBehaviour="RangeLimit" spacing="2"/>
+   <Axis enabled="1" useFixedStep="0" margin="0" id="2" minimum="-75" text="%X-Bottom Title%" resetZoomBehaviour="Regular" stepMinor="5" maximum="75" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" stepMajor="10" useMajor="1" startAt="0" useMinor="0" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" inverted="0" spacing="2">
+    <PenMajor color_b="192" color_r="192" style="1" color_a="255" width="0" styleString="SolidLine" color_g="192"/>
    </Axis>
    <Axis Undefined="1"/>
-   <Canvas color_b="255" axisLineWidth="0" color_a="255" minorTickLength="4" frameAroundExported="1" color_g="255" color_r="255" majorTickLength="8"/>
+   <Canvas color_b="255" minorTickLength="4" axisLineWidth="0" color_r="255" color_a="255" majorTickLength="8" frameAroundExported="1" color_g="255"/>
    <Grid/>
-   <Legend bgmode="0" textwidthmargin="4" legendvisible="0" externalalignment="1" externalsizeratio="0.29999999999999999" activelegend="1" maxcolumns="1">
-    <bgcolor color_b="255" color_a="255" color_g="255" color_r="255"/>
-    <borderpen color_b="164" styleString="SolidLine" color_a="255" color_g="160" color_r="160" width="1" style="1"/>
+   <Legend externalsizeratio="0.29999999999999999" activelegend="1" maxcolumns="1" externalalignment="1" bgmode="0" textwidthmargin="4" legendvisible="0">
+    <bgcolor color_b="255" color_r="255" color_a="255" color_g="255"/>
+    <borderpen color_b="164" color_r="160" style="1" color_a="255" width="1" styleString="SolidLine" color_g="160"/>
     <internalposition>
      <horizontal>1000000</horizontal>
      <vertical>0</vertical>
@@ -62,17 +62,17 @@ working/SMA Beamwaveguide.tci
     <legendordering/>
    </Legend>
    <SpectrogramData uuid="{fc21822c-1e5d-46f3-b351-5fb8d5e6c406}">
-    <EDIFile time="2026-03-20T13:00:10" name="Job_01/M3_Efield.grd" xmlHeader="&lt;!DOCTYPE FileMetaData>&#xa;&lt;Parameters>&#xa; &lt;File Object=&quot;M3_Efield_grid&quot; SubObject=&quot;unknown&quot; Quantity=&quot;E&quot; Hash=&quot;3541aa73c1e41a316964488299ad7014&quot; Type=&quot;Grid:Surface&quot; Format=&quot;Ticra&quot; Path=&quot;M3_Efield.grd&quot;>&#xa;  &lt;Parameter Unit=&quot;GHz&quot; Values=&quot; 230.000000000000&quot; Name=&quot;Frequency&quot;/>&#xa;  &lt;Parameter Unit=&quot;mm&quot; Values=&quot;[-75.0000000000000;75.0000000000000;151]&quot; Name=&quot;Y&quot;/>&#xa;  &lt;Parameter Unit=&quot;mm&quot; Values=&quot;[-75.0000000000000;75.0000000000000;151]&quot; Name=&quot;X&quot;/>&#xa; &lt;/File>&#xa;&lt;/Parameters>&#xa;"/>
+    <EDIFile time="2026-03-20T13:00:10" xmlHeader="&lt;!DOCTYPE FileMetaData>&#xa;&lt;Parameters>&#xa; &lt;File Object=&quot;M3_Efield_grid&quot; SubObject=&quot;unknown&quot; Quantity=&quot;E&quot; Hash=&quot;3541aa73c1e41a316964488299ad7014&quot; Type=&quot;Grid:Surface&quot; Format=&quot;Ticra&quot; Path=&quot;M3_Efield.grd&quot;>&#xa; &lt;Parameter Unit=&quot;GHz&quot; Values=&quot; 230.000000000000&quot; Name=&quot;Frequency&quot;/>&#xa; &lt;Parameter Unit=&quot;mm&quot; Values=&quot;[-75.0000000000000;75.0000000000000;151]&quot; Name=&quot;Y&quot;/>&#xa; &lt;Parameter Unit=&quot;mm&quot; Values=&quot;[-75.0000000000000;75.0000000000000;151]&quot; Name=&quot;X&quot;/>&#xa; &lt;/File>&#xa;&lt;/Parameters>&#xa;" name="Job_01/M3_Efield.grd"/>
     <Font data="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,12,-1,5,50,0,0,0,0,0"/>
     <Legend text="M3_Efield_grid → E_z → 230.0 GHz"/>
-    <Parameter length="0" begin="0" class="Frequency"/>
-    <Parameter length="0" begin="2" class="ProjectionComponents:Ludwig3"/>
-    <Parameter length="151" begin="0" class="X"/>
-    <Parameter length="151" begin="0" class="Y"/>
+    <Parameter begin="0" class="Frequency" length="0"/>
+    <Parameter begin="2" class="ProjectionComponents:Ludwig3" length="0"/>
+    <Parameter begin="0" class="X" length="151"/>
+    <Parameter begin="0" class="Y" length="151"/>
     <Variable className="FieldComponents:E" nameEDX=""/>
-    <Axes yName="y" zUnit="dB" xUnit="mm" zName="Amplitude" yAxis="Y" xAxis="X" xName="x" title="M3_Efield_grid → E_z → 230.0 GHz" yUnit="mm"/>
+    <Axes xName="x" yUnit="mm" zName="Amplitude" title="M3_Efield_grid → E_z → 230.0 GHz" yName="y" xAxis="X" xUnit="mm" zUnit="dB" yAxis="Y"/>
     <Format to="0"/>
-    <DisplayMode NormalisationFactor="0" Image="true" Contours="true"/>
+    <DisplayMode Image="true" NormalisationFactor="0" Contours="true"/>
     <ContourParameters ContourParametersInitialized="1">
      <cereal>
       <contourParameters>
@@ -218,23 +218,22 @@ working/SMA Beamwaveguide.tci
     <legendorderingentry uuid="{fc21822c-1e5d-46f3-b351-5fb8d5e6c406}"/>
    </legendordering>
    <ColorMap>
-    <ColorStop color_b="128" value="0" color_a="255" color_g="0" color_r="0"/>
-    <ColorStop color_b="255" value="0.25" color_a="255" color_g="255" color_r="0"/>
-    <ColorStop color_b="0" value="0.5" color_a="255" color_g="255" color_r="0"/>
-    <ColorStop color_b="0" value="0.75" color_a="255" color_g="255" color_r="255"/>
-    <ColorStop color_b="0" value="1" color_a="255" color_g="0" color_r="255"/>
+    <ColorStop color_b="128" color_r="0" color_a="255" value="0" color_g="0"/>
+    <ColorStop color_b="255" color_r="0" color_a="255" value="0.25" color_g="255"/>
+    <ColorStop color_b="0" color_r="0" color_a="255" value="0.5" color_g="255"/>
+    <ColorStop color_b="0" color_r="255" color_a="255" value="0.75" color_g="255"/>
+    <ColorStop color_b="0" color_r="255" color_a="255" value="1" color_g="0"/>
    </ColorMap>
    <FixedAspectRatio enabled="true" mode="1">
-    <MinimumRect top="-75" left="-75" width="150" height="150"/>
+    <MinimumRect height="150" left="-75" width="150" top="-75"/>
    </FixedAspectRatio>
-   <Window normalY="72" normalX="96" normalWidth="929" isMaximized="0" isFullscreen="0" isMinimized="0" normalHeight="853"/>
   </PlotWidget>
   <PlotStyleModel/>
   <GridStyleModel/>
  </ResultWindows>
  <WizardData/>
  <view_configuration>
-  <view minimized="no" upVector="-0.3107323050498962,-0.1513658761978149,0.9383675456047058" show_surfaces="yes" enable_theta_slider="no" perspective_view="no" enable_psi_slider="no" name="view_1" viewCenter="-1.926056385040283,0.9312600493431091,-2.44251823425293" show_wire_grid="yes" collapsed_view_settings_entries="" position="-1.114004969596863,1.402058601379395,-2.097671508789063" size="1312x956" locked_phi_theta="no" maximized="yes" scale="6.42527" show_rulers="yes" enable_phi_slider="no" pos="0x0" orientation_type="0"/>
+  <view position="-0.4602541625499725,-0.1799064874649048,-1.499769330024719" enable_phi_slider="no" pos="0x0" show_surfaces="yes" perspective_view="no" show_rulers="yes" minimized="no" upVector="-0.2870571613311768,-0.1449417471885681,0.9468843936920166" name="view_1" scale="4.01579" maximized="yes" size="1312x956" enable_psi_slider="no" enable_theta_slider="no" locked_phi_theta="no" viewCenter="-1.294168710708618,-0.6285019516944885,-1.821245670318604" orientation_type="0" show_wire_grid="yes" collapsed_view_settings_entries=""/>
  </view_configuration>
  <optimisation_configuration current_tab="Press 'New Manager' to create an optimisation manager"/>
  <uq_configuration current_tab="Press 'New Manager' to create an uncertainty quantification manager"/>
