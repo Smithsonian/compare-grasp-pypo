@@ -9,7 +9,7 @@ import PyPO.Colormaps as cmaps
 amp_cmap = cmaps.parula
 phs_cmap = cmaps.parula
 
-def plotGraspBeam2D(field, comp=0, comp_name='E', title=None, reim=False, vmax=None, vmin=None, norm=True):
+def plotGraspBeam2D(field, comp=0, comp_name='E', title=None, reim=False, unwrap_phase=False, vmax=None, vmin=None, norm=True):
     
     comps = ["x", "y", "z"]
     
@@ -42,7 +42,10 @@ def plotGraspBeam2D(field, comp=0, comp_name='E', title=None, reim=False, vmax=N
         ax[1].set_title("Im(F) (√W)")
     else:
         ampplt = ax[0].pcolormesh(field.positions[0], field.positions[1], 20*np.log10(np.abs(field.field[:,:,comp])), cmap=amp_cmap, vmin=vmin, vmax=vmax)
-        phsplt = ax[1].pcolormesh(field.positions[0], field.positions[1], np.angle(field.field[:,:,comp]), cmap=phs_cmap)
+        if unwrap_phase:
+            phsplt = ax[1].pcolormesh(field.positions[0], field.positions[1], np.unwrap(np.unwrap(np.angle(field.field[:,:,comp]), axis=1), axis=0), cmap=phs_cmap)
+        else:
+            phsplt = ax[1].pcolormesh(field.positions[0], field.positions[1], np.angle(field.field[:,:,comp]), cmap=phs_cmap)
         ax[0].set_title("Amplitude (dB)")
         ax[1].set_title("Phase (rad)")
 
@@ -163,7 +166,36 @@ def plotBeamCut(grid, field, cut, gmode='uv', comp='Ex', figax=None, phase=True,
             phi = grid['y'][int((shape[0]-1)/2),:]
             x = np.rad2deg(r*np.sin(phi))
             y = field[comp][int((shape[0]-1)/2),:]
-    else: # cut == 'd'
+    elif cut == 'zx':
+        if gmode =='xy':
+            x = grid['z'][int((shape[0]-1)/2),:]
+            z = grid['x'][int((shape[0]-1)/2),:]
+            y = field[comp][int((shape[0]-1)/2),:]
+        elif gmode == 'uv':
+            x = np.concat((grid['z'][::-1,int(shape[1]/2)], grid['z'][:,0]))
+            z = np.concat((grid['x'][::-1,int(shape[1]/2)], grid['x'][:,0]))
+            y = np.concat((field[comp][::-1,int(shape[1]/2)], field[comp][:,0]))
+        else: # AoE grid
+            r = grid['x'][int((shape[0]-1)/2),:]
+            phi = grid['y'][int((shape[0]-1)/2),:]
+            x = np.rad2deg(r*np.sin(phi))
+            y = field[comp][int((shape[0]-1)/2),:]
+    elif cut == 'zy':
+        if gmode =='xy':
+            x = grid['z'][int((shape[0]-1)/2),:]
+            z = grid['y'][int((shape[0]-1)/2),:]
+            y = field[comp][int((shape[0]-1)/2),:]
+        elif gmode == 'uv':
+            x = np.concat((grid['z'][::-1,int(shape[1]/2)], grid['z'][:,0]))
+            z = np.concat((grid['x'][::-1,int(shape[1]/2)], grid['x'][:,0]))
+            y = np.concat((field[comp][::-1,int(shape[1]/2)], field[comp][:,0]))
+        else: # AoE grid
+            r = grid['x'][int((shape[0]-1)/2),:]
+            phi = grid['y'][int((shape[0]-1)/2),:]
+            x = np.rad2deg(r*np.sin(phi))
+            y = field[comp][int((shape[0]-1)/2),:]
+
+    elif  cut == 'd':
         if gmode =='xy':
             # Only works with square grids
             x = np.sign(np.diagonal(grid['x']))*np.sqrt(np.diagonal(grid['x'])**2 + np.diagonal(grid['y'])**2)
@@ -178,6 +210,22 @@ def plotBeamCut(grid, field, cut, gmode='uv', comp='Ex', figax=None, phase=True,
             phi = np.diagonal(grid['y'])
             x = np.rad2deg(r)
             y = np.diagonal(field[comp])
+            
+    elif  cut == 'd2':
+        if gmode =='xy':
+            # Only works with square grids
+            x = np.sign(np.diagonal(np.fliplr(grid['x'])))*np.sqrt(np.diagonal(np.fliplr(grid['x']))**2 + np.diagonal(np.fliplr(grid['y']))**2)
+            z = np.diagonal(np.fliplr(grid.z))
+            y = np.diagonal(np.fliplr(field[comp]))
+        elif gmode == 'uv':
+            x = np.sqrt(2)*np.concat((grid['x'][::-1,int(shape[1]*7/8)], grid['x'][:,int(shape[1]*3/8)]))
+            z = np.concat((grid['z'][::-1,int(shape[1]*7/8)], grid['z'][:,int(shape[1]*3/8)]))
+            y = np.concat((field[comp][::-1,int(shape[1]*7/8)], field[comp][:,int(shape[1]*3/8)]))
+        else: # AoE grid
+            r = np.sign(np.diagonal(np.fliplr(grid['y'])))*np.diagonal(np.fliplr(grid['x']))
+            phi = np.diagonal(np.fliplr(grid['y']))
+            x = np.rad2deg(r)
+            y = np.diagonal(np.fliplr(field[comp]))
     
     if label is None:
         label = f"{cut}-cut ${comp[0]}_{comp[1]}$"
@@ -218,7 +266,7 @@ def plotBeamCut(grid, field, cut, gmode='uv', comp='Ex', figax=None, phase=True,
 
         for a in ax:
             if farfield:
-                a.set_xlabel("$\theta$ (°)")
+                a.set_xlabel("$\\theta$ (°)")
             else:
                 a.set_xlabel("r (mm)")
             a.legend()
@@ -231,7 +279,7 @@ def plotBeamCut(grid, field, cut, gmode='uv', comp='Ex', figax=None, phase=True,
         ax.legend()
         ax.set_ylabel("Amplitude (dB)")
         if farfield:
-            ax.set_xlabel("$\theta$ (°)")
+            ax.set_xlabel(r"$\theta$ (°)")
         else:
             ax.set_xlabel("r (mm)")
         
@@ -327,7 +375,7 @@ def plotGraspBeamCut(field, cut, grid='rect', comp=0, comp_name='E', figax=None,
         ax.legend()
         ax.set_ylabel("Amplitude (dB)")
         if farfield:
-            ax.set_xlabel("$\theta$ (°)")
+            ax.set_xlabel("$\\theta$ (°)")
         else:
             ax.set_xlabel("r (mm)")
         
